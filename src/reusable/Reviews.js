@@ -62,11 +62,10 @@ const Reviews = () => {
               ...Array(userRating).fill(IMAGES.FULL_STAR),
               ...Array(rate - userRating).fill(IMAGES.EMPTY_STAR),
             ];
-            console.log(stars)
 
             return (
               <div className="review-1" key={id}>
-                < IMAGES.QUOTES className="icon-fill"/>
+                {/* < IMAGES.QUOTES className="icon-fill"/> */}
                 <div className="review-1-body">
                   <div className="review-1-top">
                     <h1 className="review-1-top-heading">{title}</h1>
@@ -88,7 +87,8 @@ const Reviews = () => {
                   </div>
                 </div>
                 {index < 1 && (
-                  <IMAGES.VERTICAL_LINE className="vertical-line" id="icon-50" />
+                //   <IMAGES.VERTICAL_LINE className="vertical-line" id="icon-50" />
+                <></>
                 )}
               </div>
             );
@@ -96,10 +96,10 @@ const Reviews = () => {
         </div>
         <div className="reviews-button">
           <div className="primary-button" onClick={handleLeftArrowClick}>
-            <IMAGES.LEFT_ARROW className="icon-dark" />
+            {/* <IMAGES.LEFT_ARROW className="icon-dark" /> */}
           </div>
           <div className="primary-button" onClick={handleRightArrowClick}>
-            <IMAGES.RIGHT_ARROW className="icon-dark"/>
+            {/* <IMAGES.RIGHT_ARROW className="icon-dark"/> */}
           </div>
         </div>
       </div>

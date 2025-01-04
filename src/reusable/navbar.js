@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="navbar-items">
       <div className="navbar-item">
         <button className="nav-button">Who We Are
-        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" class="chevron-image" />
+        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
           <a href="#" className="dropdown-item">Dropdown 1</a>
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       <div className="navbar-item">
         <button className="nav-button">Practices
-        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" class="chevron-image" />
+        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
           <a href="#" className="dropdown-item">Dropdown 1</a>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-item">
         <button className="nav-button">Offerings
-        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" class="chevron-image" />
+        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
           <a href="#" className="dropdown-item">Dropdown 1</a>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
       <div className="navbar-item">
         <button className="nav-button">Industries
-        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" class="chevron-image" />
+        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
           <a href="#" className="dropdown-item">Dropdown 1</a>
@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-item">
         <button className="nav-button">Resources
-        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" class="chevron-image" />
+        <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
           <a href="#" className="dropdown-item">Dropdown 1</a>

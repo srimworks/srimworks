@@ -5,6 +5,7 @@ import LeftAside from '../reusable/leftAside'
 import { ASIDE_HUMANITY, LEFT_ASIDE } from '../utils/constsnts'
 import RightAside from '../reusable/rightAside'
 import Reviews from '../reusable/Reviews'
+import Location from '../reusable/Location'
 
 const AboutUs = () => {
   const data = ASIDE_HUMANITY[0];
@@ -15,7 +16,8 @@ const AboutUs = () => {
         <HeroWithLeftImg/>
         <LeftAside {...data}/>
         <RightAside {...data}/>
-        <Reviews/>
+        {/* <Reviews/> */}
+        <Location/>
         {/* <Navbar/> */}
        {/* <whyChooseSrim/> */}
        {/* <HearetOfSrimeWorks/> */}

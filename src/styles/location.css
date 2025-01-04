@@ -1,0 +1,63 @@
+/* Container styles */
+.container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #f9f9f9; */
+    display: flex;
+padding: 64px;
+flex-direction: column;
+align-items: center;
+gap: 64px;
+align-self: stretch;
+background: #FFF;
+  }
+  
+  /* Header styles */
+  .header {
+    color: #060606;
+    text-align: center;
+    
+    /* Desktop/Heading/56 */
+    font-family: "Config Condensed";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
+  }
+  
+  /* Description styles */
+  .description {
+    width: 600px;
+    color: #060606;
+    text-align: center;
+    
+    /* Desktop/Body/18 */
+    font-family: "SF Pro Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /* Image container styles */
+  .image-container {
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+  }
+  
+  /* .image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  } */
+  
