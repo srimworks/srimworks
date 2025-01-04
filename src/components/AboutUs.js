@@ -2,22 +2,26 @@ import React from 'react'
 import HeroWithLeftImg from '../reusable/HeroWithLeftImg'
 import ReachOut from '../reusable/reachOut'
 import LeftAside from '../reusable/leftAside'
-import { LEFT_ASIDE } from '../utils/constsnts'
+import { ASIDE_HUMANITY, LEFT_ASIDE } from '../utils/constsnts'
+import RightAside from '../reusable/rightAside'
+import Reviews from '../reusable/Reviews'
 
 const AboutUs = () => {
-  const data = LEFT_ASIDE[0].offer_1;
+  const data = ASIDE_HUMANITY[0];
 
   return (
     <div>
         <h1>About Us</h1>
+        <HeroWithLeftImg/>
         <LeftAside {...data}/>
+        <RightAside {...data}/>
+        <Reviews/>
         {/* <Navbar/> */}
-        {/* <HeroWithLeftImg/> */}
        {/* <whyChooseSrim/> */}
        {/* <HearetOfSrimeWorks/> */}
        {/* <philosophy/> articles */}
        {/* <LeadeShip><location></location></LeadeShip> */}
-       {/* <ReachOut/> */}
+       <ReachOut/>
        {/* <footer/> */}
     </div>
   )

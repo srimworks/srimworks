@@ -1,0 +1,149 @@
+/* General Navbar Styles */
+.navbar {
+     position: fixed;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+width: 100%;
+padding: 8px 64px;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #C8C8C8;
+background: #FFF;
+  }
+  /* Logo Styles */
+.navbar-logo {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+  }
+  
+  .logo-image {
+    height: 40px; /* Adjust the height of the logo */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the logo fits well */
+  }
+  
+  /* Adjust other navbar elements to align with the logo */
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-items {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-icon {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-items {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    position: relative;
+  }
+  .nav-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between text and chevron */
+    font-size: 16px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .chevron-image {
+    width: 12px; /* Adjust the size of the chevron */
+    height: 12px; /* Ensure proper aspect ratio */
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-item:hover .chevron-image {
+    transform: rotate(180deg); /* Rotate the chevron upwards */
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+  }
+  
+  .navbar-item:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* For smaller screens (mobile) */
+  @media screen and (max-width: 768px) {
+    .navbar-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-items {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .navbar-item {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dropdown {
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 100%;
+    }
+  }
+  
+  /* For larger screens (tablets and above) */
+  @media screen and (min-width: 769px) {
+    .navbar-items {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  

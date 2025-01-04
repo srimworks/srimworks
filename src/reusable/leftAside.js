@@ -1,41 +1,25 @@
-import React from 'react'
-import '../styles/leftAside.css'
-const LeftAside = ({title, content,description, image, alt, listItems}) => {
+import React from "react";
+import "../styles/leftAside.css";
+import { Link } from "react-router-dom";
+const LeftAside = ({ image, heading, title, content, btnText, list }) => {
   return (
-    // <div>
-    //   <div>
-    //     <img src={image} alt ={alt}/>
-    //   </div>
-    //   <div>
-    //     {description.length >0 && <p>{description}</p>}
-    //     <h1>{title}</h1>
-    //     <p>{content}</p>
-    //   {listItems.length>0 && listItems.map((item, index)=>{
-    //     return(
-    //         <li key={index}>{item}</li>
-    //     )
-    //   })}
-    //   </div>
-    // </div>
-    <div className="article-container">
-      <div className="text-section">
-        <h1>{title}</h1>
-        <p>
-          {description}
-        </p>
-        <p>
-          {content}
-        </p>
+    <>
+      <div className="aside-container-left-image">
+        <img src={image} alt="" />
+        <aside className="aside-container-aside">
+          {heading.length > 0 && (
+            <div className="aside-tag">
+              <hr className="aside-tag-hr-2" />
+              <h2 className="aside-tag-heading">{heading}</h2>
+            </div>
+          )}
+          <h1 className="aside-heading">{title}</h1>
+          <p className="aside-content">{content}</p>
+        <Link className="link" to="/get-in-touch">{btnText && <button className="primary-button" onClick={(e)=> e.stopPropagation()}>{btnText}</button>}</Link> 
+        </aside>
       </div>
-      <div className="image-section">
-        <img
-          src={image}
-          alt={alt}
-          className="article-image"
-        />
-      </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default LeftAside;

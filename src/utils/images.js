@@ -19,12 +19,14 @@ import OFFER_5 from "../images/Practices/Offer-Image5.png"
 import OFFER_6 from "../images/Practices/Offer-Image6.png"
 import OFFER_7 from "../images/Practices/Offer-Image7.png"
 import OFFER_8 from "../images/Practices/Offer-Image8.png"
-
-
-
+import NAV_LOGO from '../images/common/NavLogo.png'
+import CHEVRON_DOWN from '../images/common/ChevronDown.svg'
+import FULL_STAR from '../images/common/FullStar.svg'
+import EMPTY_STAR from '../images/common/EmptyStar.svg'
+import PROFILE from '../images/common/ProfileImage.png'
 
 export const IMAGES={
-
+    CHEVRON_DOWN,
     HERO_1,
     ABOUT_LEADERSHIP_1,
     ABOUT_LEADERSHIP_2,
@@ -45,6 +47,10 @@ export const IMAGES={
     OFFER_6,
     OFFER_7,
     OFFER_8,
+    NAV_LOGO,
+    FULL_STAR,
+    EMPTY_STAR,
+    PROFILE,
 
 
 

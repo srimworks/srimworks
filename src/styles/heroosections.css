@@ -1,0 +1,80 @@
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('/public/ContactSection.png') no-repeat center center/cover; /* Add your image here */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hero-content {
+    max-width: 400px; /* Restrict width for content */
+    text-align: left; /* Align text to the left */
+    color: #fff; /* White text color */
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      max-width: 90%;
+      text-align: center; /* Center content on smaller screens */
+      align-self: center; /* Center the content vertically */
+    }
+  
+    .hero-button {
+      width: 100%; /* Full-width button */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+    }
+  }
+  
