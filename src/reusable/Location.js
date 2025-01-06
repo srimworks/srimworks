@@ -6,13 +6,11 @@ const Location = () => {
   return (
     <div className="container">
       {/* Header */}
-      <h1 className="header">Welcome to My Portfolio</h1>
+      <h1 className="header">Our Locations</h1>
 
       {/* Description */}
       <p className="description">
-        This is a responsive React component styled with normal CSS. It
-        demonstrates how to center content and ensure a great user experience
-        across all screen sizes.
+      At SRIM Works, our reach spans across continents, enabling us to deliver cutting-edge technology solutions to clients worldwide. With a strategic presence in key locations, we’re always close to the industries and businesses we serve.
       </p>
 
       {/* Image */}
