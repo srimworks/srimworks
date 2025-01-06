@@ -1,71 +1,71 @@
 import { IMAGES } from "./images";
 
-export const LEFT_ASIDE=[{
-    offer_1:{
-        title:"akshay",
-        content:"oloerem",
-        alt:"content",
-        image:IMAGES.LOGO,
-        description:"",
-        // listItems:["some","some1"]
-    },
-    offer_2:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    offer_3:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    offer_4:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    offer_5:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    offer_6:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    industries_1:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    industries_2:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    },
-    industries_3:{
-        title:"",
-        content:"",
-        alt:"",
-        image:"",
-        description:""
-    }
-}]
+// export const LEFT_ASIDE=[{
+//     offer_1:{
+//         title:"akshay",
+//         content:"oloerem",
+//         alt:"content",
+//         image:IMAGES.LOGO,
+//         description:"",
+//         // listItems:["some","some1"]
+//     },
+//     offer_2:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     offer_3:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     offer_4:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     offer_5:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     offer_6:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     industries_1:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     industries_2:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     },
+//     industries_3:{
+//         title:"",
+//         content:"",
+//         alt:"",
+//         image:"",
+//         description:""
+//     }
+// }]
 
 
 export const ASIDE_HUMANITY = [
@@ -106,3 +106,402 @@ export const ASIDE_HUMANITY = [
       btnText: "Join Now",
     },
   ];
+
+
+  export const REACH_OUT={
+     title:"SRIM WORKS",
+     heading:"SRIM WORKS",
+     image:"",
+     btnText:"Schedule Meeting",
+     path:""
+  }
+
+
+
+                                                           // industries 
+
+                                                 //marine
+  export const MARINE_HERO={
+         header:"Marine",
+         title:"Empowering the Marine Industry with Digital Transformation",
+         desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
+         btnText:"Get Started"
+  }
+  export const MARINE_OVERVIEW={
+    title:"Overview",
+    image:"",
+    desc:`The marine industry faces unique challenges such as operational efficiency, regulatory compliance, and environmental sustainability. At SRIM Works, we deliver tailored digital solutions to address these challenges and drive innovation.
+
+Our expertise in data analytics, IoT, AI, and automation ensures optimal fleet management, seamless logistics, and enhanced safety measures. From port operations to vessel monitoring, we empower marine businesses to navigate complexities and achieve operational excellence.`,
+    dataList:[]
+  }
+
+export const MARINE_MARKET_TRENDS={
+  heading:"Market Trends",
+  desc:`The marine industry is undergoing significant transformation driven by emerging technologies, regulatory pressures, and environmental sustainability goals. Here are key trends shaping the future of the maritime sector:`,
+  title:"Digitalization of Marine Operations",
+  content:`The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+  subHead1:"Automation and Autonomous Vessels",
+  subHead2:"Sustainability and Green Shipping",
+  image:"",
+  dataList:[],
+}
+
+
+export const MARINE_OPERATIONS={
+  title:"Digital Innovations in Marine Operations",
+  image:"",
+  desc:`We leverage cutting-edge technologies to revolutionize marine operations. By integrating IoT sensors, AI-driven analytics, and real-time data visualization, we enable smarter decisions and proactive maintenance.`,
+  dataList:["Predictive maintenance for vessels and equipment",
+"Enhanced fleet performance tracking and fuel optimization",
+"Automation for port and cargo operations"]
+}
+
+export const MARINE_SUSTAINABILITY={
+  title:"Sustainability and Regulatory Compliance",
+  image:"",
+  desc:`Meeting environmental regulations and achieving sustainability goals are critical for the marine industry. SRIM Works provides solutions to ensure compliance while minimizing environmental impact.`,
+  dataList:["Carbon footprint monitoring and reduction strategies", "Advanced emissions tracking systems", "Compliance with IMO regulations and global standards"]
+}
+
+// BFSI
+
+export const BFSI_HERO={
+  header:"BFSI",
+  title:"Enable Smart Banking, Innovate Financial Services, and Digitize Insurance",
+  desc:"Leverage technology to embrace data and AI-powered banking operations, adopt agility and speed across financial transactions, and implement digital insurance trends for superior outcomes.",
+  btnText:"Get Started"
+}
+
+export const BFSI_OVERVIEW={
+  title:"Overview",
+  image:"",
+  desc:"At SRIM Works, we empower banks, financial service providers, and insurers through technology modernization. Our solutions deliver personalized, embedded digital customer experiences, improve process efficiencies with value-added interactions, and create new revenue opportunities by enabling market and competitor differentiation.",
+  dataList:[]
+}
+
+export const BFSI_MARKET_TRENDS={
+heading:"Market Trends",
+desc:"AI-Powered Chatbots and Robo-Advisors: Transforming Customer Engagement",
+title:"Open Banking",
+content:"Open Banking enables seamless integration between banks, third-party services, and customers, offering agility and portability in transactions.",
+subHead1:"Chatbots and Robo-Advisors",
+subHead2:"Digitization and Automation",
+image:"",
+dataList:[],
+}
+
+
+export const BFSI_ORG={
+title:"BFSI organizations",
+heading:"A Platform for Collaboration",
+image:"",
+desc:"",
+dataList:["B2B Payments: Complexities in managing secure and seamless transactions.",
+  "Trade Financing Fraud: Combating fraudulent practices across global trade.",
+  "Legacy Core Banking Systems: Modernizing outdated infrastructure.",
+  "Post-Trade Processing: Enhancing efficiency in back-office operations.",
+  "Regulatory Hurdles: Navigating stringent compliance requirements.",
+  "Underwriting Accuracy: Ensuring precise risk assessments in underwriting processes."]
+}
+
+export const BFSI_HELP={
+title:"How We Help",
+image:"",
+desc:"",
+dataList:["Data Engineering: Building automated data pipelines, cloud-based data lakes, and data warehouses for diverse datasets like KYC and trading.",
+  "Big Data: Providing forecasting for financial trends and risk modeling for credit scoring and claims processing.",
+  "Data Science: Enabling customer segmentation, personalized offerings, and fraud detection during claims processing.",
+  "Business Intelligence: Offering actionable insights for customer intelligence, process automation, and investment analysis."]
+}
+
+//logistics
+
+export const LOGISTICS_HERO={
+  header:"Logistics",
+  title:"Empowering Logistics for a Connected World",
+  desc:"Transform your logistics operations with cutting-edge technology, real-time data insights, and process automation to achieve efficiency, accuracy, and scalability.",
+  btnText:"Get Started"
+}
+
+export const LOGISTICS_OVERVIEW={
+  title:"Overview",
+  image:"",
+  desc:"In today’s fast-paced world, logistics is the backbone of global commerce. We empower logistics organizations to overcome operational challenges, streamline supply chains, and enhance customer experiences through innovative technologies. From smart warehouses to predictive analytics, we deliver solutions that drive agility and precision across the logistics ecosystem.",
+  dataList:[]
+}
+
+export const LOGISTICS_MARKET_TRENDS={
+heading:"Market Trends",
+desc:"AI-Powered Chatbots and Robo-Advisors: Transforming Customer Engagement",
+title:"Automation in Logistics",
+content:"Automation is transforming logistics, from warehouse robotics to self-driving delivery vehicles, ensuring faster and more accurate operations.",
+subHead1:"Predictive Analytics",
+subHead2:"Sustainability Initiatives",
+image:"",
+dataList:[],
+}
+
+
+export const LOGISTICS_DIGITAL={
+title:"Digital Transformation in Logistics",
+image:"",
+desc:"Leverage digital tools to revolutionize logistics operations. We enable real-time tracking, automated workflows, and IoT integration, ensuring seamless coordination between all supply chain stakeholders. From warehouse management to last-mile delivery, our solutions ensure end-to-end optimization.",
+dataList:[]
+}
+
+export const LOGISTICS_DATA_DRIVEN={
+title:"Data-Driven Insights for Smarter Logistics",
+image:"",
+desc:"Turn data into actionable insights with our advanced analytics solutions. Predict demand, optimize routes, and improve inventory management with AI-driven analytics and forecasting tools. Empower your logistics operations with data intelligence to make informed decisions faster.",
+dataList:[]
+}
+
+// realestate
+
+export const REAL_ESTATE_HERO={
+  header:"Real Estate",
+  title:"Revolutionizing Real Estate with Technology",
+  desc:"Empowering real estate businesses to innovate and thrive with data-driven insights, digital platforms, and automation tools",
+  btnText:"Get Started"
+}
+
+export const REAL_ESTATE_OVERVIEW={
+  title:"Overview",
+  image:"",
+  desc:"The real estate industry is evolving rapidly, driven by digital transformation and changing customer expectations. At SRIM, we empower real estate organizations with technology solutions that enhance operational efficiency, deliver personalized experiences, and unlock new growth opportunities. From property management to virtual tours and AI-powered analytics, we help you stay ahead in a competitive market.",
+  dataList:[]
+}
+
+export const REAL_ESTATE_MARKET_TRENDS={
+heading:"Market Trends",
+desc:"AI-Powered Chatbots and Robo-Advisors: Transforming Customer Engagement",
+title:"Virtual Reality (VR) in Real Estate",
+content:"VR is revolutionizing property viewing, offering immersive virtual tours that save time and enhance customer experiences.",
+subHead1:"Smart Buildings",
+subHead2:"Real Estate Analytics",
+image:"",
+dataList:[],
+}
+
+
+export const REAL_ESTATE_DIGITAL={
+title:"Digital Transformation in Real Estate",
+image:"",
+desc:"Embrace digital platforms to streamline property listing, buying, selling, and rental processes. Our solutions include virtual tours, CRM systems, and online booking platforms to create seamless customer journeys and efficient operations.",
+dataList:[]
+}
+
+export const REAL_ESTATE_AI={
+title:"AI-Powered Insights for Smarter Decisions",
+image:"",
+desc:"Leverage AI and data analytics to understand market trends, predict property valuations, and identify investment opportunities. With real-time insights, we help you make informed decisions and maximize returns on investments.",
+dataList:[]
+}
+
+
+//  reatail
+
+export const RETAIL_HERO={
+  header:"Retail",
+  title:"Transforming Retail with Digital Excellence",
+  desc:"Redefine customer experiences, streamline operations, and drive growth with technology-powered retail solutions.",
+  btnText:"Get Started"
+}
+
+export const RETAIL_OVERVIEW={
+  title:"Overview",
+  image:"",
+  desc:"The retail industry is rapidly evolving, with technology reshaping how businesses engage with customers and operate efficiently. At SRIM, we empower retailers to embrace innovation and stay competitive. From omnichannel experiences to data-driven insights, we enable retail transformation with digital solutions tailored to meet modern consumer demands.",
+  dataList:[]
+}
+
+export const RETAIL_MARKET_TRENDS={
+heading:"Market Trends",
+desc:"AI-Powered Chatbots and Robo-Advisors: Transforming Customer Engagement",
+title:"Omnichannel Commerce",
+content:"Retailers are merging physical and digital channels to offer consistent shopping experiences, from curbside pickups to same-day deliveries.",
+subHead1:"Personalization with AI",
+subHead2:"Sustainable Retail Practices",
+image:"",
+dataList:[],
+}
+
+
+export const RETAIL_OPERATIONAL={
+title:"Operational Excellence through Automation",
+image:"",
+desc:"Streamline retail operations with automation tools for inventory management, supply chain optimization, and customer service. By integrating cutting-edge technologies, we help you save costs and enhance productivity.",
+dataList:[]
+}
+
+export const RETAIL_DATA_DRIVEN={
+title:"Data-Driven Decision Making",
+image:"",
+desc:"Leverage advanced analytics to understand customer preferences, optimize inventory, and predict market trends. Our solutions turn raw data into actionable insights, enabling smarter decisions that drive growth.",
+dataList:[]
+}
+
+// E-Commerce
+export const E_COMMERCE_HERO={
+  header:"Ecommerce",
+  title:"Revolutionizing eCommerce for the Digital Era",
+  desc:"Empower your online store with advanced technologies, seamless customer experiences, and data-driven insights to drive growth and engagement.",
+  btnText:""
+}
+
+export const LOGISTICS_OVERVIEW={
+  title:"",
+  image:"",
+  desc:"",
+  dataList:[]
+}
+
+export const MARKET_TRENDS={
+heading:"",
+desc:"",
+title:"",
+content:"",
+subHead1:"",
+subHead2:"",
+image:"",
+dataList:[],
+}
+
+
+export const OPERATIONS={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+export const SUSTAINABILITY={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+// Media & Entertainment
+export const LOGISTICS_HERO={
+  header:"",
+  title:"",
+  desc:"",
+  btnText:""
+}
+
+export const LOGISTICS_OVERVIEW={
+  title:"",
+  image:"",
+  desc:"",
+  dataList:[]
+}
+
+export const MARKET_TRENDS={
+heading:"",
+desc:"",
+title:"",
+content:"",
+subHead1:"",
+subHead2:"",
+image:"",
+dataList:[],
+}
+
+
+export const OPERATIONS={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+export const SUSTAINABILITY={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+// FMCG
+export const LOGISTICS_HERO={
+  header:"",
+  title:"",
+  desc:"",
+  btnText:""
+}
+
+export const LOGISTICS_OVERVIEW={
+  title:"",
+  image:"",
+  desc:"",
+  dataList:[]
+}
+
+export const MARKET_TRENDS={
+heading:"",
+desc:"",
+title:"",
+content:"",
+subHead1:"",
+subHead2:"",
+image:"",
+dataList:[],
+}
+
+
+export const OPERATIONS={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+export const SUSTAINABILITY={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+// Health care
+export const LOGISTICS_HERO={
+  header:"",
+  title:"",
+  desc:"",
+  btnText:""
+}
+
+export const LOGISTICS_OVERVIEW={
+  title:"",
+  image:"",
+  desc:"",
+  dataList:[]
+}
+
+export const MARKET_TRENDS={
+heading:"",
+desc:"",
+title:"",
+content:"",
+subHead1:"",
+subHead2:"",
+image:"",
+dataList:[],
+}
+
+
+export const OPERATIONS={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
+
+export const SUSTAINABILITY={
+title:"",
+image:"",
+desc:"",
+dataList:[]
+}
