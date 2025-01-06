@@ -1,16 +1,15 @@
 import React from 'react';
 import '../styles/reachout.css'; // Import the CSS file for styling
 
-const ReachOut = () => {
+const ReachOut = ({btnText,title,heading, path}) => {
   return (
     <div className="background-image-container">
       <div className="text-overlay">
-        <p className="title">SRIM WORKS</p>
+        <p className="title">{title}</p>
         <p className="desc">
-          Have questions or want to
-          collaborate? Reach out to us
+          {heading}
         </p>
-        <button className='secondary-button'>Schedule Meeting</button>
+        <button className='secondary-button'>{btnText}</button>
       </div>
     </div>
   );

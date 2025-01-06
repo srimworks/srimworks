@@ -110,7 +110,8 @@ export const ASIDE_HUMANITY = [
 
   export const REACH_OUT={
      title:"SRIM WORKS",
-     heading:"SRIM WORKS",
+     heading:`Have questions or want to
+          collaborate? Reach out to us`,
      image:"",
      btnText:"Schedule Meeting",
      path:""
@@ -125,7 +126,8 @@ export const ASIDE_HUMANITY = [
          header:"Marine",
          title:"Empowering the Marine Industry with Digital Transformation",
          desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
-         btnText:"Get Started"
+         btnText:"Get Started",
+         image:"",
   }
   export const MARINE_OVERVIEW={
     heading:"",
@@ -173,7 +175,8 @@ export const BFSI_HERO={
   header:"BFSI",
   title:"Enable Smart Banking, Innovate Financial Services, and Digitize Insurance",
   desc:"Leverage technology to embrace data and AI-powered banking operations, adopt agility and speed across financial transactions, and implement digital insurance trends for superior outcomes.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:"",
 }
 
 export const BFSI_OVERVIEW={
@@ -226,7 +229,8 @@ export const LOGISTICS_HERO={
   header:"Logistics",
   title:"Empowering Logistics for a Connected World",
   desc:"Transform your logistics operations with cutting-edge technology, real-time data insights, and process automation to achieve efficiency, accuracy, and scalability.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:"",
 }
 
 export const LOGISTICS_OVERVIEW={
@@ -271,7 +275,8 @@ export const REAL_ESTATE_HERO={
   header:"Real Estate",
   title:"Revolutionizing Real Estate with Technology",
   desc:"Empowering real estate businesses to innovate and thrive with data-driven insights, digital platforms, and automation tools",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:"",
 }
 
 export const REAL_ESTATE_OVERVIEW={
@@ -317,7 +322,8 @@ export const RETAIL_HERO={
   header:"Retail",
   title:"Transforming Retail with Digital Excellence",
   desc:"Redefine customer experiences, streamline operations, and drive growth with technology-powered retail solutions.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:"",
 }
 
 export const RETAIL_OVERVIEW={
@@ -361,7 +367,8 @@ export const E_COMMERCE_HERO={
   header:"Ecommerce",
   title:"Revolutionizing eCommerce for the Digital Era",
   desc:"Empower your online store with advanced technologies, seamless customer experiences, and data-driven insights to drive growth and engagement.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:"",
 }
 
 export const E_COMMERCE_OVERVIEW={
@@ -405,7 +412,8 @@ export const MEDIA_HERO={
   header:"Media and Entertainment",
   title:"Transforming Media & Entertainment with Innovation",
   desc:"Revolutionize your media and entertainment offerings with cutting-edge digital solutions. From content creation to distribution and audience engagement, we empower businesses to stay ahead in the fast-evolving digital landscape. Let us help you create immersive, personalized experiences that captivate and retain your audience.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:""
 }
 
 export const MEDIA_OVERVIEW={
@@ -449,7 +457,8 @@ export const FMCG_HERO={
   header:"FMCG",
   title:"Empowering FMCG with Innovation and Efficiency",
   desc:"Leverage cutting-edge technology and data analytics to drive growth, streamline operations, and deliver personalized experiences to customers in the fast-paced FMCG sector.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:""
 }
 
 export const FMCG_OVERVIEW={
@@ -493,7 +502,8 @@ export const HEALTH_CARE_HERO={
   header:"Health Care",
   title:"Transforming Healthcare with Innovation and Technology",
   desc:"Revolutionizing patient care, enhancing operational efficiency, and empowering healthcare organizations with data-driven solutions to improve outcomes and deliver personalized experiences.",
-  btnText:"Get Started"
+  btnText:"Get Started",
+  image:""
 }
 
 export const HEALTH_CARE_OVERVIEW={
@@ -537,6 +547,8 @@ dataList:[]
 // carrers
 
 export const CARRERS_HERO={
+  btnText:"Get Started",
+  image:"",
   heading:"Carrers",
   title:"Join Our Team, Shape the Future",
   desc:`Become a part of an innovative and dynamic workplace where your skills and passion drive impactful solutions. At SRIM Works, we foster growth, collaboration, and opportunities to make a difference. Your journey starts here!`
@@ -652,6 +664,8 @@ export const OPENINGS=[
 
 
 export const RESOURCES_BLOGS_HERO={
+  btnText:"Get Started",
+  image:"",
   header:"Insights, Trends, and Expertise",
   title:"Blogs & Case Studies",
   desc:"Explore our blog to stay updated on the latest industry trends, technological innovations, and expert insights driving transformation across various sectors. Empower your knowledge and spark ideas for a brighter future.",
@@ -709,7 +723,8 @@ export const BLOGS_CARDS=[
 // Abou us
 
 export const ABOUT_HERO={
-
+  btnText:"Get Started",
+  image:"",
 }
 
 export const ABOUT_PHILOSOPY={

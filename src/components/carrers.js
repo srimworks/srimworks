@@ -1,6 +1,6 @@
 import React from 'react'
 
-const carrers = () => {
+const Carrers = () => {
   return (
     <div>carrers</div>
   )

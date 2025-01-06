@@ -2,7 +2,7 @@ import React from 'react'
 import HeroWithLeftImg from '../reusable/HeroWithLeftImg'
 import ReachOut from '../reusable/reachOut'
 import LeftAside from '../reusable/leftAside'
-import { ASIDE_HUMANITY, LEFT_ASIDE } from '../utils/constsnts'
+import { ASIDE_HUMANITY, LEFT_ASIDE, REACH_OUT } from '../utils/constsnts'
 import RightAside from '../reusable/rightAside'
 import Reviews from '../reusable/Reviews'
 import Location from '../reusable/Location'
@@ -26,7 +26,7 @@ const AboutUs = () => {
        {/* <HearetOfSrimeWorks/> */}
        {/* <philosophy/> articles */}
        {/* <LeadeShip><location></location></LeadeShip> */}
-       <ReachOut/>
+       <ReachOut {...REACH_OUT}/>
        {/* <footer/> */}
     </div>
   )

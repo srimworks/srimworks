@@ -28,6 +28,7 @@ import Cloud from "./components/practises/Cloud";
 import OpenSource from "./components/practises/OpenSource";
 import Microsoft from "./components/practises/Microsoft";
 import Carrers from "./components/carrers";
+import Home from "./components/Home";
 
 const AppRouter = () => {
   return (
