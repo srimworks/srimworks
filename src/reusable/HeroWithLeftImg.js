@@ -2,13 +2,12 @@ import React from "react";
 import "../styles/heroosections.css";
 import { IMAGES } from "../utils/images";
 const HeroSection = ({image,header, title, desc, btnText}) => {
-  const backgroundImage = IMAGES.OFFER_4; 
-
+console.log(image)
   return (
     <section
       className="hero-section"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: image,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",

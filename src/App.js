@@ -29,13 +29,17 @@ import OpenSource from "./components/practises/OpenSource";
 import Microsoft from "./components/practises/Microsoft";
 import Carrers from "./components/carrers";
 import Home from "./components/Home";
+import { REACH_OUT } from "./utils/constsnts";
+import ReachOut from "./reusable/reachOut";
 
 const AppRouter = () => {
   return (
     <>
       <Navbar />
       <Outlet />
+      <ReachOut {...REACH_OUT}/>
       <Footer />
+
     </>
   );
 };

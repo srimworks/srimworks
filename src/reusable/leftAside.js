@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/leftAside.css";
 import { Link } from "react-router-dom";
 const LeftAside = ({ image, heading, title, content, btnText, list }) => {
+  console.log(btnText)
   return (
     <>
       <div className="aside-container-left-image">

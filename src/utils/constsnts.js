@@ -1,4 +1,4 @@
-import { IMAGES } from "./images";
+import { IMAGES } from "../utils/images";
 
 // export const LEFT_ASIDE=[{
 //     offer_1:{
@@ -127,12 +127,12 @@ export const ASIDE_HUMANITY = [
          title:"Empowering the Marine Industry with Digital Transformation",
          desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
          btnText:"Get Started",
-         image:"",
+         image:IMAGES.HERO_2,
   }
   export const MARINE_OVERVIEW={
     heading:"",
     title:"Overview",
-    image:"",
+    image:IMAGES.OFFER_1,
     desc:`The marine industry faces unique challenges such as operational efficiency, regulatory compliance, and environmental sustainability. At SRIM Works, we deliver tailored digital solutions to address these challenges and drive innovation.
 
 Our expertise in data analytics, IoT, AI, and automation ensures optimal fleet management, seamless logistics, and enhanced safety measures. From port operations to vessel monitoring, we empower marine businesses to navigate complexities and achieve operational excellence.`,
@@ -146,7 +146,7 @@ export const MARINE_MARKET_TRENDS={
   content:`The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
   subHead1:"Automation and Autonomous Vessels",
   subHead2:"Sustainability and Green Shipping",
-  image:"",
+  image:IMAGES.MARINE_MARKET_TRENDS,
   dataList:[],
 }
 
@@ -154,7 +154,7 @@ export const MARINE_MARKET_TRENDS={
 export const MARINE_OPERATIONS={
   heading:"",
   title:"Digital Innovations in Marine Operations",
-  image:"",
+  image:IMAGES.MARINE_OPERATIONS,
   desc:`We leverage cutting-edge technologies to revolutionize marine operations. By integrating IoT sensors, AI-driven analytics, and real-time data visualization, we enable smarter decisions and proactive maintenance.`,
   dataList:["Predictive maintenance for vessels and equipment",
 "Enhanced fleet performance tracking and fuel optimization",
@@ -164,7 +164,7 @@ export const MARINE_OPERATIONS={
 export const MARINE_SUSTAINABILITY={
   heading:"",
   title:"Sustainability and Regulatory Compliance",
-  image:"",
+  image:IMAGES.MARINE_SUSTAINABILITY,
   desc:`Meeting environmental regulations and achieving sustainability goals are critical for the marine industry. SRIM Works provides solutions to ensure compliance while minimizing environmental impact.`,
   dataList:["Carbon footprint monitoring and reduction strategies", "Advanced emissions tracking systems", "Compliance with IMO regulations and global standards"]
 }
@@ -758,3 +758,352 @@ export const CARDS_DATA = [
     content: ` From Google Ads specialists to creative strategists, our team is a diverse blend of specialists who come together to create powerful campaigns. Each expert brings something different to the table, ensuring no stone is left unturned in your success.`,
   },
 ];
+
+
+// practises
+
+// design
+
+export const DESIGN_HERO={
+  header:"Design Engineering",
+  title:"Future-Ready Solutions for a Better Tomorrow",
+  desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
+  btnText:"Get Started",
+  image:""
+}
+
+export const DESIGN_OVERVIEW={
+  heading:"",
+  title:"Overview",
+  image:"",
+  desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
+
+Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
+  dataList:[]
+}
+
+
+export const SRIM_OFFER_TEXT="SRIM Works Offer"
+
+export const WHAT_OFFER_TEXT="What We Offers"
+
+export const DESIGN_CARDS=[
+  {
+    title:"Digital Product Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"UI/UX Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Industrial & Mechanical Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Service Experience Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Visual Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Mobile App Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Web Design",
+    content:"",
+    image:""
+  },
+  {
+    title:"Digital Design Services",
+    content:"",
+    image:""
+  },
+]
+
+export const DESIGN_MARKET_TRENDS={
+  heading:"What Makes SRIM Works Different",
+  desc:"At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
+  title:"Human-Centered Discovery",
+  content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
+  subHead1:"MVP Approach to Design",
+  subHead2:"Data-Driven Iteration",
+  image:"",
+  dataList:[],
+}
+
+
+//Digital Engineering
+
+export const DIGITAL_ENGINEERING_HERO={
+  header:"Digital Engineering",
+  title:"Empowering Transformation Across the Product Lifecycle",
+  desc:"Embrace digital technologies to craft insight-driven, human-centric experiences and achieve a resilient digital strategy for lasting success.",
+  btnText:"Get Started",
+  image:""
+}
+
+export const DIGITAL_OVERVIEW={
+  heading:"",
+  title:"Overview",
+  image:"",
+  desc:`At SRIM Works, we provide comprehensive solutions combining engineering excellence, expertise in digital technologies, and advanced automation implementation.
+
+Our digital engineering approach fosters business and technology transformation for organizations. We develop robust, reliable, and secure digital-ready products and services, while our automation strategies streamline processes through continuous delivery pipelines.`,
+  dataList:[]
+}
+
+export const DIGITAL_CARDS=[
+  {
+  heading:"Software Development",
+  content:"We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
+  cards:[
+    {
+    image:"",
+    heading:"Web Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Frontend Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Backend Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Mobile App Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Android App Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"iOS App Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Hybrid App Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"SaaS Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"CMS Development",
+    content:"lorem ipusm content dummy"
+  },
+]
+},
+{
+  heading:"Quality Assurance",
+  content:"Ensuring the highest quality standards with comprehensive testing services. We focus on functionality, performance, security, and usability to enhance customer satisfaction. Our rigorous testing process ensures the reliability of your software.",
+  cards:[
+    {
+    image:"",
+    heading:"Quality Assurance",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Functional Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Automation Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Performance Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"API Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Mobile App Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Database Testing",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Security Testing",
+    content:"lorem ipusm content dummy"
+  },
+]
+},
+{
+  heading:"Enterprise Software Development",
+  content:"We help businesses build reliable, scalable, and secure enterprise-level software solutions. Our services empower organizations to streamline operations and drive growth. We offer customized solutions to suit specific business needs.",
+  cards:[
+    {
+    image:"",
+    heading:"Enterprise Software Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Digital Transformation",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Enterprise Mobility",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"ERP Consulting",
+    content:"lorem ipusm content dummy"
+  },
+]
+},
+{
+  heading:"Salesforce Implementation & Customization",
+  content:"Maximize your Salesforce investment with our implementation, integration, and customization services. We help businesses leverage Salesforce for improved productivity, collaboration, and customer engagement. Tailored solutions to meet unique business goals.",
+  cards:[
+    {
+    image:"",
+    heading:"Salesforce Implementation",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"Salesforce Customization",
+    heading:"",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Salesforce Application Development",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Salesforce Integration",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Salesforce Migration",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Salesforce Upgrade and Maintenance",
+    content:"lorem ipusm content dummy"
+  },
+]
+},
+{
+  heading:"Cloud Solutions",
+  content:"We offer cloud services to enable businesses to scale efficiently, improve performance, and reduce costs. Our solutions empower businesses to thrive in the digital era by leveraging the power of cloud technologies.",
+  cards:[
+    {
+    image:"",
+    heading:"Cloud Native Platform",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Microservices",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Architecture Design & Consulting",
+    content:"lorem ipusm content dummy"
+  },
+]
+},
+{
+  heading:"Cloud Transformation",
+  content:"Our cloud transformation services enable seamless migration and modernization for enhanced operational efficiency. We assist businesses in adopting cloud technologies to stay competitive in a fast-evolving market.",
+  cards:[
+    {
+    image:"",
+    heading:"Cloud Transformation",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Cloud Migration",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"App Modernization",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"Cloud Consulting",
+    content:"lorem ipusm content dummy"
+  },
+  ]
+},
+{
+  heading:"DevOps Services",
+  content:"We implement DevOps practices to streamline your software development lifecycle and improve collaboration. Our solutions help businesses increase development speed and reduce downtime through automation and continuous delivery.",
+  cards:[
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+    {
+    image:"",
+    heading:"some data",
+    content:"lorem ipusm content dummy"
+  },
+  ]
+},
+]
+

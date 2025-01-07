@@ -1,0 +1,59 @@
+.market-reuse{
+display: flex;
+max-width: 1300px;
+padding: 128px 64px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+.market-head{
+    color: #FFF;
+/* Desktop/Heading/56 */
+font-family: "Config Condensed";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+
+.market-desc{
+    color: #FFF;
+
+/* Desktop/Body/18 */
+font-family: "SF Pro Display";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.market-aside{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 57px;
+flex: 1 0 0;
+}
+.market-left{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+.market-right{
+    width: 448px;
+    height: 310px;
+    flex-shrink: 0;
+}
+
+.subhead{
+display: flex;
+height: 29px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}

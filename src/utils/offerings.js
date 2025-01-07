@@ -158,7 +158,7 @@ export const CHANNEL_HERO={
   export const CHANNEL_OVERVIEW={
     title:"Overview",
     image:"",
-    desc:`SRIM Works collaborates with trusted channel partners to deliver innovative solutions and drive shared success. By combining expertise, resources, and market insights, we create a win-win ecosystem that fosters growth, accelerates business outcomes, and empowers our clients with cutting-edge solutions.`
+    desc:`SRIM Works collaborates with trusted channel partners to deliver innovative solutions and drive shared success. By combining expertise, resources, and market insights, we create a win-win ecosystem that fosters growth, accelerates business outcomes, and empowers our clients with cutting-edge solutions.`,
     dataList:[]
   }
   export const CHANNEL_PARTNER={
