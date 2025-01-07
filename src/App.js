@@ -29,7 +29,6 @@ import OpenSource from "./components/practises/OpenSource";
 import Microsoft from "./components/practises/Microsoft";
 import Carrers from "./components/carrers";
 import Home from "./components/Home";
-
 const AppRouter = () => {
   return (
     <>
@@ -57,103 +56,107 @@ export const Routes = createBrowserRouter([
         element: <PressRoom />,
         path: "/pressroom",
       },
-      // industry
+      {
+        element: <Carrers />,
+        path: "/carrers",
+      },
+            // industry
       {
         element:<Marine/>,
         path:"/marine"
       },
       {
         element:<BFSI/>,
-        path:""
+        path:"/bfsi"
       },
       {
         element: <ECommerce/>,
-        path:""
+        path:"/e-commerce"
       },
       {
         element:<Logistics/>,
-        path:""
+        path:"/logistics"
       },
       {
         element:<FMCG/>,
-        path:""
+        path:"/fmcg"
       },
       {
         element:<HealthCare/>,
-        path:""
+        path:"health-care"
       },
       {
         element:<MediaNEntertainment/>,
-        path:""
+        path:"media-entertainment"
       },
       {
         element:<Realestate/>,
-        path:""
+        path:"real-estate"
       },
       {
         element:<Retail/>,
-        path:""
+        path:"retail"
       },
 
       // offerings
       {
         element:<ChannelPart/>,
-        path:""
+        path:"channel-partners"
       },
       {
         element:<Innovation/>,
-        path:""
+        path:"innovation &research"
       },
       {
         element:<LeanProd/>,
-        path:""
+        path:"lean product-engineering"
       },
       {
         element:<ProdDev/>,
-        path:""
+        path:"prod dev-lifecycle"
       },
       {
         element:<Professional/>,
-        path:""
+        path:"professional-services"
       },
 
       // practises
       {
         element:<Digital/>,
-        path:'/digital'
+        path:'/digital-engineering'
       },
       {
         element:<Design/>,
-        path:""
+        path:"design"
       },
       {
         element:<Erp/>,
-        path:""
+        path:"erp-crm"
       },
       {
         element:<BigData/>,
-        path:""
+        path:"big-data"
       },
       {
         element:<Artificial/>,
-        path:"Ai&Ml"
+        path:"AI&ML"
       },
       {
         element:<Cloud/>,
-        path:""
+        path:"cloud-computing"
       },
       {
         element:<OpenSource/>,
-        path:""
+        path:"open-source"
       },
       {
         element:<Microsoft/>,
-        path:""
+        path:"microsoft-technologies"
       },
-      {
-        element:<Carrers/>,
-        path:""
-      },
+      // {
+      //   element:<Carrers/>,
+      //   path:""
+      // },
       {
         element:"",
         path:""

@@ -8,6 +8,7 @@ import Reviews from '../reusable/Reviews'
 import Location from '../reusable/Location'
 import CoreValues from '../reusable/CoreValues'
 import Footer from '../reusable/footer'
+import Accordian from '../reusable/accordian'
 
 const AboutUs = () => {
   const data = ASIDE_HUMANITY[0];
@@ -21,6 +22,7 @@ const AboutUs = () => {
         <CoreValues/>
         {/* <Reviews/> */}
         <Location/>
+        <Accordian/>
         {/* <Navbar/> */}
        {/* <whyChooseSrim/> */}
        {/* <HearetOfSrimeWorks/> */}
