@@ -1,4 +1,4 @@
-import { IMAGES } from "./images";
+import { IMAGES } from "./images"
 
 // export const LEFT_ASIDE=[{
 //     offer_1:{
@@ -756,5 +756,46 @@ export const CARDS_DATA = [
     id: 3,
     heading: "One Team, Many Experts",
     content: ` From Google Ads specialists to creative strategists, our team is a diverse blend of specialists who come together to create powerful campaigns. Each expert brings something different to the table, ensuring no stone is left unturned in your success.`,
+  },
+];
+
+
+// accrodian data
+
+export const ACCORDIAN_LIST = [
+  {
+    id: 1,
+    title: "Can i cancel my account at any time?",
+    content:
+      "Yes, you can cancel your account or downgrade to a free account at any time.",
+  },
+  {
+    id: 2,
+    title: "What type of payments do you accept?",
+    content:
+      "We accept all major credit cards as well as debit cards. Including Visa, Mastercard, Discover, American Express and UnionPay. We also accept PayPal.",
+  },
+  {
+    id: 3,
+    title: "Why do i have to sign in with Google?",
+    content:
+      "This allows us access to your Google Search Console account which allows us to find more errors and issues with your site that need to be fixed.",
+  },
+  {
+    id: 4,
+    title: "Are there any contracts, setup fees, or hidden fees?",
+    content:
+      "There are no setup fees or hidden fees. If you choose the monthly option, there are no contracts. If you pick a lifetime plan, it is a one-time payment for lifetime access to Ubersuggest.",
+  },
+  {
+    id: 5,
+    title: "What is your refund policy?",
+    content:
+      "We offer a one-time 7-day free trial for monthly subscriptions. Lifetime plan purchases are final and non-refundable. We recommend using the free trial to explore Ubersuggest before opting for a lifetime plan.",
+  },
+  {
+    id: 6,
+    title: "Can i get API access?",
+    content: "We don’t have any API access plans available at the moment.",
   },
 ];
