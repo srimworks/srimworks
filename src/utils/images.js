@@ -237,7 +237,7 @@ import VERTICAL_LINE from '../imagess/common/VerticalLine.svg'
 
 
 
-import { BIGDATA_OVERVIEW, CARRERS_HERO } from './constsnts'
+
 
 export const IMAGES={
 
