@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/heroosections.css";
-import { IMAGES } from "../utils/images";
+
 const HeroSection = ({image,header, title, desc, btnText}) => {
 console.log(image)
   return (
     <section
       className="hero-section"
       style={{
-        backgroundImage: image,
+        backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
@@ -21,7 +21,7 @@ console.log(image)
           <p className="hero-description">
             {desc}
           </p>
-         {btnText.length >0 && <button className="hero-button">{btnText}</button>}
+          {btnText .length >0 && <button className="hero-button">{btnText}</button>}
         </div>
       </div>
     </section>

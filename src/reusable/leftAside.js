@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/leftAside.css";
 import { Link } from "react-router-dom";
-const LeftAside = ({ image, heading, title, content, btnText, list }) => {
+const LeftAside = ({ image, heading,desc, title, content, btnText, list }) => {
   console.log(btnText)
   return (
     <>
@@ -15,7 +15,7 @@ const LeftAside = ({ image, heading, title, content, btnText, list }) => {
             </div>
           )}
           <h1 className="aside-heading">{title}</h1>
-          <p className="aside-content">{content}</p>
+          <p className="aside-content">{content || desc}</p>
         <Link className="link" to="/get-in-touch">{btnText && <button className="primary-button" onClick={(e)=> e.stopPropagation()}>{btnText}</button>}</Link> 
         </aside>
       </div>

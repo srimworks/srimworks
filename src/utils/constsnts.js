@@ -157,12 +157,12 @@ export const ABOUT_MARKET_TRENDS={
          title:"Empowering the Marine Industry with Digital Transformation",
          desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
          btnText:"Get Started",
-         image:IMAGES.HERO_2,
+         image:IMAGES.MARINE_HEROO,
   }
   export const MARINE_OVERVIEW={
     heading:"",
     title:"Overview",
-    image:IMAGES.OFFER_1,
+    image:IMAGES.MARINE_OVERVIEW,
     desc:`The marine industry faces unique challenges such as operational efficiency, regulatory compliance, and environmental sustainability. At SRIM Works, we deliver tailored digital solutions to address these challenges and drive innovation.
 
 Our expertise in data analytics, IoT, AI, and automation ensures optimal fleet management, seamless logistics, and enhanced safety measures. From port operations to vessel monitoring, we empower marine businesses to navigate complexities and achieve operational excellence.`,
@@ -184,7 +184,7 @@ export const MARINE_MARKET_TRENDS={
 export const MARINE_OPERATIONS={
   heading:"",
   title:"Digital Innovations in Marine Operations",
-  image:IMAGES.MARINE_OPERATIONS,
+  image:IMAGES.MARINE_ASIDE_1,
   desc:`We leverage cutting-edge technologies to revolutionize marine operations. By integrating IoT sensors, AI-driven analytics, and real-time data visualization, we enable smarter decisions and proactive maintenance.`,
   dataList:["Predictive maintenance for vessels and equipment",
 "Enhanced fleet performance tracking and fuel optimization",
@@ -194,7 +194,7 @@ export const MARINE_OPERATIONS={
 export const MARINE_SUSTAINABILITY={
   heading:"",
   title:"Sustainability and Regulatory Compliance",
-  image:IMAGES.MARINE_SUSTAINABILITY,
+  image:IMAGES.MARINE_ASIDE_2,
   desc:`Meeting environmental regulations and achieving sustainability goals are critical for the marine industry. SRIM Works provides solutions to ensure compliance while minimizing environmental impact.`,
   dataList:["Carbon footprint monitoring and reduction strategies", "Advanced emissions tracking systems", "Compliance with IMO regulations and global standards"]
 }
