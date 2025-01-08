@@ -33,6 +33,7 @@ import { REACH_OUT } from "./utils/constsnts";
 import ReachOut from "./reusable/reachOut";
 import Blogs from "./components/Blogs";
 import Reviews from "./reusable/Reviews";
+import Schedule from "./components/Schedule";
 
 const AppRouter = () => {
   return (
@@ -160,18 +161,18 @@ export const Routes = createBrowserRouter([
         element:<Microsoft/>,
         path:"/microsoft-technologies"
       },
-      // {
-      //   element:<Carrers/>,
-      //   path:""
-      // },
+      {
+        element:<Carrers/>,
+        path:"/carrers"
+      },
       // Resources
       {
         element:<Blogs/>,
         path:"/blogs"
       },
       {
-        element:"",
-        path:"/"
+        element:<Schedule/>,
+        path:"/contact-us"
       },
       {
         element:<Reviews/>,

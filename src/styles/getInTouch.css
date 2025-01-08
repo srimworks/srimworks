@@ -1,0 +1,106 @@
+/* Get In Touch */
+
+
+.get-in-touch-section{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0px;
+  }
+  
+  
+  .get-in-touch-section-left{
+    display: flex;
+    width: 379px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+  }
+  
+  .get-in-touch-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  
+  .get-in-touch-social-media{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  
+  .get-in-touch-body{
+    color: var(--Light-Color, #A6D1C9);
+  
+    /* Desktop/Body Text 18 */
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .get-in-touch-section-right{
+    display: flex;
+    width: 607px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+  }
+  
+  .form{
+    display: flex;
+    width: 607px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+  }
+  
+  .form-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  
+  .input{
+    min-width: 250px;
+    max-width: 607px;
+    display: flex;
+    padding: 8px 0px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border: none;
+    border-bottom: 1px solid var(--Light-Color, #A6D1C9);
+    background-color: transparent;
+    color: var(--Light-Color, #A6D1C9);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  
+  .input:focus {
+    background-color: transparent;
+    outline: none;
+  }

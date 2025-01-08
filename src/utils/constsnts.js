@@ -118,6 +118,36 @@ export const ASIDE_HUMANITY = [
   }
 
 
+//contact us
+
+export const CONTACT_HERO={
+  header:"",
+  title:"Contact Us",
+  desc:"",
+  btnText:"",
+  image:IMAGES.HERO_2,
+}
+
+  // about
+  export const ABOUT_HERO={
+    header:"Marine",
+    title:"Empowering the Marine Industry with Digital Transformation",
+    desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
+    btnText:"Get Started",
+    image:IMAGES.HERO_2,
+}
+  
+export const ABOUT_MARKET_TRENDS={
+  heading:"What Makes SRIM Works Different",
+  desc:"At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
+  title:"Human-Centered Discovery",
+  content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
+  subHead1:"MVP Approach to Design",
+  subHead2:"Data-Driven Iteration",
+  image:"",
+  dataList:[],
+}
+
 
                                                            // industries 
 
@@ -722,10 +752,6 @@ export const BLOGS_CARDS=[
 
 // Abou us
 
-export const ABOUT_HERO={
-  btnText:"Get Started",
-  image:"",
-}
 
 export const ABOUT_PHILOSOPY={
     heading:"Market Trends",

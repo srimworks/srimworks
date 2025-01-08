@@ -1,8 +1,15 @@
 import React from 'react'
+import Reviews from '../reusable/Reviews'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    {/* slider */}
+    {/* left */}
+    <Reviews/>
+    
+    
+    </>
   )
 }
 

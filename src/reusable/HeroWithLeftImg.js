@@ -21,7 +21,7 @@ console.log(image)
           <p className="hero-description">
             {desc}
           </p>
-          <button className="hero-button">{btnText}</button>
+         {btnText.length >0 && <button className="hero-button">{btnText}</button>}
         </div>
       </div>
     </section>

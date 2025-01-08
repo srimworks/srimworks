@@ -16,7 +16,7 @@ const Navbar = () => {
   <div className="navbar-content">
     {/* <!-- Left Logo --> */}
     <div className="navbar-logo">
-      <img src={IMAGES.NAV_LOGO} alt="Logo" className="logo-image" />
+     <Link to="/"><img src={IMAGES.NAV_LOGO} alt="Logo" className="logo-image" /></Link>
     </div>
 
     {/* <!-- Navbar Items --> */}
@@ -91,14 +91,14 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-item">
-        <button className="nav-button">Careers</button>
+        <Link to="/carrers"><button className="nav-button">Careers</button></Link>
 
       </div>
     </div>
 
     {/* <!-- Right Button --> */}
     <div className="navbar-button">
-      <button className="primary-button">Schedule a Call</button>
+      <Link to="/contact-us"><button className="primary-button">Schedule a Call</button></Link>
     </div>
   </div>
 </nav>
