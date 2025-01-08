@@ -33,7 +33,7 @@ import LOGISTICS_OVERVIEW from '../imagess/Industries/Logistics/Overview Section
 
 import MARINE_ASIDE_1 from '../imagess/Industries/Marine/Aside 1.png'
 import MARINE_ASIDE_2 from '../imagess/Industries/Marine/Aside 2.png'
-import MARINE_HEROO from '../imagess/Industries/Marine/Hero Section.png'
+import MARINE_HERO from '../imagess/Industries/Marine/Hero Section.png'
 import MARINE_MARKET_TRENDS from '../imagess/Industries/Marine/Market Trends.png'
 import MARINE_OVERVIEW from '../imagess/Industries/Marine/Overview Section.png'
 
@@ -87,30 +87,182 @@ import PROFESSIONAL_ASIDE_3 from '../imagess/Offerings/Professional Services/Asi
 import PROFESSIONAL_HERO from '../imagess/Offerings/Professional Services/Hero Section.png'
 import PROFESSIONAL_OVERVIEW from '../imagess/Offerings/Professional Services/Overview Section.png'
 
-import AIML_OFFER_1 from '../imagess/Practices/AIML/Offers/Image 1.png'
-import AIML_OFFER_2 from '../imagess/Practices/AIML/Offers/Image 2.png'
-import AIML_OFFER_3 from '../imagess/Practices/AIML/Offers/Image 3.png'
-import AIML_OFFER_4 from '../imagess/Practices/AIML/Offers/Image 4.png'
-import AIML_OFFER_5 from '../imagess/Practices/AIML/Offers/Image 5.png'
-import AIML_OFFER_6 from '../imagess/Practices/AIML/Offers/Image 6.png'
-import AIML_HERO from '../imagess/Practices/AIML/Hero Section.png'
-import AIML_OVERVIEW from '../imagess/Practices/AIML/Overview Section.png'
+import ALML_OFFER_1 from '../imagess/Practices/AIML/Offers/Image 1.png'
+import ALML_OFFER_2 from '../imagess/Practices/AIML/Offers/Image 2.png'
+import ALML_OFFER_3 from '../imagess/Practices/AIML/Offers/Image 3.png'
+import ALML_OFFER_4 from '../imagess/Practices/AIML/Offers/Image 4.png'
+import ALML_OFFER_5 from '../imagess/Practices/AIML/Offers/Image 5.png'
+import ALML_OFFER_6 from '../imagess/Practices/AIML/Offers/Image 6.png'
+import ALML_HERO from '../imagess/Practices/AIML/Hero Section.png'
+import ALML_OVERVIEW from '../imagess/Practices/AIML/Overview Section.png'
+import ALML_DIFFERENT from '../imagess/Practices/AIML/What makes differnet section.png'
 
+import BIG_DATA_OFFER_1 from '../imagess/Practices/Big Data Analytics/Offers/Image 1.png'
+import BIG_DATA_OFFER_2 from '../imagess/Practices/Big Data Analytics/Offers/Image 2.png'
+import BIG_DATA_OFFER_3 from '../imagess/Practices/Big Data Analytics/Offers/Image 3.png'
+import BIG_DATA_HERO from '../imagess/Practices/Big Data Analytics/Hero Section.png'
+import BIG_DATA_OVERVIEW from '../imagess/Practices/Big Data Analytics/Overview Section.png'
+import BIG_DATA_DIFFERENT from '../imagess/Practices/Big Data Analytics/What makes differnent section.png'
 
+import CLOUD_OFFER_1 from '../imagess/Practices/Cloud Computing/Offers/Image 1.png'
+import CLOUD_OFFER_2 from '../imagess/Practices/Cloud Computing/Offers/Image 2.png'
+import CLOUD_OFFER_3 from '../imagess/Practices/Cloud Computing/Offers/Image 3.png'
+import CLOUD_OFFER_4 from '../imagess/Practices/Cloud Computing/Offers/Image 4.png'
+import CLOUD_OFFER_5 from '../imagess/Practices/Cloud Computing/Offers/Image 5.png'
+import CLOUD_OFFER_6 from '../imagess/Practices/Cloud Computing/Offers/Image 6.png'
+import CLOUD_HERO from '../imagess/Practices/Cloud Computing/Hero Section.png'
+import CLOUD_OVERVIEW from '../imagess/Practices/Cloud Computing/Overview Section.png'
+import CLOUD_DIFFERENT from '../imagess/Practices/Cloud Computing/What makes Different.png'
 
-import NAV_LOGO from '../imagess/common/NavLogo.png'
+import DESIGN_OFFER_1 from '../imagess/Practices/Design/Offers/Image-1.png'
+import DESIGN_OFFER_2 from '../imagess/Practices/Design/Offers/Image-2.png'
+import DESIGN_OFFER_3 from '../imagess/Practices/Design/Offers/Image-3.png'
+import DESIGN_OFFER_4 from '../imagess/Practices/Design/Offers/Image-4.png'
+import DESIGN_OFFER_5 from '../imagess/Practices/Design/Offers/Image-5.png'
+import DESIGN_OFFER_6 from '../imagess/Practices/Design/Offers/Image-6.png'
+import DESIGN_OFFER_7 from '../imagess/Practices/Design/Offers/Image-7.png'
+import DESIGN_OFFER_8 from '../imagess/Practices/Design/Offers/Image.png'
+import DESIGN_HERO from '../imagess/Practices/Design/Hero Section.png'
+import DESIGN_OVERVIEW from '../imagess/Practices/Design/Overview Section.png'
+import DESIGN_DIFFERENT from '../imagess/Practices/Design/What makes Different.png'
+
+import DIGITAL_SOLUTIONS_1 from '../imagess/Practices/Digital Engineering/Offers/Cloud Solutions/Image 1.png'
+import DIGITAL_SOLUTIONS_2 from '../imagess/Practices/Digital Engineering/Offers/Cloud Solutions/Image 2.png'
+import DIGITAL_SOLUTIONS_3 from '../imagess/Practices/Digital Engineering/Offers/Cloud Solutions/Image 3.png'
+import DIGITAL_TRANSFORMATION_1 from '../imagess/Practices/Digital Engineering/Offers/Cloud Transformation/Image 1.png'
+import DIGITAL_TRANSFORMATION_2 from '../imagess/Practices/Digital Engineering/Offers/Cloud Transformation/Image 2.png'
+import DIGITAL_TRANSFORMATION_3 from '../imagess/Practices/Digital Engineering/Offers/Cloud Transformation/Image 3.png'
+import DIGITAL_TRANSFORMATION_4 from '../imagess/Practices/Digital Engineering/Offers/Cloud Transformation/Image 4.png'
+import DIGITAL_DEVOPS_1 from '../imagess/Practices/Digital Engineering/Offers/Devops Services/Image 1.png'
+import DIGITAL_DEVOPS_2 from '../imagess/Practices/Digital Engineering/Offers/Devops Services/Image 2.png'
+import DIGITAL_DEVOPS_3 from '../imagess/Practices/Digital Engineering/Offers/Devops Services/Image 3.png'
+import DIGITAL_DEVOPS_4 from '../imagess/Practices/Digital Engineering/Offers/Devops Services/Image 4.png'
+import DIGITAL_DEVOPS_5 from '../imagess/Practices/Digital Engineering/Offers/Devops Services/Image 5.png'
+import DIGITAL_ENTERPRISE_1 from '../imagess/Practices/Digital Engineering/Offers/Enterprise Software Development/Image 1.png'
+import DIGITAL_ENTERPRISE_2 from '../imagess/Practices/Digital Engineering/Offers/Enterprise Software Development/Image 2.png'
+import DIGITAL_ENTERPRISE_3 from '../imagess/Practices/Digital Engineering/Offers/Enterprise Software Development/Image 3.png'
+import DIGITAL_ENTERPRISE_4 from '../imagess/Practices/Digital Engineering/Offers/Enterprise Software Development/Image 4.png'
+import DIGITAL_QUALITY_1 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 1.png'
+import DIGITAL_QUALITY_2 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 2.png'
+import DIGITAL_QUALITY_3 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 3.png'
+import DIGITAL_QUALITY_4 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 4.png'
+import DIGITAL_QUALITY_5 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 5.png'
+import DIGITAL_QUALITY_6 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 6.png'
+import DIGITAL_QUALITY_7 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 7.png'
+import DIGITAL_QUALITY_8 from '../imagess/Practices/Digital Engineering/Offers/Quality Assurance/Image 8.png'
+import DIGITAL_SALESFORCE_1 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 1.png'
+import DIGITAL_SALESFORCE_2 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 2.png'
+import DIGITAL_SALESFORCE_3 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 3.png'
+import DIGITAL_SALESFORCE_4 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 4.png'
+import DIGITAL_SALESFORCE_5 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 5.png'
+import DIGITAL_SALESFORCE_6 from '../imagess/Practices/Digital Engineering/Offers/Salesforce Implementation & Customization/Image 6.png'
+import DIGITAL_SOFTWARE_1 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 1.png'
+import DIGITAL_SOFTWARE_2 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 2.png'
+import DIGITAL_SOFTWARE_3 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 3.png'
+import DIGITAL_SOFTWARE_4 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 4.png'
+import DIGITAL_SOFTWARE_5 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 5.png'
+import DIGITAL_SOFTWARE_6 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 6.png'
+import DIGITAL_SOFTWARE_7 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 7.png'
+import DIGITAL_SOFTWARE_8 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 8.png'
+import DIGITAL_SOFTWARE_9 from '../imagess/Practices/Digital Engineering/Offers/Software Development/Image 9.png'
+import DIGITAL_HERO from '../imagess/Practices/Digital Engineering/Hero Section.png'
+import DIGITAL_OVERVIEW from '../imagess/Practices/Digital Engineering/Overview Section.png'
+import DIGITAL_DIFFERENT from '../imagess/Practices/Digital Engineering/What makes different Section.png'
+
+import ERP_OFFER_1 from '../imagess/Practices/ERP and CRM Solutions/Offers/Image 1.png'
+import ERP_OFFER_2 from '../imagess/Practices/ERP and CRM Solutions/Offers/Image 2.png'
+import ERP_OFFER_3 from '../imagess/Practices/ERP and CRM Solutions/Offers/Image 3.png'
+import ERP_HERO from '../imagess/Practices/ERP and CRM Solutions/Hero Section.png'
+import ERP_OVERVIEW from '../imagess/Practices/ERP and CRM Solutions/Overview Section.png'
+import ERP_DIFFERENT from '../imagess/Practices/ERP and CRM Solutions/What makes Different.png'
+
+import MICROSOFT_OFFER_1 from '../imagess/Practices/Microsoft Technologies/Offers/Image 1.png'
+import MICROSOFT_OFFER_2 from '../imagess/Practices/Microsoft Technologies/Offers/Image 2.png'
+import MICROSOFT_OFFER_3 from '../imagess/Practices/Microsoft Technologies/Offers/Image 3.png'
+import MICROSOFT_OFFER_4 from '../imagess/Practices/Microsoft Technologies/Offers/Image 4.png'
+import MICROSOFT_HERO from '../imagess/Practices/Microsoft Technologies/Hero Section.png'
+import MICROSOFT_OVERVIEW from '../imagess/Practices/Microsoft Technologies/OverView Section.png'
+import MICROSOFT_DIFFERENT from '../imagess/Practices/Microsoft Technologies/What makes Different.png'
+
+import OPEN_SOURCE_OFFER_1 from '../imagess/Practices/Open Source Technologies/Offers/Image 1.png'
+import OPEN_SOURCE_OFFER_2 from '../imagess/Practices/Open Source Technologies/Offers/Image 2.png'
+import OPEN_SOURCE_OFFER_3 from '../imagess/Practices/Open Source Technologies/Offers/Image 3.png'
+import OPEN_SOURCE_OFFER_4 from '../imagess/Practices/Open Source Technologies/Offers/Image 4.png'
+import OPEN_SOURCE_OFFER_5 from '../imagess/Practices/Open Source Technologies/Offers/Image 5.png'
+import OPEN_SOURCE_HERO from '../imagess/Practices/Open Source Technologies/Hero Section.png'
+import OPEN_SOURCE_OVERVIEW from '../imagess/Practices/Open Source Technologies/Overview Section.png'
+import OPEN_SOURCE_DIFFERENT from '../imagess/Practices/Open Source Technologies/What makes different Section.png'
+
+import CAREERS_HERO from '../imagess/Careers/Hero Section.png'
+import MAP from '../imagess/Careers/Map.png'
+import CAREERS_OVERVIEW from '../imagess/Careers/Overview Section.png'
+
+import RESOURCES_BLOGS_HERO from '../imagess/Resources Page/Blogs & Case Studies/Hero Section.png'
+import RESOURCES_REVIEW_HERO from '../imagess/Resources Page/Submit Your Review/Hero Section.png'
+
+import SCHEDULE_MEETING_HERO from '../imagess/Schedule a meeting/Hero Section.png'
+
+import WHO_WE_ABOUTUS_CONTACT from '../imagess/Who we are/About Us page/Contact Section.png'
+import WHO_WE_ABOUTUS_HERO from '../imagess/Who we are/About Us page/Hero Section image.png'
+import WHO_WE_ABOUTUS_LEADERSHIP_1 from '../imagess/Who we are/About Us page/Leader Ship Kireeti.png'
+import WHO_WE_ABOUTUS_LEADERSHIP_2 from '../imagess/Who we are/About Us page/Leader Ship Sunil.png'
+import WHO_WE_ABOUTUS_SECTION_1 from '../imagess/Who we are/About Us page/Sectin 1 Image.png'
+import WHO_WE_ABOUTUS_SECTION_2 from '../imagess/Who we are/About Us page/Section 3 Image.png'
+
+import WHO_WE_PRESS_ARTICLES from '../imagess/Who we are/Press Room page/Articles Image.png'
+import WHO_WE_PRESS_HERO from '../imagess/Who we are/Press Room page/Hero Section.png'
+
+import ASIDE_IMAGE from '../imagess/common/aside-image.png'
+import BACKGROUND_CIRCLES from '../imagess/common/BackgroundCircles.svg'
+import CHECK from '../imagess/common/Check.svg'
+import CHEVRON_DOWN_COPY from '../imagess/common/ChevronDown copy.svg'
 import CHEVRON_DOWN from '../imagess/common/ChevronDown.svg'
-import FULL_STAR from '../imagess/common/FullStar.svg'
+import CIRCLE from '../imagess/common/Circle.svg'
+import CONTACT_SECTION from '../imagess/common/Contact Section.png'
+import CONTACT from '../imagess/common/contact.png'
+import CURSOR_CLICK from '../imagess/common/CursorClick.svg'
+import DOWN_ARROW from '../imagess/common/DownArrow.svg'
+import ELLIPSE_20 from '../imagess/common/Ellipse20.svg'
 import EMPTY_STAR from '../imagess/common/EmptyStar.svg'
+import FULL_STAR from '../imagess/common/FullStar.svg'
+import HALF_STAR from '../imagess/common/HalfStar.svg'
+import HERO_INCLINED from '../imagess/common/HeroInclinedImage.png'
+import LEFT_ARROW_BLACK from '../imagess/common/LeftArrowBlack.svg'
+import MAIN_LOGO from '../imagess/common/mainLogo.png'
+import NAV_LOGO from '../imagess/common/NavLogo.png'
 import PROFILE from '../imagess/common/ProfileImage.png'
+import REVIEWS_QUOTES from '../imagess/common/ReviewsQuotes.svg'
+import RIGHT_ARROW_DARK from '../imagess/common/RightArrowDark.svg'
+import VERTICAL_LINE from '../imagess/common/VerticalLine.svg'
+
+
+
+import { BIGDATA_OVERVIEW, CARRERS_HERO } from './constsnts'
 
 export const IMAGES={
-    CHEVRON_DOWN,
-    NAV_LOGO,
-    FULL_STAR,
-    EMPTY_STAR,
-    PROFILE,
 
+    ASIDE_IMAGE,
+    BACKGROUND_CIRCLES,
+    CHECK,
+    CHEVRON_DOWN_COPY,
+    CHEVRON_DOWN,
+    CIRCLE,
+    CONTACT_SECTION,
+    CONTACT,
+    CURSOR_CLICK,
+    DOWN_ARROW,
+    ELLIPSE_20,
+    EMPTY_STAR,
+    FULL_STAR,
+    HALF_STAR,
+    HERO_INCLINED,
+    LEFT_ARROW_BLACK,
+    MAIN_LOGO,
+    NAV_LOGO,
+    PROFILE,
+    REVIEWS_QUOTES,
+    RIGHT_ARROW_DARK,
+    VERTICAL_LINE,
 
     BFSI_ASIDE_1,
     BFSI_ASIDE_2,
@@ -139,7 +291,7 @@ export const IMAGES={
     LOGISTICS_OVERVIEW,
     MARINE_ASIDE_1,
     MARINE_ASIDE_2,
-    MARINE_HEROO,
+    MARINE_HERO,
     MARINE_MARKET_TRENDS,
     MARINE_OVERVIEW,
     MEDIA_ASIDE_1,
@@ -182,6 +334,119 @@ export const IMAGES={
     PROFESSIONAL_ASIDE_3,
     PROFESSIONAL_HERO,
     PROFESSIONAL_OVERVIEW,
+    ALML_OFFER_1,
+    ALML_OFFER_2,
+    ALML_OFFER_3,
+    ALML_OFFER_4,
+    ALML_OFFER_5,
+    ALML_OFFER_6,
+    ALML_HERO,
+    ALML_OVERVIEW,
+    ALML_DIFFERENT,
+    BIG_DATA_OFFER_1,
+    BIG_DATA_OFFER_2,
+    BIG_DATA_OFFER_3,
+    BIG_DATA_HERO,
+    BIG_DATA_OVERVIEW,
+    BIG_DATA_DIFFERENT,
+    CLOUD_OFFER_1,
+    CLOUD_OFFER_2,
+    CLOUD_OFFER_3,
+    CLOUD_OFFER_4,
+    CLOUD_OFFER_5,
+    CLOUD_OFFER_6,
+    CLOUD_HERO,
+    CLOUD_OVERVIEW,
+    CLOUD_DIFFERENT,
+    DESIGN_OFFER_1,
+    DESIGN_OFFER_2,
+    DESIGN_OFFER_3,
+    DESIGN_OFFER_4,
+    DESIGN_OFFER_5,
+    DESIGN_OFFER_6,
+    DESIGN_OFFER_7,
+    DESIGN_OFFER_8,
+    DESIGN_HERO,
+    DESIGN_OVERVIEW,
+    DESIGN_DIFFERENT,
+    DIGITAL_SOLUTIONS_1,
+    DIGITAL_SOLUTIONS_2,
+    DIGITAL_SOLUTIONS_3,
+    DIGITAL_TRANSFORMATION_1,
+    DIGITAL_TRANSFORMATION_2,
+    DIGITAL_TRANSFORMATION_3,
+    DIGITAL_TRANSFORMATION_4,
+    DIGITAL_DEVOPS_1,
+    DIGITAL_DEVOPS_2,
+    DIGITAL_DEVOPS_3,
+    DIGITAL_DEVOPS_4,
+    DIGITAL_DEVOPS_5,
+    DIGITAL_ENTERPRISE_1,
+    DIGITAL_ENTERPRISE_2,
+    DIGITAL_ENTERPRISE_3,
+    DIGITAL_ENTERPRISE_4,
+    DIGITAL_QUALITY_1,
+    DIGITAL_QUALITY_2,
+    DIGITAL_QUALITY_3,
+    DIGITAL_QUALITY_4,
+    DIGITAL_QUALITY_5,
+    DIGITAL_QUALITY_6,
+    DIGITAL_QUALITY_7,
+    DIGITAL_QUALITY_8,
+    DIGITAL_SALESFORCE_1,
+    DIGITAL_SALESFORCE_2,
+    DIGITAL_SALESFORCE_3,
+    DIGITAL_SALESFORCE_4,
+    DIGITAL_SALESFORCE_5,
+    DIGITAL_SALESFORCE_6,
+    DIGITAL_SOFTWARE_1,
+    DIGITAL_SOFTWARE_2,
+    DIGITAL_SOFTWARE_3,
+    DIGITAL_SOFTWARE_4,
+    DIGITAL_SOFTWARE_5,
+    DIGITAL_SOFTWARE_6,
+    DIGITAL_SOFTWARE_7,
+    DIGITAL_SOFTWARE_8,
+    DIGITAL_SOFTWARE_9,
+    DIGITAL_HERO,
+    DIGITAL_OVERVIEW,
+    DIGITAL_DIFFERENT,
+    ERP_OFFER_1,
+    ERP_OFFER_2,
+    ERP_OFFER_3,
+    ERP_HERO,
+    ERP_OVERVIEW,
+    ERP_DIFFERENT,
+    MICROSOFT_OFFER_1,
+    MICROSOFT_OFFER_2,
+    MICROSOFT_OFFER_3,
+    MICROSOFT_OFFER_4,
+    MICROSOFT_HERO,
+    MICROSOFT_OVERVIEW,
+    MICROSOFT_DIFFERENT,
+    OPEN_SOURCE_OFFER_1,
+    OPEN_SOURCE_OFFER_2,
+    OPEN_SOURCE_OFFER_3,
+    OPEN_SOURCE_OFFER_4,
+    OPEN_SOURCE_OFFER_5,
+    OPEN_SOURCE_HERO,
+    OPEN_SOURCE_OVERVIEW,
+    OPEN_SOURCE_DIFFERENT,
+    CAREERS_HERO,
+    CAREERS_OVERVIEW,
+    MAP,
+    RESOURCES_BLOGS_HERO,
+    RESOURCES_REVIEW_HERO,
+    SCHEDULE_MEETING_HERO,
+    WHO_WE_ABOUTUS_CONTACT,
+    WHO_WE_ABOUTUS_HERO,
+    WHO_WE_ABOUTUS_LEADERSHIP_1,
+    WHO_WE_ABOUTUS_LEADERSHIP_2,
+    WHO_WE_ABOUTUS_SECTION_1,
+    WHO_WE_ABOUTUS_SECTION_2,
+    WHO_WE_PRESS_ARTICLES,
+    WHO_WE_PRESS_HERO,
+    
 
 
 }

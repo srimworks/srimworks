@@ -7,7 +7,7 @@ console.log(image)
     <section
       className="hero-section"
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: image,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",

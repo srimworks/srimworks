@@ -157,7 +157,7 @@ export const ABOUT_MARKET_TRENDS={
          title:"Empowering the Marine Industry with Digital Transformation",
          desc:"Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
          btnText:"Get Started",
-         image:IMAGES.MARINE_HEROO,
+         image:IMAGES.MARINE_HERO,
   }
   export const MARINE_OVERVIEW={
     heading:"",
@@ -206,13 +206,13 @@ export const BFSI_HERO={
   title:"Enable Smart Banking, Innovate Financial Services, and Digitize Insurance",
   desc:"Leverage technology to embrace data and AI-powered banking operations, adopt agility and speed across financial transactions, and implement digital insurance trends for superior outcomes.",
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.BFSI_HERO,
 }
 
 export const BFSI_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.BFSI_OVERVIEW,
   desc:"At SRIM Works, we empower banks, financial service providers, and insurers through technology modernization. Our solutions deliver personalized, embedded digital customer experiences, improve process efficiencies with value-added interactions, and create new revenue opportunities by enabling market and competitor differentiation.",
   dataList:[]
 }
@@ -224,7 +224,7 @@ title:"Open Banking",
 content:"Open Banking enables seamless integration between banks, third-party services, and customers, offering agility and portability in transactions.",
 subHead1:"Chatbots and Robo-Advisors",
 subHead2:"Digitization and Automation",
-image:"",
+image:IMAGES.BFSI_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -232,7 +232,7 @@ dataList:[],
 export const BFSI_ORG={
 title:"BFSI organizations",
 heading:"A Platform for Collaboration",
-image:"",
+image:IMAGES.BFSI_ASIDE_1,
 desc:"",
 dataList:["B2B Payments: Complexities in managing secure and seamless transactions.",
   "Trade Financing Fraud: Combating fraudulent practices across global trade.",
@@ -245,7 +245,7 @@ dataList:["B2B Payments: Complexities in managing secure and seamless transactio
 export const BFSI_HELP={
   heading:"",
 title:"How We Help",
-image:"",
+image:IMAGES.BFSI_ASIDE_2,
 desc:"",
 dataList:["Data Engineering: Building automated data pipelines, cloud-based data lakes, and data warehouses for diverse datasets like KYC and trading.",
   "Big Data: Providing forecasting for financial trends and risk modeling for credit scoring and claims processing.",
@@ -260,13 +260,13 @@ export const LOGISTICS_HERO={
   title:"Empowering Logistics for a Connected World",
   desc:"Transform your logistics operations with cutting-edge technology, real-time data insights, and process automation to achieve efficiency, accuracy, and scalability.",
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.LOGISTICS_HERO,
 }
 
 export const LOGISTICS_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.LOGISTICS_OVERVIEW,
   desc:"In today’s fast-paced world, logistics is the backbone of global commerce. We empower logistics organizations to overcome operational challenges, streamline supply chains, and enhance customer experiences through innovative technologies. From smart warehouses to predictive analytics, we deliver solutions that drive agility and precision across the logistics ecosystem.",
   dataList:[]
 }
@@ -278,7 +278,7 @@ title:"Automation in Logistics",
 content:"Automation is transforming logistics, from warehouse robotics to self-driving delivery vehicles, ensuring faster and more accurate operations.",
 subHead1:"Predictive Analytics",
 subHead2:"Sustainability Initiatives",
-image:"",
+image:IMAGES.LOGISTICS_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -286,7 +286,7 @@ dataList:[],
 export const LOGISTICS_DIGITAL={
   heading:"",
 title:"Digital Transformation in Logistics",
-image:"",
+image:IMAGES.LOGISTICS_ASIDE_1,
 desc:"Leverage digital tools to revolutionize logistics operations. We enable real-time tracking, automated workflows, and IoT integration, ensuring seamless coordination between all supply chain stakeholders. From warehouse management to last-mile delivery, our solutions ensure end-to-end optimization.",
 dataList:[]
 }
@@ -294,7 +294,7 @@ dataList:[]
 export const LOGISTICS_DATA_DRIVEN={
   heading:"",
 title:"Data-Driven Insights for Smarter Logistics",
-image:"",
+image:IMAGES.LOGISTICS_ASIDE_2,
 desc:"Turn data into actionable insights with our advanced analytics solutions. Predict demand, optimize routes, and improve inventory management with AI-driven analytics and forecasting tools. Empower your logistics operations with data intelligence to make informed decisions faster.",
 dataList:[]
 }
@@ -306,13 +306,13 @@ export const REAL_ESTATE_HERO={
   title:"Revolutionizing Real Estate with Technology",
   desc:"Empowering real estate businesses to innovate and thrive with data-driven insights, digital platforms, and automation tools",
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.REAL_ESTATE_HERO,
 }
 
 export const REAL_ESTATE_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.REAL_ESTATE_OVERVIEW,
   desc:"The real estate industry is evolving rapidly, driven by digital transformation and changing customer expectations. At SRIM, we empower real estate organizations with technology solutions that enhance operational efficiency, deliver personalized experiences, and unlock new growth opportunities. From property management to virtual tours and AI-powered analytics, we help you stay ahead in a competitive market.",
   dataList:[]
 }
@@ -324,7 +324,7 @@ title:"Virtual Reality (VR) in Real Estate",
 content:"VR is revolutionizing property viewing, offering immersive virtual tours that save time and enhance customer experiences.",
 subHead1:"Smart Buildings",
 subHead2:"Real Estate Analytics",
-image:"",
+image:IMAGES.REAL_ESTATE_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -332,7 +332,7 @@ dataList:[],
 export const REAL_ESTATE_DIGITAL={
   heading:"",
 title:"Digital Transformation in Real Estate",
-image:"",
+image:IMAGES.REAL_ESTATE_ASIDE_1,
 desc:"Embrace digital platforms to streamline property listing, buying, selling, and rental processes. Our solutions include virtual tours, CRM systems, and online booking platforms to create seamless customer journeys and efficient operations.",
 dataList:[]
 }
@@ -340,7 +340,7 @@ dataList:[]
 export const REAL_ESTATE_AI={
   heading:"",
 title:"AI-Powered Insights for Smarter Decisions",
-image:"",
+image:IMAGES.REAL_ESTATE_ASIDE_2,
 desc:"Leverage AI and data analytics to understand market trends, predict property valuations, and identify investment opportunities. With real-time insights, we help you make informed decisions and maximize returns on investments.",
 dataList:[]
 }
@@ -353,13 +353,13 @@ export const RETAIL_HERO={
   title:"Transforming Retail with Digital Excellence",
   desc:"Redefine customer experiences, streamline operations, and drive growth with technology-powered retail solutions.",
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.RETAIL_HERO,
 }
 
 export const RETAIL_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.RETAIL_OVERVIEW,
   desc:"The retail industry is rapidly evolving, with technology reshaping how businesses engage with customers and operate efficiently. At SRIM, we empower retailers to embrace innovation and stay competitive. From omnichannel experiences to data-driven insights, we enable retail transformation with digital solutions tailored to meet modern consumer demands.",
   dataList:[]
 }
@@ -371,7 +371,7 @@ title:"Omnichannel Commerce",
 content:"Retailers are merging physical and digital channels to offer consistent shopping experiences, from curbside pickups to same-day deliveries.",
 subHead1:"Personalization with AI",
 subHead2:"Sustainable Retail Practices",
-image:"",
+image:IMAGES.RETAIL_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -379,7 +379,7 @@ dataList:[],
 export const RETAIL_OPERATIONAL={
   heading:"",
 title:"Operational Excellence through Automation",
-image:"",
+image:IMAGES.RETAIL_ASIDE_1,
 desc:"Streamline retail operations with automation tools for inventory management, supply chain optimization, and customer service. By integrating cutting-edge technologies, we help you save costs and enhance productivity.",
 dataList:[]
 }
@@ -387,7 +387,7 @@ dataList:[]
 export const RETAIL_DATA_DRIVEN={
   heading:"",
 title:"Data-Driven Decision Making",
-image:"",
+image:IMAGES.RETAIL_ASIDE_2,
 desc:"Leverage advanced analytics to understand customer preferences, optimize inventory, and predict market trends. Our solutions turn raw data into actionable insights, enabling smarter decisions that drive growth.",
 dataList:[]
 }
@@ -398,13 +398,13 @@ export const E_COMMERCE_HERO={
   title:"Revolutionizing eCommerce for the Digital Era",
   desc:"Empower your online store with advanced technologies, seamless customer experiences, and data-driven insights to drive growth and engagement.",
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.ECOMMERCE_HERO,
 }
 
 export const E_COMMERCE_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.ECOMMERCE_OVERVIEW,
   desc:"Ecommerce is at the forefront of digital transformation, reshaping how businesses interact with customers. At SRIM, we provide end-to-end eCommerce solutions tailored to your needs. From creating scalable online platforms to optimizing customer journeys with data and AI, we enable businesses to thrive in the competitive online marketplace.",
   dataList:[]
 }
@@ -416,7 +416,7 @@ title:"Mobile Commerce Growth",
 content:"Mobile shopping continues to dominate, with more consumers preferring to browse and buy on their smartphones.",
 subHead1:"Social Commerce",
 subHead2:"AI-Driven Personalization",
-image:"",
+image:IMAGES.ECOMMERCE_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -424,7 +424,7 @@ dataList:[],
 export const E_COMMERCE_SEAMLESS={
   heading:"",
 title:"Seamless Online Shopping Experiences",
-image:"",
+image:IMAGES.ECOMMERCE_ASIDE_1,
 desc:"We focus on creating customer-centric eCommerce platforms designed to engage and convert. With intuitive interfaces, advanced search capabilities, and user-friendly navigation, we ensure your customers enjoy a seamless and rewarding shopping experience. From product discovery to checkout, every touchpoint is optimized for simplicity and speed.",
 dataList:[]
 }
@@ -432,7 +432,7 @@ dataList:[]
 export const E_COMMERCE_SMART_SUPPLY={
   heading:"",
 title:"Smart Supply Chain & Inventory Management",
-image:"",
+image:IMAGES.ECOMMERCE_ASIDE_2,
 desc:"Streamline your operations with intelligent supply chain and inventory solutions. Our systems provide real-time tracking, automated stock updates, and predictive analytics to help you forecast demand and prevent overstocking or shortages. With improved efficiency, you can reduce operational costs while ensuring timely deliveries that keep your customers satisfied.",
 dataList:[]
 }
@@ -443,13 +443,13 @@ export const MEDIA_HERO={
   title:"Transforming Media & Entertainment with Innovation",
   desc:"Revolutionize your media and entertainment offerings with cutting-edge digital solutions. From content creation to distribution and audience engagement, we empower businesses to stay ahead in the fast-evolving digital landscape. Let us help you create immersive, personalized experiences that captivate and retain your audience.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.MEDIA_HERO
 }
 
 export const MEDIA_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.MEDIA_OVERVIEW,
   desc:"We provide end-to-end solutions for the media and entertainment industry, helping organizations to innovate, enhance user experiences, and maximize revenue streams. Our expertise spans content management, audience engagement, data analytics, and monetization strategies. With our forward-thinking approach, we help you embrace digital transformation and stay competitive in an industry that’s continuously evolving.",
   dataList:[]
 }
@@ -461,7 +461,7 @@ title:"Rise of OTT Platforms",
 content:"OTT platforms are reshaping content consumption, offering viewers more flexibility and access to exclusive content. AI-driven recommendations and subscription models are key to maintaining competitiveness in the growing market.",
 subHead1:"Immersive AR/VR Experiences",
 subHead2:"AI and Data-Driven Personalization",
-image:"",
+image:IMAGES.MEDIA_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -469,7 +469,7 @@ dataList:[],
 export const MEDIA_CONTENT={
   heading:"",
 title:"Content Creation & Management",
-image:"",
+image:IMAGES.MEDIA_ASIDE_1,
 desc:"We assist media companies in streamlining the entire content creation and management process, from ideation to production. Our solutions enable efficient workflows, collaboration, and content distribution across multiple platforms. With the latest technologies, we ensure your content is optimized for every device and screen size, enhancing the audience experience.",
 dataList:[]
 }
@@ -477,7 +477,7 @@ dataList:[]
 export const MEDIA_PERSONALIZED={
   heading:"",
 title:"Personalized Audience Engagement",
-image:"",
+image:IMAGES.MEDIA_ASIDE_2,
 desc:"Leverage data-driven insights to deliver tailored experiences to your audience. Through advanced analytics, we help you understand user preferences, behaviors, and trends, enabling you to create more engaging and relevant content. With personalized recommendations and dynamic content, we enhance user retention and drive greater engagement.",
 dataList:[]
 }
@@ -488,13 +488,13 @@ export const FMCG_HERO={
   title:"Empowering FMCG with Innovation and Efficiency",
   desc:"Leverage cutting-edge technology and data analytics to drive growth, streamline operations, and deliver personalized experiences to customers in the fast-paced FMCG sector.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.FMCG_HERO
 }
 
 export const FMCG_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.FMCG_OVERVIEW,
   desc:"In the fast-moving consumer goods (FMCG) industry, speed, efficiency, and customer engagement are crucial. We empower FMCG companies to modernize their processes, enhance product delivery, and create seamless, data-driven experiences across all channels. From supply chain optimization to personalized marketing strategies, our solutions help businesses stay ahead of trends and market demands.",
   dataList:[]
 }
@@ -506,7 +506,7 @@ title:"Personalized Customer Experiences",
 content:"The FMCG industry is increasingly focusing on hyper-personalization through data-driven insights, delivering tailored products and services that resonate with individual consumer preferences.",
 subHead1:"Sustainability and Eco-friendly Products",
 subHead2:"AI-Driven Supply Chain Optimization",
-image:"",
+image:IMAGES.FMCG_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -514,7 +514,7 @@ dataList:[],
 export const FMCG_DIGITAL={
   heading:"",
 title:"Digital Transformation",
-image:"",
+image:IMAGES.FMCG_ASIDE_1,
 desc:"We help FMCG businesses embrace digital transformation by modernizing their infrastructure, enhancing operational efficiencies, and utilizing advanced technologies like AI and IoT. Through a robust digital ecosystem, companies can improve product tracking, streamline distribution, and gain valuable customer insights to drive decision-making.",
 dataList:[]
 }
@@ -522,7 +522,7 @@ dataList:[]
 export const FMCG_DATA={
   heading:"",
 title:"Data and Analytics",
-image:"",
+image:IMAGES.FMCG_ASIDE_2,
 desc:"Data is the backbone of successful FMCG strategies. We offer end-to-end data solutions, from data collection and warehousing to advanced analytics and reporting. This enables businesses to monitor product performance, forecast demand, optimize inventory management, and personalize marketing to meet consumer needs.",
 dataList:[]
 }
@@ -533,13 +533,13 @@ export const HEALTH_CARE_HERO={
   title:"Transforming Healthcare with Innovation and Technology",
   desc:"Revolutionizing patient care, enhancing operational efficiency, and empowering healthcare organizations with data-driven solutions to improve outcomes and deliver personalized experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.HEALTH_HERO
 }
 
 export const HEALTH_CARE_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.HEALTH_OVERVIEW,
   desc:"In the healthcare industry, technology is crucial to improving patient care and optimizing operational workflows. We help healthcare organizations leverage advanced technologies like AI, machine learning, and cloud computing to enhance decision-making, streamline processes, and provide better care for patients. From patient management to data-driven insights, we offer end-to-end solutions to drive innovation and efficiency in healthcare.",
   dataList:[]
 }
@@ -551,7 +551,7 @@ title:"Telemedicine and Virtual Healthcare",
 content:"Telemedicine is rapidly growing, allowing healthcare providers to offer remote consultations and treatments. This trend is improving accessibility and convenience, especially in underserved regions, and enabling faster care delivery.",
 subHead1:"AI and Machine Learning in Diagnostics",
 subHead2:"Wearables and Remote Monitoring",
-image:"",
+image:IMAGES.HEALTH_MARKET_TRENDS,
 dataList:[],
 }
 
@@ -559,7 +559,7 @@ dataList:[],
 export const HEALTH_CARE_PATIENT={
   heading:"",
 title:"Patient-Centered Care",
-image:"",
+image:IMAGES.HEALTH_ASIDE_1,
 desc:"We enable healthcare providers to deliver personalized care by harnessing data and AI technologies. Our solutions allow for better diagnosis, tailored treatment plans, and proactive patient management. With an integrated healthcare ecosystem, providers can track patient progress, manage appointments, and predict health risks, ensuring the best possible outcomes.",
 dataList:[]
 }
@@ -567,7 +567,7 @@ dataList:[]
 export const HEALTH_CARE_OPERATIONAL={
   heading:"",
 title:"Operational Efficiency",
-image:"",
+image:IMAGES.HEALTH_ASIDE_2,
 desc:"Healthcare organizations face mounting pressure to deliver better outcomes with fewer resources. Our solutions optimize administrative tasks, improve scheduling, and streamline communication. By automating repetitive processes and enhancing resource management, we help organizations reduce operational costs while maintaining high-quality care.",
 dataList:[]
 }
@@ -578,7 +578,7 @@ dataList:[]
 
 export const CARRERS_HERO={
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.CAREERS_HERO,
   heading:"Carrers",
   title:"Join Our Team, Shape the Future",
   desc:`Become a part of an innovative and dynamic workplace where your skills and passion drive impactful solutions. At SRIM Works, we foster growth, collaboration, and opportunities to make a difference. Your journey starts here!`
@@ -587,7 +587,7 @@ export const CARRERS_HERO={
 export const CARRERS_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.CAREERS_OVERVIEW,
   desc:`At SRIM Works, we believe in empowering individuals to achieve their fullest potential. Our workplace thrives on innovation, collaboration, and inclusivity, creating an environment where talent is nurtured, ideas are celebrated, and careers are built.
 
 We are more than just a company; we are a community of forward-thinkers, problem-solvers, and trailblazers united by a shared vision to create impactful solutions. Whether you're a seasoned professional or a fresh graduate, SRIM Works offers opportunities that challenge you, inspire you, and support your career aspirations.
@@ -695,7 +695,7 @@ export const OPENINGS=[
 
 export const RESOURCES_BLOGS_HERO={
   btnText:"Get Started",
-  image:"",
+  image:IMAGES.RESOURCES_BLOGS_HERO,
   header:"Insights, Trends, and Expertise",
   title:"Blogs & Case Studies",
   desc:"Explore our blog to stay updated on the latest industry trends, technological innovations, and expert insights driving transformation across various sectors. Empower your knowledge and spark ideas for a brighter future.",
@@ -799,13 +799,13 @@ export const DESIGN_HERO={
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.DESIGN_HERO
 }
 
 export const DESIGN_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.DESIGN_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
@@ -816,42 +816,42 @@ export const DESIGN_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_3
   },
   {
     title:"Service Experience Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_4
   },
   {
     title:"Visual Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_5
   },
   {
     title:"Mobile App Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_6
   },
   {
     title:"Web Design",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_7
   },
   {
     title:"Digital Design Services",
     content:"",
-    image:""
+    image:IMAGES.DESIGN_OFFER_8
   },
 ]
 
@@ -862,7 +862,7 @@ export const DESIGN_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.DESIGN_DIFFERENT,
   dataList:[],
 }
 
@@ -874,13 +874,13 @@ export const DIGITAL_ENGINEERING_HERO={
   title:"Empowering Transformation Across the Product Lifecycle",
   desc:"Embrace digital technologies to craft insight-driven, human-centric experiences and achieve a resilient digital strategy for lasting success.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.DIGITAL_HERO
 }
 
 export const DIGITAL_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.DIGITAL_OVERVIEW,
   desc:`At SRIM Works, we provide comprehensive solutions combining engineering excellence, expertise in digital technologies, and advanced automation implementation.
 
 Our digital engineering approach fosters business and technology transformation for organizations. We develop robust, reliable, and secure digital-ready products and services, while our automation strategies streamline processes through continuous delivery pipelines.`,
@@ -893,47 +893,47 @@ export const DIGITAL_CARDS=[
   content:"We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_1,
     heading:"Web Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_2,
     heading:"Frontend Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_3,
     heading:"Backend Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_4,
     heading:"Mobile App Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_5,
     heading:"Android App Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_6,
     heading:"iOS App Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_7,
     heading:"Hybrid App Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_8,
     heading:"SaaS Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOFTWARE_9,
     heading:"CMS Development",
     content:"lorem ipusm content dummy"
   },
@@ -944,42 +944,42 @@ export const DIGITAL_CARDS=[
   content:"Ensuring the highest quality standards with comprehensive testing services. We focus on functionality, performance, security, and usability to enhance customer satisfaction. Our rigorous testing process ensures the reliability of your software.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_1,
     heading:"Quality Assurance",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_2,
     heading:"Functional Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_3,
     heading:"Automation Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_4,
     heading:"Performance Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_5,
     heading:"API Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_6,
     heading:"Mobile App Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_7,
     heading:"Database Testing",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_QUALITY_8,
     heading:"Security Testing",
     content:"lorem ipusm content dummy"
   },
@@ -990,22 +990,22 @@ export const DIGITAL_CARDS=[
   content:"We help businesses build reliable, scalable, and secure enterprise-level software solutions. Our services empower organizations to streamline operations and drive growth. We offer customized solutions to suit specific business needs.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_ENTERPRISE_1,
     heading:"Enterprise Software Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_ENTERPRISE_2,
     heading:"Digital Transformation",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_ENTERPRISE_3,
     heading:"Enterprise Mobility",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_ENTERPRISE_4,
     heading:"ERP Consulting",
     content:"lorem ipusm content dummy"
   },
@@ -1016,32 +1016,32 @@ export const DIGITAL_CARDS=[
   content:"Maximize your Salesforce investment with our implementation, integration, and customization services. We help businesses leverage Salesforce for improved productivity, collaboration, and customer engagement. Tailored solutions to meet unique business goals.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_SALESFORCE_1,
     heading:"Salesforce Implementation",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"Salesforce Customization",
+    image:IMAGES.DIGITAL_SALESFORCE_2,
     heading:"",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SALESFORCE_3,
     heading:"Salesforce Application Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SALESFORCE_4,
     heading:"Salesforce Integration",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SALESFORCE_5,
     heading:"Salesforce Migration",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SALESFORCE_6,
     heading:"Salesforce Upgrade and Maintenance",
     content:"lorem ipusm content dummy"
   },
@@ -1052,17 +1052,17 @@ export const DIGITAL_CARDS=[
   content:"We offer cloud services to enable businesses to scale efficiently, improve performance, and reduce costs. Our solutions empower businesses to thrive in the digital era by leveraging the power of cloud technologies.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOLUTIONS_1,
     heading:"Cloud Native Platform",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOLUTIONS_2,
     heading:"Microservices",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_SOLUTIONS_3,
     heading:"Architecture Design & Consulting",
     content:"lorem ipusm content dummy"
   },
@@ -1073,22 +1073,22 @@ export const DIGITAL_CARDS=[
   content:"Our cloud transformation services enable seamless migration and modernization for enhanced operational efficiency. We assist businesses in adopting cloud technologies to stay competitive in a fast-evolving market.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_TRANSFORMATION_1,
     heading:"Cloud Transformation",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_TRANSFORMATION_2,
     heading:"Cloud Migration",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_TRANSFORMATION_3,
     heading:"App Modernization",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_TRANSFORMATION_4,
     heading:"Cloud Consulting",
     content:"lorem ipusm content dummy"
   },
@@ -1099,35 +1099,31 @@ export const DIGITAL_CARDS=[
   content:"We implement DevOps practices to streamline your software development lifecycle and improve collaboration. Our solutions help businesses increase development speed and reduce downtime through automation and continuous delivery.",
   cards:[
     {
-    image:"",
+    image:IMAGES.DIGITAL_DEVOPS_1,
     heading:"some data",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_DEVOPS_2,
     heading:"some data",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_DEVOPS_3,
     heading:"some data",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_DEVOPS_4,
     heading:"some data",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.DIGITAL_DEVOPS_5,
     heading:"some data",
     content:"lorem ipusm content dummy"
   },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
+    
   ]
 },
 ]
@@ -1139,7 +1135,7 @@ export const DIGITAL_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.DIGITAL_DIFFERENT,
   dataList:[],
 }
 
@@ -1150,13 +1146,13 @@ export const BIGDATA_ENGINEERING_HERO={
   title:"Empowering Transformation Across the Product Lifecycle",
   desc:"Embrace digital technologies to craft insight-driven, human-centric experiences and achieve a resilient digital strategy for lasting success.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.BIG_DATA_HERO
 }
 
 export const BIGDATA_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.BIG_DATA_OVERVIEW,
   desc:`At SRIM Works, we provide comprehensive solutions combining engineering excellence, expertise in digital technologies, and advanced automation implementation.
 
 Our digital engineering approach fosters business and technology transformation for organizations. We develop robust, reliable, and secure digital-ready products and services, while our automation strategies streamline processes through continuous delivery pipelines.`,
@@ -1169,243 +1165,24 @@ export const BIGDATA_CARDS=[
   content:"We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
   cards:[
     {
-    image:"",
+    image:IMAGES.BIG_DATA_OFFER_1,
     heading:"Web Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.BIG_DATA_OFFER_2,
     heading:"Frontend Development",
     content:"lorem ipusm content dummy"
   },
     {
-    image:"",
+    image:IMAGES.BIG_DATA_OFFER_3,
     heading:"Backend Development",
     content:"lorem ipusm content dummy"
   },
-    {
-    image:"",
-    heading:"Mobile App Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Android App Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"iOS App Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Hybrid App Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"SaaS Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"CMS Development",
-    content:"lorem ipusm content dummy"
-  },
+  
 ]
-},
-{
-  heading:"Quality Assurance",
-  content:"Ensuring the highest quality standards with comprehensive testing services. We focus on functionality, performance, security, and usability to enhance customer satisfaction. Our rigorous testing process ensures the reliability of your software.",
-  cards:[
-    {
-    image:"",
-    heading:"Quality Assurance",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Functional Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Automation Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Performance Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"API Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Mobile App Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Database Testing",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Security Testing",
-    content:"lorem ipusm content dummy"
-  },
-]
-},
-{
-  heading:"Enterprise Software Development",
-  content:"We help businesses build reliable, scalable, and secure enterprise-level software solutions. Our services empower organizations to streamline operations and drive growth. We offer customized solutions to suit specific business needs.",
-  cards:[
-    {
-    image:"",
-    heading:"Enterprise Software Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Digital Transformation",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Enterprise Mobility",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"ERP Consulting",
-    content:"lorem ipusm content dummy"
-  },
-]
-},
-{
-  heading:"Salesforce Implementation & Customization",
-  content:"Maximize your Salesforce investment with our implementation, integration, and customization services. We help businesses leverage Salesforce for improved productivity, collaboration, and customer engagement. Tailored solutions to meet unique business goals.",
-  cards:[
-    {
-    image:"",
-    heading:"Salesforce Implementation",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"Salesforce Customization",
-    heading:"",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Salesforce Application Development",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Salesforce Integration",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Salesforce Migration",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Salesforce Upgrade and Maintenance",
-    content:"lorem ipusm content dummy"
-  },
-]
-},
-{
-  heading:"Cloud Solutions",
-  content:"We offer cloud services to enable businesses to scale efficiently, improve performance, and reduce costs. Our solutions empower businesses to thrive in the digital era by leveraging the power of cloud technologies.",
-  cards:[
-    {
-    image:"",
-    heading:"Cloud Native Platform",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Microservices",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Architecture Design & Consulting",
-    content:"lorem ipusm content dummy"
-  },
-]
-},
-{
-  heading:"Cloud Transformation",
-  content:"Our cloud transformation services enable seamless migration and modernization for enhanced operational efficiency. We assist businesses in adopting cloud technologies to stay competitive in a fast-evolving market.",
-  cards:[
-    {
-    image:"",
-    heading:"Cloud Transformation",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Cloud Migration",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"App Modernization",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"Cloud Consulting",
-    content:"lorem ipusm content dummy"
-  },
-  ]
-},
-{
-  heading:"DevOps Services",
-  content:"We implement DevOps practices to streamline your software development lifecycle and improve collaboration. Our solutions help businesses increase development speed and reduce downtime through automation and continuous delivery.",
-  cards:[
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-    {
-    image:"",
-    heading:"some data",
-    content:"lorem ipusm content dummy"
-  },
-  ]
-},
+}
+  
 ]
 
 export const BIGDATA_MARKET_TRENDS={
@@ -1415,81 +1192,72 @@ export const BIGDATA_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.BIG_DATA_DIFFERENT,
   dataList:[],
 }
 
 
 // AI & ML
-export const AI_ML_HERO={
+export const AL_ML_HERO={
   header:"Design Engineering",
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.ALML_HERO
 }
 
-export const AI_ML_OVERVIEW={
+export const AL_ML_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.ALML_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
   dataList:[]
 }
 
-export const AI_ML_CARDS=[
+export const AL_ML_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_3
   },
   {
     title:"Service Experience Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_4
   },
   {
     title:"Visual Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_5
   },
   {
     title:"Mobile App Design",
     content:"",
-    image:""
+    image:IMAGES.ALML_OFFER_6
   },
-  {
-    title:"Web Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Digital Design Services",
-    content:"",
-    image:""
-  },
+  
 ]
 
-export const AI_ML_MARKET_TRENDS={
+export const AL_ML_MARKET_TRENDS={
   heading:"What Makes SRIM Works Different",
   desc:"At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
   title:"Human-Centered Discovery",
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.ALML_DIFFERENT,
   dataList:[],
 }
 
@@ -1500,13 +1268,13 @@ export const OPENSOURCE_HERO={
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.OPEN_SOURCE_HERO
 }
 
 export const OPENSOURCE_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.OPEN_SOURCE_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
@@ -1517,43 +1285,29 @@ export const OPENSOURCE_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.OPEN_SOURCE_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.OPEN_SOURCE_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.OPEN_SOURCE_OFFER_3
   },
   {
     title:"Service Experience Design",
     content:"",
-    image:""
+    image:IMAGES.OPEN_SOURCE_OFFER_4
   },
   {
     title:"Visual Design",
     content:"",
-    image:""
+    image:IMAGES.OPEN_SOURCE_OFFER_5
   },
-  {
-    title:"Mobile App Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Web Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Digital Design Services",
-    content:"",
-    image:""
-  },
+  
 ]
 
 export const OPENSOURCE_MARKET_TRENDS={
@@ -1563,7 +1317,7 @@ export const OPENSOURCE_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.OPEN_SOURCE_DIFFERENT,
   dataList:[],
 }
 // Coud Computing
@@ -1573,13 +1327,13 @@ export const CLOUD_HERO={
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.CLOUD_HERO
 }
 
 export const CLOUD_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.CLOUD_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
@@ -1590,43 +1344,34 @@ export const CLOUD_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_3
   },
   {
     title:"Service Experience Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_4
   },
   {
     title:"Visual Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_5
   },
   {
     title:"Mobile App Design",
     content:"",
-    image:""
+    image:IMAGES.CLOUD_OFFER_6
   },
-  {
-    title:"Web Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Digital Design Services",
-    content:"",
-    image:""
-  },
+  
 ]
 
 export const CLOUD_MARKET_TRENDS={
@@ -1636,7 +1381,7 @@ export const CLOUD_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.CLOUD_DIFFERENT,
   dataList:[],
 }
 
@@ -1647,13 +1392,13 @@ export const ERP_HERO={
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.ERP_HERO
 }
 
 export const ERP_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.ERP_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
@@ -1664,43 +1409,19 @@ export const ERP_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.ERP_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.ERP_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.ERP_OFFER_3
   },
-  {
-    title:"Service Experience Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Visual Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Mobile App Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Web Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Digital Design Services",
-    content:"",
-    image:""
-  },
+  
 ]
 
 export const ERP_MARKET_TRENDS={
@@ -1710,7 +1431,7 @@ export const ERP_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.ERP_DIFFERENT,
   dataList:[],
 }
 
@@ -1721,13 +1442,13 @@ export const MICROSOFT_HERO={
   title:"Future-Ready Solutions for a Better Tomorrow",
   desc:"At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText:"Get Started",
-  image:""
+  image:IMAGES.MICROSOFT_HERO
 }
 
 export const MICROSOFT_OVERVIEW={
   heading:"",
   title:"Overview",
-  image:"",
+  image:IMAGES.MICROSOFT_OVERVIEW,
   desc:`Our mission is clear – to bring ideas to life through exceptional design engineering. By leveraging a human-centered approach and embracing design thinking principles, we tackle challenges that hinder business growth and affect customer satisfaction.
 
 Our leadership in design engineering delivers tangible results through cost-efficient strategies and forward-thinking solutions that empower businesses to stay ahead.`,
@@ -1738,43 +1459,24 @@ export const MICROSOFT_CARDS=[
   {
     title:"Digital Product Design",
     content:"",
-    image:""
+    image:IMAGES.MICROSOFT_OFFER_1
   },
   {
     title:"UI/UX Design",
     content:"",
-    image:""
+    image:IMAGES.MICROSOFT_OFFER_2
   },
   {
     title:"Industrial & Mechanical Design",
     content:"",
-    image:""
+    image:IMAGES.MICROSOFT_OFFER_3
   },
   {
     title:"Service Experience Design",
     content:"",
-    image:""
+    image:IMAGES.MICROSOFT_OFFER_4
   },
-  {
-    title:"Visual Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Mobile App Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Web Design",
-    content:"",
-    image:""
-  },
-  {
-    title:"Digital Design Services",
-    content:"",
-    image:""
-  },
+ 
 ]
 
 export const MICROSOFT_MARKET_TRENDS={
@@ -1784,7 +1486,7 @@ export const MICROSOFT_MARKET_TRENDS={
   content:"We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
   subHead1:"MVP Approach to Design",
   subHead2:"Data-Driven Iteration",
-  image:"",
+  image:IMAGES.MICROSOFT_DIFFERENT,
   dataList:[],
 }
 
