@@ -17,7 +17,7 @@ const AccordianItem = ({ title, content, id, isOpen, setIsOpen }) => {
           <div className="accordion-top-icon">
             {!isOpen ? (
                 <>➕</>
-            //   <IMAGES.PLUSICON className="icon"/>
+              // <IMAGES.PLUSICON className="icon"/>
             ) : (
                 <>➖</>
             //   <IMAGES.MINUSICON className="icon"/>

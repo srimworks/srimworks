@@ -1,8 +1,22 @@
 import React from 'react'
+import { DESIGN_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
+import HeroSection from '../../reusable/HeroWithLeftImg';
+import RightAside from '../../reusable/rightAside';
+import Cards from '../../reusable/cards';
+import MarketReuse from '../../reusable/MarketReuse';
+import Accordian from '../../reusable/accordian';
 
 const Artificial = () => {
   return (
-    <div>Artificial</div>
+    <>
+    <HeroSection {...DESIGN_HERO} />
+    <RightAside {...DESIGN_OVERVIEW} />
+    {DESIGN_CARDS.map((item) => {
+      return <Cards {...item} />;
+    })}
+    <MarketReuse {...DESIGN_MARKET_TRENDS}/>
+    <Accordian/>
+  </>
   )
 }
 

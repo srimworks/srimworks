@@ -31,6 +31,8 @@ import Carrers from "./components/carrers";
 import Home from "./components/Home";
 import { REACH_OUT } from "./utils/constsnts";
 import ReachOut from "./reusable/reachOut";
+import Blogs from "./components/Blogs";
+import Reviews from "./reusable/Reviews";
 
 const AppRouter = () => {
   return (
@@ -88,41 +90,41 @@ export const Routes = createBrowserRouter([
       },
       {
         element:<HealthCare/>,
-        path:"health-care"
+        path:"/health-care"
       },
       {
         element:<MediaNEntertainment/>,
-        path:"media-entertainment"
+        path:"/media-entertainment"
       },
       {
         element:<Realestate/>,
-        path:"real-estate"
+        path:"/real-estate"
       },
       {
         element:<Retail/>,
-        path:"retail"
+        path:"/retail"
       },
 
       // offerings
       {
         element:<ChannelPart/>,
-        path:"channel-partners"
+        path:"/channel-partners"
       },
       {
         element:<Innovation/>,
-        path:"innovation &research"
+        path:"/innovation-research"
       },
       {
         element:<LeanProd/>,
-        path:"lean product-engineering"
+        path:"/lean product-engineering"
       },
       {
         element:<ProdDev/>,
-        path:"prod dev-lifecycle"
+        path:"/prod dev-lifecycle"
       },
       {
         element:<Professional/>,
-        path:"professional-services"
+        path:"/professional-services"
       },
 
       // practises
@@ -132,47 +134,48 @@ export const Routes = createBrowserRouter([
       },
       {
         element:<Design/>,
-        path:"design"
+        path:"/design"
       },
       {
         element:<Erp/>,
-        path:"erp-crm"
+        path:"/erp-crm"
       },
       {
         element:<BigData/>,
-        path:"big-data"
+        path:"/big-data"
       },
       {
         element:<Artificial/>,
-        path:"AI&ML"
+        path:"/AI&ML"
       },
       {
         element:<Cloud/>,
-        path:"cloud-computing"
+        path:"/cloud-computing"
       },
       {
         element:<OpenSource/>,
-        path:"open-source"
+        path:"/open-source"
       },
       {
         element:<Microsoft/>,
-        path:"microsoft-technologies"
+        path:"/microsoft-technologies"
       },
       // {
       //   element:<Carrers/>,
       //   path:""
       // },
+      // Resources
       {
-        element:"",
-        path:""
+        element:<Blogs/>,
+        path:"/blogs"
       },
       {
         element:"",
-        path:""
+        path:"/"
       },
       {
-        element:"",
-        path:""
+        element:<Reviews/>,
+        path:"/reviews"
       },
     ],
   },

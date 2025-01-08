@@ -6,11 +6,12 @@
     align-items: flex-start;
     /* gap: 24px; */
     align-self: stretch;
-    border-radius: 24px;
-    background: var(--light-color-10, rgba(166, 209, 201, 0.10));
+    border-radius: 16px;
+    background: #EBEBEB;
     height: fit-content;
     cursor: pointer;
   }
+  
   
   .accordion-top{
     display: flex;
@@ -20,7 +21,7 @@
   }
   
   .accordion-top-tittle{
-    color: var(--Light-Color, #A6D1C9);
+    color: #000;
     font-family: Satoshi;
     font-size: 20px;
     font-style: normal;
@@ -57,7 +58,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-  
   }
   
   .accordion-bottom{

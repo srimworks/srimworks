@@ -53,9 +53,9 @@ const Navbar = () => {
         <img src={IMAGES.CHEVRON_DOWN} alt="Chevron" className="chevron-image" />
         </button>
         <div className="dropdown">
-        <Link to="/innovation &research" className="dropdown-item">Innovation & Research Lab</Link>
-          <Link to="/prod dev-lifecycle" className="dropdown-item">Prod Dev Lifecycle</Link>
-          <Link to="/lean product-engineering" className="dropdown-item">Lean Product Engineering</Link>
+        <Link to="/innovation-research" className="dropdown-item">Innovation & Research Lab</Link>
+          <Link to="/prod-dev-lifecycle" className="dropdown-item">Prod Dev Lifecycle</Link>
+          <Link to="/lean-product-engineering" className="dropdown-item">Lean Product Engineering</Link>
           <Link to="/professional-services" className="dropdown-item">Professional Services</Link>
           <Link to="/channel-partners" className="dropdown-item">Channel Partners</Link>
         </div>

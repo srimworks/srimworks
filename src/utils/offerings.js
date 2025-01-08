@@ -10,6 +10,7 @@ export const INNOVATION_HERO={
   }
   
   export const INNOVATION_OVERVIEW={
+    heading:"",
     title:"Overview",
     image:"",
     desc:`Our Innovation & Research Lab is a thriving network that connects tech-first organizations worldwide. We host bootcamps, workshops, and meetups to facilitate dialogue among tech influencers, researchers, and innovation leaders. Here, groundbreaking ideas are transformed into actionable solutions, driving success for businesses and society alike.`,
@@ -48,6 +49,7 @@ export const LIFECYCLE_HERO={
   }
   
   export const LIFECYCLE_OVERVIEW={
+    heading:"",
     title:"Overview",
     image:"",
     desc:`At SRIM Works, we simplify complex production and development workflows to deliver high-quality products aligned with business goals. Our lifecycle services integrate cutting-edge tools, agile practices, and collaborative methodologies to accelerate delivery while ensuring scalability and efficiency.`,
@@ -85,6 +87,7 @@ export const LEAN_HERO={
   }
   
   export const LEAN_OVERVIEW={
+    heading:"",
     title:"Overview",
     image:"",
     desc:`At SRIM Works, Lean Product Engineering is at the heart of our development philosophy. By combining lean principles, customer-centric design, and agile methodologies, we deliver innovative products that align with business goals and market demands. Our approach minimizes waste, optimizes resources, and maximizes product value through continuous improvement and cross-functional collaboration.`,
@@ -121,6 +124,7 @@ export const PROFESSIONAL_HERO={
   }
   
   export const PROFESSIONAL_OVERVIEW={
+    heading:"",
     title:"Overview",
     image:"",
     desc:`SRIM Works provides professional services designed to drive operational excellence, enhance customer experiences, and optimize business outcomes. Our solutions encompass strategic consulting, implementation support, and managed services tailored to meet the unique needs of your organization. We focus on empowering businesses to adapt, innovate, and thrive in a competitive market.`,
@@ -149,13 +153,14 @@ export const PROFESSIONAL_HERO={
   }
 //   channel partners
 export const CHANNEL_HERO={
-    header:"Channel Partners",
+    heading:"Channel Partners",
     title:"Unlocking New Opportunities with Strategic Channel Partnerships",
     desc:`Empowering Growth Through Collaborative Partnerships. Together, We Create Value and Drive Innovation.`,
     btnText:"Get Started"
   }
   
   export const CHANNEL_OVERVIEW={
+    heading:"",
     title:"Overview",
     image:"",
     desc:`SRIM Works collaborates with trusted channel partners to deliver innovative solutions and drive shared success. By combining expertise, resources, and market insights, we create a win-win ecosystem that fosters growth, accelerates business outcomes, and empowers our clients with cutting-edge solutions.`,
