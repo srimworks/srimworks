@@ -8,7 +8,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const HealthCare = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...HEALTH_CARE_HERO}/>
     <RightAside {...HEALTH_CARE_OVERVIEW}/>
     {/*  */}
@@ -17,7 +17,7 @@ const HealthCare = () => {
 
     <LeftAside {...HEALTH_CARE_OPERATIONAL} />
     
-    </>
+    </div>
   )
 }
 

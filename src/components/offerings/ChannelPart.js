@@ -13,7 +13,7 @@ import ReachOut from "../../reusable/reachOut";
 
 const ChannelPart = () => {
   return (
-    <>
+    <div className='outlet-render'>
       <HeroSection {...CHANNEL_HERO} />
       <RightAside {...CHANNEL_OVERVIEW} />
 
@@ -21,7 +21,7 @@ const ChannelPart = () => {
       <RightAside {...CHANNEL_APPROACH} />
 
       <LeftAside {...CHANNEL_AREAS} />
-    </>
+    </div>
   );
 };
 

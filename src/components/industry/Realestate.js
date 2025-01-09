@@ -9,7 +9,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const Realestate = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...REAL_ESTATE_HERO}/>
     <RightAside {...REAL_ESTATE_OVERVIEW}/>
     {/*  */}
@@ -18,7 +18,7 @@ const Realestate = () => {
 
     <LeftAside {...REAL_ESTATE_AI} />
     
-    </>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const MediaNEntertainment = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...MEDIA_HERO}/>
     <RightAside {...MEDIA_OVERVIEW}/>
     {/*  */}
@@ -18,7 +18,7 @@ const MediaNEntertainment = () => {
 
     <LeftAside {...MEDIA_PERSONALIZED} />
     
-    </>
+    </div>
   )
 }
 

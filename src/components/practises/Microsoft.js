@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const Microsoft = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...MICROSOFT_HERO} />
     <RightAside {...MICROSOFT_OVERVIEW} />
     {MICROSOFT_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const Microsoft = () => {
     })}
     <MarketReuse {...MICROSOFT_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

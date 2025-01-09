@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const Cloud = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...CLOUD_HERO} />
     <RightAside {...CLOUD_OVERVIEW} />
     {CLOUD_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const Cloud = () => {
     })}
     <MarketReuse {...CLOUD_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

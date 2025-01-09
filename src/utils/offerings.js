@@ -160,7 +160,7 @@ export const PROFESSIONAL_HERO={
 //   channel partners
 export const CHANNEL_HERO={
     image:IMAGES.CHANNEL_HERO,
-    heading:"Channel Partners",
+    header:"Channel Partners",
     title:"Unlocking New Opportunities with Strategic Channel Partnerships",
     desc:`Empowering Growth Through Collaborative Partnerships. Together, We Create Value and Drive Innovation.`,
     btnText:"Get Started"

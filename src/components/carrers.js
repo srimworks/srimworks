@@ -8,13 +8,13 @@ import Location from '../reusable/Location'
 
 const Carrers = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...CARRERS_HERO}/>
     <RightAside {...CARRERS_OVERVIEW}/>
 {/* cards */}
 
 <Location/>
-    </>
+    </div>
   )
 }
 

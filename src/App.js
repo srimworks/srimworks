@@ -163,7 +163,7 @@ export const Routes = createBrowserRouter([
       },
       {
         element:<Carrers/>,
-        path:"/carrers"
+        path:"/careers"
       },
       // Resources
       {

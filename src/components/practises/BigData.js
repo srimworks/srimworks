@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const BigData = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...BIGDATA_ENGINEERING_HERO} />
     <RightAside {...BIGDATA_OVERVIEW} />
     {BIGDATA_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const BigData = () => {
     })}
     <MarketReuse {...BIGDATA_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

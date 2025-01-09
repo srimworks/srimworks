@@ -15,7 +15,7 @@ const AboutUs = () => {
   const data = ASIDE_HUMANITY[0];
 
   return (
-    <div>
+    <div className="outlet-render">
         <h1>About Us</h1>
         <HeroWithLeftImg {...ABOUT_HERO}/>
         <LeftAside {...data}/>

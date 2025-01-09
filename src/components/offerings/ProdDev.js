@@ -7,7 +7,7 @@ import ReachOut from '../../reusable/reachOut'
 
 const ProdDev = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...LIFECYCLE_HERO}/>
 <RightAside {...LIFECYCLE_OVERVIEW}/>
 {/*  */}
@@ -17,7 +17,7 @@ const ProdDev = () => {
 
 <LeftAside {...LIFECYCLE_DEPLOYMENT} />
 
-</>
+</div>
   )
 }
 
