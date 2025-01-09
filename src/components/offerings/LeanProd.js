@@ -7,7 +7,7 @@ import ReachOut from '../../reusable/reachOut'
 
 const LeanProd = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...LEAN_HERO}/>
 <RightAside {...LEAN_OVERVIEW}/>
 {/*  */}
@@ -17,7 +17,7 @@ const LeanProd = () => {
 
 <LeftAside {...LEAN_RESOURCE} />
 
-</>
+</div>
   )
 }
 

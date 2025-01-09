@@ -7,37 +7,67 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+    height: fit-content;
   }
-  
+  .hero-section-image{
+    width: 100%;
+    height: auto;
+  }
+
+
   .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    padding: 20px;
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    
   }
   
   .hero-content {
-    max-width: 400px; /* Restrict width for content */
+    max-width: 600px; /* Restrict width for content */
     text-align: left; /* Align text to the left */
     color: #fff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  
+  .hero-header {
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
   }
   
   .hero-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "Config Condensed";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    padding: 0;
+    margin: 0;
   }
   
   .hero-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
   }
   
   .hero-button {

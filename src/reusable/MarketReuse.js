@@ -1,27 +1,47 @@
-import React from 'react'
-import '../styles/marketreuse.css'
-const MarketReuse = ({heading, desc,title, content, image, subHead1,subHead2}) => {
+import React, { useState } from "react";
+import "../styles/marketreuse.css";
+
+const MarketReuse = ({
+  heading,
+  desc,
+  image,
+  accordian_content,
+  
+}) => {
+  const [openvalue,setId]=useState(0);
   return (
-    <div className='market-reuse'>
-   <h1 className='market-head'>
-{heading}
-   </h1>
-   <p className='market-desc'>{desc}</p>
-   <div className='market-aside'>
-    <div className='market-left'>
-        <h1>{title}</h1>
-        <p>{content}</p>
-        <div className='subhead'>
-            <h2>{subHead1}</h2>
-            <h2>{subHead2}</h2>
+    <div className="market-reuse">
+      <div className="market-resue-container">
+        <div>
+          <h1 className="market-head">{heading}</h1>
+          <p className="market-desc">{desc}</p>
         </div>
+        <div className="market-aside">
+          <div className="market-left">
+            {accordian_content.map((item)=>{
+              return ( <div className= "market-left-open-container" onClick={()=> setId(item.id)}>
+                <h1 className={ item.id==openvalue ?"market-left-heading" :"market-left-heading-close"}>{item.subHead}</h1>
+                <hr className= {item.id==openvalue ? "market-seperation-line": "market-seperation-line-close"} />
+                <p className={item.id==openvalue ? "market-left-content": "market-left-content-close"}>{item.content}</p>
+              </div> )
+
+            })
+            }
+            {/* <div className="market-left-open-container">
+              <h1 className="market-left-heading">{subHead1}</h1>
+              <hr className="market-seperation-line" />
+              <p className="market-left-content">{content1}</p>
+            </div>
+            <h2 className="market-left-heading">{subHead2}</h2>
+            <h2 className="market-left-heading">{subHead3}</h2>*/}
+          </div> 
+          <div className="market-right">
+            <img src={image} alt="img" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div className='market-right'>
-        <img src={image} alt="img"/>
-    </div>
-   </div>
-    </div>
-  )
-}
+  );
+};
 
 export default MarketReuse;

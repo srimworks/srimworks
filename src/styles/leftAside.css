@@ -2,25 +2,29 @@
   display: flex;
   flex-direction: row;
   max-width: 1300px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   gap: 64px;
   align-self: center;
-  padding: 64px 0px;  
-  margin-left: 32px;
-  margin-right: 32px;
+  padding: 128px 0px;
+  width: 100% ;
+}
+.overall-aside-container {
+  display: flex;
+  width: 100%;
+  background: #212121;
+  align-items: center;
+  justify-content: center;
 }
 .aside-container-left-image {
   display: flex;
   flex-direction: row;
   max-width: 1300px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   gap: 64px;
   align-self: center;
-  padding: 64px 0px;
-  margin-left: 32px;
-  margin-right: 32px;
+  padding: 128px 0px;
 }
 
 .aside-container-aside {
@@ -28,9 +32,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  height: 100%;
+  max-width: 600px;
+  
 }
-
+.aside-container-aside-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
 .aside-tag {
   margin: 0;
   padding: 0;
@@ -50,7 +62,7 @@
 .aside-tag-hr-2 {
   width: 36px;
   height: 0px;
-  border: 1px solid ;
+  border: 1px solid;
 }
 
 .aside-tag-heading {
@@ -67,78 +79,104 @@
 }
 
 .aside-heading {
-  align-self: stretch;
   color: #060606;
-  margin: 0;
-  padding: 0;
-  font-family: "Belgiano Serif";
+  font-family: "Config Condensed";
   font-size: 56px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 61.6px */
+  font-weight: 500;
+  line-height: normal;
   letter-spacing: -0.56px;
 }
-
-.aside-content {
-  align-self: stretch;
-  color: #060606;
-  margin: 0;
+.aside-heading-left {
+  color: #fff;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
   padding: 0;
-  font-family: Satoshi;
-  font-size: 20px;
+  margin: 0;
+}
+
+.aside-heading-overview {
+  color: #060606;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.aside-content {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.4px;
   white-space: pre-line;
 }
-
+.aside-content-left {
+  color: #e8ebed;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+.aside-content-overview {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .aside-container-holder {
   height: 100;
 }
 
-
-@media (max-width:1000px) {
-  .aside-tag-heading{
+@media (max-width: 1000px) {
+  .aside-tag-heading {
     font-size: 20px;
-
   }
-  .aside-heading{
+  .aside-heading {
     font-size: 40px;
   }
 
-  .aside-content{
+  .aside-content {
     font-size: 18px;
   }
 
-
-  .aside-container img{
+  .aside-container img {
     width: 300px;
     height: 300px;
   }
-  .aside-container-left-image img{
+  .aside-container-left-image img {
     width: 300px;
     height: 300px;
   }
 }
 
-@media (max-width:600px) {
-  .aside-container{
+@media (max-width: 600px) {
+  .aside-container {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
-  .aside-container-left-image{
+  .aside-container-left-image {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
 
-@media (max-width:350px) {
-  .aside-container{
+@media (max-width: 350px) {
+  .aside-container {
     margin: 0;
     width: 90%;
   }
-  
 }

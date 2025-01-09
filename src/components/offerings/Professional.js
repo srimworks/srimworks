@@ -8,7 +8,7 @@ import ReachOut from '../../reusable/reachOut'
 
 const Professional = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...PROFESSIONAL_HERO}/>
 <RightAside {...PROFESSIONAL_OVERVIEW}/>
 {/*  */}
@@ -18,7 +18,7 @@ const Professional = () => {
 
 <LeftAside {...PROFESSIONAL_SERVICES} />
 
-</>
+</div>
   )
 }
 

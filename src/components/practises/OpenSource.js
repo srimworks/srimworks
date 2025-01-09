@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const OpenSource = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...OPENSOURCE_HERO} />
     <RightAside {...OPENSOURCE_OVERVIEW} />
     {OPENSOURCE_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const OpenSource = () => {
     })}
     <MarketReuse {...OPENSOURCE_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

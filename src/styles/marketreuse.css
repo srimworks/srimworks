@@ -1,59 +1,121 @@
-.market-reuse{
-display: flex;
-max-width: 1300px;
-padding: 128px 64px;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
+.market-reuse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 128px 64px;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+}
+.market-resue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  gap: 64px;
+}
+.market-head {
+  color: #fff;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  padding: 0;
+  margin: 0;
 }
 
-.market-head{
-    color: #FFF;
-/* Desktop/Heading/56 */
-font-family: "Config Condensed";
-font-size: 56px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.56px;
+.market-desc {
+  color: #fff;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  max-width: 764px;
+}
+.market-aside {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.market-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+  max-width: 475px;
 }
 
-.market-desc{
-    color: #FFF;
-
-/* Desktop/Body/18 */
-font-family: "SF Pro Display";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.market-aside{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 57px;
-flex: 1 0 0;
-}
-.market-left{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+.market-right {
+  width: 448px;
+  height: 310px;
+  flex-shrink: 0;
 }
 
-.market-right{
-    width: 448px;
-    height: 310px;
-    flex-shrink: 0;
+.subhead {
+  display: flex;
+  height: 29px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
-.subhead{
-display: flex;
-height: 29px;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+.market-left-heading {
+  color: #fff;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  
+}
+
+.market-left-content {
+  color: #fff;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.market-seperation-line {
+  border: 1px solid #f1c336;
+  width: 100%;
+}
+
+.market-left-open-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+.market-left-heading-close {
+  color: #828282;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.market-seperation-line-close {
+  display: none;
+}
+.market-left-content-close {
+  display: none;
 }

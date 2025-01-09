@@ -9,7 +9,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const BFSI = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...BFSI_HERO}/>
     <RightAside {...BFSI_OVERVIEW}/>
     {/*  */}
@@ -18,7 +18,7 @@ const BFSI = () => {
 
     <LeftAside {...BFSI_HELP} />
     
-    </>
+    </div>
   )
 }
 

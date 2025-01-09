@@ -14,7 +14,7 @@ import Accordian from "../../reusable/accordian";
 
 const Design = () => {
   return (
-    <>
+    <div className="outlet-render">
       <HeroSection {...DESIGN_HERO} />
       <RightAside {...DESIGN_OVERVIEW} />
       {DESIGN_CARDS.map((item) => {
@@ -22,7 +22,7 @@ const Design = () => {
       })}
       <MarketReuse {...DESIGN_MARKET_TRENDS}/>
       <Accordian/>
-    </>
+    </div>
   );
 };
 

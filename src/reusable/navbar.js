@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link to="/about-us" className="dropdown-item">About US</Link>
           <Link to="/leadership-team" className="dropdown-item">Leadership Team</Link>
           <Link to="/pressroom" className="dropdown-item">Press Room</Link>
-          <Link to="/carrers" className="dropdown-item">Carrers </Link>
+          <Link to="/careers" className="dropdown-item">Carrers </Link>
         </div>
       </div>
 
@@ -54,8 +54,8 @@ const Navbar = () => {
         </button>
         <div className="dropdown">
         <Link to="/innovation-research" className="dropdown-item">Innovation & Research Lab</Link>
-          <Link to="/prod-dev-lifecycle" className="dropdown-item">Prod Dev Lifecycle</Link>
-          <Link to="/lean-product-engineering" className="dropdown-item">Lean Product Engineering</Link>
+          <Link to="/prod dev-lifecycle" className="dropdown-item">Prod Dev Lifecycle</Link>
+          <Link to="/lean product-engineering" className="dropdown-item">Lean Product Engineering</Link>
           <Link to="/professional-services" className="dropdown-item">Professional Services</Link>
           <Link to="/channel-partners" className="dropdown-item">Channel Partners</Link>
         </div>
@@ -91,14 +91,14 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-item">
-        <Link to="/carrers"><button className="nav-button">Careers</button></Link>
+        <Link to="/careers" className='link'><button className="nav-button">Careers</button></Link>
 
       </div>
     </div>
 
     {/* <!-- Right Button --> */}
     <div className="navbar-button">
-      <Link to="/contact-us"><button className="primary-button">Schedule a Call</button></Link>
+      <Link to="/contact-us" className='link'><button className="primary-button">Schedule a Call</button></Link>
     </div>
   </div>
 </nav>

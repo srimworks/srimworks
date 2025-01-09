@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const Erp = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...ERP_HERO} />
     <RightAside {...ERP_OVERVIEW} />
     {ERP_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const Erp = () => {
     })}
     <MarketReuse {...ERP_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

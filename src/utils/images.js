@@ -234,6 +234,11 @@ import PROFILE from '../imagess/common/ProfileImage.png'
 import REVIEWS_QUOTES from '../imagess/common/ReviewsQuotes.svg'
 import RIGHT_ARROW_DARK from '../imagess/common/RightArrowDark.svg'
 import VERTICAL_LINE from '../imagess/common/VerticalLine.svg'
+import FOOTER_ICON from '../images/Footer/Footer Logo Icon.svg'
+import FACEBOOK_ICON from '../images/Footer/Facebook.svg'
+import TWITTER_ICON from '../images/Footer/Twitter.svg'
+import LINKEDIN_ICON from '../images/Footer/Linkedin.svg'
+import INSTAGRAM_ICON from '../images/Footer/Instagram.svg'
 
 
 
@@ -446,6 +451,12 @@ export const IMAGES={
     WHO_WE_ABOUTUS_SECTION_2,
     WHO_WE_PRESS_ARTICLES,
     WHO_WE_PRESS_HERO,
+    FOOTER_ICON,
+    FACEBOOK_ICON,
+    TWITTER_ICON,
+    LINKEDIN_ICON,
+    INSTAGRAM_ICON,
+
     
 
 

@@ -8,7 +8,7 @@ import Accordian from '../../reusable/accordian';
 
 const Digital = () => {
   return (
-    <>
+    <div className="outlet-render">
     <HeroSection {...DIGITAL_ENGINEERING_HERO} />
     <RightAside {...DIGITAL_OVERVIEW} />
     {DIGITAL_CARDS.map((item) => {
@@ -16,7 +16,7 @@ const Digital = () => {
     })}
     <MarketReuse {...DIGITAL_MARKET_TRENDS}/>
     <Accordian/>
-  </>
+  </div>
   )
 }
 

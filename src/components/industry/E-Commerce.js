@@ -9,7 +9,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const ECommerce = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...E_COMMERCE_HERO}/>
     <RightAside {...E_COMMERCE_OVERVIEW}/>
     {/*  */}
@@ -18,7 +18,7 @@ const ECommerce = () => {
 
     <LeftAside {...E_COMMERCE_SMART_SUPPLY} />
     
-    </>
+    </div>
   )
 }
 

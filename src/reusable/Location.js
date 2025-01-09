@@ -16,7 +16,7 @@ const Location = () => {
       {/* Image */}
       <div className="image-container">
         <img
-          src={IMAGES.LOCATION_MAP}
+          src={IMAGES.MAP}
           alt="Location"
           className="image"
         />

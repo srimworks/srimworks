@@ -9,7 +9,7 @@ import MarketReuse from '../../reusable/MarketReuse'
 
 const FMCG = () => {
   return (
-    <>
+    <div className='outlet-render'>
     <HeroSection {...FMCG_HERO}/>
     <RightAside {...FMCG_OVERVIEW}/>
     {/*  */}
@@ -18,7 +18,7 @@ const FMCG = () => {
 
     <LeftAside {...FMCG_DATA} />
     
-    </>
+    </div>
   )
 }
 
