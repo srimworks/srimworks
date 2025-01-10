@@ -200,7 +200,7 @@ import CAREERS_OVERVIEW from '../imagess/Careers/Overview Section.png'
 import RESOURCES_BLOGS_HERO from '../imagess/Resources Page/Blogs & Case Studies/Hero Section.png'
 import RESOURCES_REVIEW_HERO from '../imagess/Resources Page/Submit Your Review/Hero Section.png'
 
-import SCHEDULE_MEETING_HERO from '../imagess/Schedule a meeting/Hero Section.png'
+import SCHEDULE_MEETING_HERO from '../imagess/Schedule a meeting/scheduleHero.png'
 
 import WHO_WE_ABOUTUS_CONTACT from '../imagess/Who we are/About Us page/Contact Section.png'
 import WHO_WE_ABOUTUS_HERO from '../imagess/Who we are/About Us page/Hero Section image.png'

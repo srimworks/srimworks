@@ -122,7 +122,7 @@ export const CONTACT_HERO = {
   title: "Contact Us",
   desc: "",
   btnText: "",
-  image: IMAGES.HERO_2,
+  image: IMAGES.SCHEDULE_MEETING_HERO,
 };
 
 // about

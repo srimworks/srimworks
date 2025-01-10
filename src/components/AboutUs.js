@@ -18,8 +18,8 @@ const AboutUs = () => {
     <div className="outlet-render">
         <h1>About Us</h1>
         <HeroWithLeftImg {...ABOUT_HERO}/>
-        <LeftAside {...data}/>
-        <RightAside {...data}/>
+        {/* <LeftAside {...data}/> */}
+        {/* <RightAside {...data}/> */}
         <CoreValues/>
         <MarketReuse {...ABOUT_MARKET_TRENDS}/>
         <Location/>
