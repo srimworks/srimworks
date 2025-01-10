@@ -67,6 +67,66 @@ import { IMAGES } from "./images";
 //     }
 // }]
 
+
+
+// navbar
+
+export const NavItems = [
+  {
+    title: "Who We Are",
+    links: [
+      { to: "/about-us", label: "About US" },
+      { to: "", label: "Leadership Team" },
+      { to: "/pressroom", label: "Press Room" },
+      { to: "/careers", label: "Careers" },
+    ],
+  },
+  {
+    title: "Practices",
+    links: [
+      { to: "/design", label: "Design" },
+      { to: "/digital-engineering", label: "Digital Engineering" },
+      { to: "/big-data", label: "Big Data Analytics" },
+      { to: "/AI&ML", label: "AI & ML" },
+      { to: "/open-source", label: "Open Source Technologies" },
+      { to: "/microsoft-technologies", label: "Microsoft Technologies" },
+      { to: "/cloud-computing", label: "Cloud Computing" },
+      { to: "/erp-crm", label: "ERP and CRM Solutions" },
+    ],
+  },
+  {
+    title: "Offerings",
+    links: [
+      { to: "/innovation-research", label: "Innovation & Research Lab" },
+      { to: "/prod dev-lifecycle", label: "Prod Dev Lifecycle" },
+      { to: "/lean product-engineering", label: "Lean Product Engineering" },
+      { to: "/professional-services", label: "Professional Services" },
+      { to: "/channel-partners", label: "Channel Partners" },
+    ],
+  },
+{
+  title:"Industries",
+  links: [
+    { to: "/marine", label: "Marine" },
+    { to: "/logistics", label: "Logistics" },
+    { to: "/real-estate", label: "Real Estate" },
+    { to: "/retail", label: "Retail" },
+    { to: "/e-commerce", label: "ECommerce" },
+    { to: "/media-entertainment", label: "Media & Entertainment" },
+    { to: "/fmcg", label: "FMCG" },
+    { to: "/", label: "Health Care" },
+    { to: "/bfsi", label: "BFSI" },
+  ],
+},{
+  title:"Resources",
+  links:[
+    {to:"/blogs", label:"Blogs"},
+    {to:"/", label:"Case Studies"},
+    {to:"/", label:"Submit Your Reviews"},
+  ]
+}
+];
+
 export const ASIDE_HUMANITY = [
   {
     image: IMAGES.OFFER_1,
