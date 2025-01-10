@@ -39,7 +39,7 @@ const Navbar = () => {
                   <Link to="/about-us" className="dropdown-item">
                     About US
                   </Link>
-                  <Link to="/leadership-team" className="dropdown-item">
+                  <Link to="" className="dropdown-item">
                     Leadership Team
                   </Link>
                   <Link to="/pressroom" className="dropdown-item">

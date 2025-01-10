@@ -64,10 +64,6 @@ export const Routes = createBrowserRouter([
         element: <PressRoom />,
         path: "/pressroom",
       },
-      {
-        element: <Carrers />,
-        path: "/carrers",
-      },
             // industry
       {
         element:<Marine/>,
@@ -117,11 +113,11 @@ export const Routes = createBrowserRouter([
       },
       {
         element:<LeanProd/>,
-        path:"/lean product-engineering"
+        path:"/lean-product-engineering"
       },
       {
         element:<ProdDev/>,
-        path:"/prod dev-lifecycle"
+        path:"/prod-dev-lifecycle"
       },
       {
         element:<Professional/>,
