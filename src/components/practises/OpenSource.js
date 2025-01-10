@@ -11,9 +11,17 @@ const OpenSource = () => {
     <div className="outlet-render">
     <HeroSection {...OPENSOURCE_HERO} />
     <RightAside {...OPENSOURCE_OVERVIEW} />
-    {OPENSOURCE_CARDS.map((item) => {
-      return <Cards {...item} />;
-    })}
+    <div className="what-offers-section">
+      <div className="what-offers-top">
+        <p className="what-offers-tag">SRIM Works Offer</p>
+        <h1 className="what-offers-heading">What We Offers</h1>
+      </div>
+      <div className="practices-cards">
+      {OPENSOURCE_CARDS.map((item) => {
+        return <Cards {...item} />;
+      })}
+      </div>
+      </div>
     <MarketReuse {...OPENSOURCE_MARKET_TRENDS}/>
     <Accordian/>
   </div>

@@ -1011,7 +1011,10 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const DESIGN_CARDS = [
   {
     title: "Digital Product Design",
-    content: "",
+    content: `Transform groundbreaking ideas into software solutions tailored to user needs, business goals, and technological possibilities.
+We focus on creating future-proof, scalable products that drive innovation and enhance operational efficiency.
+From discovery to deployment, our designs align with your vision to deliver tangible results.
+Empower your business with innovative solutions that solve problems and create new opportunities.`,
     image: IMAGES.DESIGN_OFFER_1,
   },
   {

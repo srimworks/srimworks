@@ -16,19 +16,16 @@ const AccordianItem = ({ title, content, id, isOpen, setIsOpen }) => {
           <h1 className="accordion-top-tittle">{title}</h1>
           <div className="accordion-top-icon">
             {!isOpen ? (
-                <>➕</>
-              // <IMAGES.PLUSICON className="icon"/>
+                < img src={IMAGES.PLUS_ICON} />
             ) : (
-                <>➖</>
-            //   <IMAGES.MINUSICON className="icon"/>
+              < img src={IMAGES.MINUS_ICON} />
             )}
           </div>
         </div>
         {isOpen &&
-        <div className="accordion-content">
-         <hr className="accordion-middle" />
+        
         <p className="accordion-bottom">{isOpen && <>{content}</>}</p>
-        </div>}
+       }
       </div>
     </>
     // {/* </div> */}

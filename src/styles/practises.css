@@ -1,0 +1,46 @@
+.what-offers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  justify-content: center;
+  padding-bottom: 128px;
+}
+
+.what-offers-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.what-offers-tag {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.what-offers-heading {
+  color: #060606;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+.practices-cards {
+  display: flex;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}

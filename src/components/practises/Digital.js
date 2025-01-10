@@ -11,9 +11,17 @@ const Digital = () => {
     <div className="outlet-render">
     <HeroSection {...DIGITAL_ENGINEERING_HERO} />
     <RightAside {...DIGITAL_OVERVIEW} />
-    {DIGITAL_CARDS.map((item) => {
-      return <Cards {...item} />;
-    })}
+    <div className="what-offers-section">
+      <div className="what-offers-top">
+        <p className="what-offers-tag">SRIM Works Offer</p>
+        <h1 className="what-offers-heading">What We Offers</h1>
+      </div>
+      <div className="practices-cards">
+      {DIGITAL_CARDS.map((item) => {
+        return <Cards {...item} />;
+      })}
+      </div>
+      </div>
     <MarketReuse {...DIGITAL_MARKET_TRENDS}/>
     <Accordian/>
   </div>

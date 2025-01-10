@@ -1,106 +1,250 @@
 /* Get In Touch */
 
+.get-in-touch-section {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0px;
+}
 
-.get-in-touch-section{
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 64px 0px;
-  }
+.l-top-tag {
+  color: #3e4143;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.l-top-heading {
+  color: #1c1d1f;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  max-width: 310px;
+}
+.l-top-content {
+  color: #3e4143;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.get-in-touch-l-bottom {
+  display: flex;
+  width: 337px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+#l-bottom-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+#l-bottom-container-text {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: pre-line;
+}
+.get-in-touch-section-left {
+  display: flex;
+  width: 457px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+}
+
+.get-in-touch-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.get-in-touch-social-media {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.get-in-touch-body {
+  color: var(--Light-Color, #a6d1c9);
+
+  /* Desktop/Body Text 18 */
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  padding: 0;
+  margin: 0;
+}
+
+.get-in-touch-section-right {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: #EBEBEB;
+  display: flex;
+  padding: 32px 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.input {
+  min-width: 250px;
+  max-width: 607px;
+  display: flex;
+  padding: 8px 0px;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border: none;
+  border-bottom: 1px solid var(--Light-Color, #a6d1c9);
+  background-color: transparent;
+  color: var(--Light-Color, #a6d1c9);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+#input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+#input-label {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+#row{
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+
+#input {
+  display: flex;
+  height: fit-content;
+  max-width: 750px;
+  padding: 16px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #54585b;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: auto;
+}
+
+#input:focus {
+  outline: none;
+}
+
+.check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
   
-  
-  .get-in-touch-section-left{
-    display: flex;
-    width: 379px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    align-self: stretch;
-  }
-  
-  .get-in-touch-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
-  }
-  
-  .get-in-touch-social-media{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-  
-  
-  .get-in-touch-body{
-    color: var(--Light-Color, #A6D1C9);
-  
-    /* Desktop/Body Text 18 */
-    font-family: Satoshi;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .get-in-touch-section-right{
-    display: flex;
-    width: 607px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 64px;
-  }
-  
-  .form{
-    display: flex;
-    width: 607px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 64px;
-  }
-  
-  .form-grid{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-  }
-  
-  .input{
-    min-width: 250px;
-    max-width: 607px;
-    display: flex;
-    padding: 8px 0px;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-    border: none;
-    border-bottom: 1px solid var(--Light-Color, #A6D1C9);
-    background-color: transparent;
-    color: var(--Light-Color, #A6D1C9);
-    font-family: Satoshi;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.32px;
-  }
-  
-  .input:focus {
-    background-color: transparent;
-    outline: none;
-  }
+}
+#Accept_Privacy{
+  accent-color: #060606;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.check-text {
+  color: #54585b;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.captcha-div{
+  border: 1.55px solid #060606;
+  padding: 8px;
+}
+.captcha{
+  color:  #060606;
+  font-family: Satoshi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  transform: matrix3d( 
+    0.6, 0.1, 0.7, 0, 
+    -0.5, 0.8, 0.1, 0, 
+    -0.6, -0.5, 0.5, 0, 
+    0, 0, 0, 1 
+);
+  margin: 0;
+
+}
+.c-div{
+  display: flex;
+  gap: 8px;
+
+}
+#refresh{
+  cursor: pointer;
+}
+#refresh:active{
+  transition: transform 0.3s;
+  transform: rotate(45deg);
+}
+
+.privacy{
+  color: #54585B;
+}

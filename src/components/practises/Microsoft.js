@@ -11,9 +11,17 @@ const Microsoft = () => {
     <div className="outlet-render">
     <HeroSection {...MICROSOFT_HERO} />
     <RightAside {...MICROSOFT_OVERVIEW} />
-    {MICROSOFT_CARDS.map((item) => {
-      return <Cards {...item} />;
-    })}
+    <div className="what-offers-section">
+      <div className="what-offers-top">
+        <p className="what-offers-tag">SRIM Works Offer</p>
+        <h1 className="what-offers-heading">What We Offers</h1>
+      </div>
+      <div className="practices-cards">
+      {MICROSOFT_CARDS.map((item) => {
+        return <Cards {...item} />;
+      })}
+      </div>
+      </div>
     <MarketReuse {...MICROSOFT_MARKET_TRENDS}/>
     <Accordian/>
   </div>
