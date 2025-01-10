@@ -239,6 +239,12 @@ import FACEBOOK_ICON from '../images/Footer/Facebook.svg'
 import TWITTER_ICON from '../images/Footer/Twitter.svg'
 import LINKEDIN_ICON from '../images/Footer/Linkedin.svg'
 import INSTAGRAM_ICON from '../images/Footer/Instagram.svg'
+import PLUS_ICON from '../images/Practices/PlusIcon.svg'
+import MINUS_ICON from '../images/Practices/MinusIcon.svg'
+import CALL_ICON from '../imagess/Contact/callIcon.svg'
+import LOCATION_ICON from '../imagess/Contact/location_Icon.svg'
+import MAIL_ICON from '../imagess/Contact/mailIcon.svg'
+import REFRESH_ICON from '../imagess/Contact/RefreshIcon.svg'
 
 
 
@@ -456,6 +462,12 @@ export const IMAGES={
     TWITTER_ICON,
     LINKEDIN_ICON,
     INSTAGRAM_ICON,
+    PLUS_ICON,
+    MINUS_ICON,
+    LOCATION_ICON,
+    MAIL_ICON,
+    CALL_ICON,
+    REFRESH_ICON,
 
     
 

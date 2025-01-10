@@ -10,7 +10,11 @@ const Accordian = () => {
     <>
       <>
         <div className="faq-section">
-          <div className="faq-section-right">
+          <div className="faq-section-top">
+            <h1 className="faq-section-heading">How We Do It</h1>
+            <p className="faq-section-body">We follow a structured process, starting with in-depth discovery to identify key problems, defining clear objectives, and prototyping innovative solutions. Through evaluation and iterative refinement, we develop exceptional products that deliver value and meet business goals.</p>
+          </div>
+          <div className="faq-section-bottom">
             {ACCORDIAN_LIST?.map((item, index, self) => {
               return (
                 <AccordianItem

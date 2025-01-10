@@ -4,9 +4,12 @@ const Cards = ({postedon,title, image, content}) => {
   return (
     <div className='card-section'>
       {/* {postedon.length > 0 && <h1>{postedon}</h1>} */}
-        <img src={image} alt=""/>
+      <div className='overlay'>
         <h1 className='card-heading'>{title}</h1>
         <p className='card-content'>{content}</p>
+        </div>
+        <img src={image} alt={title} className='card-image'/>
+        
 
     </div>
   )
