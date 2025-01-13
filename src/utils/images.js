@@ -208,6 +208,9 @@ import WHO_WE_ABOUTUS_LEADERSHIP_1 from '../imagess/Who we are/About Us page/Lea
 import WHO_WE_ABOUTUS_LEADERSHIP_2 from '../imagess/Who we are/About Us page/Leader Ship Sunil.png'
 import WHO_WE_ABOUTUS_SECTION_1 from '../imagess/Who we are/About Us page/Sectin 1 Image.png'
 import WHO_WE_ABOUTUS_SECTION_2 from '../imagess/Who we are/About Us page/Section 3 Image.png'
+import WHO_WE_ABOUTUS_GLOBAL_ICON from '../imagess/Who we are/About Us page/Global_Icon.svg'
+import WHO_WE_ABOUTUS_INNOVATION_ICON from '../imagess/Who we are/About Us page/InnovationIcon.svg'
+import WHO_WE_ABOUTUS_CLIENT_ICON from '../imagess/Who we are/About Us page/consumer-centricIcon.svg'
 
 import WHO_WE_PRESS_ARTICLES from '../imagess/Who we are/Press Room page/Articles Image.png'
 import WHO_WE_PRESS_HERO from '../imagess/Who we are/Press Room page/Hero Section.png'
@@ -458,6 +461,9 @@ export const IMAGES={
     WHO_WE_ABOUTUS_LEADERSHIP_2,
     WHO_WE_ABOUTUS_SECTION_1,
     WHO_WE_ABOUTUS_SECTION_2,
+    WHO_WE_ABOUTUS_GLOBAL_ICON,
+    WHO_WE_ABOUTUS_INNOVATION_ICON,
+    WHO_WE_ABOUTUS_CLIENT_ICON,
     WHO_WE_PRESS_ARTICLES,
     WHO_WE_PRESS_HERO,
     FOOTER_ICON,
