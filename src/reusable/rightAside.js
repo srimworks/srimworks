@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/leftAside.css'
 
-const RightAside = ({ image, heading, title, desc ,dataList}) => {
+const RightAside = ({ image, heading,header, title, desc ,dataList}) => {
 
   return (
     <div className="aside-container">
@@ -9,7 +9,7 @@ const RightAside = ({ image, heading, title, desc ,dataList}) => {
         {heading.length > 0 && (
           <div className="aside-tag">
             {/* <hr className="aside-tag-hr" /> */}
-            <h2 className="aside-tag-heading">{heading}</h2>
+            <h2 className="aside-tag-heading">{heading || header}</h2>
           </div>
         )}
         <h1 className={title=='Overview' ?"aside-heading-overview"  : "aside-heading"}>{title}</h1>

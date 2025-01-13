@@ -9,10 +9,10 @@ const CoreValues = () => {
       <h1 className="hero-inclined-image-heading">The Heart of SRIM Works </h1>
     <div className="cards">
       {CARDS_DATA.map((item, index) => {
-        const { id, heading, content } = item;
+        const { id,icon, heading, content } = item;
         return (
           <div className="why-choose-us-card" key={id}>
-            <img src="" alt=""/>
+            <img src={icon} alt=""/>
             <h1 className="why-choose-us-card-heading">{heading}</h1>
             <p className="why-choose-us-card-body">"{content}"</p>
           </div>

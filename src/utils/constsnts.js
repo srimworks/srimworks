@@ -114,7 +114,7 @@ export const NavItems = [
     { to: "/e-commerce", label: "ECommerce" },
     { to: "/media-entertainment", label: "Media & Entertainment" },
     { to: "/fmcg", label: "FMCG" },
-    { to: "/", label: "Health Care" },
+    { to: "/health-care", label: "Health Care" },
     { to: "/bfsi", label: "BFSI" },
   ],
 },{
@@ -122,7 +122,7 @@ export const NavItems = [
   links:[
     {to:"/blogs", label:"Blogs"},
     {to:"/", label:"Case Studies"},
-    {to:"/", label:"Submit Your Reviews"},
+    {to:"/contact-us", label:"Submit Your Reviews"},
   ]
 }
 ];
@@ -187,40 +187,46 @@ export const CONTACT_HERO = {
 
 // about
 export const ABOUT_HERO = {
-  header: "Marine",
-  title: "Empowering the Marine Industry with Digital Transformation",
-  desc: "Transform marine operations with data-driven insights, automation, and next-gen technologies to enhance efficiency, safety, and sustainability.",
+  header: "SRIM WORKS",
+  title: "Driving Global Innovation with Cutting-Edge Technology",
+  desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
   btnText: "Get Started",
-  image: IMAGES.HERO_2,
+  image: IMAGES.WHO_WE_ABOUTUS_HERO,
 };
 
+
+
 export const ABOUT_MARKET_TRENDS = {
-  heading: "What Makes SRIM Works Different",
+  heading: "Our Philosophy",
   desc: "At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
-  title: "Human-Centered Discovery",
+  title: "Design Thinking: Understand and Innovate",
   content:
-    "We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
+    "We begin every project by deeply understanding the problem, empathizing with stakeholders, and exploring innovative possibilities to ensure we solve the right challenges.",
   subHead1: "MVP Approach to Design",
   subHead2: "Data-Driven Iteration",
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
+      subHead: "Lean Startup: Build Smart, Build Right",
       content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
+      subHead: "Agile & DevOps: Continuous Value Creation",
       content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
-    },
-    {
-      id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
     },
   ],
   image: "",
   dataList: [],
+};
+
+// press room
+export const PRESS_HERO = {
+  header: "Press Room",
+  title: "Explore SRIM Works’ news, achievements, and updates.",
+  desc: "Welcome to the SRIM Works Press Room, your gateway to the latest news, insights, and achievements from our global journey in technology innovation. Explore our milestones, industry recognitions, and the transformative solutions that are making headlines worldwide.",
+  btnText: "",
+  image: IMAGES.WHO_WE_PRESS_HERO,
 };
 
 // industries
@@ -808,7 +814,7 @@ export const HEALTH_CARE_OPERATIONAL = {
 // carrers
 
 export const CARRERS_HERO = {
-  btnText: "Get Started",
+  btnText: "",
   image: IMAGES.CAREERS_HERO,
   heading: "Carrers",
   title: "Join Our Team, Shape the Future",
@@ -1027,18 +1033,21 @@ export const ABOUT_PHILOSOPY = {
 export const CARDS_DATA = [
   {
     id: 1,
-    heading: "Proven Results Not Theories! ",
-    content: `We’ve helped brands go from unknown to market leaders. Every strategy we craft is designed for one purpose—delivering growth that’s visible on your bottom line.`,
+    icon:IMAGES.IDEA,
+    heading: "Innovation ",
+    content: `We continuously push boundaries, exploring new technologies to create future-ready solutions.`,
   },
   {
     id: 2,
-    heading: "Premium Service for Premium Outcomes",
-    content: `Our higher pricing isn’t an expense; it’s an investment. When you choose SRIM Media, you’re choosing quality over quantity, personalized attention, and a team that cares as much about your success as you do.`,
+    icon:IMAGES.QUALITY,
+    heading: "Excellence",
+    content: `We commit to delivering high-quality, efficient solutions that meet and exceed our clients’ expectations.`,
   },
   {
     id: 3,
-    heading: "One Team, Many Experts",
-    content: ` From Google Ads specialists to creative strategists, our team is a diverse blend of specialists who come together to create powerful campaigns. Each expert brings something different to the table, ensuring no stone is left unturned in your success.`,
+    icon:IMAGES.SYS_INTEGRATION,
+    heading: "Integrity",
+    content: `  We build trust through transparency, honesty, and ethical business practices.`,
   },
 ];
 

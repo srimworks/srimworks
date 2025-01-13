@@ -245,6 +245,9 @@ import CALL_ICON from '../imagess/Contact/callIcon.svg'
 import LOCATION_ICON from '../imagess/Contact/location_Icon.svg'
 import MAIL_ICON from '../imagess/Contact/mailIcon.svg'
 import REFRESH_ICON from '../imagess/Contact/RefreshIcon.svg'
+import SYS_INTEGRATION from '../imagess/common/system-integration.svg'
+import QUALITY from '../imagess/common/quality.svg'
+import IDEA from '../imagess/common/idea.svg'
 
 
 
@@ -468,6 +471,9 @@ export const IMAGES={
     MAIL_ICON,
     CALL_ICON,
     REFRESH_ICON,
+    SYS_INTEGRATION,
+    QUALITY,
+    IDEA
 
     
 
