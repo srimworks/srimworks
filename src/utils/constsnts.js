@@ -116,6 +116,7 @@ export const NavItems = [
     { to: "/fmcg", label: "FMCG" },
     { to: "/health-care", label: "Health Care" },
     { to: "/bfsi", label: "BFSI" },
+    { to: "/fintech", label: "Fintech" },
   ],
 },{
   title:"Resources",
@@ -206,12 +207,17 @@ export const ABOUT_MARKET_TRENDS = {
   subHead2: "Data-Driven Iteration",
   accordian_content: [
     {
-      id: 0,
+id:0,
+subHead:"Design Thinking: Understand and Innovate",
+content:`We begin every project by deeply understanding the problem, empathizing with stakeholders, and exploring innovative possibilities to ensure we solve the right challenges.`
+    },
+    {
+      id: 1,
       subHead: "Lean Startup: Build Smart, Build Right",
       content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
     },
     {
-      id: 1,
+      id: 2,
       subHead: "Agile & DevOps: Continuous Value Creation",
       content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
     },
@@ -329,18 +335,33 @@ export const BFSI_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Open Banking",
+      content: `Open Banking enables seamless integration between banks, third-party services, and customers, offering agility and portability in transactions.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Chatbots and Robo-Advisors",
+      content: `Intelligent chatbots and BFSI-specific robo-advisors simplify tasks like insurance purchase, investment advice, and customer service.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Digitization and Automation",
+      content: `Digitization improves efficiency, customer experiences, and productivity while reducing costs. Automation enhances the accuracy and speed of digitized processes.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   dataList: [],
@@ -403,18 +424,33 @@ export const LOGISTICS_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Automation in Logistics",
+      content: `Automation is transforming logistics, from warehouse robotics to self-driving delivery vehicles, ensuring faster and more accurate operations.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Predictive Analytics",
+      content: `AI and machine learning enable accurate demand forecasting, route optimization, and inventory management for enhanced operational efficiency.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Sustainability Initiatives",
+      content: `Green logistics solutions, including electric vehicles, alternative fuels, and eco-friendly packaging, are helping organizations reduce their environmental impact.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.LOGISTICS_MARKET_TRENDS,
@@ -466,18 +502,33 @@ export const REAL_ESTATE_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Virtual Reality (VR) in Real Estate",
+      content: `VR is revolutionizing property viewing, offering immersive virtual tours that save time and enhance customer experiences.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Smart Buildings",
+      content: `IoT-enabled smart buildings are becoming the norm, with features like energy optimization, automated security, and predictive maintenance.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Real Estate Analytics",
+      content: `Advanced analytics tools help predict market trends, optimize pricing strategies, and identify profitable investment opportunities.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.REAL_ESTATE_MARKET_TRENDS,
@@ -529,18 +580,33 @@ export const RETAIL_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Omnichannel Commerce",
+      content: `Retailers are merging physical and digital channels to offer consistent shopping experiences, from curbside pickups to same-day deliveries.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Personalization with AI",
+      content: `AI-driven personalization is transforming customer experiences, offering tailored recommendations and promotions based on individual preferences.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Sustainable Retail Practices",
+      content: `Consumers increasingly prefer eco-conscious brands. Sustainable sourcing, packaging, and operations are reshaping the retail landscape.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.RETAIL_MARKET_TRENDS,
@@ -591,18 +657,33 @@ export const E_COMMERCE_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Mobile Commerce Growth",
+      content: `Mobile shopping continues to dominate, with more consumers preferring to browse and buy on their smartphones.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Social Commerce",
+      content: `Social media platforms are transforming into powerful eCommerce hubs, offering direct purchasing options and influencer-driven campaigns.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "AI-Driven Personalization",
+      content: `AI is reshaping the eCommerce landscape by delivering hyper-personalized shopping experiences, from product recommendations to dynamic pricing.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.ECOMMERCE_MARKET_TRENDS,
@@ -653,18 +734,33 @@ export const MEDIA_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Rise of OTT Platforms",
+      content: `OTT platforms are reshaping content consumption, offering viewers more flexibility and access to exclusive content. AI-driven recommendations and subscription models are key to maintaining competitiveness in the growing market.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Immersive AR/VR Experiences",
+      content: `AR and VR are revolutionizing the entertainment industry by delivering interactive, immersive experiences. These technologies engage audiences in new ways, particularly in gaming, live events, and branded campaigns.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "AI and Data-Driven Personalization",
+      content: `AI is enhancing content personalization by analyzing user data to predict preferences and deliver tailored recommendations. This boosts user engagement and helps media companies deliver more relevant content to their audiences.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.MEDIA_MARKET_TRENDS,
@@ -715,18 +811,33 @@ export const FMCG_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Personalized Customer Experiences",
+      content: `The FMCG industry is increasingly focusing on hyper-personalization through data-driven insights, delivering tailored products and services that resonate with individual consumer preferences.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Sustainability and Eco-friendly Products",
+      content: `Consumers are becoming more environmentally conscious, demanding sustainable, eco-friendly packaging and ethically produced products. FMCG companies are integrating sustainable practices into their product lines and supply chains.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "AI-Driven Supply Chain Optimization",
+      content: `AI and machine learning are revolutionizing supply chain management, enabling FMCG companies to predict demand more accurately, optimize routes, reduce costs, and enhance overall operational efficiency.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.FMCG_MARKET_TRENDS,
@@ -777,18 +888,33 @@ export const HEALTH_CARE_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Telemedicine and Virtual Healthcare",
+      content: `Telemedicine is rapidly growing, allowing healthcare providers to offer remote consultations and treatments. This trend is improving accessibility and convenience, especially in underserved regions, and enabling faster care delivery.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "AI and Machine Learning in Diagnostics",
+      content: `AI and machine learning are revolutionizing the diagnostic process, improving the accuracy and speed of detecting diseases such as cancer, heart conditions, and neurological disorders. These technologies help healthcare providers make better-informed decisions and improve patient outcomes.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Wearables and Remote Monitoring",
+      content: `Wearable devices are becoming essential in monitoring patients’ health in real-time. These devices track vital signs, chronic conditions, and fitness levels, providing valuable data that can be shared with healthcare providers for proactive care management.`,
+    },
+    {
+      id: 3,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.HEALTH_MARKET_TRENDS,
@@ -1134,18 +1260,33 @@ export const DESIGN_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Discovery: Laying the Foundation for Great Design",
+      content: `Great design begins with thorough research and discovery. We delve into the problem space to identify high-value challenges, gather critical insights, and ensure our solutions align with user, customer, and business needs.`,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Define: Charting a Clear Path Forward",
+      content: `We create clear design objectives based on insights from the discovery phase, ensuring every step of our process aligns with delivering impactful and user-centric outcomes.`,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Prototype: Turning Ideas into Reality",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Evaluate: Leveraging Feedback for Better Outcomes",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "Develop: Creating Exceptional Products",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.DESIGN_DIFFERENT,
@@ -1430,18 +1571,33 @@ export const DIGITAL_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Digital Strategy",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Digital Transformation",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Digital Maturity",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Digital Acceleration",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.DIGITAL_DIFFERENT,
@@ -1504,18 +1660,33 @@ export const BIGDATA_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Assessment",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Transformation: Establishing a Data Culture",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Data Governance: Data as the Foundation",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Architecture and Integrations",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "Become Data-Powered with Intelligence and Insights",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.BIG_DATA_DIFFERENT,
@@ -1585,18 +1756,33 @@ export const AL_ML_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "AI/ML Strategy Development",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Data Preparation for AI and ML",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Model Design and Deployment",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Continuous Optimization",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.ALML_DIFFERENT,
@@ -1662,18 +1848,33 @@ export const OPENSOURCE_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Assessment and Strategy",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Design and Development",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Integration and Deployment",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Continuous Monitoring and Support",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.OPEN_SOURCE_DIFFERENT,
@@ -1743,18 +1944,33 @@ export const CLOUD_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Discovery and Assessment",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Planning and Strategy",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Implementation",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Optimization and Monitoring",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.CLOUD_DIFFERENT,
@@ -1810,18 +2026,33 @@ export const ERP_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Consultation and Needs Assessment",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Customization and Development",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Implementation and Training",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Ongoing Support and Maintenance",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.ERP_DIFFERENT,
@@ -1882,18 +2113,33 @@ export const MICROSOFT_MARKET_TRENDS = {
   accordian_content: [
     {
       id: 0,
-      subHead: "Digitalization of Marine Operations",
-      content: `The adoption of digital technologies is streamlining marine operations and improving decision-making. Real-time data, IoT-enabled sensors, and advanced analytics enable precise tracking, enhanced performance, and predictive maintenance for vessels and equipment.`,
+      subHead: "Assessment and Strategy",
+      content: ``,
     },
     {
       id: 1,
-      subHead: "Automation and Autonomous Vessels",
-      content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
+      subHead: "Custom Development and Integration",
+      content: ``,
     },
     {
       id: 2,
-      subHead: "Sustainability and Green Shipping",
-      content: `The global push for sustainability is driving the adoption of green technologies. Fuel-efficient engines, alternative energy sources, and carbon capture solutions are helping reduce emissions and meet IMO (International Maritime Organization) regulations.`,
+      subHead: "Deployment and Support",
+      content: ``,
+    },
+    {
+      id: 3,
+      subHead: "Continuous Optimization",
+      content: ``,
+    },
+    {
+      id: 4,
+      subHead: "",
+      content: ``,
+    },
+    {
+      id: 5,
+      subHead: "",
+      content: ``,
     },
   ],
   image: IMAGES.MICROSOFT_DIFFERENT,

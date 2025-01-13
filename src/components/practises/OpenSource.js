@@ -23,7 +23,7 @@ const OpenSource = () => {
       </div>
       </div>
     <MarketReuse {...OPENSOURCE_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={OPENSOURCE_MARKET_TRENDS}/>
   </div>
   )
 }

@@ -3,7 +3,7 @@ import "../styles/accordianStyles.css";
 import { IMAGES } from "../utils/images";
 import '../index.css'
 
-const AccordianItem = ({ title, content, id, isOpen, setIsOpen }) => {
+const AccordianItem = ({ title, content,subHead, id, isOpen, setIsOpen }) => {
 
   const handleClick = () => {
     setIsOpen(isOpen != isOpen);
@@ -13,7 +13,7 @@ const AccordianItem = ({ title, content, id, isOpen, setIsOpen }) => {
     <>
       <div className="accordion">
         <div className="accordion-top" onClick={handleClick}>
-          <h1 className="accordion-top-tittle">{title}</h1>
+          <h1 className="accordion-top-tittle">{title || subHead}</h1>
           <div className="accordion-top-icon">
             {!isOpen ? (
                 < img src={IMAGES.PLUS_ICON} />

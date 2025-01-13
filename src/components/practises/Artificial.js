@@ -1,5 +1,5 @@
 import React from 'react'
-import { DESIGN_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
+import { AL_ML_MARKET_TRENDS, DESIGN_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
 import HeroSection from '../../reusable/HeroWithLeftImg';
 import RightAside from '../../reusable/rightAside';
 import Cards from '../../reusable/cards';
@@ -22,8 +22,8 @@ const Artificial = () => {
       })}
       </div>
       </div>
-    <MarketReuse {...DESIGN_MARKET_TRENDS}/>
-    <Accordian/>
+    <MarketReuse {...AL_ML_MARKET_TRENDS}/>
+    <Accordian MARKKET_TRENDS={AL_ML_MARKET_TRENDS}/>
   </div>
   )
 }

@@ -23,7 +23,7 @@ const Microsoft = () => {
       </div>
       </div>
     <MarketReuse {...MICROSOFT_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={MICROSOFT_MARKET_TRENDS}/>
   </div>
   )
 }

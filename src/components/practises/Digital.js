@@ -23,7 +23,7 @@ const Digital = () => {
       </div>
       </div>
     <MarketReuse {...DIGITAL_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={DIGITAL_MARKET_TRENDS}/>
   </div>
   )
 }

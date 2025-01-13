@@ -23,7 +23,7 @@ const Cloud = () => {
       </div>
       </div>
     <MarketReuse {...CLOUD_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={CLOUD_MARKET_TRENDS}/>
   </div>
   )
 }

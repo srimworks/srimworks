@@ -34,6 +34,7 @@ import ReachOut from "./reusable/reachOut";
 import Blogs from "./components/Blogs";
 import Reviews from "./reusable/Reviews";
 import Schedule from "./components/Schedule";
+import Fintech from "./components/practises/Fintech";
 
 const AppRouter = () => {
   return (
@@ -100,6 +101,10 @@ export const Routes = createBrowserRouter([
       {
         element:<Retail/>,
         path:"/retail"
+      },
+      {
+        element:<Fintech/>,
+        path:"/fintech"
       },
 
       // offerings

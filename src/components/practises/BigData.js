@@ -23,7 +23,7 @@ const BigData = () => {
       </div>
       </div>
     <MarketReuse {...BIGDATA_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={BIGDATA_MARKET_TRENDS}/>
   </div>
   )
 }

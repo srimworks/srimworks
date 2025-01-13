@@ -23,7 +23,7 @@ const Erp = () => {
       </div>
       </div>
     <MarketReuse {...ERP_MARKET_TRENDS}/>
-    <Accordian/>
+    <Accordian MARKKET_TRENDS={ERP_MARKET_TRENDS}/>
   </div>
   )
 }

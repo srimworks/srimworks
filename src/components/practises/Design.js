@@ -30,7 +30,8 @@ const Design = () => {
       </div>
       </div>
       <MarketReuse {...DESIGN_MARKET_TRENDS}/>
-      <Accordian/>
+      {/* {DESIGN_MARKET_TRENDS.map((item)=>{})} */}
+      <Accordian MARKKET_TRENDS={DESIGN_MARKET_TRENDS}/>
     </div>
   );
 };

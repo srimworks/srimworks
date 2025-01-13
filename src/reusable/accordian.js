@@ -4,7 +4,8 @@ import { ACCORDIAN_LIST } from "../utils/constsnts";
 import "../styles/accordianStyles.css";
 // import { Link } from "react-router-dom";
 
-const Accordian = () => {
+const Accordian = ({MARKKET_TRENDS}) => {
+  console.log(MARKKET_TRENDS)
   const [openIndex, setOpenIndex] = useState(0);
   return (
     <>
@@ -15,7 +16,7 @@ const Accordian = () => {
             <p className="faq-section-body">We follow a structured process, starting with in-depth discovery to identify key problems, defining clear objectives, and prototyping innovative solutions. Through evaluation and iterative refinement, we develop exceptional products that deliver value and meet business goals.</p>
           </div>
           <div className="faq-section-bottom">
-            {ACCORDIAN_LIST?.map((item, index, self) => {
+            {MARKKET_TRENDS.accordian_content?.map((item, index, self) => {
               return (
                 <AccordianItem
                   key={item.id}
