@@ -216,7 +216,7 @@ export const ABOUT_MARKET_TRENDS = {
       content: `Automation is revolutionizing maritime logistics, from cargo handling to port operations. The rise of autonomous vessels promises safer, more efficient maritime transport by reducing human error and improving navigational precision.`,
     },
   ],
-  image: "",
+  image: IMAGES.WHO_WE_ABOUTUS_SECTION_2,
   dataList: [],
 };
 
@@ -960,7 +960,7 @@ export const CARRER_OPENINGS = [
 ];
 
 export const RESOURCES_BLOGS_HERO = {
-  btnText: "Get Started",
+  btnText: "",
   image: IMAGES.RESOURCES_BLOGS_HERO,
   header: "Insights, Trends, and Expertise",
   title: "Blogs & Case Studies",

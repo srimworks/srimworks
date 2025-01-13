@@ -28,7 +28,7 @@
   
   .hero-right-content {
     max-width: 600px; /* Restrict width for content */
-    text-align: right; /* Align text to the left */
+    /* text-align: right;  */
     color: #fff; /* White text color */
     display: flex;
     flex-direction: column;
