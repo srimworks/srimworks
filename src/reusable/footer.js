@@ -53,7 +53,7 @@ const Footer = () => {
               <Link to="/innovation-research" className="link"><li className="links-body">Innovation & Research Lab</li></Link>
               <Link to="/prod-dev-lifecycle" className="link"><li className="links-body">Prod Dev Lifecycle</li></Link>
               {/* <Link to="/"><li className="links-body">Creative Media Solutions</li></Link> */}
-              <Link to="/lean-prod-engineering" className="link"><li className="links-body">Lean Product Engineering</li></Link>
+              <Link to="/lean-product-engineering" className="link"><li className="links-body">Lean Product Engineering</li></Link>
               <Link to="/professional-services" className="link"><li className="links-body">Professional Services</li></Link>
               <Link to="/channel-partners" className="link"><li className="links-body">Channel Partners</li></Link>
             </ul>

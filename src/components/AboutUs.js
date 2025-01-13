@@ -12,6 +12,7 @@ import Accordian from '../reusable/accordian'
 import MarketReuse from '../reusable/MarketReuse'
 import HeroSection from '../reusable/HeroWithLeftImg'
 import HeroRightSection from '../reusable/HeroRightImage'
+import WhyChoose from '../reusable/whyChoose'
 
 const AboutUs = () => {
   const data = ASIDE_HUMANITY[0];
@@ -23,6 +24,7 @@ const AboutUs = () => {
         {/* <HeroSection {...ABOUT_HERO}/>
          */}
          <HeroRightSection {...ABOUT_HERO}/>
+         {/* <WhyChoose/> */}
         <CoreValues/>        
         <MarketReuse {...ABOUT_MARKET_TRENDS}/>
         <Location/>

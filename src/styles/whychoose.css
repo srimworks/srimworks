@@ -1,0 +1,33 @@
+.why-choose-container{
+    /* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch; */
+display: flex;
+max-width: 1300px;
+padding: 128px 64px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+.why-choose-head{
+    color: #FFF;
+
+/* Desktop/Heading/56 */
+font-family: "Config Condensed";
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+
+.why-choose-list{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 36px;
+align-self: stretch;
+}

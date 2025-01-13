@@ -98,8 +98,8 @@ export const NavItems = [
     title: "Offerings",
     links: [
       { to: "/innovation-research", label: "Innovation & Research Lab" },
-      { to: "/prod dev-lifecycle", label: "Prod Dev Lifecycle" },
-      { to: "/lean product-engineering", label: "Lean Product Engineering" },
+      { to: "/prod-dev-lifecycle", label: "Prod Dev Lifecycle" },
+      { to: "/lean-product-engineering", label: "Lean Product Engineering" },
       { to: "/professional-services", label: "Professional Services" },
       { to: "/channel-partners", label: "Channel Partners" },
     ],
@@ -835,7 +835,7 @@ Join us in shaping the future while advancing your career in an environment that
 
 export const SKILLS_TEXT = "Skills";
 export const REQUIRMENTS = "Requirements";
-export const OPENINGS = [
+export const CARRER_OPENINGS = [
   {
     onsite: "Hyderabad   |   Onsite",
     postedon: "Posted on 01/01/24",
