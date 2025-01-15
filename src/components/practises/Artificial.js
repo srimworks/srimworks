@@ -1,5 +1,5 @@
 import React from 'react'
-import { AL_ML_MARKET_TRENDS, DESIGN_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
+import { AL_ML_MARKET_TRENDS, AL_ML_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
 import HeroSection from '../../reusable/HeroWithLeftImg';
 import RightAside from '../../reusable/rightAside';
 import Cards from '../../reusable/cards';
@@ -17,7 +17,7 @@ const Artificial = () => {
         <h1 className="what-offers-heading">What We Offers</h1>
       </div>
       <div className="practices-cards">
-      {DESIGN_CARDS.map((item) => {
+      {AL_ML_CARDS.map((item) => {
         return <Cards {...item} />;
       })}
       </div>

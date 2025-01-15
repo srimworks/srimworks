@@ -1624,17 +1624,17 @@ export const BIGDATA_CARDS = [
   //   cards: [
       {
         image: IMAGES.BIG_DATA_OFFER_1,
-        heading: "Data Engineering",
+        title: "Data Engineering",
         content: "We lay the groundwork for effective data analytics, data science, and business intelligence by handling everything from data strategy and architecture to DataOps implementation. Our data engineering capabilities ensure that your data is organized, accurate, and ready for analysis to drive business transformation.",
       },
       {
         image: IMAGES.BIG_DATA_OFFER_2,
-        heading: " Data Science",
+        title: " Data Science",
         content: "We provide robust Data Science services, including predictive modeling, sentiment analysis, recommendation engines, and fraud detection. By leveraging advanced statistical techniques and machine learning, we empower organizations with the tools they need to make smarter, data-driven decisions.",
       },
       {
         image: IMAGES.BIG_DATA_OFFER_3,
-        heading: "Business Intelligence",
+        title: "Business Intelligence",
         content: "Through advanced BI tools like Power BI, Tableau, and Qlik, we help organizations uncover insights to guide business strategies. From financial performance to risk management, we enable data-informed decision-making and enhance operational efficiency.",
       },
     ]
