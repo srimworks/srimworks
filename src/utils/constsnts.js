@@ -76,7 +76,7 @@ export const NavItems = [
     title: "Who We Are",
     links: [
       { to: "/about-us", label: "About US" },
-      { to: "", label: "Leadership Team" },
+      { to: "/about-us#hello-about", label: "Leadership Team" },
       { to: "/pressroom", label: "Press Room" },
       { to: "/careers", label: "Careers" },
     ],
@@ -259,7 +259,7 @@ export const MARINE_MARKET_TRENDS = {
   heading: "Market Trends",
   desc: `The marine industry is undergoing significant transformation driven by emerging technologies, regulatory pressures, and environmental sustainability goals. Here are key trends shaping the future of the maritime sector:`,
 
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Digitalization of Marine Operations",
@@ -332,7 +332,7 @@ export const BFSI_MARKET_TRENDS = {
   subHead1: "Chatbots and Robo-Advisors",
   subHead2: "Digitization and Automation",
   image: IMAGES.BFSI_MARKET_TRENDS,
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Open Banking",
@@ -347,21 +347,6 @@ export const BFSI_MARKET_TRENDS = {
       id: 2,
       subHead: "Digitization and Automation",
       content: `Digitization improves efficiency, customer experiences, and productivity while reducing costs. Automation enhances the accuracy and speed of digitized processes.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   dataList: [],
@@ -421,7 +406,7 @@ export const LOGISTICS_MARKET_TRENDS = {
     "Automation is transforming logistics, from warehouse robotics to self-driving delivery vehicles, ensuring faster and more accurate operations.",
   subHead1: "Predictive Analytics",
   subHead2: "Sustainability Initiatives",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Automation in Logistics",
@@ -436,21 +421,6 @@ export const LOGISTICS_MARKET_TRENDS = {
       id: 2,
       subHead: "Sustainability Initiatives",
       content: `Green logistics solutions, including electric vehicles, alternative fuels, and eco-friendly packaging, are helping organizations reduce their environmental impact.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.LOGISTICS_MARKET_TRENDS,
@@ -499,7 +469,7 @@ export const REAL_ESTATE_MARKET_TRENDS = {
     "VR is revolutionizing property viewing, offering immersive virtual tours that save time and enhance customer experiences.",
   subHead1: "Smart Buildings",
   subHead2: "Real Estate Analytics",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Virtual Reality (VR) in Real Estate",
@@ -514,21 +484,6 @@ export const REAL_ESTATE_MARKET_TRENDS = {
       id: 2,
       subHead: "Real Estate Analytics",
       content: `Advanced analytics tools help predict market trends, optimize pricing strategies, and identify profitable investment opportunities.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.REAL_ESTATE_MARKET_TRENDS,
@@ -577,7 +532,7 @@ export const RETAIL_MARKET_TRENDS = {
     "Retailers are merging physical and digital channels to offer consistent shopping experiences, from curbside pickups to same-day deliveries.",
   subHead1: "Personalization with AI",
   subHead2: "Sustainable Retail Practices",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Omnichannel Commerce",
@@ -592,21 +547,6 @@ export const RETAIL_MARKET_TRENDS = {
       id: 2,
       subHead: "Sustainable Retail Practices",
       content: `Consumers increasingly prefer eco-conscious brands. Sustainable sourcing, packaging, and operations are reshaping the retail landscape.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.RETAIL_MARKET_TRENDS,
@@ -654,7 +594,7 @@ export const E_COMMERCE_MARKET_TRENDS = {
     "Mobile shopping continues to dominate, with more consumers preferring to browse and buy on their smartphones.",
   subHead1: "Social Commerce",
   subHead2: "AI-Driven Personalization",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Mobile Commerce Growth",
@@ -669,21 +609,6 @@ export const E_COMMERCE_MARKET_TRENDS = {
       id: 2,
       subHead: "AI-Driven Personalization",
       content: `AI is reshaping the eCommerce landscape by delivering hyper-personalized shopping experiences, from product recommendations to dynamic pricing.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.ECOMMERCE_MARKET_TRENDS,
@@ -731,7 +656,7 @@ export const MEDIA_MARKET_TRENDS = {
     "OTT platforms are reshaping content consumption, offering viewers more flexibility and access to exclusive content. AI-driven recommendations and subscription models are key to maintaining competitiveness in the growing market.",
   subHead1: "Immersive AR/VR Experiences",
   subHead2: "AI and Data-Driven Personalization",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Rise of OTT Platforms",
@@ -746,21 +671,6 @@ export const MEDIA_MARKET_TRENDS = {
       id: 2,
       subHead: "AI and Data-Driven Personalization",
       content: `AI is enhancing content personalization by analyzing user data to predict preferences and deliver tailored recommendations. This boosts user engagement and helps media companies deliver more relevant content to their audiences.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.MEDIA_MARKET_TRENDS,
@@ -808,7 +718,7 @@ export const FMCG_MARKET_TRENDS = {
     "The FMCG industry is increasingly focusing on hyper-personalization through data-driven insights, delivering tailored products and services that resonate with individual consumer preferences.",
   subHead1: "Sustainability and Eco-friendly Products",
   subHead2: "AI-Driven Supply Chain Optimization",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Personalized Customer Experiences",
@@ -823,21 +733,6 @@ export const FMCG_MARKET_TRENDS = {
       id: 2,
       subHead: "AI-Driven Supply Chain Optimization",
       content: `AI and machine learning are revolutionizing supply chain management, enabling FMCG companies to predict demand more accurately, optimize routes, reduce costs, and enhance overall operational efficiency.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.FMCG_MARKET_TRENDS,
@@ -885,7 +780,7 @@ export const HEALTH_CARE_MARKET_TRENDS = {
     "Telemedicine is rapidly growing, allowing healthcare providers to offer remote consultations and treatments. This trend is improving accessibility and convenience, especially in underserved regions, and enabling faster care delivery.",
   subHead1: "AI and Machine Learning in Diagnostics",
   subHead2: "Wearables and Remote Monitoring",
-  accordian_content: [
+  accordians_contents: [
     {
       id: 0,
       subHead: "Telemedicine and Virtual Healthcare",
@@ -900,21 +795,6 @@ export const HEALTH_CARE_MARKET_TRENDS = {
       id: 2,
       subHead: "Wearables and Remote Monitoring",
       content: `Wearable devices are becoming essential in monitoring patients’ health in real-time. These devices track vital signs, chronic conditions, and fitness levels, providing valuable data that can be shared with healthcare providers for proactive care management.`,
-    },
-    {
-      id: 3,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
     },
   ],
   image: IMAGES.HEALTH_MARKET_TRENDS,
@@ -1271,22 +1151,34 @@ export const DESIGN_MARKET_TRENDS = {
     {
       id: 2,
       subHead: "Prototype: Turning Ideas into Reality",
-      content: ``,
+      content: `Prototyping helps us validate ideas quickly. By turning concepts into tangible models, we test, refine, and perfect designs before full-scale development.`,
     },
     {
       id: 3,
       subHead: "Evaluate: Leveraging Feedback for Better Outcomes",
-      content: ``,
+      content: `Through iterative evaluation, we integrate user feedback and analytics to continuously improve and enhance designs, ensuring they deliver value and satisfaction.`,
     },
     {
       id: 4,
       subHead: "Develop: Creating Exceptional Products",
-      content: ``,
+      content: `The final step focuses on translating exceptional design into fully functional, innovative products that drive growth and exceed expectations.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Human-Centered Discovery",
+      content: `We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "MVP Approach to Design",
+      content: `Our MVP-focused methodology validates key assumptions, incorporates customer feedback, and iterates designs for maximum user and business value while reducing time-to-market.`,
+    },
+    {
+      id: 2,
+      subHead: "Data-Driven Iteration",
+      content: `By leveraging both qualitative and quantitative data, we refine designs to enhance user experiences, improve engagement, and maximize conversions. This data-driven approach ensures a higher ROI for businesses.`,
     },
   ],
   image: IMAGES.DESIGN_DIFFERENT,
@@ -1572,32 +1464,55 @@ export const DIGITAL_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Digital Strategy",
-      content: ``,
+      content: `We craft tailored digital strategies that transform how businesses operate, ensuring they remain competitive in the digital era:
+Reimagining products and services for the digital age.
+Enhancing customer experiences through human-centric designs.
+Accelerating operations with cutting-edge automation.
+`,
     },
     {
       id: 1,
       subHead: "Digital Transformation",
-      content: ``,
+      content: `From technology transformation to business evolution, we ensure organizations thrive in all dimensions:
+Assessment: Analyze infrastructure and tech stack to evaluate current capabilities.
+Define Outcomes: Set clear short-term and long-term transformation goals.
+New Operating Models: Implement agile methods to transform business operations.
+Technology and Data: Leverage digital platforms and data for scalable, tech-driven solutions.
+`,
     },
     {
       id: 2,
       subHead: "Digital Maturity",
-      content: ``,
+      content: `We help businesses achieve digital maturity to navigate today’s challenges and tomorrow’s opportunities:
+Maximize innovation and productivity through advanced technologies.
+Improve operational performance to drive sustained growth.
+Build resilience against disruptions in evolving digital landscapes.
+`,
     },
     {
       id: 3,
       subHead: "Digital Acceleration",
-      content: ``,
+      content: `For future readiness, we emphasize rapid adoption and evolution of new technologies:
+Develop strategies for swift technology upgrades.
+Foster innovation to maintain a competitive edge in a fast-evolving market.
+`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Expertise in Emerging Technologies",
+      content: `Our team of experts is at the forefront of digital innovation, with deep knowledge in emerging technologies and diverse industries. We analyze your existing tech stack to set both short-term and long-term goals, ensuring impactful, future-ready transformations.`,
     },
     {
-      id: 4,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Tailored Technology Solutions for Business Growth",
+      content: `We provide customized digital strategies that align with your business needs. By leveraging the latest technologies, we ensure that your business stays competitive, drives operational efficiency, and accelerates growth in an ever-evolving market.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 2,
+      subHead: "Continuous Innovation and Optimization",
+      content: `We foster a culture of continuous innovation and optimization. Through agile practices and data-driven insights, we consistently refine and enhance solutions to keep your business agile and adaptable to changing technological landscapes.`,
     },
   ],
   image: IMAGES.DIGITAL_DIFFERENT,
@@ -1661,33 +1576,46 @@ export const BIGDATA_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Assessment",
-      content: ``,
+      content: `We conduct a thorough assessment of your existing data infrastructure and processes, identifying areas for improvement and growth.`,
     },
     {
       id: 1,
       subHead: "Transformation: Establishing a Data Culture",
-      content: ``,
+      content: `We work with organizations to establish a data-driven culture, ensuring that data is used to inform and drive business decisions at all levels.`,
     },
     {
       id: 2,
       subHead: "Data Governance: Data as the Foundation",
-      content: ``,
+      content: `We set up robust governance models to ensure that data is managed, organized, and processed effectively, establishing data as the foundation of business operations.`,
     },
     {
       id: 3,
       subHead: "Architecture and Integrations",
-      content: ``,
+      content: `We design scalable data architectures and integration systems to seamlessly connect disparate data sources, enabling seamless access to actionable insights across your organization.`,
     },
     {
       id: 4,
       subHead: "Become Data-Powered with Intelligence and Insights",
-      content: ``,
+      content: `Our goal is to empower organizations to become data-driven, enabling them to use data and analytics to drive decisions, fuel innovation, and gain a competitive edge in the market.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Technical and Architectural Expertise",
+      content: `We combine deep technical expertise with vast industry experience to create robust, scalable data architectures that ensure data integrity and consistency. Our comprehensive understanding of data flows, governance, and management empowers organizations to extract maximum value from their data.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Unlocking Data’s Value",
+      content: `We help organizations maximize the potential of their data by creating comprehensive data strategies. Our approach to big data, data mining, and integration ensures that businesses unlock valuable insights that drive innovation, enhance customer experiences, and create competitive advantages.`,
     },
+    {
+      id: 2,
+      subHead: "Ensuring Data Consistency",
+      content: `In an era where real-time data flow is essential, we establish data governance frameworks to ensure consistency and accuracy across business operations. From inventory management to predictive modeling, we ensure data consistency throughout an organization to support decision-making and long-term strategy.`,
+    },
+
   ],
   image: IMAGES.BIG_DATA_DIFFERENT,
   dataList: [],
@@ -1757,33 +1685,41 @@ export const AL_ML_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "AI/ML Strategy Development",
-      content: ``,
+      content: `We create a comprehensive roadmap tailored to business needs, ensuring seamless AI and ML integration.`,
     },
     {
       id: 1,
       subHead: "Data Preparation for AI and ML",
-      content: ``,
+      content: `From data cleaning to structuring, we ensure datasets are optimized for accurate and effective model development.`,
     },
     {
       id: 2,
       subHead: "Model Design and Deployment",
-      content: ``,
+      content: `We build custom and pre-trained AI/ML models tailored to specific business challenges, ensuring scalability and precision.`,
     },
     {
       id: 3,
       subHead: "Continuous Optimization",
-      content: ``,
+      content: `Our models are continuously refined through feedback loops, ensuring adaptability and long-term value.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Advanced AI and ML Governance",
+      content: `We help organizations create governance frameworks to ensure AI and ML systems deliver consistent value, manage risks, and optimize operational efficiency.`,
     },
     {
-      id: 4,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Real-World Application Expertise",
+      content: `Our AI and ML implementations are grounded in real-world use cases, delivering tangible business results through innovative technologies and statistical methodologies.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 2,
+      subHead: "Scalable Solutions for All Businesses",
+      content: `We cater to startups, SMBs, and enterprises with tailored AI and ML strategies that align with unique business goals, ensuring measurable outcomes at every stage.`,
     },
+
   ],
   image: IMAGES.ALML_DIFFERENT,
   dataList: [],
@@ -1849,32 +1785,41 @@ export const OPENSOURCE_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Assessment and Strategy",
-      content: ``,
+      content: `We start by assessing your business needs and creating a tailored open source strategy that aligns with your goals and technical landscape.`,
     },
     {
       id: 1,
       subHead: "Design and Development",
-      content: ``,
+      content: `Our development process focuses on customizing and building open source solutions that meet your unique requirements while ensuring scalability and security.`,
     },
     {
       id: 2,
       subHead: "Integration and Deployment",
-      content: ``,
+      content: `We seamlessly integrate open source technologies into your ecosystem, ensuring optimal performance and minimal disruption.`,
     },
     {
       id: 3,
       subHead: "Continuous Monitoring and Support",
-      content: ``,
+      content: `Post-deployment, we provide ongoing monitoring, updates, and support to ensure your systems remain efficient, secure, and future-ready.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Expertise Across Diverse Open Source Ecosystems",
+      content: `Our team brings deep expertise in a wide range of open source technologies, including Linux, Kubernetes, Docker, Apache, and more. We craft solutions tailored to your business, ensuring they are both innovative and reliable.`,
     },
     {
-      id: 4,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Cost-Efficient and Scalable Solutions",
+      content: `With open source, we help businesses reduce operational costs while ensuring scalability and flexibility. Our solutions are built to adapt to your growing needs without increasing overheads`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 2,
+      subHead: "Secure and Reliable Open Source Adoption",
+      content: `We ensure that your open source adoption journey is secure and compliant. From risk assessment to implementation, we address security challenges to deliver robust and dependable solutions.
+
+`,
     },
   ],
   image: IMAGES.OPEN_SOURCE_DIFFERENT,
@@ -1945,32 +1890,39 @@ export const CLOUD_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Discovery and Assessment",
-      content: ``,
+      content: `We begin by evaluating your current IT infrastructure and business needs to identify the best cloud solutions for your organization.`,
     },
     {
       id: 1,
       subHead: "Planning and Strategy",
-      content: ``,
+      content: `We create a detailed roadmap for cloud adoption, focusing on scalability, security, and cost-efficiency.`,
     },
     {
       id: 2,
       subHead: "Implementation",
-      content: ``,
+      content: `From migration to new application deployment, we execute the plan with minimal disruption to your operations.`,
     },
     {
       id: 3,
       subHead: "Optimization and Monitoring",
-      content: ``,
+      content: `We continuously monitor your cloud environment, optimizing performance and ensuring adherence to industry standards.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Tailored Cloud Strategies",
+      content: `We understand that every business is unique. Our cloud strategies are customized to align with your goals, helping you achieve agility, resilience, and innovation through cloud adoption.`,
     },
     {
-      id: 4,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Expertise Across Leading Cloud Platforms",
+      content: `Our team has extensive experience with major cloud platforms like AWS, Microsoft Azure, Google Cloud, and more. We leverage the best of these platforms to deliver scalable and secure solutions.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 2,
+      subHead: "Focus on Business Continuity",
+      content: `Our cloud solutions are designed to minimize downtime and disruptions. We help businesses stay operational even during system upgrades, migrations, or unexpected incidents.`,
     },
   ],
   image: IMAGES.CLOUD_DIFFERENT,
@@ -2027,32 +1979,39 @@ export const ERP_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Consultation and Needs Assessment",
-      content: ``,
+      content: `We begin by understanding your business requirements through a comprehensive consultation. This helps us assess your goals and challenges, ensuring we recommend the best ERP and CRM solution that fits your needs.`,
     },
     {
       id: 1,
       subHead: "Customization and Development",
-      content: ``,
+      content: `After understanding your needs, we customize ERP and CRM solutions that align with your business processes. Our development team works closely with you to build systems that are intuitive and feature-rich.`,
     },
     {
       id: 2,
       subHead: "Implementation and Training",
-      content: ``,
+      content: `We handle the end-to-end implementation of your ERP and CRM systems, ensuring a smooth deployment. We also provide training to your team members, ensuring they can leverage the system’s full potential.`,
     },
     {
       id: 3,
       subHead: "Ongoing Support and Maintenance",
-      content: ``,
+      content: `We handle the end-to-end implementation of your ERP and CRM systems, ensuring a smooth deployment. We also provide training to your team members, ensuring they can leverage the system’s full potential.`,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Tailored Solutions for Every Business",
+      content: `We understand that no two businesses are the same. Our ERP and CRM solutions are customized to fit your specific needs, ensuring that you have the right tools to optimize your operations and engage with your customers effectively.`,
     },
     {
-      id: 4,
-      subHead: "",
-      content: ``,
+      id: 1,
+      subHead: "Seamless Integration",
+      content: `Our ERP and CRM systems integrate seamlessly with existing business infrastructure, providing a smooth transition and minimal disruption. This ensures that your teams can start leveraging the new system quickly and effectively.`,
     },
     {
-      id: 5,
-      subHead: "",
-      content: ``,
+      id: 2,
+      subHead: "Advanced Analytics and Insights",
+      content: `Our solutions come with powerful data analytics capabilities, enabling businesses to make data-driven decisions. Whether it's sales forecasting, customer behavior analysis, or operational performance monitoring, our systems provide the insights needed to stay ahead.`,
     },
   ],
   image: IMAGES.ERP_DIFFERENT,
@@ -2114,22 +2073,22 @@ export const MICROSOFT_MARKET_TRENDS = {
     {
       id: 0,
       subHead: "Assessment and Strategy",
-      content: ``,
+      content: `We start by assessing your existing systems and defining a clear roadmap for integrating Microsoft technologies into your operations.`,
     },
     {
       id: 1,
       subHead: "Custom Development and Integration",
-      content: ``,
+      content: `Our team customizes and integrates Microsoft solutions to align with your business goals, ensuring seamless functionality and high performance.`,
     },
     {
       id: 2,
       subHead: "Deployment and Support",
-      content: ``,
+      content: `From deployment to ongoing support, we ensure that your Microsoft-powered systems run smoothly, allowing your business to thrive.`,
     },
     {
       id: 3,
       subHead: "Continuous Optimization",
-      content: ``,
+      content: `We regularly evaluate your systems to identify opportunities for enhancement, ensuring your business stays ahead in the digital landscape.`,
     },
     {
       id: 4,
@@ -2140,6 +2099,23 @@ export const MICROSOFT_MARKET_TRENDS = {
       id: 5,
       subHead: "",
       content: ``,
+    },
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Unmatched Expertise in Microsoft Ecosystem",
+      content: `With years of experience and in-depth knowledge of Microsoft technologies, our team delivers solutions that are tailored to your business needs. From development to deployment, we ensure a seamless integration of Microsoft tools into your operations.`,
+    },
+    {
+      id: 1,
+      subHead: "End-to-End Services",
+      content: `We offer comprehensive support, from consulting and strategy development to implementation and post-deployment support. Our solutions are designed to maximize ROI and deliver measurable business value.`,
+    },
+    {
+      id: 2,
+      subHead: "Focus on Security and Compliance",
+      content: `Microsoft technologies are known for their robust security and compliance features. At SRIM Works, we ensure that your systems are configured to meet the highest standards of data protection and regulatory compliance.`,
     },
   ],
   image: IMAGES.MICROSOFT_DIFFERENT,

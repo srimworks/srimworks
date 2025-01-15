@@ -5,7 +5,7 @@ const MarketReuse = ({
   heading,
   desc,
   image,
-  accordian_content,
+  accordians_contents,
   
 }) => {
   const [openvalue,setId]=useState(0);
@@ -18,7 +18,7 @@ const MarketReuse = ({
         </div>
         <div className="market-aside">
           <div className="market-left">
-            {accordian_content.map((item)=>{
+            {accordians_contents.map((item)=>{
               return ( <div className= "market-left-open-container" onClick={()=> setId(item.id)}>
                 <h1 className={ item.id==openvalue ?"market-left-heading" :"market-left-heading-close"}>{item.subHead}</h1>
                 <hr className= {item.id==openvalue ? "market-seperation-line": "market-seperation-line-close"} />
