@@ -1624,18 +1624,18 @@ export const BIGDATA_CARDS = [
   //   cards: [
       {
         image: IMAGES.BIG_DATA_OFFER_1,
-        heading: "Web Development",
-        content: "lorem ipusm content dummy",
+        heading: "Data Engineering",
+        content: "We lay the groundwork for effective data analytics, data science, and business intelligence by handling everything from data strategy and architecture to DataOps implementation. Our data engineering capabilities ensure that your data is organized, accurate, and ready for analysis to drive business transformation.",
       },
       {
         image: IMAGES.BIG_DATA_OFFER_2,
-        heading: "Frontend Development",
-        content: "lorem ipusm content dummy",
+        heading: " Data Science",
+        content: "We provide robust Data Science services, including predictive modeling, sentiment analysis, recommendation engines, and fraud detection. By leveraging advanced statistical techniques and machine learning, we empower organizations with the tools they need to make smarter, data-driven decisions.",
       },
       {
         image: IMAGES.BIG_DATA_OFFER_3,
-        heading: "Backend Development",
-        content: "lorem ipusm content dummy",
+        heading: "Business Intelligence",
+        content: "Through advanced BI tools like Power BI, Tableau, and Qlik, we help organizations uncover insights to guide business strategies. From financial performance to risk management, we enable data-informed decision-making and enhance operational efficiency.",
       },
     ]
   // },
@@ -1718,33 +1718,33 @@ Our leadership in design engineering delivers tangible results through cost-effi
 
 export const AL_ML_CARDS = [
   {
-    title: "Digital Product Design",
-    content: "",
+    title: "Machine Learning Solutions",
+    content: "Unlock the power of ML with advanced data interpretation, optimization techniques, and pattern recognition. Our solutions enable predictive analytics, trend analysis, and actionable insights to help businesses stay ahead.",
     image: IMAGES.ALML_OFFER_1,
   },
   {
-    title: "UI/UX Design",
-    content: "",
+    title: "Deep Learning Capabilities",
+    content: "With expertise in neural networks, we empower organizations to implement advanced deep learning models for object detection, image classification, and video analytics.",
     image: IMAGES.ALML_OFFER_2,
   },
   {
-    title: "Industrial & Mechanical Design",
-    content: "",
+    title: " Natural Language Processing (NLP)",
+    content: "Our NLP solutions process and analyze human language to deliver sentiment analysis, intelligent chat systems, and document processing, enabling smarter decision-making.",
     image: IMAGES.ALML_OFFER_3,
   },
   {
-    title: "Service Experience Design",
-    content: "",
+    title: "AI-Powered Computer Vision",
+    content: "We enable organizations to harness Computer Vision for automated systems that extract insights from images and videos, enhancing operational efficiency and real-time decision-making.",
     image: IMAGES.ALML_OFFER_4,
   },
   {
-    title: "Visual Design",
-    content: "",
+    title: "Predictive and Prescriptive Analytics",
+    content: " Our AI and ML models offer predictive capabilities to forecast trends and prescriptive analytics to recommend optimal actions, driving innovation and competitive edge.",
     image: IMAGES.ALML_OFFER_5,
   },
   {
-    title: "Mobile App Design",
-    content: "",
+    title: "AI Chatbots and Virtual Assistants",
+    content: "Text: Enhance customer engagement with conversational AI solutions, including self-learning chatbots designed to deliver personalized, context-aware user experiences.",
     image: IMAGES.ALML_OFFER_6,
   },
 ];
@@ -1822,28 +1822,28 @@ Our leadership in design engineering delivers tangible results through cost-effi
 
 export const OPENSOURCE_CARDS = [
   {
-    title: "Digital Product Design",
-    content: "",
+    title: "Custom Open Source Development",
+    content: " We deliver tailored open source solutions to meet specific business requirements. From CMS platforms to enterprise applications, we build scalable, secure, and cost-effective systems that align with your goals.",
     image: IMAGES.OPEN_SOURCE_OFFER_1,
   },
   {
-    title: "UI/UX Design",
-    content: "",
+    title: "Open Source Integration",
+    content: " Our team ensures seamless integration of open source technologies with your existing infrastructure. We specialize in combining multiple open source solutions to create cohesive, high-performing systems.",
     image: IMAGES.OPEN_SOURCE_OFFER_2,
   },
   {
-    title: "Industrial & Mechanical Design",
-    content: "",
+    title: "Cloud-Native Solutions with Open Source",
+    content: " We leverage open source tools to build and deploy cloud-native applications. Our expertise ensures scalability, flexibility, and robust performance in a cloud environment.",
     image: IMAGES.OPEN_SOURCE_OFFER_3,
   },
   {
-    title: "Service Experience Design",
-    content: "",
+    title: "Open Source Migration",
+    content: " We help businesses transition to open source platforms without disruption. Our migration services ensure data integrity, system reliability, and enhanced capabilities.",
     image: IMAGES.OPEN_SOURCE_OFFER_4,
   },
   {
-    title: "Visual Design",
-    content: "",
+    title: "Open Source Maintenance and Support",
+    content: " Our dedicated support services keep your open source systems running smoothly. From performance optimization to security updates, we’ve got you covered.",
     image: IMAGES.OPEN_SOURCE_OFFER_5,
   },
 ];
@@ -1922,33 +1922,33 @@ Our leadership in design engineering delivers tangible results through cost-effi
 
 export const CLOUD_CARDS = [
   {
-    title: "Digital Product Design",
-    content: "",
+    title: " Cloud Migration",
+    content: "Seamlessly transition your business operations to the cloud with our end-to-end cloud migration services. We minimize disruptions and ensure secure and efficient data transfer to enhance agility and scalability.",
     image: IMAGES.CLOUD_OFFER_1,
   },
   {
-    title: "UI/UX Design",
-    content: "",
+    title: "Cloud Infrastructure Setup and Management",
+    content: "Build and manage robust cloud infrastructure tailored to your business needs. Our services ensure optimized performance, security, and scalability while reducing operational complexity.",
     image: IMAGES.CLOUD_OFFER_2,
   },
   {
-    title: "Industrial & Mechanical Design",
-    content: "",
+    title: "Cloud-Native Application Development",
+    content: "Develop and deploy applications designed specifically for the cloud. Our cloud-native development approach leverages microservices and containers to enable flexibility and faster time-to-market.",
     image: IMAGES.CLOUD_OFFER_3,
   },
   {
-    title: "Service Experience Design",
-    content: "",
+    title: "Hybrid and Multi-Cloud Solutions",
+    content: " Maximize the benefits of hybrid and multi-cloud architectures by integrating public and private cloud platforms. We create solutions that provide flexibility, cost-efficiency, and enhanced control over your cloud resources.",
     image: IMAGES.CLOUD_OFFER_4,
   },
   {
-    title: "Visual Design",
-    content: "",
+    title: "Cloud Security and Compliance",
+    content: " Protect your digital assets with advanced cloud security measures and compliance frameworks. We ensure your cloud environment is secure, meeting industry standards and safeguarding sensitive data.",
     image: IMAGES.CLOUD_OFFER_5,
   },
   {
-    title: "Mobile App Design",
-    content: "",
+    title: "Cloud Cost Optimization",
+    content: " Reduce cloud spend while maximizing efficiency. Our cost optimization services identify unused resources and implement best practices for managing your cloud investments effectively.",
     image: IMAGES.CLOUD_OFFER_6,
   },
 ];
@@ -2026,18 +2026,18 @@ Our leadership in design engineering delivers tangible results through cost-effi
 
 export const ERP_CARDS = [
   {
-    title: "Digital Product Design",
-    content: "",
+    title: "Enterprise Resource Planning (ERP)",
+    content: "We provide fully integrated ERP systems tailored to your business needs. Our ERP solutions help businesses automate core processes, improve data accuracy, and make informed decisions across functions like finance, inventory, procurement, and human resources.",
     image: IMAGES.ERP_OFFER_1,
   },
   {
-    title: "UI/UX Design",
-    content: "",
+    title: "Customer Relationship Management (CRM)",
+    content: "Our CRM solutions enable businesses to build stronger, more personalized relationships with customers. With streamlined workflows for sales, marketing, and customer service teams, our CRM platforms help improve customer satisfaction, drive sales growth, and enhance customer retention.",
     image: IMAGES.ERP_OFFER_2,
   },
   {
-    title: "Industrial & Mechanical Design",
-    content: "",
+    title: "Custom ERP and CRM Solutions",
+    content: " SRIM Works specializes in creating customized ERP and CRM systems that align with your unique business processes. We integrate advanced features like AI, data analytics, and automation to provide solutions that deliver efficiency, scalability, and real-time insights.",
     image: IMAGES.ERP_OFFER_3,
   },
 ];
@@ -2115,23 +2115,23 @@ Our leadership in design engineering delivers tangible results through cost-effi
 
 export const MICROSOFT_CARDS = [
   {
-    title: "Digital Product Design",
-    content: "",
+    title: "Enterprise Solutions with Microsoft",
+    content: "Text: Our expertise in Microsoft Dynamics 365, Power Platform, and Azure ensures that your enterprise systems are optimized for seamless performance and scalability. We help organizations implement robust enterprise solutions that streamline operations and enhance decision-making.",
     image: IMAGES.MICROSOFT_OFFER_1,
   },
   {
-    title: "UI/UX Design",
-    content: "",
+    title: " Cloud Computing with Azure",
+    content: " Leverage the power of Microsoft Azure to scale your operations, enhance agility, and optimize costs. We offer end-to-end cloud services, including migration, integration, and architecture design, to help businesses transition seamlessly to the cloud.",
     image: IMAGES.MICROSOFT_OFFER_2,
   },
   {
-    title: "Industrial & Mechanical Design",
-    content: "",
+    title: "Application Development",
+    content: "From building enterprise-grade applications with .NET to creating dynamic, responsive web apps with Microsoft frameworks, we ensure that your business applications are secure, efficient, and future-ready.",
     image: IMAGES.MICROSOFT_OFFER_3,
   },
   {
-    title: "Service Experience Design",
-    content: "",
+    title: "Data and AI with Microsoft",
+    content: " Transform raw data into actionable insights with Microsoft’s data platforms and AI capabilities. Using Power BI, Azure AI, and Cognitive Services, we empower businesses to make informed decisions and drive innovation.",
     image: IMAGES.MICROSOFT_OFFER_4,
   },
 ];
