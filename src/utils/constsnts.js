@@ -68,6 +68,31 @@ import { IMAGES } from "./images";
 // }]
 
 
+export const HOME_SLIDE=[
+  {
+    header: "SRIM WORKS",
+    title: "Driving Global Innovation with Cutting-Edge Technology",
+    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
+    btnText: "Get Started",
+     btnText_btn:"Learn More",
+    image: IMAGES.ASIDE_IMAGE,
+  },
+  {
+    header: "SRIM WORKS",
+    title: "Driving Global Innovation with Cutting-Edge Technology",
+    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
+    btnText: "Get Started",
+    btnText_btn:"Learn More",
+    image: IMAGES.WHO_WE_ABOUTUS_HERO,
+  },
+  {  header: "SRIM WORKS",
+    title: "Driving Global Innovation with Cutting-Edge Technology",
+    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
+    btnText: "Get Started",
+    btnText_btn:"Learn More",
+    image: IMAGES.ALML_HERO,}
+]
+
 
 // navbar
 
