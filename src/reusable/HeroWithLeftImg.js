@@ -1,7 +1,15 @@
 import React from "react";
 import "../styles/heroosections.css";
 
-const HeroSection = ({ image, header, title, desc, btnText }) => {
+const HeroSection = ({
+  image,
+  header,
+  title,
+  desc,
+  btnText,
+  btnClass,
+  cards,
+}) => {
   return (
     <section className="hero-section">
       <div className="hero-overlay">
@@ -12,9 +20,27 @@ const HeroSection = ({ image, header, title, desc, btnText }) => {
           </div>
           <p className="hero-description">{desc}</p>
           {btnText.length > 0 && (
-            <button className="secondary-button">{btnText}</button>
+            <button
+              className={
+                btnClass ? "secondary-button-white-filled" : "secondary-button"
+              }
+            >
+              {btnText}
+            </button>
           )}
         </div>
+        {cards && (
+          <div className="cards-container">
+            {cards.map((item) => {
+              return (
+                <div className="img-cards">
+                  <h2 className="img-card-heading">{item.title}</h2>
+                  <p className="img-card-body">{item.content}</p>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
       <img src={image} className="hero-section-image" />
     </section>

@@ -16,13 +16,12 @@ const LeftAside = ({
       <div className="aside-container-left-image">
         <img src={image} alt="" />
         <aside className="aside-container-aside">
-          {/* {heading.length > 0 && (
-            <div className="aside-tag">
-              <hr className="aside-tag-hr-2" />
+          <div>
+          {heading.length > 0 && (
               <h2 className="aside-tag-heading">{heading}</h2>
-            </div>
-          )} */}
+          )}
           <h1 className="aside-heading-left">{title}</h1>
+          </div>
           <p className="aside-content-left">{content || desc}</p>
           <div>
             {dataList.length > 0 &&
@@ -35,16 +34,17 @@ const LeftAside = ({
               })}
           </div>
 
-          <Link className="link" to="/get-in-touch">
+          
             {btnText && (
               <button
-                className="primary-button"
-                onClick={(e) => e.stopPropagation()}
+                className="secondary-button-white-filled"
               >
+                <Link className="link" to="/get-in-touch">
                 {btnText}
+                </Link>
               </button>
             )}
-          </Link>
+          
         </aside>
       </div>
     </div>
