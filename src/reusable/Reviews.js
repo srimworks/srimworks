@@ -38,7 +38,6 @@ const Reviews = () => {
     <div className="reviews-section">
       <div className="reviews-section-top">
         <div className="reviews-aside-tag">
-          <hr className="reviews-aside-tag-hr" />
           <h2 className="reviews-aside-tag-heading">{REVIEW_TITLE}</h2>
         </div>
         <h1 className="reviews-slider-heading">{REVIEW_HEAD}</h1>
@@ -65,7 +64,7 @@ const Reviews = () => {
 
             return (
               <div className="review-1" key={id}>
-                {/* < IMAGES.QUOTES className="icon-fill"/> */}
+                 < img src={IMAGES.REVIEWS_QUOTES}/>
                 <div className="review-1-body">
                   <div className="review-1-top">
                     <h1 className="review-1-top-heading">{title}</h1>
@@ -87,19 +86,19 @@ const Reviews = () => {
                   </div>
                 </div>
                 {index < 1 && (
-                //   <IMAGES.VERTICAL_LINE className="vertical-line" id="icon-50" />
-                <></>
+                <img src={IMAGES.VERTICAL_LINE}/>
+             
                 )}
               </div>
             );
           })}
         </div>
         <div className="reviews-button">
-          <div className="primary-button" onClick={handleLeftArrowClick}>
-            {/* <IMAGES.LEFT_ARROW className="icon-dark" /> */}
+          <div id="arrow-button" onClick={handleLeftArrowClick}>
+            < img src={IMAGES.LEFT_ARROW_BLACK}/> 
           </div>
-          <div className="primary-button" onClick={handleRightArrowClick}>
-            {/* <IMAGES.RIGHT_ARROW className="icon-dark"/> */}
+          <div id="arrow-button" onClick={handleRightArrowClick}>
+            < img src={IMAGES.RIGHT_ARROW_DARK}/> 
           </div>
         </div>
       </div>

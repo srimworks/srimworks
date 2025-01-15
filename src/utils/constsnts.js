@@ -67,32 +67,85 @@ import { IMAGES } from "./images";
 //     }
 // }]
 
-
-export const HOME_SLIDE=[
+export const HOME_SLIDE = [
   {
     header: "SRIM WORKS",
     title: "Driving Global Innovation with Cutting-Edge Technology",
     desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
     btnText: "Get Started",
-     btnText_btn:"Learn More",
-    image: IMAGES.ASIDE_IMAGE,
+    btnText_btn: "Learn More",
+    image: IMAGES.HOME_HERO_1,
   },
   {
     header: "SRIM WORKS",
     title: "Driving Global Innovation with Cutting-Edge Technology",
     desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
     btnText: "Get Started",
-    btnText_btn:"Learn More",
-    image: IMAGES.WHO_WE_ABOUTUS_HERO,
+    btnText_btn: "Learn More",
+    image: IMAGES.HOME_HERO_2,
   },
-  {  header: "SRIM WORKS",
+  {
+    header: "SRIM WORKS",
     title: "Driving Global Innovation with Cutting-Edge Technology",
     desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
     btnText: "Get Started",
-    btnText_btn:"Learn More",
-    image: IMAGES.ALML_HERO,}
-]
+    btnText_btn: "Learn More",
+    image: IMAGES.HOME_HERO_3,
+  },
+];
 
+//Home
+export const INTRO_SRIMWORKS = {
+  heading: "INTRODUCING SRIM WORKS",
+  title: "Your Global Partner for Technology Innovation",
+  image: IMAGES.INTRO_SRIMWORKS,
+  desc: `SRIM Works is a multinational technology solutions and staffing company headquartered in Hyderabad, India. With a talented team of over 300 professionals, we cater to businesses worldwide, delivering customized solutions that meet the unique challenges of every client. 
+
+From cloud infrastructure and IT outsourcing to AI-powered analytics and product engineering, our global reach and diverse expertise help businesses navigate digital transformation. Partner with us for a future-ready, innovative approach to success.`,
+  dataList: [],
+  btnText: "Schedule Meeting",
+};
+
+export const HOME_WEWORK = {
+  heading: "We Work With",
+  title: "Trusted by Leading Organizations Worldwide",
+  image: IMAGES.HOME_WEWORK,
+  desc: `We partner with organizations across various industries, including healthcare, retail, finance, logistics, manufacturing, and more. Our clients range from growing startups to large enterprises, all benefiting from our tailored solutions that help them navigate digital transformation and thrive in their industries.`,
+  dataList: [],
+  btnText: "Schedule Meeting",
+};
+
+export const WHO_WE_ARE = {
+  header: "WHO SRIM WORKS ARE",
+  title: "Innovative, Passionate, and Global",
+  desc: `At SRIM Works, we are more than just a technology services provider – we are your strategic partner in business transformation. Headquartered in Hyderabad, India, our team of over 300 experts works across diverse sectors, delivering end-to-end solutions that drive growth, efficiency, and competitive advantage. 
+With a focus on innovation, collaboration, and integrity, we leverage cutting-edge technologies like AI, blockchain, and cloud computing to help businesses unlock their full potential and embrace the future with confidence.`,
+  btnText: "Know More",
+  image: IMAGES.HOME_WHOWEARE,
+  btnClass:'secondary-button-white-filled',
+  cards: [
+    {
+      title: "Global Reach",
+      content:
+        "SRIM Works connects businesses worldwide with top-tier technology solutions and talent, driving innovation across borders.",
+    },
+    {
+      title: "Expert Team",
+      content:
+        "With over 300 skilled professionals, we deliver tailored solutions that drive real business impact for clients worldwide.",
+    },
+    {
+      title: "Innovation Focus",
+      content:
+        "We lead in technology trends, investing in R&D to provide cutting-edge solutions that keep our clients ahead.",
+    },
+    {
+      title: "Collaboration",
+      content:
+        "We believe in the power of teamwork, both within our organization and with our clients, to achieve shared success.",
+    },
+  ],
+};
 
 // navbar
 
@@ -129,28 +182,29 @@ export const NavItems = [
       { to: "/channel-partners", label: "Channel Partners" },
     ],
   },
-{
-  title:"Industries",
-  links: [
-    { to: "/marine", label: "Marine" },
-    { to: "/logistics", label: "Logistics" },
-    { to: "/real-estate", label: "Real Estate" },
-    { to: "/retail", label: "Retail" },
-    { to: "/e-commerce", label: "ECommerce" },
-    { to: "/media-entertainment", label: "Media & Entertainment" },
-    { to: "/fmcg", label: "FMCG" },
-    { to: "/health-care", label: "Health Care" },
-    { to: "/bfsi", label: "BFSI" },
-    { to: "/fintech", label: "Fintech" },
-  ],
-},{
-  title:"Resources",
-  links:[
-    {to:"/blogs", label:"Blogs"},
-    {to:"/", label:"Case Studies"},
-    {to:"/contact-us", label:"Submit Your Reviews"},
-  ]
-}
+  {
+    title: "Industries",
+    links: [
+      { to: "/marine", label: "Marine" },
+      { to: "/logistics", label: "Logistics" },
+      { to: "/real-estate", label: "Real Estate" },
+      { to: "/retail", label: "Retail" },
+      { to: "/e-commerce", label: "ECommerce" },
+      { to: "/media-entertainment", label: "Media & Entertainment" },
+      { to: "/fmcg", label: "FMCG" },
+      { to: "/health-care", label: "Health Care" },
+      { to: "/bfsi", label: "BFSI" },
+      { to: "/fintech", label: "Fintech" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { to: "/blogs", label: "Blogs" },
+      { to: "/", label: "Case Studies" },
+      { to: "/contact-us", label: "Submit Your Reviews" },
+    ],
+  },
 ];
 
 export const ASIDE_HUMANITY = [
@@ -220,8 +274,6 @@ export const ABOUT_HERO = {
   image: IMAGES.WHO_WE_ABOUTUS_HERO,
 };
 
-
-
 export const ABOUT_MARKET_TRENDS = {
   heading: "Our Philosophy",
   desc: "At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
@@ -232,9 +284,9 @@ export const ABOUT_MARKET_TRENDS = {
   subHead2: "Data-Driven Iteration",
   accordians_contents: [
     {
-id:0,
-subHead:"Design Thinking: Understand and Innovate",
-content:`We begin every project by deeply understanding the problem, empathizing with stakeholders, and exploring innovative possibilities to ensure we solve the right challenges.`
+      id: 0,
+      subHead: "Design Thinking: Understand and Innovate",
+      content: `We begin every project by deeply understanding the problem, empathizing with stakeholders, and exploring innovative possibilities to ensure we solve the right challenges.`,
     },
     {
       id: 1,
@@ -1064,19 +1116,19 @@ export const ABOUT_PHILOSOPY = {
 export const CARDS_DATA = [
   {
     id: 1,
-    icon:IMAGES.IDEA,
+    icon: IMAGES.IDEA,
     heading: "Innovation ",
     content: `We continuously push boundaries, exploring new technologies to create future-ready solutions.`,
   },
   {
     id: 2,
-    icon:IMAGES.QUALITY,
+    icon: IMAGES.QUALITY,
     heading: "Excellence",
     content: `We commit to delivering high-quality, efficient solutions that meet and exceed our clients’ expectations.`,
   },
   {
     id: 3,
-    icon:IMAGES.SYS_INTEGRATION,
+    icon: IMAGES.SYS_INTEGRATION,
     heading: "Integrity",
     content: `  We build trust through transparency, honesty, and ethical business practices.`,
   },
@@ -1640,7 +1692,6 @@ export const BIGDATA_MARKET_TRENDS = {
       subHead: "Ensuring Data Consistency",
       content: `In an era where real-time data flow is essential, we establish data governance frameworks to ensure consistency and accuracy across business operations. From inventory management to predictive modeling, we ensure data consistency throughout an organization to support decision-making and long-term strategy.`,
     },
-
   ],
   image: IMAGES.BIG_DATA_DIFFERENT,
   dataList: [],
@@ -1744,7 +1795,6 @@ export const AL_ML_MARKET_TRENDS = {
       subHead: "Scalable Solutions for All Businesses",
       content: `We cater to startups, SMBs, and enterprises with tailored AI and ML strategies that align with unique business goals, ensuring measurable outcomes at every stage.`,
     },
-
   ],
   image: IMAGES.ALML_DIFFERENT,
   dataList: [],

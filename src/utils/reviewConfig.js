@@ -1,5 +1,5 @@
 import { IMAGES } from "./images";
-export const REVIEW_TITLE="Reviews";
+export const REVIEW_TITLE="Testimonials";
 
 export const REVIEW_HEAD="Client Success Stories";
 
