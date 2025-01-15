@@ -311,6 +311,37 @@ export const PRESS_HERO = {
   btnText: "",
   image: IMAGES.WHO_WE_PRESS_HERO,
 };
+export const PRESS_CARDS = [
+  {
+    date :"Posted on : 25/08/2024",
+    title: "PESTEL Analysis for Business Expansion",
+    content: "A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    image: IMAGES.ALML_OFFER_1,
+    btnText_btn :"Read More"
+  },
+  {
+    date :"Posted on : 25/08/2024",
+    title: "PESTEL Analysis for Business Expansion",
+    content: " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    image: IMAGES.ALML_OFFER_1,
+    btnText_btn :"Read More"
+  },
+  {
+    date :"Posted on : 25/08/2024",
+    title: "PESTEL Analysis for Business Expansion",
+    content: " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    image: IMAGES.ALML_OFFER_1,
+    btnText_btn :"Read More"
+  },
+  {
+    date :"Posted on : 25/08/2024",
+    title: "PESTEL Analysis for Business Expansion",
+    content: "Text: A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    image: IMAGES.ALML_OFFER_1,
+    btnText_btn :"Read More"
+  },
+ 
+];
 
 // industries
 
@@ -1744,7 +1775,7 @@ export const AL_ML_CARDS = [
   },
   {
     title: "AI Chatbots and Virtual Assistants",
-    content: "Text: Enhance customer engagement with conversational AI solutions, including self-learning chatbots designed to deliver personalized, context-aware user experiences.",
+    content: "Enhance customer engagement with conversational AI solutions, including self-learning chatbots designed to deliver personalized, context-aware user experiences.",
     image: IMAGES.ALML_OFFER_6,
   },
 ];
