@@ -1617,11 +1617,11 @@ Our digital engineering approach fosters business and technology transformation 
 };
 
 export const BIGDATA_CARDS = [
-  {
-    heading: "Software Development",
-    content:
-      "We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
-    cards: [
+  // {
+  //   heading: "Software Development",
+  //   content:
+  //     "We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
+  //   cards: [
       {
         image: IMAGES.BIG_DATA_OFFER_1,
         heading: "Web Development",
@@ -1637,9 +1637,9 @@ export const BIGDATA_CARDS = [
         heading: "Backend Development",
         content: "lorem ipusm content dummy",
       },
-    ],
-  },
-];
+    ]
+  // },
+// ];
 
 export const BIGDATA_MARKET_TRENDS = {
   heading: "What Makes SRIM Works Different",
