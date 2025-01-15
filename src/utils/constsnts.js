@@ -205,7 +205,7 @@ export const ABOUT_MARKET_TRENDS = {
     "We begin every project by deeply understanding the problem, empathizing with stakeholders, and exploring innovative possibilities to ensure we solve the right challenges.",
   subHead1: "MVP Approach to Design",
   subHead2: "Data-Driven Iteration",
-  accordian_content: [
+  accordians_contents: [
     {
 id:0,
 subHead:"Design Thinking: Understand and Innovate",
