@@ -99,4 +99,17 @@
     justify-content: center;
     width: auto;
   }
+  .card-section-heading-s {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card-section-heading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
 }

@@ -230,7 +230,7 @@ const ContactForm = () => {
           <button
             type="submit"
             onClick={(e) => e.stopPropagation()}
-            className="primary-button"
+            className="secondary-button-black-filled"
           >
             Submit
           </button>

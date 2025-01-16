@@ -23,6 +23,13 @@
 /* Logo Styles */
 .navbar-logo {
   flex-shrink: 0; /* Prevent the logo from shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon{
+  display: none;
 }
 
 .logo-image {
@@ -167,6 +174,23 @@
 .dropdown-item:hover {
   background-color: #f1f1f1;
 }
+@media (max-width:1100px) {
+  .navbar-logo{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-items{
+    display: none;
+  }
+  .navbar-button{
+    display: none;
+  }
+}
+
 
 /* For smaller screens (mobile) */
 @media screen and (max-width: 768px) {
@@ -174,7 +198,10 @@
     flex-direction: column;
     align-items: center;
   }
-
+  .navbar{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .navbar-items {
     flex-direction: column;
     align-items: center;
@@ -195,9 +222,9 @@
 }
 
 /* For larger screens (tablets and above) */
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
   .navbar-items {
     flex-direction: row;
     gap: 20px;
   }
-}
+} */

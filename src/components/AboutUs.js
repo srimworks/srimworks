@@ -34,7 +34,6 @@ const AboutUs = () => {
        */}
       <HeroRightSection {...ABOUT_HERO} />
       <WhyChoose />
-      {/* <WhyChoose/> */}
       <CoreValues />
       <MarketReuse {...ABOUT_MARKET_TRENDS} />
       <Leadership />

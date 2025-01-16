@@ -118,6 +118,21 @@
 }
 
 @media (max-width: 1000px) {
+  .faq-section {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
+  .accordion {
+    width: 100%;
+    max-width: none;
+  }
+  .faq-section-bottom {
+    width: 100%;
+  }
+  .faq-section-body {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -125,10 +140,32 @@
     font-size: 18px;
   }
   .accordion-bottom {
-    font-size: 18px;
+    font-size: 16px;
   }
   .accordion-content {
     margin-top: 16px;
     gap: 16px;
+  }
+  .faq-section-heading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  .faq-section-body {
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .accordion-top-tittle {
+    font-family: "Config Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.2px;
   }
 }
