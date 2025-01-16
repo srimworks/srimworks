@@ -10,7 +10,11 @@ const PressRoom = () => {
   return (
     <div>
         <HeroRightSection {...PRESS_HERO}/>
-      <Cards {...PRESS_CARDS}/>
+      {PRESS_CARDS.map((item,index,self)=>{
+        return(
+          <Cards {...item}/>
+        )
+      })}
         {/* <h1>press room</h1> */}
         {/* <Navbar/> */}
         {/* <articles/> */}
