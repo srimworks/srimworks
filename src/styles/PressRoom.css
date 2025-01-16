@@ -1,0 +1,58 @@
+.pressroom-section {
+  display: flex;
+  padding: 128px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.pressroom-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pr-t-tag {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pr-t-heading {
+  color: #060606;
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.pr-cards {
+  display: flex;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .pr-t-heading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  .pr-t-tag {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .pr-cards{
+    justify-content: center;
+  }
+}
