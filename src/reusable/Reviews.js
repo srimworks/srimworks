@@ -86,7 +86,7 @@ const Reviews = () => {
                   </div>
                 </div>
                 {index < 1 && (
-                <img src={IMAGES.VERTICAL_LINE}/>
+                <img src={IMAGES.VERTICAL_LINE} className="vertical-line"/>
              
                 )}
               </div>

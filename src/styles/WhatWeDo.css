@@ -1,7 +1,8 @@
 .whatwedo-section {
   display: flex;
   max-width: 1300px;
-  padding: 64px 0px 128px 0px;
+  padding: 64px 32px 128px 32px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
@@ -62,8 +63,8 @@
   overflow: scroll;
   padding: 0px 24px;
 }
-.practices-list::-webkit-scrollbar{
-    display: none;
+.practices-list::-webkit-scrollbar {
+  display: none;
 }
 .practices-item {
   display: flex;
@@ -89,7 +90,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
+  width: 100%;
 }
 
 .what-we-do-left {
@@ -98,7 +99,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
+  gap: 24px;
 }
 
 .wwd-l-content {
@@ -106,7 +107,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  align-self: stretch;
 }
 
 .wwd-heading {
@@ -137,4 +137,72 @@
   line-height: normal;
 }
 
-
+@media (max-width: 1100px) {
+  .what-we-do-bottom {
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .what-we-do-left {
+    width: 100%;
+  }
+  .what-we-do-bottom img {
+    width: 100%;
+    height: auto;
+  }
+  .whatwedo-top-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .whatwedo-top-heading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  .whatwedo-top-content {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .wwd-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+  }
+  .wwd-body {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .wwd-list {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .what-we-do-middle {
+    gap: 24px;
+  }
+  .practices-item img {
+    width: 32px;
+    height: 32px;
+  }
+  .practices-item-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.16px;
+  }
+}

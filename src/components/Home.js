@@ -13,7 +13,7 @@ const Home = () => {
     {/* slider */}
     <ImageSlider/>
     {/* left */}
-    <LeftAside {...INTRO_SRIMWORKS}/>
+     <LeftAside {...INTRO_SRIMWORKS}/>
     <Reviews/>
     <HeroSection {...WHO_WE_ARE}/>
     <CoreValues/>

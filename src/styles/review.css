@@ -216,13 +216,22 @@
     align-items: flex-start;
   }
   .reviews-collection {
-    gap: 4px;
+    gap: 0px;
   }
 }
 
 @media (max-width: 900px) {
   .vertical-line {
     display: none;
+  }
+  .review-1{
+    gap: 16px;
+  }
+  .review-1-top-body{
+    font-size: 16px;
+  }
+  .review-1-body{
+    width: 75%;
   }
 }
 
@@ -250,4 +259,21 @@
     width: 100%;
     gap: 8px;
   }
+
+  .vertical-line{
+    display: none;
+  }
+  .reviews-section{
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 24px;
+  }
+  .review-1{
+    flex-direction: column;
+  }
+  .review-1-body{
+    width: 100%;
+  }
 }
+
