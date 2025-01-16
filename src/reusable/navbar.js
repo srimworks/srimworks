@@ -26,6 +26,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={IMAGES.NAV_LOGO} alt="Logo" className="logo-image" />
           </Link>
+          <img src={IMAGES.MENU_ICON} alt="Menu_Icon" className="menu-icon"/>
         </div>
 
         <div className="navbar-items">

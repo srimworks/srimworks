@@ -18,7 +18,7 @@ const LeftAside = ({
         <aside className="aside-container-aside">
           <div>
           {heading.length > 0 && (
-              <h2 className="aside-tag-heading">{heading}</h2>
+              <h2 className="aside-tag-heading-left">{heading}</h2>
           )}
           <h1 className="aside-heading-left">{title}</h1>
           </div>

@@ -51,7 +51,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  align-self: stretch;
   max-width: 475px;
 }
 
@@ -78,7 +77,6 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.24px;
-  
 }
 
 .market-left-content {
@@ -99,7 +97,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
 }
 .market-left-heading-close {
   color: #828282;
@@ -118,4 +115,61 @@
 }
 .market-left-content-close {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .market-aside {
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .market-head {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .market-desc {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .market-left-heading {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+  .market-left-content {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .market-left-heading-close {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+  .market-right{
+    width: 100%;
+    height: fit-content;
+  }
+  .market-right img{
+    width: 100%;
+    height: auto;
+  }
+  .market-reuse{
+    padding: 64px 24px;
+  }
 }

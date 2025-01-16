@@ -1,7 +1,7 @@
 .leadership-section {
   display: flex;
   max-width: 1300px;
-  padding: 128px 0px;
+  padding: 128px 32px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -39,7 +39,7 @@
 
 .leadership-images {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 48px;
 }
@@ -69,3 +69,55 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 1000px) {
+  .leadership-section {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .leadership-content {
+    width: 80%;
+  }
+  .leadership-body {
+    max-width: 600px;
+  }
+}
+@media (max-width: 800px) {
+  .leadership-images {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .leadership-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .leadership-heading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  .leadership-body {
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #leader-image-container img {
+    width: 100%;
+    height: auto;
+  }
+  #leader-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #leader-designation{
+    font-size: 16px;
+  }
+}
+

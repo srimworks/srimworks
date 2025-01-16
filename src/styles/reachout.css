@@ -55,10 +55,14 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .background-image-container {
-    height: 300px; /* Adjust height on smaller screens */
+    height: 400px; /* Adjust height on smaller screens */
     padding: 0 10px;
+  }
+  .text-overlay {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .title {
@@ -67,5 +71,21 @@
 
   .description {
     font-size: 16px; /* Adjust description size for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .desc {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
   }
 }

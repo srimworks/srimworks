@@ -120,9 +120,7 @@
   .overlay-heading-2 {
     font-size: 40px;
   }
-  .overlay {
-    left: 64px;
-  }
+  
   .primary-button-homepage {
     border-radius: 26px;
     padding: 12px 24px;
@@ -148,12 +146,7 @@
     font-size: 28px;
     width: 100%;
   }
-  .overlay {
-    left: 72px;
-    top: 400px;
-    width: 250px;
-    gap: 8px;
-  }
+ 
   .primary-button-homepage {
     padding: 8px 16px;
     border-radius: 26px;

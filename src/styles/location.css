@@ -1,63 +1,81 @@
 /* Container styles */
 .container {
-    /* display: flex;
+  /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 16px;
     background-color: #f9f9f9; */
-    display: flex;
-padding: 64px;
-flex-direction: column;
-align-items: center;
-gap: 64px;
-align-self: stretch;
-background: #FFF;
+  display: flex;
+  padding: 64px 0px 0px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  background: #fff;
+}
+
+/* Header styles */
+.header {
+  color: #060606;
+  text-align: center;
+
+  /* Desktop/Heading/56 */
+  font-family: "Config Condensed";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+/* Description styles */
+.description {
+  width: 600px;
+  color: #060606;
+  text-align: center;
+
+  /* Desktop/Body/18 */
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Image container styles */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  height: fit-content;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .container-top{
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  
-  /* Header styles */
   .header {
-    color: #060606;
-    text-align: center;
-    
-    /* Desktop/Heading/56 */
-    font-family: "Config Condensed";
-    font-size: 56px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.56px;
+    letter-spacing: -0.28px;
   }
-  
-  /* Description styles */
   .description {
-    width: 600px;
-    color: #060606;
-    text-align: center;
-    
-    /* Desktop/Body/18 */
-    font-family: "SF Pro Display";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
-  
-  /* Image container styles */
-  .image-container {
-    display: flex;
-    padding: 64px;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-    align-self: stretch;
-  }
-  
-  /* .image {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-  } */
-  
+  }
+}

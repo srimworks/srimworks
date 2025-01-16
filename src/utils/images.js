@@ -277,6 +277,7 @@ import REFRESH_ICON from "../imagess/Contact/RefreshIcon.svg";
 import SYS_INTEGRATION from "../imagess/common/system-integration.svg";
 import QUALITY from "../imagess/common/quality.svg";
 import IDEA from "../imagess/common/idea.svg";
+import MENU_ICON from '../imagess/common/menu.svg'
 
 export const IMAGES = {
   ASIDE_IMAGE,
@@ -524,4 +525,5 @@ export const IMAGES = {
   HOME_HERO_1,
   HOME_HERO_2,
   HOME_HERO_3,
+  MENU_ICON,
 };

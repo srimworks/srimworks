@@ -7,7 +7,7 @@ import Location from '../reusable/Location'
 
 const Schedule = () => {
   return (
-    <div className='outlet-render-contact'>
+    <div className='outlet-render'>
     <HeroSection {...CONTACT_HERO}/>
     <ContactForm/>
     <CoreValues/>
