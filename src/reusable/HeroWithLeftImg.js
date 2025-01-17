@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/heroosections.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = ({
   image,
@@ -20,13 +21,13 @@ const HeroSection = ({
           </div>
           <p className="hero-description">{desc}</p>
           {btnText.length > 0 && (
-            <button
+           <Link to='/contact-us' className="link"> <button
               className={
                 btnClass ? "secondary-button-white-filled" : "secondary-button"
               }
             >
               {btnText}
-            </button>
+            </button></Link>
           )}
         </div>
         {cards && (

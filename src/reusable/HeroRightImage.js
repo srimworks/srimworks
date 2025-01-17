@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/heroRight.css";
+import { Link } from "react-router-dom";
 
 const HeroRightSection = ({ image, header,heading, title, desc, btnText }) => {
   return (
@@ -12,7 +13,7 @@ const HeroRightSection = ({ image, header,heading, title, desc, btnText }) => {
           </div>
           {desc && <p className="hero-right-description">{desc}</p>}
           {btnText.length > 0 && (
-            <button className="secondary-button">{btnText}</button>
+           <Link to="/contact-us" className="link"> <button className="secondary-button">{btnText}</button></Link>
           )}
         </div>
       </div>
