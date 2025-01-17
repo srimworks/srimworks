@@ -1,98 +1,32 @@
 import { IMAGES } from "./images";
 
-// export const LEFT_ASIDE=[{
-//     offer_1:{
-//         title:"akshay",
-//         content:"oloerem",
-//         alt:"content",
-//         image:IMAGES.LOGO,
-//         description:"",
-//         // listItems:["some","some1"]
-//     },
-//     offer_2:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     offer_3:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     offer_4:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     offer_5:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     offer_6:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     industries_1:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     industries_2:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     },
-//     industries_3:{
-//         title:"",
-//         content:"",
-//         alt:"",
-//         image:"",
-//         description:""
-//     }
-// }]
-
 export const HOME_SLIDE = [
   {
-    header: "SRIM WORKS",
-    title: "Driving Global Innovation with Cutting-Edge Technology",
-    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
-    btnText: "Get Started",
-    btnText_btn: "Learn More",
+    header:"SRIM WORKS",
     image: IMAGES.HOME_HERO_1,
+    title: "Driving Global Innovation with Cutting-Edge Technology",
+    description: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
+    button1: { text: "Get Started", link: "/" },
+    button2: { text: "Learn More", link: "/" },
   },
   {
-    header: "SRIM WORKS",
-    title: "Driving Global Innovation with Cutting-Edge Technology",
-    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
-    btnText: "Get Started",
-    btnText_btn: "Learn More",
+    header:"SRIM WORKS",
     image: IMAGES.HOME_HERO_2,
+    title: "",
+    description: "",
+    button1: { text: "Get Started", link: "/" },
+    button2: { text: "Learn More", link: "/" },
   },
   {
-    header: "SRIM WORKS",
-    title: "Driving Global Innovation with Cutting-Edge Technology",
-    desc: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
-    btnText: "Get Started",
-    btnText_btn: "Learn More",
+    header:"SRIM WORKS",
     image: IMAGES.HOME_HERO_3,
+    title: "",
+    description: "",
+    button1: { text: "Get Started", link: "/" },
+    button2: { text: "Learn More", link: "/" },
   },
 ];
+
 
 //Home
 export const INTRO_SRIMWORKS = {
