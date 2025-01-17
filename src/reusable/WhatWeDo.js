@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/WhatWeDo.css";
 import { IMAGES } from "../utils/images";
 import { practicesContent } from "../utils/constsnts";
+import { Link } from "react-router-dom";
 
 const WhatWeDo = () => {
 
@@ -14,7 +15,7 @@ const WhatWeDo = () => {
     setSelectedPractice(practice);
   };
 
-  const { title, description, services, image } = practicesContent[selectedPractice];
+  const { title, description, services, image, link } = practicesContent[selectedPractice];
 
   return (
     <div className="whatwedo-section">
@@ -58,7 +59,7 @@ const WhatWeDo = () => {
               ))}
             </ul>
           </div>
-          <button className="secondary-button-black-filled">View More Details</button>
+          <Link className="link" to={link}><button className="secondary-button-black-filled">View More Details</button></Link>
         </div>
         <img src={image} alt={selectedPractice} />
       </div>
