@@ -2130,16 +2130,6 @@ export const MICROSOFT_MARKET_TRENDS = {
       subHead: "Continuous Optimization",
       content: `We regularly evaluate your systems to identify opportunities for enhancement, ensuring your business stays ahead in the digital landscape.`,
     },
-    {
-      id: 4,
-      subHead: "",
-      content: ``,
-    },
-    {
-      id: 5,
-      subHead: "",
-      content: ``,
-    },
   ],
   accordians_contents: [
     {

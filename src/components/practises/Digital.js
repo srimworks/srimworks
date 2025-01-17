@@ -17,9 +17,24 @@ const Digital = () => {
         <h1 className="what-offers-heading">What We Offers</h1>
       </div>
       <div className="practices-cards">
-      {DIGITAL_CARDS.map((item) => {
-        return <Cards {...item} />;
-      })}
+        
+      {DIGITAL_CARDS.map((category, index) => (
+        <div key={index}>
+          <h2>{category.heading}</h2>
+          <p>{category.content}</p>
+          <div className="card-container">
+            {category.cards.map((card, cardIndex) => (
+              <Cards
+                key={cardIndex}
+                title={card.heading}
+                content={card.content}
+                image={card.image}
+                postedon={category.heading} // Optionally add a date or heading here
+              />
+            ))}
+          </div>
+        </div>
+      ))}
       </div>
       </div>
     <MarketReuse {...DIGITAL_MARKET_TRENDS}/>
