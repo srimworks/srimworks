@@ -6,7 +6,7 @@ export const HOME_SLIDE = [
     image: IMAGES.HOME_HERO_1,
     title: "Driving Global Innovation with Cutting-Edge Technology",
     description: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
-    button1: { text: "Get Started", link: "/" },
+    button1: { text: "Get Started", link: "/about-us" },
     button2: { text: "Learn More", link: "/" },
   },
   {

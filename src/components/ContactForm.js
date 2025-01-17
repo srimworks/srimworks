@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import "../styles/getInTouch.css";
 import { IMAGES } from "../utils/images.js";
 import { Link } from "react-router-dom";
+
 const ContactForm = () => {
+  const generateCaptcha = () => {
+    return Math.random().toString(36).substring(2, 8); // Generates a random string
+  };
+
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -12,6 +17,7 @@ const ContactForm = () => {
     website: "",
     message: "",
     captcha: "",
+    generatedCaptcha: generateCaptcha(), // Initial captcha value
   });
 
   const handleChange = (e) => {
@@ -21,6 +27,13 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate captcha before submitting
+    if (formData.captcha !== formData.generatedCaptcha) {
+      alert("Captcha does not match! Please try again.");
+      return;
+    }
+
     try {
       const response = await fetch(
         "https://srimmedia-backend.onrender.com/submit-form",
@@ -43,6 +56,8 @@ const ContactForm = () => {
           companyName: "",
           website: "",
           message: "",
+          captcha: "",
+          generatedCaptcha: generateCaptcha(), // Reset captcha on successful submission
         });
       } else {
         alert(`Failed to submit form: ${data.message || "Unknown error"}`);
@@ -195,7 +210,7 @@ const ContactForm = () => {
                 <input
                   id="input"
                   type="text"
-                  name="companyName"
+                  name="captcha"
                   value={formData.captcha}
                   onChange={handleChange}
                   placeholder="Enter Captcha"
@@ -205,12 +220,16 @@ const ContactForm = () => {
               </div>
               <div id="input-container">
                 <div className="c-div">
-                <div className="captcha-div">
-                  <div className="captcha">eFif7</div>
+                  <div className="captcha-div">
+                    <div className="captcha">{formData.generatedCaptcha}</div>
+                  </div>
+                  <img
+                    src={IMAGES.REFRESH_ICON}
+                    id="refresh"
+                    onClick={() => setFormData({ ...formData, generatedCaptcha: generateCaptcha() })}
+                    alt="Refresh Captcha"
+                  />
                 </div>
-                <img src={IMAGES.REFRESH_ICON} id='refresh'/>
-                </div>
-                
               </div>
             </div>
             <div className="check">
@@ -220,7 +239,6 @@ const ContactForm = () => {
                 name="Privacy"
                 value="Checked"
               ></input>
-
               <p className="check-text">
                 I agree to our <Link className="privacy"> privacy policy </Link>
               </p>
