@@ -2,31 +2,33 @@ import { IMAGES } from "./images";
 
 export const HOME_SLIDE = [
   {
-    header:"SRIM WORKS",
+    header: "SRIM WORKS",
     image: IMAGES.HOME_HERO_1,
     title: "Driving Global Innovation with Cutting-Edge Technology",
-    description: "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
+    description:
+      "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
     button1: { text: "Get Started", link: "/about-us" },
     button2: { text: "Learn More", link: "/" },
   },
   {
-    header:"SRIM WORKS",
+    header: "SRIM WORKS",
     image: IMAGES.HOME_HERO_2,
-    title: "",
-    description: "",
+    title: "Empowering Businesses with Tailored Solutions",
+    description:
+      "At SRIM Works, we specialize in creating customized technology solutions that address unique business challenges. From AI-driven innovations to scalable cloud strategies, our expertise empowers companies to stay ahead in a fast-paced digital world. With a global reach and a focus on excellence, we turn visions into results.",
     button1: { text: "Get Started", link: "/" },
     button2: { text: "Learn More", link: "/" },
   },
   {
-    header:"SRIM WORKS",
+    header: "SRIM WORKS",
     image: IMAGES.HOME_HERO_3,
-    title: "",
-    description: "",
+    title: "Bridging Talent and Technology Across Borders",
+    description:
+      "SRIM Works connects businesses with top-tier talent and the latest technological advancements. With a presence across continents and a commitment to continuous innovation, we build strategic partnerships that transform industries. Together, let’s shape a smarter and more connected future.",
     button1: { text: "Get Started", link: "/" },
     button2: { text: "Learn More", link: "/" },
   },
 ];
-
 
 //Home
 export const INTRO_SRIMWORKS = {
@@ -56,7 +58,7 @@ export const WHO_WE_ARE = {
 With a focus on innovation, collaboration, and integrity, we leverage cutting-edge technologies like AI, blockchain, and cloud computing to help businesses unlock their full potential and embrace the future with confidence.`,
   btnText: "Know More",
   image: IMAGES.HOME_WHOWEARE,
-  btnClass:'secondary-button-white-filled',
+  btnClass: "secondary-button-white-filled",
   cards: [
     {
       title: "Global Reach",
@@ -247,34 +249,37 @@ export const PRESS_HERO = {
 };
 export const PRESS_CARDS = [
   {
-    date :"Posted on : 25/08/2024",
+    date: "Posted on : 25/08/2024",
     title: "PESTEL Analysis for Business Expansion",
-    content: "A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    content:
+      "A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
     image: IMAGES.ALML_OFFER_1,
-    btnText_btn :"Read More"
+    btnText_btn: "Read More",
   },
   {
-    date :"Posted on : 25/08/2024",
+    date: "Posted on : 25/08/2024",
     title: "PESTEL Analysis for Business Expansion",
-    content: " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    content:
+      " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
     image: IMAGES.ALML_OFFER_1,
-    btnText_btn :"Read More"
+    btnText_btn: "Read More",
   },
   {
-    date :"Posted on : 25/08/2024",
+    date: "Posted on : 25/08/2024",
     title: "PESTEL Analysis for Business Expansion",
-    content: " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    content:
+      " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
     image: IMAGES.ALML_OFFER_1,
-    btnText_btn :"Read More"
+    btnText_btn: "Read More",
   },
   {
-    date :"Posted on : 25/08/2024",
+    date: "Posted on : 25/08/2024",
     title: "PESTEL Analysis for Business Expansion",
-    content: "Text: A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+    content:
+      "Text: A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
     image: IMAGES.ALML_OFFER_1,
-    btnText_btn :"Read More"
+    btnText_btn: "Read More",
   },
- 
 ];
 
 // industries
@@ -1277,47 +1282,56 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SOFTWARE_1,
         heading: "Web Development",
-        content: " We build responsive, scalable, and high-performance web applications tailored to your business needs. Our solutions are designed to enhance user engagement and provide a seamless browsing experience across all devices.",
+        content:
+          " We build responsive, scalable, and high-performance web applications tailored to your business needs. Our solutions are designed to enhance user engagement and provide a seamless browsing experience across all devices.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_2,
         heading: "Frontend Development",
-        content: "Our frontend development focuses on creating engaging, intuitive, and interactive user interfaces. We ensure a seamless user experience by incorporating modern technologies and design trends that cater to user needs.",
+        content:
+          "Our frontend development focuses on creating engaging, intuitive, and interactive user interfaces. We ensure a seamless user experience by incorporating modern technologies and design trends that cater to user needs.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_3,
         heading: "Backend Development",
-        content: "Text:  Our backend development services ensure that your applications are built with reliable and scalable architecture. We integrate security and high-performance standards, ensuring smooth operation and data management.",
+        content:
+          "Text:  Our backend development services ensure that your applications are built with reliable and scalable architecture. We integrate security and high-performance standards, ensuring smooth operation and data management.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_4,
         heading: "Mobile App Development",
-        content: "We specialize in designing and developing mobile applications for both Android and iOS. Our mobile apps are optimized for performance, usability, and seamless integration with device features.",
+        content:
+          "We specialize in designing and developing mobile applications for both Android and iOS. Our mobile apps are optimized for performance, usability, and seamless integration with device features.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_5,
         heading: "Android App Development",
-        content: " Our Android app development services are aimed at delivering performance-driven applications with a focus on usability, scalability, and smooth user experience across all Android devices.",
+        content:
+          " Our Android app development services are aimed at delivering performance-driven applications with a focus on usability, scalability, and smooth user experience across all Android devices.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_6,
         heading: "iOS App Development",
-        content: "We build high-quality, native iOS applications that provide a robust user experience. Our apps are designed to leverage the best features of Apple devices, ensuring top-tier performance.",
+        content:
+          "We build high-quality, native iOS applications that provide a robust user experience. Our apps are designed to leverage the best features of Apple devices, ensuring top-tier performance.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_7,
         heading: "Hybrid App Development",
-        content: "Our hybrid mobile apps are developed to work seamlessly across different platforms, providing a unified experience with faster time-to-market and lower development costs.",
+        content:
+          "Our hybrid mobile apps are developed to work seamlessly across different platforms, providing a unified experience with faster time-to-market and lower development costs.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_8,
         heading: "SaaS Development",
-        content: "We offer SaaS application development services that provide flexibility and scalability for your business. Our solutions are designed to improve efficiency, increase productivity, and provide seamless cloud-based access.",
+        content:
+          "We offer SaaS application development services that provide flexibility and scalability for your business. Our solutions are designed to improve efficiency, increase productivity, and provide seamless cloud-based access.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_9,
         heading: "CMS Development",
-        content: " Our CMS development services empower businesses to manage and update content efficiently. We create customizable, scalable solutions to help you maintain an intuitive and functional content management system.",
+        content:
+          " Our CMS development services empower businesses to manage and update content efficiently. We create customizable, scalable solutions to help you maintain an intuitive and functional content management system.",
       },
     ],
   },
@@ -1329,42 +1343,50 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_QUALITY_1,
         heading: "Quality Assurance",
-        content: " We offer comprehensive testing services to ensure the quality, performance, and security of your software. Our QA process includes functional, performance, and security testing to guarantee a flawless user experience.",
+        content:
+          " We offer comprehensive testing services to ensure the quality, performance, and security of your software. Our QA process includes functional, performance, and security testing to guarantee a flawless user experience.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_2,
         heading: "Functional Testing",
-        content: "Text: We conduct functional testing to verify that your software operates according to the defined requirements. Our tests ensure that all features and functionalities meet expectations.",
+        content:
+          "Text: We conduct functional testing to verify that your software operates according to the defined requirements. Our tests ensure that all features and functionalities meet expectations.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_3,
         heading: "Automation Testing",
-        content: "Text: We automate testing processes to reduce manual intervention, enhance testing efficiency, and increase reliability across your software applications.",
+        content:
+          "Text: We automate testing processes to reduce manual intervention, enhance testing efficiency, and increase reliability across your software applications.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_4,
         heading: "Performance Testing",
-        content: "Our performance testing services ensure that your application can handle expected traffic and perform efficiently under heavy load conditions. We test for speed, scalability, and responsiveness.",
+        content:
+          "Our performance testing services ensure that your application can handle expected traffic and perform efficiently under heavy load conditions. We test for speed, scalability, and responsiveness.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_5,
         heading: "API Testing",
-        content: "We ensure your APIs are reliable, secure, and capable of integrating with external services. Our API testing focuses on functionality, performance, and security to ensure optimal operation.",
+        content:
+          "We ensure your APIs are reliable, secure, and capable of integrating with external services. Our API testing focuses on functionality, performance, and security to ensure optimal operation.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_6,
         heading: "Mobile App Testing",
-        content: "We conduct extensive testing across multiple platforms to ensure that your mobile app works flawlessly on various devices and operating systems.",
+        content:
+          "We conduct extensive testing across multiple platforms to ensure that your mobile app works flawlessly on various devices and operating systems.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_7,
         heading: "Database Testing",
-        content: "Our database testing services verify the integrity, performance, and security of your database systems. We ensure that your data is stored and accessed efficiently without risk of corruption.",
+        content:
+          "Our database testing services verify the integrity, performance, and security of your database systems. We ensure that your data is stored and accessed efficiently without risk of corruption.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_8,
         heading: "Security Testing",
-        content: "We identify potential vulnerabilities and mitigate risks to ensure your software is secure. Our security testing covers all aspects, including authentication, authorization, and data encryption.",
+        content:
+          "We identify potential vulnerabilities and mitigate risks to ensure your software is secure. Our security testing covers all aspects, including authentication, authorization, and data encryption.",
       },
     ],
   },
@@ -1376,22 +1398,26 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_ENTERPRISE_1,
         heading: "Enterprise Software Development",
-        content: "We develop tailored enterprise software solutions that help businesses streamline operations and improve efficiency. Our solutions are scalable and designed to meet the specific needs of large organizations.",
+        content:
+          "We develop tailored enterprise software solutions that help businesses streamline operations and improve efficiency. Our solutions are scalable and designed to meet the specific needs of large organizations.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_2,
         heading: "Digital Transformation",
-        content: "We help organizations embrace digital transformation by leveraging technology to improve business operations, enhance customer experiences, and create new revenue opportunities.",
+        content:
+          "We help organizations embrace digital transformation by leveraging technology to improve business operations, enhance customer experiences, and create new revenue opportunities.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_3,
         heading: "Enterprise Mobility",
-        content: "Our enterprise mobility solutions enable businesses to empower their workforce with mobile applications that improve productivity and flexibility, allowing employees to work from anywhere.",
+        content:
+          "Our enterprise mobility solutions enable businesses to empower their workforce with mobile applications that improve productivity and flexibility, allowing employees to work from anywhere.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_4,
         heading: "ERP Consulting",
-        content: "We offer expert ERP consulting services to optimize and implement enterprise resource planning systems. Our team ensures smooth integration and alignment with business objectives to enhance operational efficiency.",
+        content:
+          "We offer expert ERP consulting services to optimize and implement enterprise resource planning systems. Our team ensures smooth integration and alignment with business objectives to enhance operational efficiency.",
       },
     ],
   },
@@ -1403,32 +1429,38 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SALESFORCE_1,
         heading: "Salesforce Implementation",
-        content: "We assist businesses in implementing Salesforce to streamline customer relationship management, improve data accessibility, and enhance customer experiences through automation and integrations.",
+        content:
+          "We assist businesses in implementing Salesforce to streamline customer relationship management, improve data accessibility, and enhance customer experiences through automation and integrations.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_2,
         heading: "Salesforce Customization",
-        content: "We customize Salesforce solutions to meet the unique needs of your business. Our team adapts Salesforce to fit your workflow, improving efficiency and business alignment.",
+        content:
+          "We customize Salesforce solutions to meet the unique needs of your business. Our team adapts Salesforce to fit your workflow, improving efficiency and business alignment.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_3,
         heading: "Salesforce Application Development",
-        content: "We develop custom Salesforce applications to optimize your business processes and improve customer engagement. Our solutions enhance functionality and help your business run smoothly.",
+        content:
+          "We develop custom Salesforce applications to optimize your business processes and improve customer engagement. Our solutions enhance functionality and help your business run smoothly.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_4,
         heading: "Salesforce Integration",
-        content: "We integrate Salesforce with other systems to create a seamless flow of information across your business. Our integration services ensure that all data is synchronized for improved decision-making.",
+        content:
+          "We integrate Salesforce with other systems to create a seamless flow of information across your business. Our integration services ensure that all data is synchronized for improved decision-making.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_5,
         heading: "Salesforce Migration",
-        content: "Our Salesforce migration services help businesses transition smoothly to the platform, ensuring data integrity and minimal disruption. We assist with data import, system configuration, and post-migration support.",
+        content:
+          "Our Salesforce migration services help businesses transition smoothly to the platform, ensuring data integrity and minimal disruption. We assist with data import, system configuration, and post-migration support.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_6,
         heading: "Salesforce Upgrade and Maintenance",
-        content: "We provide continuous upgrades and maintenance to keep your Salesforce system running at peak performance. Our services ensure that your CRM remains aligned with business goals.",
+        content:
+          "We provide continuous upgrades and maintenance to keep your Salesforce system running at peak performance. Our services ensure that your CRM remains aligned with business goals.",
       },
     ],
   },
@@ -1440,17 +1472,20 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SOLUTIONS_1,
         heading: "Cloud Native Platform",
-        content: "We specialize in developing cloud-native applications that are scalable, reliable, and secure. Our cloud solutions help businesses enhance their digital capabilities and adapt to changing market demands.",
+        content:
+          "We specialize in developing cloud-native applications that are scalable, reliable, and secure. Our cloud solutions help businesses enhance their digital capabilities and adapt to changing market demands.",
       },
       {
         image: IMAGES.DIGITAL_SOLUTIONS_2,
         heading: "Microservices",
-        content: "We design microservices architectures that break down complex applications into smaller, manageable components. This approach enhances flexibility, scalability, and speeds up the development process.",
+        content:
+          "We design microservices architectures that break down complex applications into smaller, manageable components. This approach enhances flexibility, scalability, and speeds up the development process.",
       },
       {
         image: IMAGES.DIGITAL_SOLUTIONS_3,
         heading: "Architecture Design & Consulting",
-        content: "Our cloud architecture design and consulting services help businesses build efficient and scalable infrastructure. We provide expert guidance on system design, cloud adoption, and platform optimization.",
+        content:
+          "Our cloud architecture design and consulting services help businesses build efficient and scalable infrastructure. We provide expert guidance on system design, cloud adoption, and platform optimization.",
       },
     ],
   },
@@ -1462,22 +1497,26 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_1,
         heading: "Cloud Transformation",
-        content: "We guide businesses through cloud transformation, ensuring they maximize the benefits of cloud technologies. Our approach focuses on improving operational efficiency, scalability, and reducing costs.",
+        content:
+          "We guide businesses through cloud transformation, ensuring they maximize the benefits of cloud technologies. Our approach focuses on improving operational efficiency, scalability, and reducing costs.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_2,
         heading: "Cloud Migration",
-        content: "Text: We offer seamless cloud migration services to help organizations transition from on-premise systems to cloud-based platforms, minimizing risks and ensuring data integrity throughout the process.",
+        content:
+          "Text: We offer seamless cloud migration services to help organizations transition from on-premise systems to cloud-based platforms, minimizing risks and ensuring data integrity throughout the process.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_3,
         heading: "App Modernization",
-        content: "We modernize legacy applications by upgrading them to cloud-native solutions, improving performance, scalability, and user experience to meet current business demands.",
+        content:
+          "We modernize legacy applications by upgrading them to cloud-native solutions, improving performance, scalability, and user experience to meet current business demands.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_4,
         heading: "Cloud Consulting",
-        content: "Our cloud consulting services help organizations develop strategies for cloud adoption, optimize existing cloud infrastructure, and drive digital transformation for enhanced performance.",
+        content:
+          "Our cloud consulting services help organizations develop strategies for cloud adoption, optimize existing cloud infrastructure, and drive digital transformation for enhanced performance.",
       },
     ],
   },
@@ -1489,27 +1528,32 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_DEVOPS_1,
         heading: "DevOps Assessment",
-        content: "We evaluate your existing DevOps practices and identify areas for improvement to streamline development processes and enhance collaboration across teams.",
+        content:
+          "We evaluate your existing DevOps practices and identify areas for improvement to streamline development processes and enhance collaboration across teams.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_2,
         heading: "Continuous Integration",
-        content: "Our continuous integration services ensure that code is continuously tested and integrated into the main branch, enhancing collaboration and reducing the risk of errors.",
+        content:
+          "Our continuous integration services ensure that code is continuously tested and integrated into the main branch, enhancing collaboration and reducing the risk of errors.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_3,
         heading: "DevOps Pipeline Deployment",
-        content: "We deploy automated DevOps pipelines to streamline the development process, reduce time-to-market, and ensure high-quality software delivery.",
+        content:
+          "We deploy automated DevOps pipelines to streamline the development process, reduce time-to-market, and ensure high-quality software delivery.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_4,
         heading: "Continuous Testing",
-        content: "Text: We integrate continuous testing into the DevOps pipeline to catch issues early in the development lifecycle and ensure that the software is always in a deployable state.",
+        content:
+          "Text: We integrate continuous testing into the DevOps pipeline to catch issues early in the development lifecycle and ensure that the software is always in a deployable state.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_5,
         heading: "Optimization, Monitoring, and Maintenance",
-        content: "We provide ongoing optimization, monitoring, and maintenance services to ensure your DevOps pipeline remains efficient and performs at its best.",
+        content:
+          "We provide ongoing optimization, monitoring, and maintenance services to ensure your DevOps pipeline remains efficient and performs at its best.",
       },
     ],
   },
@@ -1608,23 +1652,26 @@ export const BIGDATA_CARDS = [
   //   content:
   //     "We offer end-to-end software development services tailored to meet the demands of your business and accelerate digital transformation.",
   //   cards: [
-      {
-        image: IMAGES.BIG_DATA_OFFER_1,
-        title: "Data Engineering",
-        content: "We lay the groundwork for effective data analytics, data science, and business intelligence by handling everything from data strategy and architecture to DataOps implementation. Our data engineering capabilities ensure that your data is organized, accurate, and ready for analysis to drive business transformation.",
-      },
-      {
-        image: IMAGES.BIG_DATA_OFFER_2,
-        title: " Data Science",
-        content: "We provide robust Data Science services, including predictive modeling, sentiment analysis, recommendation engines, and fraud detection. By leveraging advanced statistical techniques and machine learning, we empower organizations with the tools they need to make smarter, data-driven decisions.",
-      },
-      {
-        image: IMAGES.BIG_DATA_OFFER_3,
-        title: "Business Intelligence",
-        content: "Through advanced BI tools like Power BI, Tableau, and Qlik, we help organizations uncover insights to guide business strategies. From financial performance to risk management, we enable data-informed decision-making and enhance operational efficiency.",
-      },
-    ]
-  // },
+  {
+    image: IMAGES.BIG_DATA_OFFER_1,
+    title: "Data Engineering",
+    content:
+      "We lay the groundwork for effective data analytics, data science, and business intelligence by handling everything from data strategy and architecture to DataOps implementation. Our data engineering capabilities ensure that your data is organized, accurate, and ready for analysis to drive business transformation.",
+  },
+  {
+    image: IMAGES.BIG_DATA_OFFER_2,
+    title: " Data Science",
+    content:
+      "We provide robust Data Science services, including predictive modeling, sentiment analysis, recommendation engines, and fraud detection. By leveraging advanced statistical techniques and machine learning, we empower organizations with the tools they need to make smarter, data-driven decisions.",
+  },
+  {
+    image: IMAGES.BIG_DATA_OFFER_3,
+    title: "Business Intelligence",
+    content:
+      "Through advanced BI tools like Power BI, Tableau, and Qlik, we help organizations uncover insights to guide business strategies. From financial performance to risk management, we enable data-informed decision-making and enhance operational efficiency.",
+  },
+];
+// },
 // ];
 
 export const BIGDATA_MARKET_TRENDS = {
@@ -1705,32 +1752,38 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const AL_ML_CARDS = [
   {
     title: "Machine Learning Solutions",
-    content: "Unlock the power of ML with advanced data interpretation, optimization techniques, and pattern recognition. Our solutions enable predictive analytics, trend analysis, and actionable insights to help businesses stay ahead.",
+    content:
+      "Unlock the power of ML with advanced data interpretation, optimization techniques, and pattern recognition. Our solutions enable predictive analytics, trend analysis, and actionable insights to help businesses stay ahead.",
     image: IMAGES.ALML_OFFER_1,
   },
   {
     title: "Deep Learning Capabilities",
-    content: "With expertise in neural networks, we empower organizations to implement advanced deep learning models for object detection, image classification, and video analytics.",
+    content:
+      "With expertise in neural networks, we empower organizations to implement advanced deep learning models for object detection, image classification, and video analytics.",
     image: IMAGES.ALML_OFFER_2,
   },
   {
     title: " Natural Language Processing (NLP)",
-    content: "Our NLP solutions process and analyze human language to deliver sentiment analysis, intelligent chat systems, and document processing, enabling smarter decision-making.",
+    content:
+      "Our NLP solutions process and analyze human language to deliver sentiment analysis, intelligent chat systems, and document processing, enabling smarter decision-making.",
     image: IMAGES.ALML_OFFER_3,
   },
   {
     title: "AI-Powered Computer Vision",
-    content: "We enable organizations to harness Computer Vision for automated systems that extract insights from images and videos, enhancing operational efficiency and real-time decision-making.",
+    content:
+      "We enable organizations to harness Computer Vision for automated systems that extract insights from images and videos, enhancing operational efficiency and real-time decision-making.",
     image: IMAGES.ALML_OFFER_4,
   },
   {
     title: "Predictive and Prescriptive Analytics",
-    content: " Our AI and ML models offer predictive capabilities to forecast trends and prescriptive analytics to recommend optimal actions, driving innovation and competitive edge.",
+    content:
+      " Our AI and ML models offer predictive capabilities to forecast trends and prescriptive analytics to recommend optimal actions, driving innovation and competitive edge.",
     image: IMAGES.ALML_OFFER_5,
   },
   {
     title: "AI Chatbots and Virtual Assistants",
-    content: "Enhance customer engagement with conversational AI solutions, including self-learning chatbots designed to deliver personalized, context-aware user experiences.",
+    content:
+      "Enhance customer engagement with conversational AI solutions, including self-learning chatbots designed to deliver personalized, context-aware user experiences.",
     image: IMAGES.ALML_OFFER_6,
   },
 ];
@@ -1809,27 +1862,32 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const OPENSOURCE_CARDS = [
   {
     title: "Custom Open Source Development",
-    content: " We deliver tailored open source solutions to meet specific business requirements. From CMS platforms to enterprise applications, we build scalable, secure, and cost-effective systems that align with your goals.",
+    content:
+      " We deliver tailored open source solutions to meet specific business requirements. From CMS platforms to enterprise applications, we build scalable, secure, and cost-effective systems that align with your goals.",
     image: IMAGES.OPEN_SOURCE_OFFER_1,
   },
   {
     title: "Open Source Integration",
-    content: " Our team ensures seamless integration of open source technologies with your existing infrastructure. We specialize in combining multiple open source solutions to create cohesive, high-performing systems.",
+    content:
+      " Our team ensures seamless integration of open source technologies with your existing infrastructure. We specialize in combining multiple open source solutions to create cohesive, high-performing systems.",
     image: IMAGES.OPEN_SOURCE_OFFER_2,
   },
   {
     title: "Cloud-Native Solutions with Open Source",
-    content: " We leverage open source tools to build and deploy cloud-native applications. Our expertise ensures scalability, flexibility, and robust performance in a cloud environment.",
+    content:
+      " We leverage open source tools to build and deploy cloud-native applications. Our expertise ensures scalability, flexibility, and robust performance in a cloud environment.",
     image: IMAGES.OPEN_SOURCE_OFFER_3,
   },
   {
     title: "Open Source Migration",
-    content: " We help businesses transition to open source platforms without disruption. Our migration services ensure data integrity, system reliability, and enhanced capabilities.",
+    content:
+      " We help businesses transition to open source platforms without disruption. Our migration services ensure data integrity, system reliability, and enhanced capabilities.",
     image: IMAGES.OPEN_SOURCE_OFFER_4,
   },
   {
     title: "Open Source Maintenance and Support",
-    content: " Our dedicated support services keep your open source systems running smoothly. From performance optimization to security updates, we’ve got you covered.",
+    content:
+      " Our dedicated support services keep your open source systems running smoothly. From performance optimization to security updates, we’ve got you covered.",
     image: IMAGES.OPEN_SOURCE_OFFER_5,
   },
 ];
@@ -1909,32 +1967,38 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const CLOUD_CARDS = [
   {
     title: " Cloud Migration",
-    content: "Seamlessly transition your business operations to the cloud with our end-to-end cloud migration services. We minimize disruptions and ensure secure and efficient data transfer to enhance agility and scalability.",
+    content:
+      "Seamlessly transition your business operations to the cloud with our end-to-end cloud migration services. We minimize disruptions and ensure secure and efficient data transfer to enhance agility and scalability.",
     image: IMAGES.CLOUD_OFFER_1,
   },
   {
     title: "Cloud Infrastructure Setup and Management",
-    content: "Build and manage robust cloud infrastructure tailored to your business needs. Our services ensure optimized performance, security, and scalability while reducing operational complexity.",
+    content:
+      "Build and manage robust cloud infrastructure tailored to your business needs. Our services ensure optimized performance, security, and scalability while reducing operational complexity.",
     image: IMAGES.CLOUD_OFFER_2,
   },
   {
     title: "Cloud-Native Application Development",
-    content: "Develop and deploy applications designed specifically for the cloud. Our cloud-native development approach leverages microservices and containers to enable flexibility and faster time-to-market.",
+    content:
+      "Develop and deploy applications designed specifically for the cloud. Our cloud-native development approach leverages microservices and containers to enable flexibility and faster time-to-market.",
     image: IMAGES.CLOUD_OFFER_3,
   },
   {
     title: "Hybrid and Multi-Cloud Solutions",
-    content: " Maximize the benefits of hybrid and multi-cloud architectures by integrating public and private cloud platforms. We create solutions that provide flexibility, cost-efficiency, and enhanced control over your cloud resources.",
+    content:
+      " Maximize the benefits of hybrid and multi-cloud architectures by integrating public and private cloud platforms. We create solutions that provide flexibility, cost-efficiency, and enhanced control over your cloud resources.",
     image: IMAGES.CLOUD_OFFER_4,
   },
   {
     title: "Cloud Security and Compliance",
-    content: " Protect your digital assets with advanced cloud security measures and compliance frameworks. We ensure your cloud environment is secure, meeting industry standards and safeguarding sensitive data.",
+    content:
+      " Protect your digital assets with advanced cloud security measures and compliance frameworks. We ensure your cloud environment is secure, meeting industry standards and safeguarding sensitive data.",
     image: IMAGES.CLOUD_OFFER_5,
   },
   {
     title: "Cloud Cost Optimization",
-    content: " Reduce cloud spend while maximizing efficiency. Our cost optimization services identify unused resources and implement best practices for managing your cloud investments effectively.",
+    content:
+      " Reduce cloud spend while maximizing efficiency. Our cost optimization services identify unused resources and implement best practices for managing your cloud investments effectively.",
     image: IMAGES.CLOUD_OFFER_6,
   },
 ];
@@ -2013,17 +2077,20 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const ERP_CARDS = [
   {
     title: "Enterprise Resource Planning (ERP)",
-    content: "We provide fully integrated ERP systems tailored to your business needs. Our ERP solutions help businesses automate core processes, improve data accuracy, and make informed decisions across functions like finance, inventory, procurement, and human resources.",
+    content:
+      "We provide fully integrated ERP systems tailored to your business needs. Our ERP solutions help businesses automate core processes, improve data accuracy, and make informed decisions across functions like finance, inventory, procurement, and human resources.",
     image: IMAGES.ERP_OFFER_1,
   },
   {
     title: "Customer Relationship Management (CRM)",
-    content: "Our CRM solutions enable businesses to build stronger, more personalized relationships with customers. With streamlined workflows for sales, marketing, and customer service teams, our CRM platforms help improve customer satisfaction, drive sales growth, and enhance customer retention.",
+    content:
+      "Our CRM solutions enable businesses to build stronger, more personalized relationships with customers. With streamlined workflows for sales, marketing, and customer service teams, our CRM platforms help improve customer satisfaction, drive sales growth, and enhance customer retention.",
     image: IMAGES.ERP_OFFER_2,
   },
   {
     title: "Custom ERP and CRM Solutions",
-    content: " SRIM Works specializes in creating customized ERP and CRM systems that align with your unique business processes. We integrate advanced features like AI, data analytics, and automation to provide solutions that deliver efficiency, scalability, and real-time insights.",
+    content:
+      " SRIM Works specializes in creating customized ERP and CRM systems that align with your unique business processes. We integrate advanced features like AI, data analytics, and automation to provide solutions that deliver efficiency, scalability, and real-time insights.",
     image: IMAGES.ERP_OFFER_3,
   },
 ];
@@ -2102,22 +2169,26 @@ Our leadership in design engineering delivers tangible results through cost-effi
 export const MICROSOFT_CARDS = [
   {
     title: "Enterprise Solutions with Microsoft",
-    content: "Text: Our expertise in Microsoft Dynamics 365, Power Platform, and Azure ensures that your enterprise systems are optimized for seamless performance and scalability. We help organizations implement robust enterprise solutions that streamline operations and enhance decision-making.",
+    content:
+      "Text: Our expertise in Microsoft Dynamics 365, Power Platform, and Azure ensures that your enterprise systems are optimized for seamless performance and scalability. We help organizations implement robust enterprise solutions that streamline operations and enhance decision-making.",
     image: IMAGES.MICROSOFT_OFFER_1,
   },
   {
     title: " Cloud Computing with Azure",
-    content: " Leverage the power of Microsoft Azure to scale your operations, enhance agility, and optimize costs. We offer end-to-end cloud services, including migration, integration, and architecture design, to help businesses transition seamlessly to the cloud.",
+    content:
+      " Leverage the power of Microsoft Azure to scale your operations, enhance agility, and optimize costs. We offer end-to-end cloud services, including migration, integration, and architecture design, to help businesses transition seamlessly to the cloud.",
     image: IMAGES.MICROSOFT_OFFER_2,
   },
   {
     title: "Application Development",
-    content: "From building enterprise-grade applications with .NET to creating dynamic, responsive web apps with Microsoft frameworks, we ensure that your business applications are secure, efficient, and future-ready.",
+    content:
+      "From building enterprise-grade applications with .NET to creating dynamic, responsive web apps with Microsoft frameworks, we ensure that your business applications are secure, efficient, and future-ready.",
     image: IMAGES.MICROSOFT_OFFER_3,
   },
   {
     title: "Data and AI with Microsoft",
-    content: " Transform raw data into actionable insights with Microsoft’s data platforms and AI capabilities. Using Power BI, Azure AI, and Cognitive Services, we empower businesses to make informed decisions and drive innovation.",
+    content:
+      " Transform raw data into actionable insights with Microsoft’s data platforms and AI capabilities. Using Power BI, Azure AI, and Cognitive Services, we empower businesses to make informed decisions and drive innovation.",
     image: IMAGES.MICROSOFT_OFFER_4,
   },
 ];
@@ -2213,7 +2284,6 @@ export const ACCORDIAN_LIST = [
   },
 ];
 
-
 // pratise
 
 export const practicesContent = {
@@ -2230,82 +2300,98 @@ export const practicesContent = {
     ],
     image: IMAGES.DESIGN_IMG,
   },
-  "Digital": {
-    title: "Driving Digital Innovation with Engineering Excellence",
-    description:
-      "Transform your business with cutting-edge digital solutions and next-gen engineering services that optimize operations and drive growth.",
+  Digital: {
+    title: "Revolutionizing Businesses with Digital Engineering",
+    description: `Empower innovation and efficiency by leveraging cutting-edge digital technologies and agile solutions to transform your business operations and customer experiences.
+Services we offer:`,
     services: [
+      "Product Lifecycle Management",
       "Software Development",
-      "DevOps & Automation",
-      "System Integration",
+      "Web Development",
+      "App Development",
+      "Cloud Integration",
       "IoT Solutions",
-      "Quality Assurance & Testing",
+      "AI & Automation",
+      "Software Testing",
     ],
     image: IMAGES.DIGITAL_IMG,
   },
-  "BigData": {
+  BigData: {
     title: "Unlocking Insights with Big Data",
-    description:
-      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    description: `Harness the power of big data to generate actionable insights, enabling data-driven decisions that propel your business forward.
+Services we offer:`,
     services: [
-      "Data Engineering",
-      "Data Warehousing",
       "Predictive Analytics",
-      "Machine Learning Models",
+      "Data Visualization",
+      "Data Integration",
       "Business Intelligence",
+      "Advanced Analytics",
     ],
     image: IMAGES.BIGDATA_IMG,
   },
-  "Aiml": {
-    title: "Unlocking Insights with Big Data",
-    description:
-      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+  Aiml: {
+    title: "Empowering Innovation with Artificial Intelligence",
+    description: `Implement cutting-edge AI and ML solutions to automate processes, enhance decision-making, and create intelligent systems that drive business success.
+Services we offer:`,
     services: [
-      "Data Engineering",
-      "Data Warehousing",
-      "Predictive Analytics",
       "Machine Learning Models",
-      "Business Intelligence",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Predictive Analytics",
+      "AI-Driven Automation",
     ],
     image: IMAGES.AIML_IMG,
   },
-  "OpenSource": {
-    title: "Unlocking Insights with Big Data",
-    description:
-      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+  OpenSource: {
+    title: "Building Scalable Solutions with Open-Source Tools",
+    description: `Develop flexible, cost-efficient, and scalable solutions using open-source technologies that foster innovation, collaboration, and future growth.
+Services we offer:`,
     services: [
-      "Data Engineering",
-      "Data Warehousing",
-      "Predictive Analytics",
-      "Machine Learning Models",
-      "Business Intelligence",
+      "Custom Open Source Development",
+      "DevOps Solutions",
+      "Cloud-Native Applications",
+      "Open Source Integration",
+      "Performance Optimization",
     ],
     image: IMAGES.OPENSOURCE_IMG,
   },
-  "Cloud": {
-    title: "Unlocking Insights with Big Data",
-    description:
-      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+  Cloud: {
+    title: "Innovating with Microsoft’s Robust Tech Ecosystem",
+    description: `Leverage Microsoft’s cutting-edge tools and platforms to streamline business operations, boost productivity, and foster digital transformation.
+Services we offer:`,
     services: [
-      "Data Engineering",
-      "Data Warehousing",
-      "Predictive Analytics",
-      "Machine Learning Models",
-      "Business Intelligence",
+      "Microsoft Azure",
+      "Power BI & Power Apps",
+      "Dynamics 365 Solutions",
+      "SharePoint & Office 365",
+      "Cloud Integration",
     ],
     image: IMAGES.CLOUD_IMG,
   },
-  "Microsoft": {
-    title: "Unlocking Insights with Big Data",
-    description:
-      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+  Microsoft: {
+    title: "Enabling Seamless Digital Transformation with Cloud",
+    description: `Build scalable, secure, and cost-efficient cloud solutions that drive operational efficiency and business growth, ensuring a flexible future for your organization.
+Services we offer:`,
     services: [
-      "Data Engineering",
-      "Data Warehousing",
-      "Predictive Analytics",
-      "Machine Learning Models",
-      "Business Intelligence",
+      "Cloud Migration",
+      "Cloud Infrastructure Management",
+      "Multi-Cloud Solutions",
+      "Cloud Security",
+      "SaaS/PaaS Solutions",
     ],
     image: IMAGES.MICROSOFT_IMG,
+  },
+  ERP: {
+    title: "Optimizing Business Operations with Integrated Solutions",
+    description: `Streamline and automate core business functions with customized ERP and CRM solutions, improving efficiency, data accuracy, and customer satisfaction.
+Services we offer:`,
+    services: [
+      "ERP Implementation",
+      "CRM Solutions",
+      "Business Process Automation",
+      "System Integration",
+      "Data Analytics and Reporting",
+    ],
+    image: IMAGES.ERP_IMG,
   },
 };

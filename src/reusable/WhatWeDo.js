@@ -50,7 +50,7 @@ const WhatWeDo = () => {
           <div className="wwd-l-content">
             <h1 className="wwd-heading">{title}</h1>
             <p className="wwd-body">{description}</p>
-            <ul>
+            <ul className="wwd-list-container">
               {services.map((service, index) => (
                 <li key={index} className="wwd-list">
                   {service}

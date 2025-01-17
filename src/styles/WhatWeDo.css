@@ -72,6 +72,7 @@
   align-items: center;
   gap: 16px;
   width: auto;
+  cursor: pointer;
 }
 
 .practices-item-name {
@@ -137,6 +138,9 @@
   line-height: normal;
 }
 
+.wwd-list-container{
+  padding-left: 16px;
+}
 @media (max-width: 1100px) {
   .what-we-do-bottom {
     flex-direction: column;
