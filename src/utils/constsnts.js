@@ -129,8 +129,7 @@ export const NavItems = [
       { to: "/media-entertainment", label: "Media & Entertainment" },
       { to: "/fmcg", label: "FMCG" },
       { to: "/health-care", label: "Health Care" },
-      { to: "/bfsi", label: "BFSI" },
-      { to: "/fintech", label: "Fintech" },
+      { to: "/bfsi", label: "BFSI" }
     ],
   },
   {
