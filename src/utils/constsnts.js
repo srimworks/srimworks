@@ -1136,37 +1136,58 @@ Empower your business with innovative solutions that solve problems and create n
   },
   {
     title: "UI/UX Design",
-    content: "",
+    content: `Elevate your brand with intuitive interfaces and engaging user experiences that prioritize customer satisfaction.
+Our designs bridge the gap between functionality and aesthetics, enhancing usability and trust.
+By understanding user behavior, we create interfaces that maximize engagement and simplify interactions.
+Experience improved customer retention and acquisition with designs that truly resonate.`,
     image: IMAGES.DESIGN_OFFER_2,
   },
   {
     title: "Industrial & Mechanical Design",
-    content: "",
+    content: `Design innovative products that align with end-user needs, market demands, and manufacturing excellence.
+We provide full-cycle solutions, from opportunity identification to prototyping and manufacturing designs.
+Our expertise ensures cost-effective, efficient, and reliable products that strengthen your business.
+Turn your ideas into impactful products that enhance user experience and brand value.`,
     image: IMAGES.DESIGN_OFFER_3,
   },
   {
     title: "Service Experience Design",
-    content: "",
+    content: `Deliver exceptional customer and employee experiences with human-centered service design strategies.
+Our tailored solutions improve workflows, optimize processes, and enhance customer satisfaction.
+We focus on creating seamless, viable designs that add value to every interaction.
+Boost your business efficiency with services designed to maximize impact and drive growth.`,
     image: IMAGES.DESIGN_OFFER_4,
   },
   {
     title: "Visual Design",
-    content: "",
+    content: `Strengthen your brand identity with visually compelling designs that capture audience attention.
+Our creative expertise ensures that every visual communicates your message effectively.
+From logos to promotional materials, we design assets that build trust and drive engagement.
+Achieve a lasting impact with visuals that resonate with your target audience.`,
     image: IMAGES.DESIGN_OFFER_5,
   },
   {
     title: "Mobile App Design",
-    content: "",
+    content: `Craft intuitive and visually stunning mobile applications that elevate user experience.
+Our design-driven engineering ensures your apps align with brand goals and market needs.
+By blending functionality with creativity, we deliver apps that stand out in competitive markets.
+Launch high-quality, user-friendly mobile apps that deliver exceptional performance and value.`,
     image: IMAGES.DESIGN_OFFER_6,
   },
   {
     title: "Web Design",
-    content: "",
+    content: `Create websites that combine stunning design with exceptional functionality for a seamless user journey.
+Our designs are optimized for conversions, ensuring your site delivers measurable results.
+We adhere to global best practices, offering end-to-end solutions for design and backend integration.
+Elevate your online presence with a website that represents your brand's vision and goals.`,
     image: IMAGES.DESIGN_OFFER_7,
   },
   {
     title: "Digital Design Services",
-    content: "",
+    content: `Revolutionize user experiences with cutting-edge digital design strategies tailored to your business.
+We integrate innovative technologies to create impactful marketing assets and seamless designs.
+From ideation to execution, our digital designs deliver ease, creativity, and value for end users.
+Achieve hassle-free user experiences that enhance engagement and maximize ROI.`,
     image: IMAGES.DESIGN_OFFER_8,
   },
 ];
@@ -1256,47 +1277,47 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SOFTWARE_1,
         heading: "Web Development",
-        content: "lorem ipusm content dummy",
+        content: " We build responsive, scalable, and high-performance web applications tailored to your business needs. Our solutions are designed to enhance user engagement and provide a seamless browsing experience across all devices.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_2,
         heading: "Frontend Development",
-        content: "lorem ipusm content dummy",
+        content: "Our frontend development focuses on creating engaging, intuitive, and interactive user interfaces. We ensure a seamless user experience by incorporating modern technologies and design trends that cater to user needs.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_3,
         heading: "Backend Development",
-        content: "lorem ipusm content dummy",
+        content: "Text:  Our backend development services ensure that your applications are built with reliable and scalable architecture. We integrate security and high-performance standards, ensuring smooth operation and data management.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_4,
         heading: "Mobile App Development",
-        content: "lorem ipusm content dummy",
+        content: "We specialize in designing and developing mobile applications for both Android and iOS. Our mobile apps are optimized for performance, usability, and seamless integration with device features.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_5,
         heading: "Android App Development",
-        content: "lorem ipusm content dummy",
+        content: " Our Android app development services are aimed at delivering performance-driven applications with a focus on usability, scalability, and smooth user experience across all Android devices.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_6,
         heading: "iOS App Development",
-        content: "lorem ipusm content dummy",
+        content: "We build high-quality, native iOS applications that provide a robust user experience. Our apps are designed to leverage the best features of Apple devices, ensuring top-tier performance.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_7,
         heading: "Hybrid App Development",
-        content: "lorem ipusm content dummy",
+        content: "Our hybrid mobile apps are developed to work seamlessly across different platforms, providing a unified experience with faster time-to-market and lower development costs.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_8,
         heading: "SaaS Development",
-        content: "lorem ipusm content dummy",
+        content: "We offer SaaS application development services that provide flexibility and scalability for your business. Our solutions are designed to improve efficiency, increase productivity, and provide seamless cloud-based access.",
       },
       {
         image: IMAGES.DIGITAL_SOFTWARE_9,
         heading: "CMS Development",
-        content: "lorem ipusm content dummy",
+        content: " Our CMS development services empower businesses to manage and update content efficiently. We create customizable, scalable solutions to help you maintain an intuitive and functional content management system.",
       },
     ],
   },
@@ -1308,42 +1329,42 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_QUALITY_1,
         heading: "Quality Assurance",
-        content: "lorem ipusm content dummy",
+        content: " We offer comprehensive testing services to ensure the quality, performance, and security of your software. Our QA process includes functional, performance, and security testing to guarantee a flawless user experience.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_2,
         heading: "Functional Testing",
-        content: "lorem ipusm content dummy",
+        content: "Text: We conduct functional testing to verify that your software operates according to the defined requirements. Our tests ensure that all features and functionalities meet expectations.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_3,
         heading: "Automation Testing",
-        content: "lorem ipusm content dummy",
+        content: "Text: We automate testing processes to reduce manual intervention, enhance testing efficiency, and increase reliability across your software applications.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_4,
         heading: "Performance Testing",
-        content: "lorem ipusm content dummy",
+        content: "Our performance testing services ensure that your application can handle expected traffic and perform efficiently under heavy load conditions. We test for speed, scalability, and responsiveness.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_5,
         heading: "API Testing",
-        content: "lorem ipusm content dummy",
+        content: "We ensure your APIs are reliable, secure, and capable of integrating with external services. Our API testing focuses on functionality, performance, and security to ensure optimal operation.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_6,
         heading: "Mobile App Testing",
-        content: "lorem ipusm content dummy",
+        content: "We conduct extensive testing across multiple platforms to ensure that your mobile app works flawlessly on various devices and operating systems.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_7,
         heading: "Database Testing",
-        content: "lorem ipusm content dummy",
+        content: "Our database testing services verify the integrity, performance, and security of your database systems. We ensure that your data is stored and accessed efficiently without risk of corruption.",
       },
       {
         image: IMAGES.DIGITAL_QUALITY_8,
         heading: "Security Testing",
-        content: "lorem ipusm content dummy",
+        content: "We identify potential vulnerabilities and mitigate risks to ensure your software is secure. Our security testing covers all aspects, including authentication, authorization, and data encryption.",
       },
     ],
   },
@@ -1355,22 +1376,22 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_ENTERPRISE_1,
         heading: "Enterprise Software Development",
-        content: "lorem ipusm content dummy",
+        content: "We develop tailored enterprise software solutions that help businesses streamline operations and improve efficiency. Our solutions are scalable and designed to meet the specific needs of large organizations.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_2,
         heading: "Digital Transformation",
-        content: "lorem ipusm content dummy",
+        content: "We help organizations embrace digital transformation by leveraging technology to improve business operations, enhance customer experiences, and create new revenue opportunities.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_3,
         heading: "Enterprise Mobility",
-        content: "lorem ipusm content dummy",
+        content: "Our enterprise mobility solutions enable businesses to empower their workforce with mobile applications that improve productivity and flexibility, allowing employees to work from anywhere.",
       },
       {
         image: IMAGES.DIGITAL_ENTERPRISE_4,
         heading: "ERP Consulting",
-        content: "lorem ipusm content dummy",
+        content: "We offer expert ERP consulting services to optimize and implement enterprise resource planning systems. Our team ensures smooth integration and alignment with business objectives to enhance operational efficiency.",
       },
     ],
   },
@@ -1382,32 +1403,32 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SALESFORCE_1,
         heading: "Salesforce Implementation",
-        content: "lorem ipusm content dummy",
+        content: "We assist businesses in implementing Salesforce to streamline customer relationship management, improve data accessibility, and enhance customer experiences through automation and integrations.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_2,
-        heading: "",
-        content: "lorem ipusm content dummy",
+        heading: "Salesforce Customization",
+        content: "We customize Salesforce solutions to meet the unique needs of your business. Our team adapts Salesforce to fit your workflow, improving efficiency and business alignment.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_3,
         heading: "Salesforce Application Development",
-        content: "lorem ipusm content dummy",
+        content: "We develop custom Salesforce applications to optimize your business processes and improve customer engagement. Our solutions enhance functionality and help your business run smoothly.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_4,
         heading: "Salesforce Integration",
-        content: "lorem ipusm content dummy",
+        content: "We integrate Salesforce with other systems to create a seamless flow of information across your business. Our integration services ensure that all data is synchronized for improved decision-making.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_5,
         heading: "Salesforce Migration",
-        content: "lorem ipusm content dummy",
+        content: "Our Salesforce migration services help businesses transition smoothly to the platform, ensuring data integrity and minimal disruption. We assist with data import, system configuration, and post-migration support.",
       },
       {
         image: IMAGES.DIGITAL_SALESFORCE_6,
         heading: "Salesforce Upgrade and Maintenance",
-        content: "lorem ipusm content dummy",
+        content: "We provide continuous upgrades and maintenance to keep your Salesforce system running at peak performance. Our services ensure that your CRM remains aligned with business goals.",
       },
     ],
   },
@@ -1419,17 +1440,17 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_SOLUTIONS_1,
         heading: "Cloud Native Platform",
-        content: "lorem ipusm content dummy",
+        content: "We specialize in developing cloud-native applications that are scalable, reliable, and secure. Our cloud solutions help businesses enhance their digital capabilities and adapt to changing market demands.",
       },
       {
         image: IMAGES.DIGITAL_SOLUTIONS_2,
         heading: "Microservices",
-        content: "lorem ipusm content dummy",
+        content: "We design microservices architectures that break down complex applications into smaller, manageable components. This approach enhances flexibility, scalability, and speeds up the development process.",
       },
       {
         image: IMAGES.DIGITAL_SOLUTIONS_3,
         heading: "Architecture Design & Consulting",
-        content: "lorem ipusm content dummy",
+        content: "Our cloud architecture design and consulting services help businesses build efficient and scalable infrastructure. We provide expert guidance on system design, cloud adoption, and platform optimization.",
       },
     ],
   },
@@ -1441,22 +1462,22 @@ export const DIGITAL_CARDS = [
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_1,
         heading: "Cloud Transformation",
-        content: "lorem ipusm content dummy",
+        content: "We guide businesses through cloud transformation, ensuring they maximize the benefits of cloud technologies. Our approach focuses on improving operational efficiency, scalability, and reducing costs.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_2,
         heading: "Cloud Migration",
-        content: "lorem ipusm content dummy",
+        content: "Text: We offer seamless cloud migration services to help organizations transition from on-premise systems to cloud-based platforms, minimizing risks and ensuring data integrity throughout the process.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_3,
         heading: "App Modernization",
-        content: "lorem ipusm content dummy",
+        content: "We modernize legacy applications by upgrading them to cloud-native solutions, improving performance, scalability, and user experience to meet current business demands.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_4,
         heading: "Cloud Consulting",
-        content: "lorem ipusm content dummy",
+        content: "Our cloud consulting services help organizations develop strategies for cloud adoption, optimize existing cloud infrastructure, and drive digital transformation for enhanced performance.",
       },
     ],
   },
@@ -1467,28 +1488,28 @@ export const DIGITAL_CARDS = [
     cards: [
       {
         image: IMAGES.DIGITAL_DEVOPS_1,
-        heading: "some data",
-        content: "lorem ipusm content dummy",
+        heading: "DevOps Assessment",
+        content: "We evaluate your existing DevOps practices and identify areas for improvement to streamline development processes and enhance collaboration across teams.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_2,
-        heading: "some data",
-        content: "lorem ipusm content dummy",
+        heading: "Continuous Integration",
+        content: "Our continuous integration services ensure that code is continuously tested and integrated into the main branch, enhancing collaboration and reducing the risk of errors.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_3,
-        heading: "some data",
-        content: "lorem ipusm content dummy",
+        heading: "DevOps Pipeline Deployment",
+        content: "We deploy automated DevOps pipelines to streamline the development process, reduce time-to-market, and ensure high-quality software delivery.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_4,
-        heading: "some data",
-        content: "lorem ipusm content dummy",
+        heading: "Continuous Testing",
+        content: "Text: We integrate continuous testing into the DevOps pipeline to catch issues early in the development lifecycle and ensure that the software is always in a deployable state.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_5,
-        heading: "some data",
-        content: "lorem ipusm content dummy",
+        heading: "Optimization, Monitoring, and Maintenance",
+        content: "We provide ongoing optimization, monitoring, and maintenance services to ensure your DevOps pipeline remains efficient and performs at its best.",
       },
     ],
   },
