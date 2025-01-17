@@ -2,19 +2,17 @@ import React, { useState } from "react";
 import "../styles/WhatWeDo.css";
 import { IMAGES } from "../utils/images";
 import { practicesContent } from "../utils/constsnts";
+import { Link } from "react-router-dom";
 
 const WhatWeDo = () => {
-
   const [selectedPractice, setSelectedPractice] = useState("Design");
-
-
-
 
   const handlePracticeClick = (practice) => {
     setSelectedPractice(practice);
   };
 
-  const { title, description, services, image } = practicesContent[selectedPractice];
+  const { title, description, services, image, link } =
+    practicesContent[selectedPractice];
 
   return (
     <div className="whatwedo-section">
@@ -35,11 +33,27 @@ const WhatWeDo = () => {
           {Object.keys(practicesContent).map((practice, index) => (
             <div
               key={index}
-              className={`practices-item ${selectedPractice === practice ? "active" : ""}`}
+              className={`practices-item ${
+                selectedPractice === practice ? "active" : ""
+              }`}
               onClick={() => handlePracticeClick(practice)}
             >
-              <img src={IMAGES[`${practice.replace(/\s+/g, '_').toUpperCase()}_ICON`]} alt={practice} />
-              <h3 className="practices-item-name">{practice}</h3>
+              <img
+                src={
+                  IMAGES[`${practice.replace(/\s+/g, "_").toUpperCase()}_ICON`]
+                }
+                className={`practices-item-icon ${
+                  selectedPractice === practice ? "active" : ""
+                }`}
+                alt={practice}
+              />
+              <h3
+                className={`practices-item-name ${
+                  selectedPractice === practice ? "active" : ""
+                }`}
+              >
+                {practice}
+              </h3>
             </div>
           ))}
         </div>
@@ -58,7 +72,12 @@ const WhatWeDo = () => {
               ))}
             </ul>
           </div>
-          <button className="secondary-button-black-filled">View More Details</button>
+
+          <button className="secondary-button-black-filled">
+            <Link to={link} className="link">
+              View More Details
+            </Link>
+          </button>
         </div>
         <img src={image} alt={selectedPractice} />
       </div>
@@ -67,4 +86,3 @@ const WhatWeDo = () => {
 };
 
 export default WhatWeDo;
-

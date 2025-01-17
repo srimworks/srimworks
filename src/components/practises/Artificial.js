@@ -1,5 +1,5 @@
 import React from 'react'
-import { AL_ML_MARKET_TRENDS, AL_ML_CARDS, DESIGN_HERO, DESIGN_MARKET_TRENDS, DESIGN_OVERVIEW } from '../../utils/constsnts';
+import { AL_ML_MARKET_TRENDS, AL_ML_CARDS,AL_ML_HERO,  AL_ML_OVERVIEW} from '../../utils/constsnts';
 import HeroSection from '../../reusable/HeroWithLeftImg';
 import RightAside from '../../reusable/rightAside';
 import Cards from '../../reusable/cards';
@@ -9,8 +9,8 @@ import Accordian from '../../reusable/accordian';
 const Artificial = () => {
   return (
     <div className="outlet-render">
-    <HeroSection {...DESIGN_HERO} />
-    <RightAside {...DESIGN_OVERVIEW} />
+    <HeroSection {...AL_ML_HERO} />
+    <RightAside {...AL_ML_OVERVIEW} />
     <div className="what-offers-section">
       <div className="what-offers-top">
         <p className="what-offers-tag">SRIM Works Offer</p>

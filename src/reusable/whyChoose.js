@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/whychoose.css";
 import { IMAGES } from "../utils/images";
+import { Link } from "react-router-dom";
 
 const WhyChoose = () => {
   return (
@@ -54,7 +55,8 @@ const WhyChoose = () => {
               </div>
             </div>
           </div>
-          <button className="secondary-button-white-filled">Schedule Meeting</button>
+          <button className="secondary-button-white-filled">
+           <Link to='/contact-us' className="link">Schedule Meeting</Link> </button>
         </div>
         <div className="why-choose-right">
           <img src={IMAGES.WHO_WE_ABOUTUS_SECTION_1} alt="SRIM WORKS Image" />

@@ -76,7 +76,7 @@
 }
 
 .practices-item-name {
-  color: #aa2121;
+  color: #646464;
   font-family: "Config Condensed";
   font-size: 24px;
   font-style: normal;
@@ -85,6 +85,9 @@
   letter-spacing: -0.24px;
   width: fit-content;
   white-space: nowrap;
+}
+.practices-item-name.active{
+  color: #aa2121;
 }
 
 .what-we-do-bottom {
@@ -213,6 +216,6 @@
 .practices-item.active {
   background-color: #f0f0f0; 
   border-radius: 8px;
-  cursor: pointer;
+
 }
 

@@ -1629,7 +1629,7 @@ Foster innovation to maintain a competitive edge in a fast-evolving market.
 // BIG data
 
 export const BIGDATA_ENGINEERING_HERO = {
-  header: "Digital Engineering",
+  header: "Big Data Analytics",
   title: "Empowering Transformation Across the Product Lifecycle",
   desc: "Embrace digital technologies to craft insight-driven, human-centric experiences and achieve a resilient digital strategy for lasting success.",
   btnText: "Get Started",
@@ -1732,7 +1732,7 @@ export const BIGDATA_MARKET_TRENDS = {
 
 // AI & ML
 export const AL_ML_HERO = {
-  header: "Design Engineering",
+  header: "Artificial Intelligence and Machine Learning",
   title: "Future-Ready Solutions for a Better Tomorrow",
   desc: "At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText: "Get Started",
@@ -1842,7 +1842,7 @@ export const AL_ML_MARKET_TRENDS = {
 // Open Source
 
 export const OPENSOURCE_HERO = {
-  header: "Design Engineering",
+  header: "Open Source Technologies",
   title: "Future-Ready Solutions for a Better Tomorrow",
   desc: "At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText: "Get Started",
@@ -1947,7 +1947,7 @@ export const OPENSOURCE_MARKET_TRENDS = {
 // Coud Computing
 
 export const CLOUD_HERO = {
-  header: "Design Engineering",
+  header: "Cloud Computing",
   title: "Future-Ready Solutions for a Better Tomorrow",
   desc: "At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText: "Get Started",
@@ -2057,7 +2057,7 @@ export const CLOUD_MARKET_TRENDS = {
 // ERP & CRM
 
 export const ERP_HERO = {
-  header: "Design Engineering",
+  header: "ERP and CRM Solutions",
   title: "Future-Ready Solutions for a Better Tomorrow",
   desc: "At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText: "Get Started",
@@ -2149,7 +2149,7 @@ export const ERP_MARKET_TRENDS = {
 // microsoft
 
 export const MICROSOFT_HERO = {
-  header: "Design Engineering",
+  header: "Microsoft Technologies",
   title: "Future-Ready Solutions for a Better Tomorrow",
   desc: "At SRIM Works, we are dedicated to transforming innovative ideas into future-proof, human-centered products. Our approach combines cutting-edge design thinking with MVP-focused, iterative strategies to deliver solutions that drive business success and enhance user experiences.",
   btnText: "Get Started",
@@ -2299,6 +2299,7 @@ export const practicesContent = {
       "Branding & Visual Identity",
     ],
     image: IMAGES.DESIGN_IMG,
+    link:'/design',
   },
   Digital: {
     title: "Revolutionizing Businesses with Digital Engineering",
@@ -2315,6 +2316,7 @@ Services we offer:`,
       "Software Testing",
     ],
     image: IMAGES.DIGITAL_IMG,
+    link:'/digital-engineering',
   },
   BigData: {
     title: "Unlocking Insights with Big Data",
@@ -2328,6 +2330,7 @@ Services we offer:`,
       "Advanced Analytics",
     ],
     image: IMAGES.BIGDATA_IMG,
+    link:'/big-data',
   },
   Aiml: {
     title: "Empowering Innovation with Artificial Intelligence",
@@ -2341,6 +2344,7 @@ Services we offer:`,
       "AI-Driven Automation",
     ],
     image: IMAGES.AIML_IMG,
+    link:'/AI&ML',
   },
   OpenSource: {
     title: "Building Scalable Solutions with Open-Source Tools",
@@ -2354,6 +2358,7 @@ Services we offer:`,
       "Performance Optimization",
     ],
     image: IMAGES.OPENSOURCE_IMG,
+    link:'/open-source',
   },
   Cloud: {
     title: "Innovating with Microsoft’s Robust Tech Ecosystem",
@@ -2367,6 +2372,7 @@ Services we offer:`,
       "Cloud Integration",
     ],
     image: IMAGES.CLOUD_IMG,
+    link:'/cloud-computing',
   },
   Microsoft: {
     title: "Enabling Seamless Digital Transformation with Cloud",
@@ -2380,6 +2386,7 @@ Services we offer:`,
       "SaaS/PaaS Solutions",
     ],
     image: IMAGES.MICROSOFT_IMG,
+    link:'/microsoft-technologies',
   },
   ERP: {
     title: "Optimizing Business Operations with Integrated Solutions",
@@ -2393,5 +2400,6 @@ Services we offer:`,
       "Data Analytics and Reporting",
     ],
     image: IMAGES.ERP_IMG,
+    link:'/erp-crm',
   },
 };
