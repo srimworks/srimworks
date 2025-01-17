@@ -206,3 +206,9 @@
     letter-spacing: -0.16px;
   }
 }
+.practices-item.active {
+  background-color: #f0f0f0; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+

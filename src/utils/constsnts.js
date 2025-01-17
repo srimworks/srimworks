@@ -2267,3 +2267,100 @@ export const ACCORDIAN_LIST = [
     content: "We don’t have any API access plans available at the moment.",
   },
 ];
+
+
+// pratise
+
+export const practicesContent = {
+  Design: {
+    title: "Creating Impactful Experiences with Human-Centered Design",
+    description:
+      "Develop future-ready products and solutions that generate exceptional business value using design thinking principles, focusing on user needs, rapid prototyping, and iterative development.",
+    services: [
+      "Digital Product Design",
+      "UI/UX Design",
+      "Industrial & Mechanical Design",
+      "Service Experience Design",
+      "Branding & Visual Identity",
+    ],
+    image: IMAGES.DESIGN_IMG,
+  },
+  "Digital": {
+    title: "Driving Digital Innovation with Engineering Excellence",
+    description:
+      "Transform your business with cutting-edge digital solutions and next-gen engineering services that optimize operations and drive growth.",
+    services: [
+      "Software Development",
+      "DevOps & Automation",
+      "System Integration",
+      "IoT Solutions",
+      "Quality Assurance & Testing",
+    ],
+    image: IMAGES.DIGITAL_IMG,
+  },
+  "BigData": {
+    title: "Unlocking Insights with Big Data",
+    description:
+      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    services: [
+      "Data Engineering",
+      "Data Warehousing",
+      "Predictive Analytics",
+      "Machine Learning Models",
+      "Business Intelligence",
+    ],
+    image: IMAGES.BIGDATA_IMG,
+  },
+  "Aiml": {
+    title: "Unlocking Insights with Big Data",
+    description:
+      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    services: [
+      "Data Engineering",
+      "Data Warehousing",
+      "Predictive Analytics",
+      "Machine Learning Models",
+      "Business Intelligence",
+    ],
+    image: IMAGES.AIML_IMG,
+  },
+  "OpenSource": {
+    title: "Unlocking Insights with Big Data",
+    description:
+      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    services: [
+      "Data Engineering",
+      "Data Warehousing",
+      "Predictive Analytics",
+      "Machine Learning Models",
+      "Business Intelligence",
+    ],
+    image: IMAGES.OPENSOURCE_IMG,
+  },
+  "Cloud": {
+    title: "Unlocking Insights with Big Data",
+    description:
+      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    services: [
+      "Data Engineering",
+      "Data Warehousing",
+      "Predictive Analytics",
+      "Machine Learning Models",
+      "Business Intelligence",
+    ],
+    image: IMAGES.CLOUD_IMG,
+  },
+  "Microsoft": {
+    title: "Unlocking Insights with Big Data",
+    description:
+      "Leverage advanced analytics and data processing techniques to make informed business decisions.",
+    services: [
+      "Data Engineering",
+      "Data Warehousing",
+      "Predictive Analytics",
+      "Machine Learning Models",
+      "Business Intelligence",
+    ],
+    image: IMAGES.MICROSOFT_IMG,
+  },
+};
