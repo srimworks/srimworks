@@ -90,7 +90,7 @@ export const NavItems = [
     title: "Who We Are",
     links: [
       { to: "/about-us", label: "About US" },
-      { to: "/about-us#hello-about", label: "Leadership Team" },
+      { to: "/about-us#leader-ship", label: "Leadership Team" },
       { to: "/pressroom", label: "Press Room" },
       { to: "/careers", label: "Careers" },
     ],

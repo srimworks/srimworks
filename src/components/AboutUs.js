@@ -1,42 +1,32 @@
-import React from "react";
-import HeroWithLeftImg from "../reusable/HeroWithLeftImg";
-import ReachOut from "../reusable/reachOut";
-import LeftAside from "../reusable/leftAside";
-import {
-  ABOUT_HERO,
-  ABOUT_MARKET_TRENDS,
-  ASIDE_HUMANITY,
-  CONTACT_HERO,
-  LEFT_ASIDE,
-  MARINE_HERO,
-  REACH_OUT,
-} from "../utils/constsnts";
-import RightAside from "../reusable/rightAside";
-import Reviews from "../reusable/Reviews";
-import Location from "../reusable/Location";
-import CoreValues from "../reusable/CoreValues";
-import Footer from "../reusable/footer";
-import Accordian from "../reusable/accordian";
-import MarketReuse from "../reusable/MarketReuse";
-import HeroSection from "../reusable/HeroWithLeftImg";
+import React, { useEffect } from "react";
 import HeroRightSection from "../reusable/HeroRightImage";
 import WhyChoose from "../reusable/whyChoose";
+import CoreValues from "../reusable/CoreValues";
+import MarketReuse from "../reusable/MarketReuse";
 import Leadership from "../reusable/Leadership";
+import Location from "../reusable/Location";
+import { ABOUT_HERO, ABOUT_MARKET_TRENDS } from "../utils/constsnts";
 
 const AboutUs = () => {
-  const data = ASIDE_HUMANITY[0];
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1)); // Remove "#" and find the element
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
   return (
     <div className="outlet-render">
-      {/* <LeftAside {...data}/> */}
-      {/* <RightAside {...data}/> */}
-      {/* <HeroSection {...ABOUT_HERO}/>
-       */}
       <HeroRightSection {...ABOUT_HERO} />
       <WhyChoose />
       <CoreValues />
       <MarketReuse {...ABOUT_MARKET_TRENDS} />
-      <Leadership />
+      <div id="leader-ship"> {/* Add ID here */}
+        <Leadership />
+      </div>
       <Location />
     </div>
   );
