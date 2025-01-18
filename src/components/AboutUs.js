@@ -10,15 +10,20 @@ import { ABOUT_HERO, ABOUT_MARKET_TRENDS } from "../utils/constsnts";
 
 const AboutUs = () => {
   const location = useLocation();
-
   useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1)); 
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+    const scrollToSection = () => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
-    }
-  }, [location.hash]);
+    };
+
+    scrollToSection();
+    window.addEventListener("hashchange", scrollToSection);
+    return () => window.removeEventListener("hashchange", scrollToSection);
+  }, [location]);
 
   return (
     <div className="outlet-render">

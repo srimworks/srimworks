@@ -29,7 +29,7 @@ const Footer = () => {
             <h1 className="links-heading">Who We Are</h1>
             <ul className="links">
               <Link to="/about-us" className="link"><li className="links-body">About Us</li></Link>
-              <Link to="/leadership" className="link"><li className="links-body">LeaderShip Team</li></Link>
+              <Link to="/about-us#leader-ship" className="link"><li className="links-body">LeaderShip Team</li></Link>
               <Link to="/pressroom" className="link"><li className="links-body">Press Room</li></Link>
               <Link to="/careers" className="link"><li className="links-body">Carrers</li></Link>
             </ul>

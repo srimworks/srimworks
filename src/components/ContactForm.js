@@ -87,7 +87,8 @@ const ContactForm = () => {
           <div id="l-bottom-container">
             <img src={IMAGES.CALL_ICON} />
             <p id="l-bottom-container-text">
-              USA/CA +1 (832) 501-3875, IND +91 (080) 6218-0277
+              {`USA/CA +1 (832) 501-3875,
+               IND +91 (080) 6218-0277`}
             </p>
           </div>
           <div id="l-bottom-container">
