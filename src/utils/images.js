@@ -210,14 +210,14 @@ import MICROSOFT_ICON from "../imagess/Home Page/Section 5 Icons/microsoft Techn
 import CLOUD_ICON from "../imagess/Home Page/Section 5 Icons/cloud-computing.svg";
 import ERP_ICON from "../imagess/Home Page/Section 5 Icons/ERP and CRM.svg";
 
-import DESIGN_IMG from "../imagess/Home Page/Section 5 Images/Image 1.png";
-import DIGITAL_IMG from "../imagess/Home Page/Section 5 Images/Image 2.png";
-import BIGDATA_IMG from "../imagess/Home Page/Section 5 Images/Image 3.png";
-import AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
-import OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
-import MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
-import CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
-import ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
+import  DESIGN_IMG from "../imagess/Home Page/Section 5 Images/Image 1.png";
+import  DIGITAL_IMG from "../imagess/Home Page/Section 5 Images/Image 2.png";
+import  BIGDATA_IMG from "../imagess/Home Page/Section 5 Images/Image 3.png";
+import  AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
+import  OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
+import  MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
+import  CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
+import  ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
 
 import CAREERS_HERO from "../imagess/Careers/Hero Section.png";
 import MAP from "../imagess/Careers/Map.png";

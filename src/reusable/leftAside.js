@@ -38,7 +38,7 @@ const LeftAside = ({
               <button
                 className="secondary-button-white-filled"
               >
-                <Link className="link" to="/get-in-touch">
+                <Link className="link" to="/contact-us">
                 {btnText}
                 </Link>
               </button>

@@ -27,10 +27,10 @@ const ImageSlider = () => {
           </div>
           <p className="hero-description">{HOME_SLIDE[currentImg].description}</p>
           <div className="buttons-container">
-            <Link to={HOME_SLIDE[currentImg].button1.link} className="link">
+            <Link to='/contact-us' className="link">
               <button className="secondary-button">{HOME_SLIDE[currentImg].button1.text}</button>
             </Link>
-            <Link to={HOME_SLIDE[currentImg].button2.link} className="link">
+            <Link to='/about-us' className="link">
               <button className="secondary-button-outline">{HOME_SLIDE[currentImg].button2.text}</button>
             </Link>
           </div>
