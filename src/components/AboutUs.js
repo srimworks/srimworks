@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import HeroRightSection from "../reusable/HeroRightImage";
 import WhyChoose from "../reusable/whyChoose";
 import CoreValues from "../reusable/CoreValues";
@@ -8,15 +9,16 @@ import Location from "../reusable/Location";
 import { ABOUT_HERO, ABOUT_MARKET_TRENDS } from "../utils/constsnts";
 
 const AboutUs = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const element = document.getElementById(hash.substring(1));
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1)); 
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, []);
+  }, [location.hash]);
 
   return (
     <div className="outlet-render">

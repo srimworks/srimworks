@@ -31,7 +31,7 @@ const Footer = () => {
               <Link to="/about-us" className="link"><li className="links-body">About Us</li></Link>
               <Link to="/leadership" className="link"><li className="links-body">LeaderShip Team</li></Link>
               <Link to="/pressroom" className="link"><li className="links-body">Press Room</li></Link>
-              <Link to="/carrers" className="link"><li className="links-body">Carrers</li></Link>
+              <Link to="/careers" className="link"><li className="links-body">Carrers</li></Link>
             </ul>
           </div>
           <div className="column">
@@ -79,10 +79,10 @@ const Footer = () => {
               <Link to="/reviews" className="link"><li className="links-body">Submit Your Review</li></Link>
           </div>
           <div className="column">
-            <h1 className="links-heading">Careers</h1>
+            <h1 className="links-heading"><Link className="link" to='/careers'>Careers</Link></h1>
           </div>
           <div className="column">
-            <h1 className="links-heading">Contact Us</h1>
+            <h1 className="links-heading"><Link className="link" to='/contact-us'>Contact Us</Link></h1>
           </div>
         </div>
       
