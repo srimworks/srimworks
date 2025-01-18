@@ -57,6 +57,7 @@ const WhyChoose = () => {
           </div>
           <button className="secondary-button-white-filled">
            <Link to='/contact-us' className="link">Schedule Meeting</Link> </button>
+
         </div>
         <div className="why-choose-right">
           <img src={IMAGES.WHO_WE_ABOUTUS_SECTION_1} alt="SRIM WORKS Image" />

@@ -10,7 +10,6 @@ const LeftAside = ({
   btnText,
   dataList,
 }) => {
-  // console.log(btnText)
   return (
     <div className="overall-aside-container">
       <div className="aside-container-left-image">

@@ -5,7 +5,6 @@ import "../styles/accordianStyles.css";
 // import { Link } from "react-router-dom";
 
 const Accordian = ({MARKKET_TRENDS}) => {
-  console.log(MARKKET_TRENDS)
   const [openIndex, setOpenIndex] = useState(0);
   return (
     <>

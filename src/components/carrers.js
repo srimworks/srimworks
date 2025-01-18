@@ -10,13 +10,10 @@ import Cards from '../reusable/cards'
 
 const Carrers = () => {
   return (
-    <div className='outlet-render'>
-    <HeroRightSection {...CARRERS_HERO}/>
-    <RightAside {...CARRERS_OVERVIEW}/>
-{/* cards */}
-<Cards {...CARRER_OPENINGS}/>
-
-<Location/>
+    <div className=''>
+<iframe src="https://app.pyjamahr.com/careers?company=SRIM%20WORKS&company_uuid=F98336B846"
+frameborder="0" scrolling="yes" seamless="seamless"
+style={{display:"block", width:"100%", height:"100vh"}}></iframe>
     </div>
   )
 }

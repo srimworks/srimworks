@@ -11,8 +11,8 @@ const WhatWeDo = () => {
     setSelectedPractice(practice);
   };
 
-  const { title, description, services, image, link } =
-    practicesContent[selectedPractice];
+  const { title, description, services, image, link } = practicesContent[selectedPractice];
+
 
   return (
     <div className="whatwedo-section">
@@ -72,6 +72,7 @@ const WhatWeDo = () => {
               ))}
             </ul>
           </div>
+
 
           <button className="secondary-button-black-filled">
             <Link to={link} className="link">

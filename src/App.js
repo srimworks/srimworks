@@ -35,11 +35,13 @@ import Blogs from "./components/Blogs";
 import Reviews from "./reusable/Reviews";
 import Schedule from "./components/Schedule";
 import Fintech from "./components/practises/Fintech";
+import ScrollToTop from "./utils/UseLocation";
 
 const AppRouter = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop/>
       <Outlet />
       <ReachOut {...REACH_OUT}/>
       <Footer />
