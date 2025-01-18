@@ -36,6 +36,8 @@ import Reviews from "./reusable/Reviews";
 import Schedule from "./components/Schedule";
 import Fintech from "./components/practises/Fintech";
 import ScrollToTop from "./utils/UseLocation";
+import TermsPopup from "./components/TermsPopUp";
+import CookiesPopup from "./components/CookiesPopUp";
 
 const AppRouter = () => {
   return (
@@ -44,6 +46,8 @@ const AppRouter = () => {
       <ScrollToTop/>
       <Outlet />
       <ReachOut {...REACH_OUT}/>
+      {/* <TermsPopup />
+      <CookiesPopup /> */}
       <Footer />
 
     </>

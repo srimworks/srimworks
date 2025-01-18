@@ -1,0 +1,25 @@
+.cookies-popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .cookies-popup a {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  .cookies-popup button {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  

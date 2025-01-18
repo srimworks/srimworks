@@ -76,7 +76,7 @@ const Footer = () => {
             <h1 className="links-heading">Resources</h1>
             <Link to="/blogs" className="link"><li className="links-body">Blogs</li></Link>
               <Link to="/case-studies" className="link"><li className="links-body">Case Studies</li></Link>
-              <Link to="/reviews" className="link"><li className="links-body">Submit Your Review</li></Link>
+              <Link to="/contact-us" className="link"><li className="links-body">Submit Your Review</li></Link>
           </div>
           <div className="column">
             <h1 className="links-heading"><Link className="link" to='/careers'>Careers</Link></h1>
