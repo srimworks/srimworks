@@ -6,6 +6,8 @@ import { NavItems } from "../utils/constsnts";
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null); 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
 
   const handleMouseEnter = (index) => {
     setActiveDropdown(index); 
@@ -26,18 +28,19 @@ const Navbar = () => {
           <Link to="/">
             <img src={IMAGES.NAV_LOGO} alt="Logo" className="logo-image" />
           </Link>
-          <img src={IMAGES.MENU_ICON} alt="Menu_Icon" className="menu-icon"/>
+          <img src={IMAGES.MENU_ICON} alt="Menu_Icon" className="menu-icon" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}/>
         </div>
 
-        <div className="navbar-items">
+        <div className={`navbar-items ${isMobileMenuOpen ? "active":""} `}>
           {NavItems.map((item, index) => (
             <div
               key={index}
               className="navbar-item"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
+              onClick={()=> setIsDropDownMenuOpen(!isDropDownMenuOpen)}
             >
-              <button className="nav-button">
+              <button className="nav-button" >
                 {item.title}
                 <img
                   src={IMAGES.CHEVRON_DOWN}
@@ -46,7 +49,7 @@ const Navbar = () => {
                 />
               </button>
               {activeDropdown === index && (
-                <div id="nav-dropdown">
+                <div id={`${isDropDownMenuOpen && isMobileMenuOpen ? "nav-dropdown-active":"nav-dropdown"}`}>
                   <div id="nav-dropdown-container">
                     <h1 id="dropdown-heading">{item.title}</h1>
                     <div className="dropdown">
@@ -56,6 +59,7 @@ const Navbar = () => {
                           to={link.to}
                           className="dropdown-item"
                           onClick={handleItemClick}
+                          onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                           {link.label}
                         </Link>
@@ -68,14 +72,14 @@ const Navbar = () => {
           ))}
                   <div className="navbar-item">
             <Link to="/careers" className="link">
-              <button className="nav-button">Careers</button>
+              <button className="nav-button" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}>Careers</button>
             </Link>
           </div>
         </div>
 
-        <div className="navbar-button">
-          <Link to="/contact-us" className="link">
-            <button className="primary-button">Schedule a Call</button>
+        <div className={`${isMobileMenuOpen ? "navbar-button-active":"navbar-button" }`}>
+          <Link to="/contact-us" className="link" >
+            <button className="primary-button" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}>Schedule a Call</button>
           </Link>
         </div>
       </div>
