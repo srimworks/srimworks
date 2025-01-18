@@ -11,7 +11,7 @@ const AboutUs = () => {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      const element = document.getElementById(hash.substring(1)); // Remove "#" and find the element
+      const element = document.getElementById(hash.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
@@ -24,7 +24,7 @@ const AboutUs = () => {
       <WhyChoose />
       <CoreValues />
       <MarketReuse {...ABOUT_MARKET_TRENDS} />
-      <div id="leader-ship"> {/* Add ID here */}
+      <div id="leader-ship"> 
         <Leadership />
       </div>
       <Location />
