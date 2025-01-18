@@ -19,6 +19,7 @@ const Navbar = () => {
 
   const handleItemClick = () => {
     setActiveDropdown(null); 
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   };
 
   return (
@@ -59,7 +60,7 @@ const Navbar = () => {
                           to={link.to}
                           className="dropdown-item"
                           onClick={handleItemClick}
-                          onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}
+                          // onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                           {link.label}
                         </Link>
