@@ -103,6 +103,11 @@
   background-color: #f1c336; 
 }
 
+@media (max-width:1200px) {
+  .image-slider-css{
+    height: fit-content;
+  }
+}
 
 
 @media (max-width: 1030px) {
@@ -113,6 +118,7 @@
   .image-slider-css {
     overflow: hidden;
     width: 100vw;
+    height: fit-content;
   }
   .overlay-heading-1 {
     font-size: 48px;
