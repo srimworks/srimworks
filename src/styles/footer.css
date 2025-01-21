@@ -141,7 +141,9 @@ footer{
     align-items: center;
     gap: var(--Margin, 32px);
 }
-
+.social-media img{
+    cursor: pointer;
+}
 
 .footer-line{
     width: 100%;
