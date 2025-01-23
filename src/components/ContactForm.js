@@ -34,7 +34,7 @@ const ContactForm = () => {
       alert("Captcha does not match! Please try again.");
       return;
     }
-  setLoading(true)
+
     try {
       const response = await fetch(
         "https://srimmedia-backend.onrender.com/submit-form",
@@ -49,6 +49,7 @@ const ContactForm = () => {
 
       const data = await response.json();
       if (response.ok) {
+        setLoading(!loading)
         setFormData({
           firstname: "",
           lastname: "",
@@ -240,6 +241,7 @@ const ContactForm = () => {
                 id="Accept_Privacy"
                 name="Privacy"
                 value="Checked"
+                required
               ></input>
               <p className="check-text">
                 I agree to our <Link className="privacy"> privacy policy </Link>
@@ -247,8 +249,12 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <button type="submit" className="secondary-button-black-filled" disabled={loading}>
+          {/* <button type="submit" className="secondary-button-black-filled" disabled={loading}>
             {loading ? <div className="loading-spinner"></div> : "Submit"}
+            </button> */}
+            
+          <button type="submit" className="secondary-button-black-filled">
+            Submit
             </button>
         </form>
       </div>
