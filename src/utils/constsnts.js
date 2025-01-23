@@ -103,6 +103,7 @@ export const NavItems = [
       { to: "/big-data", label: "Big Data Analytics" },
       { to: "/AI&ML", label: "AI & ML" },
       { to: "/open-source", label: "Open Source Technologies" },
+      { to: "/data-annotation", label: "Data Annotation services" },
       { to: "/microsoft-technologies", label: "Microsoft Technologies" },
       { to: "/cloud-computing", label: "Cloud Computing" },
       { to: "/erp-crm", label: "ERP and CRM Solutions" },
@@ -2243,6 +2244,122 @@ export const MICROSOFT_MARKET_TRENDS = {
   dataList: [],
 };
 
+
+// Data Annotations
+
+export const DATAAN_HERO = {
+  header: "Data Annotation services",
+  title: "Transforming the World with Data Annotation",
+  desc: "Unleash the power of AI with precise annotation services across LiDAR, image, text, and audio data. Empower innovations in autonomous vehicles, smart cities, robotics, and more with accurate, high-quality data tailored for cutting-edge AI applications.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
+};
+
+export const DATAAN_OVERVIEW = {
+  heading: "",
+  title: "Overview",
+  image: IMAGES.DATA_ANN_2,
+  desc: `At SRIM Works, we deliver top-tier data annotation services across LiDAR, image, text, audio, and video domains. By combining AI-assisted tools and human expertise, we ensure the highest levels of accuracy and efficiency for your AI models. Our commitment to quality and innovation enables our clients to lead in autonomous driving, precision farming, fintech, and more`,
+  dataList: [],
+};
+
+export const DATAAN_CARDS = [
+  {
+    title: "Image Annotation  ",
+    content:
+      "Image annotation is the process of labeling objects, regions, or specific features in an image to train machine learning models for computer vision tasks. It is widely used in applications such as object detection, facial recognition, autonomous driving, and medical imaging diagnostics. Common methods include drawing bounding boxes around objects, semantic segmentation (labeling each pixel in an image), polygon annotation for irregular shapes, keypoint annotation for specific points like facial landmarks, and 3D cuboids to understand the dimensions of objects in 3D space.",
+    image: IMAGES.DATA_ANN_3,
+  },
+  {
+    title: " Text Annotation ",
+    content:`Text annotation involves identifying and labeling key parts of a text document to support natural language processing (NLP) tasks. It is crucial for applications like sentiment analysis, chatbot training, language translation, and text summarization. Techniques include recognizing entities like names and dates (entity recognition), categorizing text based on emotional tone (sentiment annotation), identifying user intent in commands or queries (intent annotation), and classifying documents or sentences into predefined categories. Linguistic annotation further involves adding grammatical, syntactical, or semantic labels to enrich textual data for advanced NLP models`,
+    image: IMAGES.DATA_ANN_4,
+  },
+  {
+    title: "Audio Annotation  ",
+    content:`Audio annotation is the process of labeling sound files for various tasks such as speech recognition, emotion detection, and sound event analysis. It finds applications in virtual assistants, speech-to-text transcription, and audio-based fraud detection systems. Key techniques include transcribing speech to text, identifying and segmenting different speakers (speaker diarization), labeling emotions in speech (emotion annotation), detecting specific sound events like sirens or claps, and annotating phonemes (the smallest sound units) for linguistic research and AI models.`,
+    image: IMAGES.DATA_ANN_5,
+  },
+  {
+    title: "LiDAR Annotation  ",
+    content:`LiDAR annotation is used to label 3D point cloud data captured by LiDAR sensors, commonly employed in autonomous vehicles, robotics, and urban planning. It enables AI models to understand spatial data and detect objects in 3D environments. Annotation techniques include creating 3D bounding boxes to define object dimensions, semantic segmentation to label every point in the dataset, instance segmentation to differentiate overlapping objects, trajectory annotation for tracking movement in 3D space, and lane detection for self-driving vehicles.
+`,
+    image: IMAGES.DATA_ANN_6,
+  },
+  {
+    title: " Video Annotation",
+    content:`Video annotation focuses on labeling objects, actions, or events in video frames to train AI models for applications like object tracking, action recognition, and autonomous driving. It involves frame-by-frame annotation to ensure precision, object tracking to follow the movement of labeled items across frames, and event annotation to identify specific activities (e.g., a soccer goal). Additional techniques include scene annotation to label the environment and context, and keyframe annotation to reduce redundancy by annotating only critical frames.`,
+    image: IMAGES.DATA_ANN_7,
+  },
+  {
+    title: "Natural Language Benchmark Annotation ",
+    content:`Natural language benchmark annotation involves creating and labeling datasets to evaluate and test the performance of NLP models. This type of annotation supports tasks such as question answering, text generation, language translation, and dialogue system training. It ensures models are tested against high-quality benchmarks to measure their accuracy, reliability, and contextual understanding. Specific tasks include annotating question-answer pairs, evaluating paraphrase detection, assessing model-generated text responses, and measuring reading comprehension capabilities.`,
+    image: IMAGES.DATA_ANN_8,
+  },
+];
+
+export const DATAAN_MARKET_TRENDS = {
+  heading: "What Makes SRIM Works Different",
+  desc: "At SRIM Works, we believe in blending agility, creativity, and cutting-edge practices to deliver exceptional results. Our philosophy is rooted in solving problems efficiently and creating value-driven solutions that empower businesses to thrive.",
+  title: "Human-Centered Discovery",
+  content:
+    "We identify and solve high-value problems using a human-centered discovery approach. This method focuses on transforming challenges into opportunities, boosting customer satisfaction, and driving business growth.",
+  subHead1: "MVP Approach to Design",
+  subHead2: "Data-Driven Iteration",
+  accordian_content: [
+    {
+      id: 0,
+      subHead: "How We Do It",
+      content: `We follow a structured process, starting with in-depth discovery to identify key problems, defining clear objectives, and prototyping innovative solutions. Through evaluation and iterative refinement, we develop exceptional products that deliver value and meet business goals.`,
+    },
+    {
+      id: 1,
+      subHead: "Understanding Your Requirements",
+      content: `We start by collaborating with you to understand your unique project needs, objectives, and use cases. Our team tailors the annotation process to align with your specific goals.`,
+    },
+    {
+      id: 2,
+      subHead: "Designing Custom Workflows",
+      content: `Leveraging advanced tools and domain expertise, we design bespoke workflows to ensure seamless data processing and annotation. Whether it's LiDAR data, text, images, or video, we create solutions that maximize accuracy and efficiency.
+`,
+    },
+    {
+      id: 3,
+      subHead: "AI-Assisted Annotation",
+      content: `Our platform integrates AI-assisted tools to enhance annotation speed and precision. These tools automate repetitive tasks while our skilled annotators focus on nuanced and complex labeling`,
+    },
+    {
+      id: 4,
+      subHead: "Multi-Layered Quality Checks",
+      content: `To ensure high-quality output, we implement rigorous quality control measures at multiple stages. Our processes are designed to minimize errors and deliver datasets with unmatched accuracy.
+`,
+    },
+    {
+      id: 5,
+      subHead: "Seamless Integration and Delivery",
+      content: `We deliver annotated datasets in formats compatible with your existing systems, ensuring seamless integration and usability. Our team also provides ongoing support to address your evolving needs.`,
+    }
+  ],
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "AI-assisted Labeling",
+      content: `Our annotation platform leverages AI-assisted labeling for improved speed and accuracy, automating repetitive tasks and enhancing efficiency.`,
+    },
+    {
+      id: 1,
+      subHead: "Real-time Quality Control",
+      content: `Built-in quality control measures minimize errors during the annotation process, ensuring high-quality datasets for your AI models.`,
+    },
+    {
+      id: 2,
+      subHead: "Flexible Integration",
+      content: `Our platform seamlessly integrates with your existing data management systems, streamlining data workflows and facilitating seamless data transfer.`,
+    },
+  ],
+  image: IMAGES.DATA_ANN_9,
+  dataList: [],
+};
 // accrodian data
 
 export const ACCORDIAN_LIST = [

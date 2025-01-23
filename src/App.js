@@ -38,6 +38,7 @@ import Fintech from "./components/practises/Fintech";
 import ScrollToTop from "./utils/UseLocation";
 import TermsPopup from "./components/TermsPopUp";
 import CookiesPopup from "./components/CookiesPopUp";
+import DataAnnotations from "./components/practises/DataAnnotations";
 
 const AppRouter = () => {
   return (
@@ -163,6 +164,10 @@ export const Routes = createBrowserRouter([
       {
         element:<OpenSource/>,
         path:"/open-source"
+      },
+      {
+        element:<DataAnnotations/>,
+        path:"/data-annotation"
       },
       {
         element:<Microsoft/>,
