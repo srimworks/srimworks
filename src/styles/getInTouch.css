@@ -258,6 +258,40 @@
   color: #54585b;
 }
 
+.submit-button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 @media (max-width: 900px) {
   .get-in-touch-section-left {
     padding-left: 64px;

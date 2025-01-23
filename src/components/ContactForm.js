@@ -4,6 +4,7 @@ import { IMAGES } from "../utils/images.js";
 import { Link } from "react-router-dom";
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false)
   const generateCaptcha = () => {
     return Math.random().toString(36).substring(2, 8); // Generates a random string
   };
@@ -17,7 +18,7 @@ const ContactForm = () => {
     website: "",
     message: "",
     captcha: "",
-    generatedCaptcha: generateCaptcha(), // Initial captcha value
+    generatedCaptcha: generateCaptcha(), 
   });
 
   const handleChange = (e) => {
@@ -33,7 +34,7 @@ const ContactForm = () => {
       alert("Captcha does not match! Please try again.");
       return;
     }
-
+  setLoading(true)
     try {
       const response = await fetch(
         "https://srimmedia-backend.onrender.com/submit-form",
@@ -246,13 +247,9 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <button
-            type="submit"
-            onClick={(e) => e.stopPropagation()}
-            className="secondary-button-black-filled"
-          >
-            Submit
-          </button>
+          <button type="submit" className="secondary-button-black-filled" disabled={loading}>
+            {loading ? <div className="loading-spinner"></div> : "Submit"}
+            </button>
         </form>
       </div>
     </div>
