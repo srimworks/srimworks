@@ -4,7 +4,7 @@ import '../styles/cards.css';
 const Cards = ({ postedon, title, image, content }) => {
   return (
     <div className="card-section">
-      {postedon && <h1>{postedon}</h1>}
+      {/* {postedon && <h1>{postedon}</h1>} */}
       <div className="overlay">
         <h1 className="card-heading">{title}</h1>
         <p className="card-content">{content}</p>

@@ -14,7 +14,7 @@ const CoreValues = () => {
           const { id, icon, heading, content } = item;
           return (
             <div className="why-choose-us-card" key={id}>
-              <img src={icon} alt="" />
+              <img src={icon} alt={heading} />
               <h1 className="why-choose-us-card-heading">{heading}</h1>
               <p className="why-choose-us-card-body">"{content}"</p>
             </div>

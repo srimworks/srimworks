@@ -13,7 +13,7 @@ const LeftAside = ({
   return (
     <div className="overall-aside-container">
       <div className="aside-container-left-image">
-        <img src={image} alt="" />
+        <img src={image} alt={title} />
         <aside className="aside-container-aside">
           <div>
           {heading.length > 0 && (

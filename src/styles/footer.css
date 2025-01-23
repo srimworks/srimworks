@@ -81,6 +81,18 @@ footer{
     line-height: normal;
     letter-spacing: -0.4px;
 }
+.links-heading-t-s{
+    color: #060606;
+    padding: 0;
+    margin: 0;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    padding-top: 16px;
+}
 
 .links{
     display: flex;
