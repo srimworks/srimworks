@@ -21,7 +21,7 @@ const RightAside = ({ image, heading,header, title, desc ,dataList}) => {
         </div>
         {/* <p className="aside-content">Additionally, we offer a Free Digital Marketing services to Non-Profit Organizations, NGO’s and government , helping them achieve their goals and flourish in the marketplace. </p> */}
       </aside>
-      <img src={image} alt="" />
+      <img src={image} alt={title} />
     </div>
   );
 };

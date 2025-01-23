@@ -1,17 +1,11 @@
 import React from "react";
 import "../styles/heroosections.css";
+import { IMAGES } from "../utils/images";
 import { Link } from "react-router-dom";
-
-const HeroSection = ({
-  image,
-  header,
-  title,
-  desc,
-  btnText,
-  btnClass,
-  cards,
-}) => {
+const HeroSection = ({cards,image,header, title, desc, btnText,btnClass}) => {
+console.log(image)
   return (
+  
     <section className="hero-section">
       <div className="hero-overlay">
         <div className="hero-content">
@@ -34,7 +28,7 @@ const HeroSection = ({
           <div className="cards-container">
             {cards.map((item) => {
               return (
-                <div className="img-cards">
+                <div className="img-cards" key={item.id}>
                   <h2 className="img-card-heading">{item.title}</h2>
                   <p className="img-card-body">{item.content}</p>
                 </div>
@@ -43,7 +37,7 @@ const HeroSection = ({
           </div>
         )}
       </div>
-      <img src={image} className="hero-section-image" />
+      <img src={image} className="hero-section-image" alt={title}/>
     </section>
   );
 };

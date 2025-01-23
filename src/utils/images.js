@@ -264,10 +264,9 @@ import REVIEWS_QUOTES from "../imagess/common/ReviewsQuotes.svg";
 import RIGHT_ARROW_DARK from "../imagess/common/RightArrowDark.svg";
 import VERTICAL_LINE from "../imagess/common/VerticalLine.svg";
 import FOOTER_ICON from "../images/Footer/Footer Logo Icon.svg";
-import FACEBOOK_ICON from "../images/Footer/Facebook.svg";
-import TWITTER_ICON from "../images/Footer/Twitter.svg";
+import GLASSDOOR_ICON from "../images/Footer/Glassdoor.svg";
 import LINKEDIN_ICON from "../images/Footer/Linkedin.svg";
-import INSTAGRAM_ICON from "../images/Footer/Instagram.svg";
+import AMBITION_BOX_ICON from "../images/Footer/Ambitionbox.svg";
 import PLUS_ICON from "../images/Practices/PlusIcon.svg";
 import MINUS_ICON from "../images/Practices/MinusIcon.svg";
 import CALL_ICON from "../imagess/Contact/callIcon.svg";
@@ -502,10 +501,9 @@ export const IMAGES = {
   WHO_WE_PRESS_ARTICLES,
   WHO_WE_PRESS_HERO,
   FOOTER_ICON,
-  FACEBOOK_ICON,
-  TWITTER_ICON,
+  GLASSDOOR_ICON,
   LINKEDIN_ICON,
-  INSTAGRAM_ICON,
+  AMBITION_BOX_ICON,
   PLUS_ICON,
   MINUS_ICON,
   LOCATION_ICON,

@@ -64,7 +64,7 @@ const Reviews = () => {
 
             return (
               <div className="review-1" key={id}>
-                 < img src={IMAGES.REVIEWS_QUOTES}/>
+                 < img src={IMAGES.REVIEWS_QUOTES} alt="Quotes"/>
                 <div className="review-1-body">
                   <div className="review-1-top">
                     <h1 className="review-1-top-heading">{title}</h1>
@@ -86,7 +86,7 @@ const Reviews = () => {
                   </div>
                 </div>
                 {index < 1 && (
-                <img src={IMAGES.VERTICAL_LINE} className="vertical-line"/>
+                <img src={IMAGES.VERTICAL_LINE} alt="Vertical Line" className="vertical-line"/>
              
                 )}
               </div>
@@ -95,10 +95,10 @@ const Reviews = () => {
         </div>
         <div className="reviews-button">
           <div id="arrow-button" onClick={handleLeftArrowClick}>
-            < img src={IMAGES.LEFT_ARROW_BLACK}/> 
+            < img src={IMAGES.LEFT_ARROW_BLACK} alt="Left Arrow"/> 
           </div>
           <div id="arrow-button" onClick={handleRightArrowClick}>
-            < img src={IMAGES.RIGHT_ARROW_DARK}/> 
+            < img src={IMAGES.RIGHT_ARROW_DARK} alt="Right Arrow"/> 
           </div>
         </div>
       </div>
