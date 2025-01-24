@@ -39,6 +39,8 @@ import ScrollToTop from "./utils/UseLocation";
 import TermsPopup from "./components/TermsPopUp";
 import CookiesPopup from "./components/CookiesPopUp";
 import DataAnnotations from "./components/practises/DataAnnotations";
+import Terms from "./reusable/Terms";
+import Privacy from "./reusable/Privacy";
 
 const AppRouter = () => {
   return (
@@ -189,6 +191,14 @@ export const Routes = createBrowserRouter([
       {
         element:<Reviews/>,
         path:"/reviews"
+      },
+      {
+        element:<Terms/>,
+        path:"/terms"
+      },
+      {
+        element:<Privacy/>,
+        path:"/privacy"
       },
     ],
   },
