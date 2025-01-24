@@ -14,9 +14,18 @@ const Footer = () => {
           </Link>
         </div>
         <div className="social-media">
-         <Link to="https://in.linkedin.com/company/srim-works/" > <img src={IMAGES.LINKEDIN_ICON} alt="Linked In" /></Link>
-          <Link to="https://www.ambitionbox.com/overview/srim-works-overview" >  <img src={IMAGES.AMBITION_BOX_ICON} alt="Abition Box"/></Link>
-          <Link to="https://www.glassdoor.co.in/Overview/Working-at-SRIM-WORKS-EI_IE9788976.11,21.htm" >  <img src={IMAGES.GLASSDOOR_ICON} alt="Glass Door" /></Link>
+          <Link to="https://in.linkedin.com/company/srim-works/">
+            {" "}
+            <img src={IMAGES.LINKEDIN_ICON} alt="Linked In" />
+          </Link>
+          <Link to="https://www.ambitionbox.com/overview/srim-works-overview">
+            {" "}
+            <img src={IMAGES.AMBITION_BOX_ICON} alt="Abition Box" />
+          </Link>
+          <Link to="https://www.glassdoor.co.in/Overview/Working-at-SRIM-WORKS-EI_IE9788976.11,21.htm">
+            {" "}
+            <img src={IMAGES.GLASSDOOR_ICON} alt="Glass Door" />
+          </Link>
         </div>
       </div>
       <hr className="footer-line" />
@@ -153,8 +162,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="social-media">
-          <p className="footer-bottom-text-1">· Terms</p>
+          <Link to="/terms" className="link">
+            <p className="footer-bottom-text-1">· Terms</p>
+          </Link>
+          <Link to="/privacy" className="link">
           <p className="footer-bottom-text-1">· Privacy</p>
+          </Link>
         </div>
       </div>
     </footer>
