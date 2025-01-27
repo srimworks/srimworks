@@ -17,7 +17,7 @@ const HeroRightSection = ({ image, header,heading, title, desc, btnText }) => {
           )}
         </div>
       </div>
-      <img src={image} className="hero-right-section-image" />
+      <img src={image} className="hero-right-section-image"  alt={title}/>
     </section>
   );
 };

@@ -18,7 +18,7 @@ const ContactForm = () => {
     website: "",
     message: "",
     captcha: "",
-    generatedCaptcha: generateCaptcha(), 
+    generatedCaptcha: generateCaptcha(), // Initial captcha value
   });
 
   const handleChange = (e) => {
@@ -87,18 +87,18 @@ const ContactForm = () => {
         </div>
         <div className="get-in-touch-l-bottom">
           <div id="l-bottom-container">
-            <img src={IMAGES.CALL_ICON} />
+            <img src={IMAGES.CALL_ICON} alt="CALL Icon" />
             <p id="l-bottom-container-text">
               {`USA/CA +1 (832) 501-3875,
                IND +91 (080) 6218-0277`}
             </p>
           </div>
           <div id="l-bottom-container">
-            <img src={IMAGES.MAIL_ICON} />
+            <img src={IMAGES.MAIL_ICON} alt="Mail Icon"/>
             <p id="l-bottom-container-text">info@srimworks.com</p>
           </div>
           <div id="l-bottom-container">
-            <img src={IMAGES.LOCATION_ICON} />
+            <img src={IMAGES.LOCATION_ICON} alt="Location Icon"/>
             <p id="l-bottom-container-text">
               GET PLACED INDIA PRIVATE LIMITED Rajapushpa Summit, SY. 130P &
               115/1P, Nanakramguda Rd, Ranga Reddy Dist., Financial District,
@@ -244,7 +244,7 @@ const ContactForm = () => {
                 required
               ></input>
               <p className="check-text">
-                I agree to our <Link className="privacy"> privacy policy </Link>
+                I agree to our <Link className="privacy" to="/privacy"> privacy policy </Link>
               </p>
             </div>
           </div>

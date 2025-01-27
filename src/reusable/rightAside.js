@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/leftAside.css'
 
-const RightAside = ({ image, heading,header, title, desc ,dataList}) => {
+const RightAside = ({ image, heading,header, title, desc ,dataList, asideList}) => {
 
   return (
     <div className="aside-container">
@@ -15,6 +15,16 @@ const RightAside = ({ image, heading,header, title, desc ,dataList}) => {
         <h1 className={title=='Overview' ?"aside-heading-overview"  : "aside-heading"}>{title}</h1>
         <p className={title=='Overview' ? "aside-content-overview": "aside-content"}>{desc}</p>
         <div>
+        {
+          asideList && asideList.map((item,index)=>{
+            return(
+              <>
+                <h3 className="aside-content-head">{item.title}</h3>
+                <p className="aside-content" >{item.content}</p>
+              </>
+            )
+          })
+        }
         {dataList.length > 0 && dataList.map((item,index)=>{
             return (<li className="aside-content" key={index} >{item}</li>)
           })}

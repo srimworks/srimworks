@@ -49,8 +49,9 @@ const AppRouter = () => {
       <ScrollToTop/>
       <Outlet />
       <ReachOut {...REACH_OUT}/>
-      {/* <TermsPopup />
-      <CookiesPopup /> */}
+      <CookiesPopup /> 
+     <TermsPopup />
+     
       <Footer />
 
     </>

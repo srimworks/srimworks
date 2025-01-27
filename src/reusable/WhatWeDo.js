@@ -29,6 +29,8 @@ const WhatWeDo = () => {
       </div>
       <div className="what-we-do-middle">
         <hr id="wwd-hr" />
+        <div className="practices-list-container">
+        <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-left"/>
         <div className="practices-list">
           {Object.keys(practicesContent).map((practice, index) => (
             <div
@@ -56,6 +58,8 @@ const WhatWeDo = () => {
               </h3>
             </div>
           ))}
+        </div>
+        <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-right"/>
         </div>
         <hr id="wwd-hr" />
       </div>

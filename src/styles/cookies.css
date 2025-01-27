@@ -1,25 +1,254 @@
+.cookies-popup-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000075;
+  z-index: 10;
+  padding: 24px;
+}
+
 .cookies-popup {
-    position: fixed;
-    bottom: 0;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  color: white;
+  text-align: center;
+}
+
+.cookies-t-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cookies-heading {
+  color: #060606;
+  font-family: "Config Condensed";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.cookies-top {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.cookies-top img {
+  cursor: pointer;
+}
+
+#cookies-left-head {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  padding: 12px 8px 12px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-left: 12px solid #f1c336;
+  border-top: 1px solid rgba(6, 6, 6, 0.15);
+  border-bottom: 1px solid rgba(6, 6, 6, 0.15);
+  background: #fff;
+  max-width: 280px;
+  text-align: left;
+}
+#cookies-left-head-ia {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  padding: 12px 8px 12px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-left: 12px solid #fff;
+  border-top: 1px solid rgba(6, 6, 6, 0.15);
+  border-bottom: 1px solid rgba(6, 6, 6, 0.15);
+  max-width: 280px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cookies-middle {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  align-self: stretch;
+}
+
+.cookies-m-right {
+  display: flex;
+  height: 400px;
+  padding: 4px 24px 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.cookies-m-r-t-head {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+}
+.cookies-m-r-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.cookies-btn-active {
+  background: transparent;
+  border: none;
+  color: #aa2121;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.toggle {
+  display: flex;
+  width: 56px;
+  padding: 4px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #aa2121;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.toggle-disable {
+  display: flex;
+  width: 56px;
+  padding: 4px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #d9d9d9;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s all linear;
+
+}
+
+.toogle-circle {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+.cookies-m-r-bottom {
+  height: 100%;
+  overflow: scroll;
+}
+.cookies-m-r-bottom-content {
+  color: #000;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-align: left;
+}
+
+.cookies-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.cookies-m-right-down{
+  display: none;
+}
+.cookies-m-right-down-disable{
+  display: none;
+}
+
+@media (max-width:600px) {
+  .cookies-m-right{
+    display: none;
+  }
+  .cookies-m-left{
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    padding: 15px;
   }
-  
-  .cookies-popup a {
-    color: #ffcc00;
-    text-decoration: underline;
+  #cookies-left-head-ia{
+    max-width: none;
+    padding-left: 12px;
   }
-  
-  .cookies-popup button {
-    background: #ffcc00;
-    border: none;
-    padding: 8px 12px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: bold;
+  #cookies-left-head{
+    max-width: none;
+    padding-left: 12px;
   }
-  
+  .cookies-m-right-down{
+    display: block;
+    padding: 0px 24px;
+  }
+  .cookies-m-right-down-disable{
+    display: none;
+  }
+  .cookies-middle{
+    max-height: 380px;
+    height: 100%;
+    overflow: scroll;
+  }
+  .cookies-heading{
+    font-size: 20px;
+  }
+  .cookies-t-left img{
+    height: 40px;
+    width: auto;
+  }
+  .cookies-m-r-t-head{
+    font-size: 16px;
+  }
+  .cookies-m-r-bottom-content{
+    font-size: 14px;
+  }
+  .cookies-popup{
+    height: 90vh;
+  }
+  .cookies-btn-active{
+    font-size: 14px;
+  }
+  .cookies-bottom{
+    height: fit-content;
+  }
+  .toggle-disable{
+    width: 48px;
+  }
+  .cookies-m-right-down{
+    padding-top: 16px;
+  }
+  .toogle-circle {
+    width: 16px;
+    height: 16px;
+  }
+}

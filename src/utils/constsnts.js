@@ -2451,6 +2451,22 @@ Services we offer:`,
     image: IMAGES.BIGDATA_IMG,
     link:'/big-data',
   },
+  DataAnnotation: {
+    title: "Empowering AI with Precise Data Annotation",
+    description: `Enhance AI models with precise and reliable data annotation services, enabling better accuracy, insights, and decision-making.
+Services we offer:`,
+    services: [
+      "Image Annotation",
+      "Text Annotation",
+      "Audio Annotation",
+      "Video Annotation",
+      "LiDAR Annotation",
+      "NLP Annotation",
+    ],
+    link:"/data-annotation",
+    image: IMAGES.DATAANNOTATION_IMG,
+    link:'/data-annotation',
+  },
   Aiml: {
     title: "Empowering Innovation with Artificial Intelligence",
     description: `Implement cutting-edge AI and ML solutions to automate processes, enhance decision-making, and create intelligent systems that drive business success.
@@ -2481,7 +2497,7 @@ Services we offer:`,
     image: IMAGES.OPENSOURCE_IMG,
     link:'/open-source',
   },
-  Cloud: {
+  Microsoft: {
     title: "Innovating with Microsoft’s Robust Tech Ecosystem",
     description: `Leverage Microsoft’s cutting-edge tools and platforms to streamline business operations, boost productivity, and foster digital transformation.
 Services we offer:`,
@@ -2496,7 +2512,7 @@ Services we offer:`,
     image: IMAGES.CLOUD_IMG,
     link:'/cloud-computing',
   },
-  Microsoft: {
+  Cloud: {
     title: "Enabling Seamless Digital Transformation with Cloud",
     description: `Build scalable, secure, and cost-efficient cloud solutions that drive operational efficiency and business growth, ensuring a flexible future for your organization.
 Services we offer:`,
@@ -2547,3 +2563,35 @@ You are responsible for complying with the laws of the jurisdiction from which y
 
 SRIM Works does not accept unauthorized idea submissions outside of established business relationships. To protect the interests of our current clients and ourselves, we must treat the issue of such submissions with great care. Importantly, without a clear business relationship, SRIM Works cannot and does not treat any such submissions in confidence. Accordingly, please do not communicate unauthorized idea submissions to SRIM Works through this website. Any ideas disclosed to SRIM Works outside a pre-existing and documented confidential business relationship are not confidential and SRIM Works may therefore develop, use and freely disclose or publish similar ideas without compensating you or accounting to you. SRIM Works will make every reasonable effort to return or destroy any unauthorized idea submissions without detailed review of them. However, if a review is necessary in SRIM Works' sole discretion, it will be with the understanding that SRIM Works assumes no obligation to protect the confidentiality of your idea or compensate you for its disclosure or use. By submitting an idea or other detailed submission to SRIM Works through this website, you agree to be bound by the terms of this stated policy.`
 }
+
+export const cookiesData=[
+  {
+    id:0,
+    title:"Your Privacy",
+    content:"Any website that you visit may store or retrieve personal information, mostly through the use of cookies. The stored or retrieved information might be about you, your preferences, or your device and is used for the purposes specified per cookies category below. The data controller of your data processed through our cookies is SRIM Works. In addition, some cookies we use are from (and controlled by) third-party companies, such as Facebook, Microsoft, Marketo Munchkin Tracking, Twitter, Knotch, YouTube, Instagram, Yoptima, and LinkedIn Analytics to provide us with web analytics and intelligence about our sites. You can accept the cookies as per your preferences by activating the sliders per cookies category. By accepting cookies, the functionalities described per cookies category will be activated, and by not accepting cookies, such functionalities will not be activated. Because we respect your right to privacy, you can choose not to allow some types of cookies, and you have the right to withdraw your consent by adapting your preferences in our cookie consent manager. Click on the different category headings to find out more and change our default settings. Please read our Cookies Policy for more information.",
+  },
+  {
+    id:1,
+    title:"Strictly Necessary Cookies",
+    content:"These cookies are essential in order to enable you to move around the site and use its features, such as accessing secure areas of the site. Without these cookies, services you have asked for cannot be provided.",
+    button:"Always Active"
+  },
+  {
+    id:2,
+    title:"First Party Analytics Cookies",
+    content:"These cookies allow us to employ data analytics so we can measure and improve the performance of our site and provide more relevant content to you. These cookies don't collect information that identifies a visitor down to an individual level that is available to us. These cookies are not passing personally identifiable information to any external third party other than in limited cases when we engage a service provider to act on our behalf but who is then unable to use the data for their own purposes.",
+    button:"switch"
+  }
+  ,{
+    id:3,
+    title:"Performance Cookies and Functional Cookies",
+    content:"These cookies allow us to employ data analytics so we can measure and improve the performance of our site and provide more relevant content to you. These cookies don't collect information that identifies a visitor down to an individual level that is available to us. These cookies are not passing personally identifiable information to any external third party other than in limited cases when we engage a service provider to act on our behalf but who is then unable to use the data for their own purposes.",
+    button:"switch"
+  },
+  {
+    id:4,
+    title:"Advertising and Social Media Cookies",
+    content:"Third-party advertising and social media cookies are used to (1) deliver advertisements more relevant to you and your interests; (2) limit the number of times you see an advertisement; (3) help measure the effectiveness of the advertising campaign; and (4) understand people’s behavior after they view an advertisement. They are usually placed on behalf of advertising networks with the site operator’s permission. They remember that you have visited a site and quite often they will be linked to site functionality provided by the other organization. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools or play certain videos on our site.",
+    button:"switch",
+  }
+]
