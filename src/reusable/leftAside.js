@@ -9,6 +9,7 @@ const LeftAside = ({
   content,
   btnText,
   dataList,
+  asideList,
 }) => {
   return (
     <div className="overall-aside-container">
@@ -16,13 +17,22 @@ const LeftAside = ({
         <img src={image} alt={title} />
         <aside className="aside-container-aside">
           <div>
-          {heading.length > 0 && (
+            {heading.length > 0 && (
               <h2 className="aside-tag-heading-left">{heading}</h2>
-          )}
-          <h1 className="aside-heading-left">{title}</h1>
+            )}
+            <h1 className="aside-heading-left">{title}</h1>
           </div>
           <p className="aside-content-left">{content || desc}</p>
           <div>
+            {asideList &&
+              asideList.map((item, index) => {
+                return (
+                  <>
+                    <h3 className="aside-content-left-head">{item.title}</h3>
+                    <p className="aside-content-left">{item.content}</p>
+                  </>
+                );
+              })}
             {dataList.length > 0 &&
               dataList.map((item, index) => {
                 return (
@@ -33,17 +43,13 @@ const LeftAside = ({
               })}
           </div>
 
-          
-            {btnText && (
-              <button
-                className="secondary-button-white-filled"
-              >
-                <Link className="link-fill" to="/contact-us">
+          {btnText && (
+            <button className="secondary-button-white-filled">
+              <Link className="link-fill" to="/contact-us">
                 {btnText}
-                </Link>
-              </button>
-            )}
-          
+              </Link>
+            </button>
+          )}
         </aside>
       </div>
     </div>

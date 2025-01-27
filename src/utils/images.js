@@ -205,6 +205,7 @@ import DESIGN_ICON from "../imagess/Home Page/Section 5 Icons/Design.svg";
 import DIGITAL_ICON from "../imagess/Home Page/Section 5 Icons/Digital Engineering.svg";
 import BIGDATA_ICON from "../imagess/Home Page/Section 5 Icons/Big Data Analytics.svg";
 import AIML_ICON from "../imagess/Home Page/Section 5 Icons/AIML.svg";
+import DATAANNOTATION_ICON from "../imagess/Home Page/Section 5 Icons/Data Annotation.svg";
 import OPENSOURCE_ICON from "../imagess/Home Page/Section 5 Icons/open-source Technologies.svg";
 import MICROSOFT_ICON from "../imagess/Home Page/Section 5 Icons/microsoft Technologies.svg";
 import CLOUD_ICON from "../imagess/Home Page/Section 5 Icons/cloud-computing.svg";
@@ -213,11 +214,12 @@ import ERP_ICON from "../imagess/Home Page/Section 5 Icons/ERP and CRM.svg";
 import  DESIGN_IMG from "../imagess/Home Page/Section 5 Images/Image 1.png";
 import  DIGITAL_IMG from "../imagess/Home Page/Section 5 Images/Image 2.png";
 import  BIGDATA_IMG from "../imagess/Home Page/Section 5 Images/Image 3.png";
-import  AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
-import  OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
-import  MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
-import  CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
-import  ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
+import  DATAANNOTATION_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
+import  AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
+import  OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
+import  MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
+import  CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
+import  ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 9.png";
 
 import CAREERS_HERO from "../imagess/Careers/Hero Section.png";
 import MAP from "../imagess/Careers/Map.png";
@@ -277,6 +279,7 @@ import SYS_INTEGRATION from "../imagess/common/system-integration.svg";
 import QUALITY from "../imagess/common/quality.svg";
 import IDEA from "../imagess/common/idea.svg";
 import MENU_ICON from '../imagess/common/menu.svg';
+import CLOSE_ICON from '../imagess/common/close.svg';
 
 
 import DATA_ANN_1 from '../imagess/Data Annotation/Hero Section.jpg'
@@ -519,6 +522,7 @@ export const IMAGES = {
   DESIGN_ICON,
   DIGITAL_ICON,
   BIGDATA_ICON,
+  DATAANNOTATION_ICON,
   AIML_ICON,
   OPENSOURCE_ICON,
   MICROSOFT_ICON,
@@ -532,9 +536,11 @@ export const IMAGES = {
   MICROSOFT_IMG,
   CLOUD_IMG,
   ERP_IMG,
+  DATAANNOTATION_IMG,
   HOME_HERO_1,
   HOME_HERO_2,
   HOME_HERO_3,
   MENU_ICON,
+  CLOSE_ICON,
   DATA_ANN_1,DATA_ANN_2,DATA_ANN_3,DATA_ANN_4,DATA_ANN_5,DATA_ANN_6,DATA_ANN_7,DATA_ANN_8,DATA_ANN_9
 };

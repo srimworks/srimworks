@@ -74,7 +74,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.aside-tag-heading{
+.aside-tag-heading {
   margin: 0;
   padding: 0;
   color: #060606;
@@ -83,7 +83,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
 }
 
 .aside-heading {
@@ -116,6 +115,14 @@
   line-height: normal;
   letter-spacing: -0.56px;
 }
+.aside-content-head {
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .aside-content {
   color: #060606;
   font-family: "SF Pro Display";
@@ -125,6 +132,7 @@
   line-height: normal;
   white-space: pre-line;
 }
+
 .aside-content-left {
   color: #e8ebed;
   font-family: "SF Pro Display";
@@ -150,7 +158,8 @@
 @media (max-width: 1100px) {
   .aside-tag-heading-left {
     font-size: 20px;
-  }.aside-tag-heading{
+  }
+  .aside-tag-heading {
     font-size: 20px;
   }
   .aside-heading {
@@ -193,12 +202,11 @@
     font-weight: 400;
     line-height: normal;
   }
-  .aside-tag-heading{
+  .aside-tag-heading {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
   }
   .aside-heading-left {
     font-size: 28px;
@@ -206,6 +214,14 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.28px;
+  }
+  .aside-content-left-head {
+    color: #e8ebed;
+    font-family: "SF Pro Display";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   .aside-content-left {
     font-size: 16px;

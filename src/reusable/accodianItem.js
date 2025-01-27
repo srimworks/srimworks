@@ -16,9 +16,9 @@ const AccordianItem = ({ title, content,subHead, id, isOpen, setIsOpen }) => {
           <h1 className="accordion-top-tittle">{title || subHead}</h1>
           <div className="accordion-top-icon">
             {!isOpen ? (
-                < img src={IMAGES.PLUS_ICON} />
+                < img src={IMAGES.PLUS_ICON} alt="Plus_Icon" />
             ) : (
-              < img src={IMAGES.MINUS_ICON} />
+              < img src={IMAGES.MINUS_ICON} alt="Minus_Icon"/>
             )}
           </div>
         </div>

@@ -3,8 +3,8 @@ import "../styles/footer.css";
 import { IMAGES } from "../utils/images";
 import { Link } from "react-router-dom";
 const Footer = () => {
-  let date = new Date();
-  date = date.getFullYear();
+  let date=new Date()
+  date=date.getFullYear()
   return (
     <footer>
       <div className="footer-bottom">
