@@ -154,6 +154,21 @@
 .aside-container-holder {
   height: 100;
 }
+.aside-content-left-head {
+  color: #e8ebed;
+  font-family: "SF Pro Display";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.aside-container {
+  padding-left: 32px;
+  padding-right: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 1100px) {
   .aside-tag-heading-left {
@@ -166,13 +181,7 @@
     font-size: 40px;
   }
 
-  .aside-container {
-    padding-left: 32px;
-    padding-right: 32px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+
   .aside-content {
     font-size: 18px;
   }
@@ -189,13 +198,14 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .aside-container-left-image img {
-    width: 300px;
-    height: 300px;
+    width:auto;
+    height: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .aside-tag-heading-left {
     font-size: 18px;
     font-style: normal;
@@ -234,10 +244,7 @@
     align-items: center;
     justify-content: center;
   }
-  .aside-container img {
-    width: 100%;
-    height: auto;
-  }
+ 
   .aside-container-aside-overview {
     gap: 16px;
   }
@@ -269,8 +276,17 @@
     width: 100%;
     height: auto;
   }
+  .aside-container img {
+    width: auto;
+    height: auto;
+  }
 }
-
+@media (max-width:500px) {
+  .aside-container img {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 350px) {
   .aside-container {
     margin: 0;

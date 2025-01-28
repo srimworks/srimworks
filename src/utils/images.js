@@ -192,6 +192,33 @@ import OPEN_SOURCE_HERO from "../imagess/Practices/Open Source Technologies/Hero
 import OPEN_SOURCE_OVERVIEW from "../imagess/Practices/Open Source Technologies/Overview Section.png";
 import OPEN_SOURCE_DIFFERENT from "../imagess/Practices/Open Source Technologies/What makes different Section.png";
 
+import IMGANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/Image Annotation/Hero Section.jpg";
+import IMGANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/Image Annotation/Aside 1.jpg";
+import IMGANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/Image Annotation/Aside 2.jpg";
+
+import TEXTANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/Text Annotation/Hero Section.jpg";
+import TEXTANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/Text Annotation/Aside 1.jpg";
+import TEXTANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/Text Annotation/Aside 2.jpg";
+
+import AUDIOANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/Audio Annotation/Hero Section.jpg";
+import AUDIOANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/Audio Annotation/Aside 1.jpg";
+import AUDIOANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/Audio Annotation/Aside 2.jpg";
+
+import LIDARANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Hero Section.jpg";
+import LIDARANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Aside 1.jpg";
+import LIDARANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Aside 2.jpg";
+import LIDARANNO_ASIDE_IMG3 from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Aside 3.jpg";
+import LIDARANNO_ASIDE_IMG4 from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Aside 4.jpg";
+import LIDARANNO_ASIDE_IMG5 from "../imagess/Data Annotation/Data annotation Sub Topics/LiDAR Annotation/Aside 5.png";
+
+import VIDEOANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/Video Annotation/Hero Section.png";
+import VIDEOANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/Video Annotation/Aside 1.png";
+import VIDEOANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/Video Annotation/Aside 2.png";
+
+import NLPANNO_HERO_IMG from "../imagess/Data Annotation/Data annotation Sub Topics/NLP Annotation/Hero Section.png";
+import NLPANNO_ASIDE_IMG1 from "../imagess/Data Annotation/Data annotation Sub Topics/NLP Annotation/Aside 1.png";
+import NLPANNO_ASIDE_IMG2 from "../imagess/Data Annotation/Data annotation Sub Topics/NLP Annotation/Aside 2.png";
+
 //Home Page
 
 import INTRO_SRIMWORKS from "../imagess/Home Page/Section 1 Image.png";
@@ -211,15 +238,15 @@ import MICROSOFT_ICON from "../imagess/Home Page/Section 5 Icons/microsoft Techn
 import CLOUD_ICON from "../imagess/Home Page/Section 5 Icons/cloud-computing.svg";
 import ERP_ICON from "../imagess/Home Page/Section 5 Icons/ERP and CRM.svg";
 
-import  DESIGN_IMG from "../imagess/Home Page/Section 5 Images/Image 1.png";
-import  DIGITAL_IMG from "../imagess/Home Page/Section 5 Images/Image 2.png";
-import  BIGDATA_IMG from "../imagess/Home Page/Section 5 Images/Image 3.png";
-import  DATAANNOTATION_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
-import  AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
-import  OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
-import  MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
-import  CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
-import  ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 9.png";
+import DESIGN_IMG from "../imagess/Home Page/Section 5 Images/Image 1.png";
+import DIGITAL_IMG from "../imagess/Home Page/Section 5 Images/Image 2.png";
+import BIGDATA_IMG from "../imagess/Home Page/Section 5 Images/Image 3.png";
+import DATAANNOTATION_IMG from "../imagess/Home Page/Section 5 Images/Image 4.png";
+import AIML_IMG from "../imagess/Home Page/Section 5 Images/Image 5.png";
+import OPENSOURCE_IMG from "../imagess/Home Page/Section 5 Images/Image 6.png";
+import MICROSOFT_IMG from "../imagess/Home Page/Section 5 Images/Image 7.png";
+import CLOUD_IMG from "../imagess/Home Page/Section 5 Images/Image 8.png";
+import ERP_IMG from "../imagess/Home Page/Section 5 Images/Image 9.png";
 
 import CAREERS_HERO from "../imagess/Careers/Hero Section.png";
 import MAP from "../imagess/Careers/Map.png";
@@ -278,26 +305,24 @@ import REFRESH_ICON from "../imagess/Contact/RefreshIcon.svg";
 import SYS_INTEGRATION from "../imagess/common/system-integration.svg";
 import QUALITY from "../imagess/common/quality.svg";
 import IDEA from "../imagess/common/idea.svg";
-import MENU_ICON from '../imagess/common/menu.svg';
-import CLOSE_ICON from '../imagess/common/close.svg';
+import MENU_ICON from "../imagess/common/menu.svg";
+import CLOSE_ICON from "../imagess/common/close.svg";
 
+import DATA_ANN_1 from "../imagess/Data Annotation/Hero Section.jpg";
+import DATA_ANN_2 from "../imagess/Data Annotation/Overview.png";
+import DATA_ANN_3 from "../imagess/Data Annotation/Practices/Component 22.jpg";
+import DATA_ANN_4 from "../imagess/Data Annotation/Practices/Component 23.jpg";
+import DATA_ANN_5 from "../imagess/Data Annotation/Practices/Component 24.jpg";
+import DATA_ANN_6 from "../imagess/Data Annotation/Practices/Component 25.jpg";
+import DATA_ANN_7 from "../imagess/Data Annotation/Practices/Component 26.jpg";
+import DATA_ANN_8 from "../imagess/Data Annotation/Practices/Component 27.jpg";
+import DATA_ANN_9 from "../imagess/Data Annotation/What makes different.png";
 
-import DATA_ANN_1 from '../imagess/Data Annotation/Hero Section.jpg'
-import DATA_ANN_2 from '../imagess/Data Annotation/Overview.png'
-import DATA_ANN_3 from '../imagess/Data Annotation/Practices/Component 22.jpg'
-import DATA_ANN_4 from '../imagess/Data Annotation/Practices/Component 23.jpg'
-import DATA_ANN_5 from '../imagess/Data Annotation/Practices/Component 24.jpg'
-import DATA_ANN_6 from '../imagess/Data Annotation/Practices/Component 25.jpg'
-import DATA_ANN_7 from '../imagess/Data Annotation/Practices/Component 26.jpg'
-import DATA_ANN_8 from '../imagess/Data Annotation/Practices/Component 27.jpg'
-import DATA_ANN_9 from '../imagess/Data Annotation/What makes different.png'
-
-import  FINTECH_HERO  from "../imagess/Industries/fintech/fintech-hero.png";
-import  FINTECH_OVERVIEW  from "../imagess/Industries/fintech/fintech-overview.png";
-import  FINTECH_ASIDE1  from "../imagess/Industries/fintech/fintech-aside1.png";
-import  FINTECH_ASIDE2  from "../imagess/Industries/fintech/fintech-aside2.png";
-import  FINTECH_MARKET from "../imagess/Industries/fintech/fintech-market.png";
-
+import FINTECH_HERO from "../imagess/Industries/fintech/fintech-hero.png";
+import FINTECH_OVERVIEW from "../imagess/Industries/fintech/fintech-overview.png";
+import FINTECH_ASIDE1 from "../imagess/Industries/fintech/fintech-aside1.png";
+import FINTECH_ASIDE2 from "../imagess/Industries/fintech/fintech-aside2.png";
+import FINTECH_MARKET from "../imagess/Industries/fintech/fintech-market.png";
 
 export const IMAGES = {
   ASIDE_IMAGE,
@@ -548,6 +573,42 @@ export const IMAGES = {
   HOME_HERO_3,
   MENU_ICON,
   CLOSE_ICON,
-  DATA_ANN_1,DATA_ANN_2,DATA_ANN_3,DATA_ANN_4,DATA_ANN_5,DATA_ANN_6,DATA_ANN_7,DATA_ANN_8,DATA_ANN_9,
-  FINTECH_ASIDE1,FINTECH_ASIDE2,FINTECH_HERO,FINTECH_MARKET,FINTECH_OVERVIEW
+  IMGANNO_HERO_IMG,
+  IMGANNO_ASIDE_IMG1,
+  IMGANNO_ASIDE_IMG2,
+  TEXTANNO_HERO_IMG,
+  TEXTANNO_ASIDE_IMG1,
+  TEXTANNO_ASIDE_IMG2,
+  AUDIOANNO_HERO_IMG,
+  AUDIOANNO_ASIDE_IMG1,
+  AUDIOANNO_ASIDE_IMG2,
+  LIDARANNO_HERO_IMG,
+  LIDARANNO_ASIDE_IMG1,
+  LIDARANNO_ASIDE_IMG2,
+  LIDARANNO_ASIDE_IMG3,
+  LIDARANNO_ASIDE_IMG4,
+  LIDARANNO_ASIDE_IMG5,
+  VIDEOANNO_HERO_IMG,
+  VIDEOANNO_ASIDE_IMG1,
+  VIDEOANNO_ASIDE_IMG2,
+  NLPANNO_HERO_IMG,
+  NLPANNO_ASIDE_IMG1,
+  NLPANNO_ASIDE_IMG2,
+
+
+
+  DATA_ANN_1,
+  DATA_ANN_2,
+  DATA_ANN_3,
+  DATA_ANN_4,
+  DATA_ANN_5,
+  DATA_ANN_6,
+  DATA_ANN_7,
+  DATA_ANN_8,
+  DATA_ANN_9,
+  FINTECH_ASIDE1,
+  FINTECH_ASIDE2,
+  FINTECH_HERO,
+  FINTECH_MARKET,
+  FINTECH_OVERVIEW,
 };

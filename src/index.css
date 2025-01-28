@@ -129,6 +129,15 @@ background: #F1C336; */
   text-decoration: none;
   color: inherit;
 }
+.link-cards {
+  text-decoration: none;
+  /* color: inherit; */
+  width: auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .link-fill {
   width: 100%;
   text-decoration: none;
@@ -138,4 +147,20 @@ background: #F1C336; */
   width: 100%;
   text-decoration: none;
   color: inherit;
+}
+
+
+@media (max-width:600px) {
+  .secondary-button{
+    font-size: 14px;
+  }
+  .secondary-button-outline{
+    font-size: 14px;
+  }
+  .secondary-button-white-filled{
+    font-size: 14px;
+  }
+  .secondary-button-black-filled{
+    font-size: 14px;
+  }
 }

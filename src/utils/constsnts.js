@@ -2612,16 +2612,16 @@ export const ANNO_SUB1_HERO={
 //1 iamge
   header: "",
   title: "Image Annotation",
-  desc: "From object detection to polygon and landmark annotation, ensuring high-quality data for complex AI tasks.",
+  desc: "Image annotation is the process of labeling objects, regions, or specific features in an image to train machine learning models for computer vision tasks. It is widely used in applications such as object detection, facial recognition, autonomous driving, and medical imaging diagnostics. Common methods include drawing bounding boxes around objects, semantic segmentation (labeling each pixel in an image), polygon annotation for irregular shapes, keypoint annotation for specific points like facial landmarks, and 3D cuboids to understand the dimensions of objects in 3D space.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.IMGANNO_HERO_IMG,
 
   
 }
 export const ANNO_SUB1_RIGHT={
   title: "Comprehensive Image Annotation Services",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.IMGANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[
@@ -2641,7 +2641,7 @@ export const ANNO_SUB1_RIGHT={
 export const ANNO_SUB1_LEFT={
   title: "Precise Image Annotation: Polygon & Landmark",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.IMGANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[
@@ -2658,15 +2658,15 @@ export const ANNO_SUB1_LEFT={
 export const ANNO_SUB2_HERO={
   header: "",
   title: "Text Annotation",
-  desc: "From object detection to polygon and landmark annotation, ensuring high-quality data for complex AI tasks.",
+  desc: "Text annotation involves identifying and labeling key parts of a text document to support natural language processing (NLP) tasks. It is crucial for applications like sentiment analysis, chatbot training, language translation, and text summarization. Techniques include recognizing entities like names and dates (entity recognition), categorizing text based on emotional tone (sentiment annotation), identifying user intent in commands or queries (intent annotation), and classifying documents or sentences into predefined categories. Linguistic annotation further involves adding grammatical, syntactical, or semantic labels to enrich textual data for advanced NLP models.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.TEXTANNO_HERO_IMG,
 
 }
 export const ANNO_SUB2_RIGHT={
   title: "Unveiling the Power of Text Annotation",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.TEXTANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2688,7 +2688,7 @@ export const ANNO_SUB2_RIGHT={
 export const ANNO_SUB2_LEFT={
   title: "Advanced Text Annotation: Entity Linking & Document Structuring",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.TEXTANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2706,15 +2706,15 @@ export const ANNO_SUB2_LEFT={
 export const ANNO_SUB3_HERO={
   header: "",
   title: "Audio Annotation",
-  desc: "Supporting applications in speech recognition, action tracking, and event tagging with detailed annotations.",
+  desc: "Audio annotation is the process of labeling sound files for various tasks such as speech recognition, emotion detection, and sound event analysis. It finds applications in virtual assistants, speech-to-text transcription, and audio-based fraud detection systems. Key techniques include transcribing speech to text, identifying and segmenting different speakers (speaker diarization), labeling emotions in speech (emotion annotation), detecting specific sound events like sirens or claps, and annotating phonemes (the smallest sound units) for linguistic research and AI models.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.AUDIOANNO_HERO_IMG,
 
 }
 export const ANNO_SUB3_RIGHT={
   title: "Unlocking the Secrets of Audio Annotation",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.AUDIOANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2735,7 +2735,7 @@ export const ANNO_SUB3_RIGHT={
 export const ANNO_SUB3_LEFT={
   title: "Advanced Audio Annotation: Segmentation & Phoneme Labeling",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.AUDIOANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2753,15 +2753,15 @@ export const ANNO_SUB3_LEFT={
 export const ANNO_SUB4_HERO={
   header: "",
   title: "LiDAR Annotation",
-  desc: "Powering autonomous vehicles with precision-driven 3D spatial insights for safe and efficient navigation.",
+  desc: "LiDAR annotation is used to label 3D point cloud data captured by LiDAR sensors, commonly employed in autonomous vehicles, robotics, and urban planning. It enables AI models to understand spatial data and detect objects in 3D environments. Annotation techniques include creating 3D bounding boxes to define object dimensions, semantic segmentation to label every point in the dataset, instance segmentation to differentiate overlapping objects, trajectory annotation for tracking movement in 3D space, and lane detection for self-driving vehicles.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.LIDARANNO_HERO_IMG,
 
 }
 export const ANNO_SUB4_RIGHT1={
   title: "LiDAR Annotation: The Heart of 3D Perception",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.LIDARANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2781,7 +2781,7 @@ export const ANNO_SUB4_RIGHT1={
 export const ANNO_SUB4_LEFT2={
   title: "Advanced LiDAR Annotation: Trajectory & Customized Solutions",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.LIDARANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[
@@ -2799,7 +2799,7 @@ export const ANNO_SUB4_LEFT2={
 export const ANNO_SUB4_RIGHT3={
   title: "Empowering Autonomous Vehicles with LiDAR Annotation",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.LIDARANNO_ASIDE_IMG3,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2819,7 +2819,7 @@ export const ANNO_SUB4_RIGHT3={
 export const ANNO_SUB4_LEFT4={
   title: "LiDAR Annotation: Revolutionizing Robotics & Urban Planning",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.LIDARANNO_ASIDE_IMG4,
   desc: "",
   dataList: [],
   asideList:[
@@ -2841,7 +2841,7 @@ export const ANNO_SUB4_LEFT4={
 export const ANNO_SUB4_RIGHT5={
   title: "LiDAR in Agriculture: Precision Farming for Enhanced Yields",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.LIDARANNO_ASIDE_IMG5,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2862,15 +2862,15 @@ export const ANNO_SUB4_RIGHT5={
 export const ANNO_SUB5_HERO={
   header: "",
   title: "Video Annotation",
-  desc: "Capture and analyze video data with precise annotations, empowering AI models for enhanced action recognition, object tracking, and event tagging.",
+  desc: "Video annotation focuses on labeling objects, actions, or events in video frames to train AI models for applications like object tracking, action recognition, and autonomous driving. It involves frame-by-frame annotation to ensure precision, object tracking to follow the movement of labeled items across frames, and event annotation to identify specific activities (e.g., a soccer goal). Additional techniques include scene annotation to label the environment and context, and keyframe annotation to reduce redundancy by annotating only critical frames.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.VIDEOANNO_HERO_IMG,
 
 }
 export const ANNO_SUB5_RIGHT1={
   title: "Unveiling the Action: Video Annotation Services",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.VIDEOANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[{
@@ -2890,7 +2890,7 @@ export const ANNO_SUB5_RIGHT1={
 export const ANNO_SUB5_LEFT2={
   title: "Advanced Video Annotation: Keyframe & Event Tagging",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.VIDEOANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[
@@ -2910,15 +2910,15 @@ export const ANNO_SUB5_LEFT2={
 export const ANNO_SUB6_HERO={
   header: "",
   title: "NLP Annotation",
-  desc: "Elevate AI language capabilities with comprehensive text annotations, enabling better understanding, categorization, and contextual processing of text.",
+  desc: "Natural language benchmark annotation involves creating and labeling datasets to evaluate and test the performance of NLP models. This type of annotation supports tasks such as question answering, text generation, language translation, and dialogue system training. It ensures models are tested against high-quality benchmarks to measure their accuracy, reliability, and contextual understanding. Specific tasks include annotating question-answer pairs, evaluating paraphrase detection, assessing model-generated text responses, and measuring reading comprehension capabilities.",
   btnText: "Get Started",
-  image: IMAGES.DATA_ANN_1,
+  image: IMAGES.NLPANNO_HERO_IMG,
 
 }
 export const ANNO_SUB6_RIGHT={
   title: "Boosting NLP: Natural Language Processing Annotation",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.NLPANNO_ASIDE_IMG1,
   desc: "",
   dataList: [],
   asideList:[
@@ -2939,7 +2939,7 @@ export const ANNO_SUB6_RIGHT={
 export const ANNO_SUB6_LEFT={
   title: "Advanced NLP Annotation: Dependency Parsing & Topic Modeling",
   heading: "",
-  image: IMAGES.BFSI_ASIDE_1,
+  image: IMAGES.NLPANNO_ASIDE_IMG2,
   desc: "",
   dataList: [],
   asideList:[
