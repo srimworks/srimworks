@@ -5,6 +5,7 @@ import RightAside from "../../reusable/rightAside";
 import Cards from "../../reusable/cards";
 import MarketReuse from "../../reusable/MarketReuse";
 import Accordian from "../../reusable/accordian";
+import { Link } from "react-router-dom";
 
 const DataAnnotations = () => {
   return (
@@ -18,7 +19,7 @@ const DataAnnotations = () => {
         </div>
         <div className="practices-cards">
           {DATAAN_CARDS.map((item) => {
-            return <Cards {...item} />;
+            return <Link className="link" to={item.link}><Cards {...item} /></Link>
           })}
         </div>
       </div>

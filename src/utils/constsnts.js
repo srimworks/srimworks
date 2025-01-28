@@ -2270,32 +2270,38 @@ export const DATAAN_CARDS = [
     content:
       "Image annotation is the process of labeling objects, regions, or specific features in an image to train machine learning models for computer vision tasks. It is widely used in applications such as object detection, facial recognition, autonomous driving, and medical imaging diagnostics. Common methods include drawing bounding boxes around objects, semantic segmentation (labeling each pixel in an image), polygon annotation for irregular shapes, keypoint annotation for specific points like facial landmarks, and 3D cuboids to understand the dimensions of objects in 3D space.",
     image: IMAGES.DATA_ANN_3,
+    link:'/image-annotation'
   },
   {
     title: " Text Annotation ",
     content:`Text annotation involves identifying and labeling key parts of a text document to support natural language processing (NLP) tasks. It is crucial for applications like sentiment analysis, chatbot training, language translation, and text summarization. Techniques include recognizing entities like names and dates (entity recognition), categorizing text based on emotional tone (sentiment annotation), identifying user intent in commands or queries (intent annotation), and classifying documents or sentences into predefined categories. Linguistic annotation further involves adding grammatical, syntactical, or semantic labels to enrich textual data for advanced NLP models`,
     image: IMAGES.DATA_ANN_4,
+    link:"/text-annotation"
   },
   {
     title: "Audio Annotation  ",
     content:`Audio annotation is the process of labeling sound files for various tasks such as speech recognition, emotion detection, and sound event analysis. It finds applications in virtual assistants, speech-to-text transcription, and audio-based fraud detection systems. Key techniques include transcribing speech to text, identifying and segmenting different speakers (speaker diarization), labeling emotions in speech (emotion annotation), detecting specific sound events like sirens or claps, and annotating phonemes (the smallest sound units) for linguistic research and AI models.`,
     image: IMAGES.DATA_ANN_5,
+    link:"/audio-annotation"
   },
   {
     title: "LiDAR Annotation  ",
     content:`LiDAR annotation is used to label 3D point cloud data captured by LiDAR sensors, commonly employed in autonomous vehicles, robotics, and urban planning. It enables AI models to understand spatial data and detect objects in 3D environments. Annotation techniques include creating 3D bounding boxes to define object dimensions, semantic segmentation to label every point in the dataset, instance segmentation to differentiate overlapping objects, trajectory annotation for tracking movement in 3D space, and lane detection for self-driving vehicles.
 `,
     image: IMAGES.DATA_ANN_6,
+    link:"/lidar-annotation"
   },
   {
     title: " Video Annotation",
     content:`Video annotation focuses on labeling objects, actions, or events in video frames to train AI models for applications like object tracking, action recognition, and autonomous driving. It involves frame-by-frame annotation to ensure precision, object tracking to follow the movement of labeled items across frames, and event annotation to identify specific activities (e.g., a soccer goal). Additional techniques include scene annotation to label the environment and context, and keyframe annotation to reduce redundancy by annotating only critical frames.`,
     image: IMAGES.DATA_ANN_7,
+    link:"/video-annotation"
   },
   {
     title: "Natural Language Benchmark Annotation ",
     content:`Natural language benchmark annotation involves creating and labeling datasets to evaluate and test the performance of NLP models. This type of annotation supports tasks such as question answering, text generation, language translation, and dialogue system training. It ensures models are tested against high-quality benchmarks to measure their accuracy, reliability, and contextual understanding. Specific tasks include annotating question-answer pairs, evaluating paraphrase detection, assessing model-generated text responses, and measuring reading comprehension capabilities.`,
     image: IMAGES.DATA_ANN_8,
+    link:"/nlp-annotation"
   },
 ];
 
@@ -2601,75 +2607,351 @@ export const cookiesData=[
 
 // annotation sub pages
 
-//1
+//1 iamge
 export const ANNO_SUB1_HERO={
+//1 iamge
+  header: "",
+  title: "Image Annotation",
+  desc: "From object detection to polygon and landmark annotation, ensuring high-quality data for complex AI tasks.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
+
   
 }
 export const ANNO_SUB1_RIGHT={
-
+  title: "Comprehensive Image Annotation Services",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      title:"Object Detection",
+      content:" Identify and label objects within images, such as vehicles, faces, or products, providing essential data for computer vision models."
+    },
+    {
+      title:"Semantic Segmentation",
+      content:"Go beyond object identification by classifying each pixel in an image to generate detailed object and region maps, providing richer insights for analysis and understanding."
+    },{
+      title:"Image Classification",
+      content:"Categorize entire images for identification tasks, leveraging machine learning to classify images based on their content."
+    }
+  ]
 }
 export const ANNO_SUB1_LEFT={
-  
+  title: "Precise Image Annotation: Polygon & Landmark",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {title:"Polygon Annotation",
+      content:"Precisely outline irregular shapes in images for fine-grained object detection, enabling accurate identification of intricate objects."
+    },
+    {
+      title:"Landmark Annotation",
+      content:"Identify key points, such as facial landmarks or anatomical structures, for specialized tasks, providing essential data for biometrics, medical imaging, and other applications.Identify key points, such as facial landmarks or anatomical structures, for specialized tasks, providing essential data for biometrics, medical imaging, and other applications."
+    }
+  ]
 }
-//2
+//2 text
 export const ANNO_SUB2_HERO={
+  header: "",
+  title: "Text Annotation",
+  desc: "From object detection to polygon and landmark annotation, ensuring high-quality data for complex AI tasks.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
 
 }
 export const ANNO_SUB2_RIGHT={
+  title: "Unveiling the Power of Text Annotation",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Named Entity Recognition (NER)",
+    content:"Identify and classify entities like names, dates, and locations in text, extracting key information for machine learning models."
+  },
+  {
+    title:"Sentiment Analysis",
+    content:"Annotate text to capture sentiment, tone, or intent, enabling machines to understand the emotional context of language."
+  },
+  {
+    title:"Text Categorization",
+    content:"Organize text into predefined categories for efficient data sorting, streamlining data management and analysis."
+  }
+
+]
 
 }
 export const ANNO_SUB2_LEFT={
+  title: "Advanced Text Annotation: Entity Linking & Document Structuring",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Entity Linking",
+    content:"Connect text entities to knowledge bases for enhanced understanding, linking names, places, and concepts to relevant information."
+  },
+  {
+    title:"Document Structuring",
+    content:"Segment documents into logical sections for better organization and processing, enabling AI models to understand the structure of documents."
+  },
+]
   
 }
-//3
+//3 audio
 export const ANNO_SUB3_HERO={
+  header: "",
+  title: "Audio Annotation",
+  desc: "Supporting applications in speech recognition, action tracking, and event tagging with detailed annotations.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
 
 }
 export const ANNO_SUB3_RIGHT={
+  title: "Unlocking the Secrets of Audio Annotation",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Speech-to-Text Transcription",
+    content:"Convert audio recordings into text with time-stamped accuracy, providing valuable data for speech recognition systems and transcription services."
+  },
+  {
+    title:"Speaker Identification",
+    content:"Label different speakers in a multi-speaker environment, enabling AI to identify and separate voices for voice recognition and other applications."
+  },
+  {
+    title:"Sound Classification",
+    content:"Annotate sounds for machine learning models in fields like security or entertainment, enabling AI to recognize and categorize sounds."
+  }
+]
 
 }
 export const ANNO_SUB3_LEFT={
+  title: "Advanced Audio Annotation: Segmentation & Phoneme Labeling",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Audio Segmentation",
+    content:"Divide audio into meaningful segments for analysis, enabling AI models to focus on specific parts of audio for detailed analysis."
+  },
+  {
+    title:"Phoneme Annotation",
+    content:"Label phonetic components in speech for advanced linguistic studies, providing valuable insights for speech recognition and language processing research."
+  }
+]
   
 }
-//4
+//4 LIDAR
 export const ANNO_SUB4_HERO={
+  header: "",
+  title: "LiDAR Annotation",
+  desc: "Powering autonomous vehicles with precision-driven 3D spatial insights for safe and efficient navigation.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
 
 }
-export const ANNO_SUB4_RIGHT={
+export const ANNO_SUB4_RIGHT1={
+  title: "LiDAR Annotation: The Heart of 3D Perception",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Point Cloud Labeling",
+    content:"Annotate millions of points in 3D space to identify objects, boundaries, and features with unmatched precision, enabling accurate 3D scene understanding."
+  },
+{
+  title:"Semantic Segmentation",
+  content:"Classify each point in a LiDAR dataset into meaningful categories, such as roads, vehicles, pedestrians, or vegetation, providing detailed spatial information for analysis and decision-making."
+},
+{
+  title:"3D Bounding Boxes",
+  content:"Draw tight, accurate bounding boxes around objects in a 3D space for object tracking and detection, enabling AI models to recognize and track objects in 3D environments."
+}]
 
 }
-export const ANNO_SUB4_LEFT={
+export const ANNO_SUB4_LEFT2={
+  title: "Advanced LiDAR Annotation: Trajectory & Customized Solutions",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      title:"Trajectory Analysis",
+      content:"Annotate and track object movement across sequential LiDAR frames to understand behavior and predict future motion, enabling AI models to anticipate object movement and make informed decisions."
+    },
+    {
+      title:"Customized Solutions",
+      content:"Tailored annotation workflows to meet your unique project requirements and objectives, ensuring our services align with your specific needs and goals."
+    }
+  ]
   
 }
-//5
+export const ANNO_SUB4_RIGHT3={
+  title: "Empowering Autonomous Vehicles with LiDAR Annotation",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Safe Navigation",
+    content:"Accurate 3D mapping and object recognition enable safe and efficient navigation in complex environments."
+  },
+{
+  title:"Enhanced Situational Awareness",
+  content:"LiDAR data provides detailed 3D information for improved situational awareness, enabling vehicles to make informed decisions."
+},
+{
+  title:"Advanced Object Detection",
+  content:"Precise LiDAR annotation supports object detection for pedestrians, vehicles, and other obstacles, ensuring safety and efficient navigation."
+}]
+
+}
+export const ANNO_SUB4_LEFT4={
+  title: "LiDAR Annotation: Revolutionizing Robotics & Urban Planning",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      title:"Enhanced Robotics",
+      content:"LiDAR data provides detailed 3D information for improved situational awareness, enabling robots to operate safely and efficiently in complex environments."
+    },
+    {
+      title:"Urban Planning",
+      content:"Precise modeling of cities for planning and infrastructure development, enabling informed decisions for urban design and development."
+    },
+    {
+      title:"Smart City Applications",
+      content:"LiDAR data is crucial for developing smart city solutions, such as traffic management, environmental monitoring, and infrastructure planning."
+    }
+  ]
+  
+}
+export const ANNO_SUB4_RIGHT5={
+  title: "LiDAR in Agriculture: Precision Farming for Enhanced Yields",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Terrain Mapping",
+    content:"LiDAR data provides detailed 3D terrain information for precise mapping and analysis, enabling optimized planting and resource management."
+  },
+{
+  title:"Yield Optimization",
+  content:"By analyzing LiDAR data, farmers can identify areas with varying soil conditions and optimize planting strategies for higher yields."
+},
+{
+  title:"Sustainable Practices",
+  content:"Precision farming enabled by LiDAR reduces the use of fertilizers and pesticides, promoting sustainable agricultural practices."
+}]
+
+}
+//5 video
 export const ANNO_SUB5_HERO={
+  header: "",
+  title: "Video Annotation",
+  desc: "Capture and analyze video data with precise annotations, empowering AI models for enhanced action recognition, object tracking, and event tagging.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
 
 }
 export const ANNO_SUB5_RIGHT1={
-
+  title: "Unveiling the Action: Video Annotation Services",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[{
+    title:"Frame-by-Frame Labeling",
+    content:"Identify and track objects or actions across video frames, providing detailed information for video understanding and analysis."
+  },
+{
+  title:"Object Tracking",
+  content:"Annotate the movement of objects through video sequences, enabling AI models to track objects over time and understand their trajectories."
+},
+{
+  title:"Action Recognition",
+  content:"Label specific actions in videos for behavioral analysis, providing insights into human behavior and activity recognition."
+}
+]
 }
 export const ANNO_SUB5_LEFT2={
-  
+  title: "Advanced Video Annotation: Keyframe & Event Tagging",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      title:"Keyframe Annotation",
+      content:"Highlight critical moments in a video for detailed analysis, enabling AI models to focus on specific frames for understanding and decision-making"
+    },
+    {
+      title:"Event Tagging",
+      content:"Annotate significant events or transitions within video content, providing context and meaning to video data for analysis and understanding."
+    }
+  ]
 }
-export const ANNO_SUB5_RIGHT3={
 
-}
-export const ANNO_SUB5_LEFT4={
-  
-}
-export const ANNO_SUB5_RIGHT5={
 
-}
-
-//6
+//6 NLP
 export const ANNO_SUB6_HERO={
+  header: "",
+  title: "NLP Annotation",
+  desc: "Elevate AI language capabilities with comprehensive text annotations, enabling better understanding, categorization, and contextual processing of text.",
+  btnText: "Get Started",
+  image: IMAGES.DATA_ANN_1,
 
 }
 export const ANNO_SUB6_RIGHT={
-
+  title: "Boosting NLP: Natural Language Processing Annotation",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      tilte:"Part-of-Speech Tagging",
+      content:"Annotate text with grammatical tags to enhance linguistic understanding, providing essential data for language models and grammatical analysis."
+    },
+    {
+      title:"Intent and Entity Annotation",
+      content:"Identify user intents and relevant entities for conversational AI systems, enabling machines to understand and respond to user queries effectively."
+    },
+    {
+      title:"Coreference Resolution",
+      content:"Link pronouns to their respective entities in text for contextual understanding, enabling AI models to understand the relationships between words and entities."
+    }
+  ]
 }
 export const ANNO_SUB6_LEFT={
-  
+  title: "Advanced NLP Annotation: Dependency Parsing & Topic Modeling",
+  heading: "",
+  image: IMAGES.BFSI_ASIDE_1,
+  desc: "",
+  dataList: [],
+  asideList:[
+    {
+      title:"Dependency Parsing",
+      content:"Map syntactic relationships between words for advanced linguistic models, providing insights into sentence structure and grammatical relationships."
+    },
+    {
+      title:"Topic Modeling",
+      content:"Annotate and group text by overarching themes or topics, enabling AI models to identify and understand the main topics discussed in a collection of documents."
+    }
+  ]
 }
 
 // fintech code

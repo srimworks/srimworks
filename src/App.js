@@ -41,6 +41,12 @@ import CookiesPopup from "./components/CookiesPopUp";
 import DataAnnotations from "./components/practises/DataAnnotations";
 import Terms from "./reusable/Terms";
 import Privacy from "./reusable/Privacy";
+import ImageAnno from "./components/annotations/imageAnno";
+import AudioAnno from "./components/annotations/audioAnno";
+import LidarAnno from "./components/annotations/lidarAnno";
+import TextAnno from "./components/annotations/textAnno";
+import VideoAnno from "./components/annotations/videoAnno";
+import NlpAnno from "./components/annotations/nlpAnno";
 
 const AppRouter = () => {
   return (
@@ -200,6 +206,30 @@ export const Routes = createBrowserRouter([
       {
         element:<Privacy/>,
         path:"/privacy"
+      },
+      {
+        element:<ImageAnno/>,
+        path:"/image-annotation"
+      },
+      {
+        element:<AudioAnno/>,
+        path:"/audio-annotation"
+      },
+      {
+        element:<LidarAnno/>,
+        path:"/lidar-annotation"
+      },
+      {
+        element:<TextAnno/>,
+        path:"/text-annotation"
+      },
+      {
+        element:<VideoAnno/>,
+        path:"/video-annotation"
+      },
+      {
+        element:<NlpAnno/>,
+        path:"/nlp-annotation"
       },
     ],
   },
