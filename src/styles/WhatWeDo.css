@@ -57,16 +57,16 @@
 .practices-list-container{
   display: flex;
 }
-.practices-chevron-left{
+ .practices-chevron-left{
   transform: rotate(90deg);
   width: 40px;
   height: 40px;
-}
-.practices-chevron-right{
+} 
+ .practices-chevron-right{
   transform: rotate(-90deg);
   width: 40px;
   height: 40px; 
-}
+} 
 .practices-list {
   display: flex;
   align-items: center;
@@ -101,7 +101,11 @@
 .practices-item-name.active{
   color: #aa2121;
 }
-
+.practices-chevron-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .what-we-do-bottom {
   display: flex;
   justify-content: space-between;

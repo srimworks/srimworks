@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../styles/WhatWeDo.css";
 import { IMAGES } from "../utils/images";
 import { practicesContent } from "../utils/constsnts";
@@ -6,9 +6,22 @@ import { Link } from "react-router-dom";
 
 const WhatWeDo = () => {
   const [selectedPractice, setSelectedPractice] = useState("Design");
+  const practicesListRef = useRef(null);
 
   const handlePracticeClick = (practice) => {
     setSelectedPractice(practice);
+  };
+
+  const scrollLeft = () => {
+    if (practicesListRef.current) {
+      practicesListRef.current.scrollBy({ left: -200, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (practicesListRef.current) {
+      practicesListRef.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
   };
 
   const { title, description, services, image, link } =
@@ -30,36 +43,38 @@ const WhatWeDo = () => {
       <div className="what-we-do-middle">
         <hr id="wwd-hr" />
         <div className="practices-list-container">
-        <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-left"/>
-        <div className="practices-list">
-          {Object.keys(practicesContent).map((practice, index) => (
-            <div
-              key={index}
-              className={`practices-item ${
-                selectedPractice === practice ? "active" : ""
-              }`}
-              onClick={() => handlePracticeClick(practice)}
-            >
-              <img
-                src={
-                  IMAGES[`${practice.replace(/\s+/g, "_").toUpperCase()}_ICON`]
-                }
-                className={`practices-item-icon ${
+          <button onClick={scrollLeft} className="practices-chevron-button">
+            <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-left" alt="Scroll Left" />
+          </button>
+          <div className="practices-list" ref={practicesListRef}>
+            {Object.keys(practicesContent).map((practice, index) => (
+              <div
+                key={index}
+                className={`practices-item ${
                   selectedPractice === practice ? "active" : ""
                 }`}
-                alt={practice}
-              />
-              <h3
-                className={`practices-item-name ${
-                  selectedPractice === practice ? "active" : ""
-                }`}
+                onClick={() => handlePracticeClick(practice)}
               >
-                {practice}
-              </h3>
-            </div>
-          ))}
-        </div>
-        <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-right"/>
+                <img
+                  src={
+                    IMAGES[`${practice.replace(/\s+/g, "_").toUpperCase()}_ICON`]
+                  }
+                  className="practices-item-icon"
+                  alt={practice}
+                />
+                <h3
+                  className={`practices-item-name ${
+                    selectedPractice === practice ? "active" : ""
+                  }`}
+                >
+                  {practice}
+                </h3>
+              </div>
+            ))}
+          </div>
+          <button onClick={scrollRight} className="practices-chevron-button">
+            <img src={IMAGES.CHEVRON_DOWN} className="practices-chevron-right" alt="Scroll Right" />
+          </button>
         </div>
         <hr id="wwd-hr" />
       </div>
