@@ -2923,7 +2923,7 @@ export const ANNO_SUB6_RIGHT={
   dataList: [],
   asideList:[
     {
-      tilte:"Part-of-Speech Tagging",
+      title:"Part-of-Speech Tagging",
       content:"Annotate text with grammatical tags to enhance linguistic understanding, providing essential data for language models and grammatical analysis."
     },
     {
