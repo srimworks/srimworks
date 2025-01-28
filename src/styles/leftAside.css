@@ -8,6 +8,8 @@
   align-self: center;
   padding: 128px 0px;
   width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .overall-aside-container {
   display: flex;
@@ -162,13 +164,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.aside-container {
-  padding-left: 32px;
-  padding-right: 32px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
+
 
 @media (max-width: 1100px) {
   .aside-tag-heading-left {
@@ -181,7 +177,12 @@
     font-size: 40px;
   }
 
+  .aside-container {
 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   .aside-content {
     font-size: 18px;
   }
