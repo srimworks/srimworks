@@ -2544,6 +2544,7 @@ Services we offer:`,
   },
 };
 
+
 export const terms={
   title:"Support",
   heading:"SRIM Works terms of use",
@@ -2595,3 +2596,78 @@ export const cookiesData=[
     button:"switch",
   }
 ]
+
+
+// annotation sub pages
+
+//1
+export const ANNO_SUB1_HERO={
+  
+}
+export const ANNO_SUB1_RIGHT={
+
+}
+export const ANNO_SUB1_LEFT={
+  
+}
+//2
+export const ANNO_SUB2_HERO={
+
+}
+export const ANNO_SUB2_RIGHT={
+
+}
+export const ANNO_SUB2_LEFT={
+  
+}
+//3
+export const ANNO_SUB3_HERO={
+
+}
+export const ANNO_SUB3_RIGHT={
+
+}
+export const ANNO_SUB3_LEFT={
+  
+}
+//4
+export const ANNO_SUB4_HERO={
+
+}
+export const ANNO_SUB4_RIGHT={
+
+}
+export const ANNO_SUB4_LEFT={
+  
+}
+//5
+export const ANNO_SUB5_HERO={
+
+}
+export const ANNO_SUB5_RIGHT1={
+
+}
+export const ANNO_SUB5_LEFT2={
+  
+}
+export const ANNO_SUB5_RIGHT3={
+
+}
+export const ANNO_SUB5_LEFT4={
+  
+}
+export const ANNO_SUB5_RIGHT5={
+
+}
+
+//6
+export const ANNO_SUB6_HERO={
+
+}
+export const ANNO_SUB6_RIGHT={
+
+}
+export const ANNO_SUB6_LEFT={
+  
+}
+
