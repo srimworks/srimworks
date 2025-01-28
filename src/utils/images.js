@@ -292,6 +292,12 @@ import DATA_ANN_7 from '../imagess/Data Annotation/Practices/Component 26.jpg'
 import DATA_ANN_8 from '../imagess/Data Annotation/Practices/Component 27.jpg'
 import DATA_ANN_9 from '../imagess/Data Annotation/What makes different.png'
 
+import  FINTECH_HERO  from "../imagess/Industries/fintech/fintech-hero.png";
+import  FINTECH_OVERVIEW  from "../imagess/Industries/fintech/fintech-overview.png";
+import  FINTECH_ASIDE1  from "../imagess/Industries/fintech/fintech-aside1.png";
+import  FINTECH_ASIDE2  from "../imagess/Industries/fintech/fintech-aside2.png";
+import  FINTECH_MARKET from "../imagess/Industries/fintech/fintech-market.png";
+
 
 export const IMAGES = {
   ASIDE_IMAGE,
@@ -542,5 +548,6 @@ export const IMAGES = {
   HOME_HERO_3,
   MENU_ICON,
   CLOSE_ICON,
-  DATA_ANN_1,DATA_ANN_2,DATA_ANN_3,DATA_ANN_4,DATA_ANN_5,DATA_ANN_6,DATA_ANN_7,DATA_ANN_8,DATA_ANN_9
+  DATA_ANN_1,DATA_ANN_2,DATA_ANN_3,DATA_ANN_4,DATA_ANN_5,DATA_ANN_6,DATA_ANN_7,DATA_ANN_8,DATA_ANN_9,
+  FINTECH_ASIDE1,FINTECH_ASIDE2,FINTECH_HERO,FINTECH_MARKET,FINTECH_OVERVIEW
 };

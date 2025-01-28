@@ -34,7 +34,7 @@ import ReachOut from "./reusable/reachOut";
 import Blogs from "./components/Blogs";
 import Reviews from "./reusable/Reviews";
 import Schedule from "./components/Schedule";
-import Fintech from "./components/practises/Fintech";
+import Fintech from "./components/industry/Fintech";
 import ScrollToTop from "./utils/UseLocation";
 import TermsPopup from "./components/TermsPopUp";
 import CookiesPopup from "./components/CookiesPopUp";

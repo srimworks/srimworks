@@ -130,7 +130,8 @@ export const NavItems = [
       { to: "/media-entertainment", label: "Media & Entertainment" },
       { to: "/fmcg", label: "FMCG" },
       { to: "/health-care", label: "Health Care" },
-      { to: "/bfsi", label: "BFSI" }
+      { to: "/bfsi", label: "BFSI" },
+      {to: "/fintech", label: "FinTech"},
     ],
   },
   {
@@ -2671,3 +2672,65 @@ export const ANNO_SUB6_LEFT={
   
 }
 
+// fintech code
+
+export const FINTECH_HERO = {
+  header: "Fintech",
+  title: "Transforming FinTech with Innovation and Technology",
+  desc: "Empowering financial institutions with advanced solutions to enhance customer experiences, streamline operations, and drive growth through data-driven strategies and seamless digital platforms.",
+  btnText: "Get Started",
+  image: IMAGES.FINTECH_HERO,
+};
+
+export const FINTECH_OVERVIEW = {
+  heading: "",
+  title: "Overview",
+  image: IMAGES.FINTECH_OVERVIEW,
+  desc: "The financial industry is at the forefront of technological innovation, transforming how services are delivered and accessed. We help banks, fintech firms, and financial institutions harness the power of AI, blockchain, and data analytics to streamline processes, mitigate risks, and provide personalized experiences. From payment processing to fraud detection, our end-to-end solutions enable organizations to stay ahead in an ever-evolving financial landscape.",
+  dataList: [],
+};
+
+export const FINTECH_MARKET_TRENDS = {
+  heading: "Market Trends",
+  desc: "The media and entertainment industry is rapidly evolving with the advancement of new technologies and shifting consumer behaviors. Staying ahead of these trends is crucial to remain competitive.",
+  title: "Mobile Commerce Growth",
+  content:
+    "Mobile shopping continues to dominate, with more consumers preferring to browse and buy on their smartphones.",
+  subHead1: "Social Commerce",
+  subHead2: "AI-Driven Personalization",
+  accordians_contents: [
+    {
+      id: 0,
+      subHead: "Blockchain and Cryptocurrency Adoption",
+      content: `Financial institutions are increasingly integrating blockchain for secure, transparent transactions and exploring cryptocurrency as an alternative payment method to meet evolving customer demands.`,
+    },
+    {
+      id: 1,
+      subHead: "AI in Financial Decision-Making",
+      content: `AI and machine learning are revolutionizing credit scoring, investment management, and risk assessment by delivering faster, more accurate data interpretations.`,
+    },
+    {
+      id: 2,
+      subHead: "Personalized Banking Experiences",
+      content: `Hyper-personalization driven by big data and AI enables financial institutions to offer tailored services, enhancing customer satisfaction and fostering loyalty.`,
+    },
+  ],
+  image: IMAGES.FINTECH_MARKET,
+  dataList: [],
+};
+
+export const FINTECH_SEAMLESS = {
+  heading: "",
+  title: "Digital Financial Solutions",
+  image: IMAGES.FINTECH_ASIDE1,
+  desc: "We offer cutting-edge digital payment systems, blockchain integration, and online banking platforms that simplify transactions and improve accessibility. These solutions enhance customer satisfaction and support financial institutions in staying relevant in a competitive market.",
+  dataList: [],
+};
+
+export const FINTECH_SMART_SUPPLY = {
+  heading: "",
+  title: "Risk Mitigation with AI",
+  image: IMAGES.FINTECH_ASIDE2,
+  desc: "Our AI-powered fraud detection and risk assessment tools ensure secure financial operations. By identifying potential threats in real-time and automating compliance, we help organizations protect their assets and maintain customer trust.",
+  dataList: [],
+};

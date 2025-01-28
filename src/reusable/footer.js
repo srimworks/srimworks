@@ -135,7 +135,7 @@ const Footer = () => {
             <Link to="/bfsi" className="link">
               <li className="links-body">BFSI</li>
             </Link>
-            <Link className="link">
+            <Link to="/fintech" className="link">
               <li className="links-body">Fintech</li>
             </Link>
           </ul>
