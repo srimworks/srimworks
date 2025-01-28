@@ -19,7 +19,7 @@ const DataAnnotations = () => {
         </div>
         <div className="practices-cards">
           {DATAAN_CARDS.map((item) => {
-            return <Link className="link" to={item.link}><Cards {...item} /></Link>
+            return <Link className="link-cards" to={item.link}><Cards {...item} /></Link>
           })}
         </div>
       </div>
