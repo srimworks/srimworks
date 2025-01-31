@@ -5,6 +5,7 @@ import { cookiesData } from "../utils/constsnts";
 
 const CookiesPopup = () => {
   const [show, setShow] = useState(true);
+  const [showCookie, setCookie] = useState(false);
   const [showindex, setIndex] = useState(0);
   const [setToggle,setToogleState]=useState(false)
 
@@ -21,14 +22,15 @@ const CookiesPopup = () => {
   };
 
   return (
-    show && <div className="cookies-popup-outer">
+    show &&
+     <div className="cookies-popup-outer">
       <div className="cookies-popup">
         <div className="cookies-top">
           <div className="cookies-t-left">
             <img src={IMAGES.FOOTER_ICON} />
             <h2 className="cookies-heading"> Privacy Preference Center</h2>
           </div>
-          <img src={IMAGES.CLOSE_ICON} onClick={()=>{setShow(false)}}/>
+          <img src={IMAGES.CLOSE_ICON} onClick={()=>{setCookie(false)}}/>
         </div>
         <div className="cookies-middle">
           <div className="cookies-m-left">
