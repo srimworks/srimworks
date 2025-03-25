@@ -17,8 +17,8 @@ const BigData = () => {
         <h1 className="what-offers-heading">What We Offers</h1>
       </div>
       <div className="practices-cards">
-      {BIGDATA_CARDS.map((item) => {
-        return <Cards {...item} />;
+      {BIGDATA_CARDS.map((item,index) => {
+        return <Cards {...item} key={index} />;
       })}
       </div>
       </div>

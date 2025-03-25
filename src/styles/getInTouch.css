@@ -185,6 +185,39 @@
   line-height: normal;
   width: auto;
 }
+.flag-dropdown {
+  height: 100%;
+}
+/* Container (entire component wrapper) */
+.custom-container {
+  width: 100%;
+  max-width: 750px;
+  border: 1px solid #767676;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 2px;
+  flex-shrink: 0 !important;
+  display: flex;
+}
+
+/* Input (phone number input box) */
+.custom-input {
+  background: transparent;
+  border: 1px solid #fff !important;
+  font-size: 16px;
+  color: #333;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+}
+
+/* Button (flag dropdown button) */
+.custom-button {
+  background: transparent !important;
+  border: none !important;
+
+}
+
 
 #input:focus {
   outline: none;
@@ -286,6 +319,24 @@
   margin: 0 auto;
   display: none;
 }
+.secondary-button-black-loading{
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #060606;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #fff;
+  width: 100%;
+  border-color: transparent;
+  cursor: not-allowed;
+}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }

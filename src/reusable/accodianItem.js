@@ -6,7 +6,7 @@ import '../index.css'
 const AccordianItem = ({ title, content,subHead, id, isOpen, setIsOpen }) => {
 
   const handleClick = () => {
-    setIsOpen(isOpen != isOpen);
+    setIsOpen(isOpen !== isOpen);
   };
 
   return (

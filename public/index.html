@@ -15,8 +15,30 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.cdnfonts.com/css/config-condensed" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link
+      href="https://fonts.cdnfonts.com/css/config-condensed"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <!-- Code for Google Tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16525387287"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16525387287");
+    </script>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

@@ -3,7 +3,7 @@ import "../styles/heroosections.css";
 import { IMAGES } from "../utils/images";
 import { Link } from "react-router-dom";
 const HeroSection = ({cards,image,header, title, desc, btnText,btnClass}) => {
-console.log(image)
+
   return (
   
     <section className="hero-section">

@@ -5,15 +5,15 @@ const RightAside = ({ image, heading,header, title, desc ,dataList, asideList}) 
 
   return (
     <div className="aside-container">
-      <aside className={title=='Overview'? "aside-container-aside-overview":"aside-container-aside" }>
+      <aside className={title==='Overview'? "aside-container-aside-overview":"aside-container-aside" }>
         {heading.length > 0 && (
           <div className="aside-tag">
             {/* <hr className="aside-tag-hr" /> */}
             <h2 className="aside-tag-heading">{heading || header}</h2>
           </div>
         )}
-        <h1 className={title=='Overview' ?"aside-heading-overview"  : "aside-heading"}>{title}</h1>
-        <p className={title=='Overview' ? "aside-content-overview": "aside-content"}>{desc}</p>
+        <h1 className={title==='Overview' ?"aside-heading-overview"  : "aside-heading"}>{title}</h1>
+        <p className={title==='Overview' ? "aside-content-overview": "aside-content"}>{desc}</p>
         <div>
         {
           asideList && asideList.map((item,index)=>{
