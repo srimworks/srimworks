@@ -18,11 +18,11 @@ const MarketReuse = ({
         </div>
         <div className="market-aside">
           <div className="market-left">
-            {accordians_contents.map((item)=>{
-              return ( <div className= "market-left-open-container" onClick={()=> setId(item.id)}>
-                <h1 className={ item.id==openvalue ?"market-left-heading" :"market-left-heading-close"}>{item.subHead}</h1>
-                <hr className= {item.id==openvalue ? "market-seperation-line": "market-seperation-line-close"} />
-                <p className={item.id==openvalue ? "market-left-content": "market-left-content-close"}>{item.content}</p>
+            {accordians_contents.map((item,index)=>{
+              return ( <div className= "market-left-open-container" key={index} onClick={()=> setId(item.id)}>
+                <h1 className={ item.id===openvalue ?"market-left-heading" :"market-left-heading-close"}>{item.subHead}</h1>
+                <hr className= {item.id===openvalue ? "market-seperation-line": "market-seperation-line-close"} />
+                <p className={item.id===openvalue ? "market-left-content": "market-left-content-close"}>{item.content}</p>
               </div> )
 
             })

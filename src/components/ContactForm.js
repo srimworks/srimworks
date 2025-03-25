@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import "../styles/getInTouch.css";
 import { IMAGES } from "../utils/images.js";
 import { Link } from "react-router-dom";
+import { gtag_report_conversion } from "../gtag.js";
+import PhoneInput from "react-phone-input-2";
+import 'react-phone-input-2/lib/style.css'
+import "../styles/getInTouch.css";
+
 
 const ContactForm = () => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState('Submit');
+  const [submit_btn, setSubmit_btn] = useState('secondary-button-black-filled');
   const generateCaptcha = () => {
     return Math.random().toString(36).substring(2, 8); // Generates a random string
   };
@@ -19,22 +24,62 @@ const ContactForm = () => {
     message: "",
     captcha: "",
     generatedCaptcha: generateCaptcha(), // Initial captcha value
+    from:"Form Submitted from SRIM Works Website",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  const handleMobile = (value) => {
+    setFormData({ ...formData, mobile: value });
+  };
+
+
+  //Email Validation
+  const isValidURL = (url) => {
+    const urlPattern = /^(https?:\/\/)?(www\.)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/;
+    return urlPattern.test(url);
+  };
+
+  //Mobile Validation
+  const validateMobile=(num)=>{
+    const patt = /^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
+    return patt.test(num);
+  }
+  const validate=(data)=>{
+    if (!validateMobile(data.mobile) || data.mobile.length<10){
+      alert("Mobile Number must contain 10 numbers")
+      return false;
+    }
+    if(!isValidURL(data.website)){
+      alert('Please Enter Valid Website URL')
+      return false
+    }
+
+    if (data.message.split(" ").length<10){
+      alert("Your Message is too short")
+      return false;
+    }
+    if(data.captcha!=data.generatedCaptcha ){
+      alert("Captcha does not match! Please try again.");
+      return false;
+    }
+    
+      return true;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validate captcha before submitting
-    if (formData.captcha !== formData.generatedCaptcha) {
-      alert("Captcha does not match! Please try again.");
+    if (!validate(formData)) {
+      // alert("Captcha does not match! Please try again.");
       return;
     }
-
+    setLoading('Loading...');
+    setSubmit_btn("secondary-button-black-loading")
+    formData.mobile=`+${formData.mobile}`
     try {
       const response = await fetch(
         "https://srimmedia-backend.onrender.com/submit-form",
@@ -60,13 +105,30 @@ const ContactForm = () => {
           message: "",
           captcha: "",
           generatedCaptcha: generateCaptcha(), // Reset captcha on successful submission
+          from:"Form Subbmitted from SRIM Works Website",
         });
+        gtag_report_conversion()
+        setLoading('Submitted Sucessfully');
+        setTimeout(()=>{
+          setLoading('Submit')
+          setSubmit_btn('secondary-button-black-filled')
+        },3000)
       } else {
         alert(`Failed to submit form: ${data.message || "Unknown error"}`);
+        setLoading('Retry');
+        setTimeout(()=>{
+          setLoading('Submit')
+          setSubmit_btn('secondary-button-black-filled')
+        },3000)
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("An error occurred. Please check the console for details.");
+      setLoading('Not Submitted Retry');
+      setTimeout(()=>{
+        setLoading('Submit')
+        setSubmit_btn('secondary-button-black-filled')
+      },5000)
     }
   };
 
@@ -155,15 +217,19 @@ const ContactForm = () => {
               </div>
               <div id="input-container">
                 <label id="input-label">Mobile Number *</label>
-                <input
+                <PhoneInput
                   id="input"
-                  type="text"
+                  country={'us'}
                   name="mobile"
                   value={formData.mobile}
-                  onChange={handleChange}
+                  onChange={handleMobile}
                   placeholder="Mobile Number"
                   onClick={stopPropagation}
-                  required
+                  inputProps={{required:true}}
+                  containerClass="custom-container"
+                  inputClass="custom-input"
+                  buttonClass="custom-button"
+                  
                 />
               </div>
             </div>
@@ -202,7 +268,7 @@ const ContactForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Write Message"
+                placeholder="Write Message minimum 10 words"
                 onClick={stopPropagation}
                 required
               ></textarea>
@@ -243,9 +309,9 @@ const ContactForm = () => {
                 value="Checked"
                 required
               ></input>
-              <p className="check-text">
+              <label htmlFor='Accept_Privacy' className="check-text">
                 I agree to our <Link className="privacy" to="/privacy"> privacy policy </Link>
-              </p>
+              </label>
             </div>
           </div>
 
@@ -253,8 +319,8 @@ const ContactForm = () => {
             {loading ? <div className="loading-spinner"></div> : "Submit"}
             </button> */}
             
-          <button type="submit" className="secondary-button-black-filled">
-            Submit
+          <button type="submit"  className={submit_btn} disabled ={loading!=='Submit'} >
+          {loading }
             </button>
         </form>
       </div>

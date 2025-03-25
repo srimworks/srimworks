@@ -14,16 +14,18 @@ const TermsPopup = () => {
     setShow(false);
   };
   const handleReject = () => {
+    localStorage.setItem("acceptedTerms", "false");
     setShow(false);
   };
   const handleCustomize = () => {
+    localStorage.setItem("acceptedTerms", "true");
     setShow(false);
     setCookie(true);
   };
 
   return (
     <>
-      {show && (
+      {(show && !localStorage.getItem("acceptedTerms") )&& (
         <div className="terms-popup">
           <div className="terms-content">
             <h2 className="terms-heading">We value your privacy</h2>
