@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { IMAGES } from "../utils/images.js";
 import { Link } from "react-router-dom";
-import { gtag_report_conversion } from "../gtag.js";
 import PhoneInput from "react-phone-input-2";
 import 'react-phone-input-2/lib/style.css'
 import "../styles/getInTouch.css";
+import {sendEvent} from '../gtag.js'
 
 
 const ContactForm = () => {
@@ -107,7 +107,7 @@ const ContactForm = () => {
           generatedCaptcha: generateCaptcha(), // Reset captcha on successful submission
           from:"Form Subbmitted from SRIM Works Website",
         });
-        gtag_report_conversion()
+        sendEvent()
         setLoading('Submitted Sucessfully');
         setTimeout(()=>{
           setLoading('Submit')
