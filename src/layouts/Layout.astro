@@ -17,6 +17,23 @@ const {
 
 import '../index.css';
 import '../App.css';
+import '../styles/cards.css';
+import '../styles/practises.css';
+import '../styles/heroosections.css';
+import '../styles/heroRight.css';
+import '../styles/leftAside.css';
+import '../styles/marketreuse.css';
+import '../styles/WhatWeDo.css';
+import '../styles/corevalues.css';
+import '../styles/location.css';
+import '../styles/whychoose.css';
+import '../styles/reachout.css';
+import '../styles/getInTouch.css';
+import '../styles/Leadership.css';
+import '../styles/PressRoom.css';
+import '../styles/review.css';
+import '../styles/terms.css';
+import '../styles/accordianStyles.css';
 import Navbar from '../reusable/navbar';
 import Footer from '../reusable/footer';
 import ReachOut from '../reusable/reachOut';
@@ -193,7 +210,7 @@ const fullImageUrl = image.startsWith('http') ? image : `https://srimworks.com${
       <main id="main-content" role="main">
         <slot />
       </main>
-      <ReachOut {...REACH_OUT} client:idle />
+      {!Astro.url.pathname.includes('/contact-us') && <ReachOut {...REACH_OUT} client:idle />}
       <TermsPopup client:idle />
       <footer role="contentinfo">
         <Footer client:idle />

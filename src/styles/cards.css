@@ -1,117 +1,169 @@
+/* SRIM WORKS Standardized Service & Practice Card Design System */
 .card-section {
   display: flex;
-  width: 407px;
-  height: 480px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
   position: relative;
+  width: 100%;
+  min-height: 440px;
+  border-radius: 16px;
   overflow: hidden;
+  background: #090d16;
+  border: 1px solid #1e293b;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-section:hover {
+  transform: translateY(-6px);
+  border-color: #0284c7;
+  box-shadow: 0 12px 30px -4px rgba(2, 132, 199, 0.25), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.card-section:hover .card-image {
+  transform: scale(1.06);
+}
+
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 6, 23, 0.45) 0%,
+    rgba(2, 6, 23, 0.78) 45%,
+    rgba(2, 6, 23, 0.96) 80%,
+    rgba(2, 6, 23, 1) 100%
+  );
+  z-index: 2;
+}
+
+.card-body {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 32px 26px 28px;
+  gap: 12px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.card-badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #38bdf8;
+  background: rgba(2, 132, 199, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+.card-date {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
 }
 
 .card-heading {
-  color: #fff;
-  font-family: "Config Condensed";
-  font-size: 28px;
-  font-style: normal;
+  font-family: "Config Condensed", -apple-system, sans-serif;
+  font-size: 26px;
   font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  color: #f8fafc;
+  line-height: 1.25;
+  margin: 0;
+  text-transform: none;
 }
 
 .card-content {
-  color: #fff;
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  font-style: normal;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 14.5px;
   font-weight: 400;
-  line-height: 135%;
-  padding-left: 24px;
-  padding-right: 36px;
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 96px;
-  width: 400px;
-  transition: translate 0.3s cubic-bezier(0, 0, 1, -0.3);
-}
-.card-image {
-  position: absolute;
-  z-index: -1;
-  background: linear-gradient(331deg, #aa2121 -86.77%, #000 78.39%);
-  transition: all 0.3s ease;
-  left: 0;
-  top: 0;
-}
-
-.overlay {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
-
-.card-section:hover .card-content {
-  position: relative;
-  width: 100%;
+  color: #cbd5e1;
+  line-height: 1.6;
   margin: 0;
-  transition: all 0.2s linear;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.card-section:hover .card-image{
-  transform: scale(5);
-  filter: blur(24px);
-  -webkit-filter: blur(24px);
-  margin-left: 600px;
-  margin-top: 500px;
+.card-cta {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
 }
 
-/* .card-section:hover .overlay {
-  background: linear-gradient(331deg, #aa2121 -86.77%, #000 78.39%),
-    linear-gradient(0deg, #1e1e1e 0%, #1e1e1e 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000 100%);
-  transition: all 0.3s ease; 
-} */
+.card-cta-text {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #38bdf8;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
 
+.card-section:hover .card-cta-text {
+  color: #7dd3fc;
+  gap: 10px;
+}
+
+/* Link wrapper style for cards */
+.link-cards {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
+/* Responsive Grid Adaptation */
 @media (max-width: 900px) {
-  .card-image{
-    transform: scale(5);
-    filter: blur(24px);
-    -webkit-filter: blur(24px);
-    margin-left: 600px;
-    margin-top: 500px;
+  .card-section {
+    min-height: 400px;
+  }
+  .card-heading {
+    font-size: 24px;
   }
   .card-content {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    transition: all 0.3s cubic-bezier(0, 0, 1, -0.3);
+    font-size: 14px;
+    -webkit-line-clamp: 4;
   }
 }
 
 @media (max-width: 600px) {
-  .overlay {
-    width: 100%;
+  .card-section {
+    min-height: 380px;
+    border-radius: 14px;
   }
-  .card-content {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .card-section{
-    width: 90%;
+  .card-body {
+    padding: 24px 20px 22px;
   }
   .card-heading {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+    font-size: 22px;
   }
 }

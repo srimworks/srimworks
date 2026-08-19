@@ -194,9 +194,9 @@ export const REACH_OUT = {
 //contact us
 
 export const CONTACT_HERO = {
-  header: "",
-  title: "Contact Us",
-  desc: "",
+  header: "Get In Touch",
+  title: "Connect with Our Enterprise Engineering & AI Specialists",
+  desc: "Whether you need high-accuracy data annotation suites, custom LLM fine-tuning, multi-cloud DevOps, or enterprise software architecture, we are here to help.",
   btnText: "",
   image: IMAGES.SCHEDULE_MEETING_HERO,
 };

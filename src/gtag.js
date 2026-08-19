@@ -1,13 +1,10 @@
-import TagManager from "react-gtm-module";
-
-export const sendEvent = () => {
-  TagManager.dataLayer({
-    dataLayer: {
-      event: "button_click",
+export const sendEvent = (eventName = "form_submission", params = {}) => {
+  if (typeof window !== "undefined" && window.dataLayer) {
+    window.dataLayer.push({
+      event: eventName,
       category: "User Interaction",
-      action: "Clicked Signup Button",
-      label: "Signup Page"
-    }
-  });
-  console.log("function is called")
+      action: "Submitted Contact Form",
+      ...params
+    });
+  }
 };

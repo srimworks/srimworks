@@ -4,9 +4,11 @@
   display: flex;
   width: 100%;
   max-width: 1300px;
+  margin: 0 auto;
   justify-content: space-between;
-  align-items: center;
-  padding: 64px 32px;
+  align-items: flex-start;
+  padding: 80px 32px;
+  box-sizing: border-box;
 }
 
 .l-top-tag {
