@@ -237,7 +237,12 @@
 }
 
 /* Primary Schedule Call Button */
-.navbar-button .primary-button {
+.navbar-button .primary-button,
+.navbar-button .primary-button-link,
+.primary-button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #0f172a;
   color: #ffffff;
   border: none;
@@ -247,10 +252,13 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.navbar-button .primary-button:hover {
+.navbar-button .primary-button:hover,
+.navbar-button .primary-button-link:hover,
+.primary-button-link:hover {
   background: #0284c7;
   transform: translateY(-1px);
 }
@@ -372,7 +380,8 @@
     z-index: 1000;
   }
 
-  .navbar-button.active .primary-button {
+  .navbar-button.active .primary-button,
+  .navbar-button.active .primary-button-link {
     width: 100%;
     padding: 14px;
     font-size: 16px;

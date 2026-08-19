@@ -96,9 +96,11 @@ const ContactForm = () => {
 
     return () => {
       clearInterval(intervalId);
-      delete window.onTurnstileSuccess;
-      delete window.onTurnstileExpired;
-      delete window.onTurnstileError;
+      try {
+        window.onTurnstileSuccess = null;
+        window.onTurnstileExpired = null;
+        window.onTurnstileError = null;
+      } catch (e) {}
     };
   }, []);
 

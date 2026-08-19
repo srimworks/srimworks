@@ -150,15 +150,15 @@ const Navbar = () => {
           ))}
 
           <div className="navbar-item">
-            <Link to="/careers" className="link" onClick={handleLinkClick}>
-              <button type="button" className="nav-button">Careers</button>
+            <Link to="/careers/" className="nav-button" onClick={handleLinkClick}>
+              Careers
             </Link>
           </div>
         </div>
 
         <div className={`navbar-button ${isMobileMenuOpen ? "active" : ""}`}>
-          <Link to="/contact-us" className="link" onClick={handleLinkClick}>
-            <button type="button" className="primary-button">Schedule a Call</button>
+          <Link to="/contact-us/" className="primary-button-link" onClick={handleLinkClick}>
+            Schedule a Call
           </Link>
         </div>
       </div>
