@@ -1,1 +1,0 @@
-import{R as e}from"./index.DmM0KDA7.js";import{H as t}from"./HeroWithLeftImg.CONQRSE_.js";import{R as r}from"./constsnts.D2gShtwl.js";/* empty css                       */import"./images.CaXP2vDm.js";const c=()=>e.createElement("div",{className:"outlet-render"},e.createElement(t,{...r}));export{c as default};

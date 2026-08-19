@@ -4,13 +4,15 @@ interface Props {
   description?: string;
   image?: string;
   canonical?: string;
+  type?: string;
 }
 
 const {
   title = "SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms",
-  description = "SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions.",
+  description = "SRIM WORKS delivers high-accuracy AI & ML systems, Precision Data Annotations (Image, Video, LiDAR, NLP), Cloud Computing, and Digital Product Engineering for global enterprises.",
   image = "/ContactSection.png",
-  canonical = Astro.url.href
+  canonical = Astro.url.href.replace('srimworks.pages.dev', 'srimworks.com'),
+  type = "website"
 } = Astro.props;
 
 import '../index.css';
@@ -20,14 +22,19 @@ import Footer from '../reusable/footer';
 import ReachOut from '../reusable/reachOut';
 import TermsPopup from '../components/TermsPopUp';
 import { REACH_OUT } from '../utils/constsnts';
+
+const fullImageUrl = image.startsWith('http') ? image : `https://srimworks.com${image}`;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#020617" />
+    <meta name="author" content="SRIM WORKS" />
+    <meta name="publisher" content="SRIM WORKS Technologies" />
     
     <!-- Primary Metadata -->
     <title>{title}</title>
@@ -35,95 +42,126 @@ import { REACH_OUT } from '../utils/constsnts';
     <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-    <!-- OpenGraph / Social Sharing -->
+    <!-- OpenGraph / Facebook / LinkedIn -->
     <meta property="og:site_name" content="SRIM WORKS" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image.startsWith('http') ? image : `https://srimworks.pages.dev${image}`} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:image:alt" content="SRIM WORKS - Enterprise AI Engineering & Data Annotations" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@srimworks" />
+    <meta name="twitter:creator" content="@srimworks" />
     <meta name="twitter:url" content={canonical} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image.startsWith('http') ? image : `https://srimworks.pages.dev${image}`} />
+    <meta name="twitter:image" content={fullImageUrl} />
 
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- Typography (Self-hosted / Preconnect) -->
+    <!-- Performance Preconnect & Typography -->
     <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
-    <link href="https://fonts.cdnfonts.com/css/config-condensed" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://fonts.cdnfonts.com" />
+    <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
+    <link href="https://fonts.cdnfonts.com/css/config-condensed" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" media="print" onload="this.media='all'" />
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Complete GEO / SEO Knowledge Graph (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["Organization", "ProfessionalService"],
-      "@id": "https://srimworks.pages.dev/#organization",
-      "name": "SRIM WORKS",
-      "legalName": "SRIM WORKS Technologies Private Limited",
-      "url": "https://srimworks.pages.dev",
-      "logo": "https://srimworks.pages.dev/favicon.png",
-      "image": "https://srimworks.pages.dev/ContactSection.png",
-      "description": "SRIM WORKS is a premier enterprise digital engineering, artificial intelligence, and specialized data annotation agency.",
-      "telephone": "+91-9848044325",
-      "email": "contact@srimworks.com",
-      "areaServed": [
-        { "@type": "Country", "name": "India" },
-        { "@type": "Country", "name": "United States" },
-        { "@type": "Country", "name": "Global" }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Enterprise Engineering & AI Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Artificial Intelligence & Machine Learning",
-              "description": "Enterprise AI development, LLM fine-tuning, and multi-agent workflows."
-            }
+      "@graph": [
+        {
+          "@type": ["Organization", "Corporation", "ProfessionalService"],
+          "@id": "https://srimworks.com/#organization",
+          "name": "SRIM WORKS",
+          "alternateName": "SRIM WORKS Technologies",
+          "legalName": "SRIM WORKS Technologies Private Limited",
+          "url": "https://srimworks.com",
+          "logo": "https://srimworks.com/favicon.png",
+          "image": "https://srimworks.com/ContactSection.png",
+          "description": "SRIM WORKS is a premier enterprise digital engineering, artificial intelligence, and specialized data annotation agency providing mission-critical solutions to global enterprises.",
+          "telephone": "+91-9848044325",
+          "email": "info@srimworks.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rajapushpa Summit, SY. 130P & 115/1P, Nanakramguda Rd, Financial District, Manikonda Jagir",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "500032",
+            "addressCountry": "IN"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Data Annotation & Labelling Suite",
-              "description": "Image, Video, Audio, LiDAR, Text, and NLP annotation for computer vision and ML models."
-            }
+          "areaServed": [
+            { "@type": "Country", "name": "United States" },
+            { "@type": "Country", "name": "Canada" },
+            { "@type": "Country", "name": "United Kingdom" },
+            { "@type": "Country", "name": "India" },
+            { "@type": "Country", "name": "Global" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Enterprise Engineering & AI Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Artificial Intelligence & Machine Learning",
+                  "description": "Enterprise AI architecture, custom LLM fine-tuning, autonomous multi-agent pipelines, and predictive algorithms."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Precision Data Annotation Suite",
+                  "description": "Pixel-perfect Image, Video, 3D LiDAR point cloud, Audio, Text, and NLP annotation for production AI/ML models."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cloud Computing & DevOps",
+                  "description": "Multi-cloud architecture, AWS/Azure/GCP cloud migrations, Kubernetes containerization, and automated CI/CD pipelines."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Digital Product Engineering",
+                  "description": "End-to-end full-stack web, mobile, and microservices platform engineering with human-centered UI/UX design."
+                }
+              }
+            ]
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Cloud Computing & DevOps",
-              "description": "Enterprise cloud architecture, AWS, Azure, GCP infrastructure, and Kubernetes orchestration."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Digital Product Engineering",
-              "description": "Custom full-stack web and mobile application engineering."
-            }
+          "sameAs": [
+            "https://www.linkedin.com/company/srim-works/",
+            "https://www.glassdoor.co.in/Overview/Working-at-SRIM-WORKS-EI_IE9788976.11,21.htm",
+            "https://www.ambitionbox.com/overview/srim-works-overview"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://srimworks.com/#website",
+          "url": "https://srimworks.com",
+          "name": "SRIM WORKS",
+          "description": "Enterprise AI Engineering, Precision Data Annotations & Digital Platforms",
+          "publisher": {
+            "@id": "https://srimworks.com/#organization"
           }
-        ]
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/srimworks",
-        "https://twitter.com/srimworks"
+        }
       ]
     }
     </script>
 
-    <!-- Google Tag Manager -->
-        <!-- Deferred Non-Blocking Google Tag Manager (Core Web Vitals Optimized) -->
+    <!-- Deferred Non-Blocking Google Tag Manager -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function loadGTM() {
@@ -136,24 +174,27 @@ import { REACH_OUT } from '../utils/constsnts';
         })(window,document,'script','dataLayer','GTM-NP66W5LK');
       }
       if ('requestIdleCallback' in window) {
-        window.requestIdleCallback(loadGTM, { timeout: 2000 });
+        window.requestIdleCallback(loadGTM, { timeout: 2500 });
       } else {
         window.addEventListener('load', loadGTM, { passive: true });
       }
     </script>
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP66W5LK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div id="root">
-      <Navbar client:load />
-      <main>
+      <header role="banner">
+        <Navbar client:load />
+      </header>
+      <main id="main-content" role="main">
         <slot />
       </main>
       <ReachOut {...REACH_OUT} client:idle />
       <TermsPopup client:idle />
-      <Footer client:idle />
+      <footer role="contentinfo">
+        <Footer client:idle />
+      </footer>
     </div>
   </body>
 </html>

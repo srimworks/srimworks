@@ -3,7 +3,7 @@
 /* Container for the background image */
 .background-image-container {
   position: relative;
-  background-image: url("../../public/ContactSection.png"); /* Replace with your image URL */
+  background-image: url("/ContactSection.png");
   background-size: cover;
   background-position: center;
   height: 400px; /* Set the height for the background */

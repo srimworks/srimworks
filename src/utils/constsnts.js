@@ -84,12 +84,11 @@ With a focus on innovation, collaboration, and integrity, we leverage cutting-ed
 };
 
 // navbar
-
 export const NavItems = [
   {
     title: "Who We Are",
     links: [
-      { to: "/about-us", label: "About US" },
+      { to: "/about-us", label: "About Us" },
       { to: "/about-us#leader-ship", label: "Leadership Team" },
       { to: "/pressroom", label: "Press Room" },
       { to: "/careers", label: "Careers" },
@@ -98,49 +97,48 @@ export const NavItems = [
   {
     title: "Practices",
     links: [
-      { to: "/design", label: "Design" },
+      { to: "/design", label: "Design & UX Strategy" },
       { to: "/digital-engineering", label: "Digital Engineering" },
       { to: "/big-data", label: "Big Data Analytics" },
-      { to: "/AI&ML", label: "AI & ML" },
+      { to: "/AI&ML", label: "AI & Machine Learning" },
       { to: "/open-source", label: "Open Source Technologies" },
-      { to: "/data-annotation", label: "Data Annotation services" },
+      { to: "/data-annotation", label: "Data Annotation Services" },
       { to: "/microsoft-technologies", label: "Microsoft Technologies" },
-      { to: "/cloud-computing", label: "Cloud Computing" },
-      { to: "/erp-crm", label: "ERP and CRM Solutions" },
+      { to: "/cloud-computing", label: "Cloud Computing & DevOps" },
+      { to: "/erp-crm", label: "ERP & CRM Solutions" },
     ],
   },
   {
     title: "Offerings",
     links: [
       { to: "/innovation-research", label: "Innovation & Research Lab" },
-      { to: "/prod-dev-lifecycle", label: "Prod Dev Lifecycle" },
+      { to: "/prod-dev-lifecycle", label: "Product Dev Lifecycle" },
       { to: "/lean-product-engineering", label: "Lean Product Engineering" },
       { to: "/professional-services", label: "Professional Services" },
       { to: "/channel-partners", label: "Channel Partners" },
-      { to: "https://www.srimworks.com/managed-spend-solutions", label: "Managed Spend Solutions" },
     ],
   },
   {
     title: "Industries",
     links: [
-      { to: "/marine", label: "Marine" },
-      { to: "/logistics", label: "Logistics" },
-      { to: "/real-estate", label: "Real Estate" },
-      { to: "/retail", label: "Retail" },
-      { to: "/e-commerce", label: "ECommerce" },
+      { to: "/bfsi", label: "BFSI & Banking" },
+      { to: "/fintech", label: "FinTech" },
+      { to: "/health-care", label: "Healthcare & Life Sciences" },
+      { to: "/retail", label: "Retail & Consumer" },
+      { to: "/e-commerce", label: "E-Commerce" },
+      { to: "/logistics", label: "Logistics & Supply Chain" },
+      { to: "/real-estate", label: "Real Estate & PropTech" },
       { to: "/media-entertainment", label: "Media & Entertainment" },
       { to: "/fmcg", label: "FMCG" },
-      { to: "/health-care", label: "Health Care" },
-      { to: "/bfsi", label: "BFSI" },
-      {to: "/fintech", label: "FinTech"},
+      { to: "/marine", label: "Marine & Maritime" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { to: "/blogs", label: "Blogs" },
-      { to: "/", label: "Case Studies" },
-      { to: "/contact-us", label: "Submit Your Reviews" },
+      { to: "/blogs", label: "Insights & Blogs" },
+      { to: "/pressroom", label: "Press Room" },
+      { to: "/reviews", label: "Client Testimonials" },
     ],
   },
 ];

@@ -98,7 +98,7 @@ const Footer = () => {
             <Link to="/channel-partners" className="link">
               <li className="links-body">Channel Partners</li>
             </Link>
-            <Link to="https://www.srimworks.com/managed-spend-solutions" className="link">
+            <Link to="/professional-services" className="link">
               <li className="links-body">Managed Spend Solutions</li>
             </Link>
           </ul>
