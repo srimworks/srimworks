@@ -29,9 +29,21 @@ const ContactForm = () => {
 
   // Load and initialize Cloudflare Turnstile
   useEffect(() => {
-    let script = document.getElementById("cf-turnstile-script");
-    
-    const initWidget = () => {
+    // Set up global callback listeners
+    window.onTurnstileSuccess = (token) => {
+      setTurnstileToken(token);
+      setFormStatus({ type: null, message: "" });
+    };
+
+    window.onTurnstileExpired = () => {
+      setTurnstileToken("");
+    };
+
+    window.onTurnstileError = () => {
+      setTurnstileToken("");
+    };
+
+    const tryRender = () => {
       if (window.turnstile && turnstileContainerRef.current && widgetIdRef.current === null) {
         try {
           widgetIdRef.current = window.turnstile.render(turnstileContainerRef.current, {
@@ -47,31 +59,48 @@ const ContactForm = () => {
               setTurnstileToken("");
             },
             theme: "light",
-            size: "flexible"
+            size: "normal"
           });
         } catch (e) {
-          console.warn("Turnstile render note:", e);
+          // May already be auto-rendered
         }
       }
     };
 
-    if (!script) {
-      script = document.createElement("script");
-      script.id = "cf-turnstile-script";
-      script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-      script.async = true;
-      script.defer = true;
-      script.onload = () => {
-        if (window.turnstile) {
-          window.turnstile.ready(initWidget);
-        }
-      };
-      document.head.appendChild(script);
-    } else if (window.turnstile) {
-      window.turnstile.ready(initWidget);
+    // If Turnstile is already on page, initialize immediately
+    if (window.turnstile) {
+      if (typeof window.turnstile.ready === 'function') {
+        window.turnstile.ready(tryRender);
+      } else {
+        tryRender();
+      }
+    } else {
+      // Dynamic fallback script loader
+      let script = document.getElementById("cf-turnstile-script");
+      if (!script) {
+        script = document.createElement("script");
+        script.id = "cf-turnstile-script";
+        script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+        script.async = true;
+        script.defer = true;
+        script.onload = () => {
+          if (window.turnstile) {
+            window.turnstile.ready(tryRender);
+          }
+        };
+        document.head.appendChild(script);
+      }
     }
 
+    const intervalId = setInterval(() => {
+      const hidden = document.querySelector('[name="cf-turnstile-response"]');
+      if (hidden && hidden.value && !turnstileToken) {
+        setTurnstileToken(hidden.value);
+      }
+    }, 1000);
+
     return () => {
+      clearInterval(intervalId);
       if (window.turnstile && widgetIdRef.current !== null) {
         try {
           window.turnstile.remove(widgetIdRef.current);
@@ -90,6 +119,23 @@ const ContactForm = () => {
     if (formStatus.type === "error") {
       setFormStatus({ type: null, message: "" });
     }
+  };
+
+  const getEffectiveTurnstileToken = () => {
+    if (turnstileToken) return turnstileToken;
+    const hidden = document.querySelector('[name="cf-turnstile-response"]');
+    if (hidden && hidden.value) return hidden.value;
+    if (window.turnstile && typeof window.turnstile.getResponse === 'function') {
+      try {
+        const resp = window.turnstile.getResponse(widgetIdRef.current);
+        if (resp) return resp;
+      } catch (e) {}
+      try {
+        const respAll = window.turnstile.getResponse();
+        if (respAll) return respAll;
+      } catch (e) {}
+    }
+    return "";
   };
 
   const validateForm = () => {
@@ -119,8 +165,9 @@ const ContactForm = () => {
       return false;
     }
 
-    if (!turnstileToken) {
-      setFormStatus({ type: "error", message: "Please complete the security verification." });
+    const token = getEffectiveTurnstileToken();
+    if (!token) {
+      setFormStatus({ type: "error", message: "Please complete the Cloudflare security verification below." });
       return false;
     }
 
@@ -131,6 +178,12 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (!validateForm()) return;
+
+    const effectiveToken = getEffectiveTurnstileToken();
+    if (!effectiveToken) {
+      setFormStatus({ type: "error", message: "Security verification is still initializing. Please wait 2 seconds and click Submit again." });
+      return;
+    }
 
     setLoading("Sending securely...");
     setSubmitBtnClass("secondary-button-black-loading");
@@ -151,7 +204,7 @@ const ContactForm = () => {
           companyName: formData.companyName.trim(),
           website: formData.website.trim(),
           message: formData.message.trim(),
-          turnstileToken: turnstileToken,
+          turnstileToken: effectiveToken,
         }),
       });
 
@@ -179,7 +232,7 @@ const ContactForm = () => {
 
         setTurnstileToken("");
         if (window.turnstile && widgetIdRef.current !== null) {
-          window.turnstile.reset(widgetIdRef.current);
+          try { window.turnstile.reset(widgetIdRef.current); } catch (e) {}
         }
 
         setLoading("Message Sent ✓");
@@ -196,7 +249,7 @@ const ContactForm = () => {
         setLoading("Retry Submission");
         setSubmitBtnClass("secondary-button-black-filled");
         if (window.turnstile && widgetIdRef.current !== null) {
-          window.turnstile.reset(widgetIdRef.current);
+          try { window.turnstile.reset(widgetIdRef.current); } catch (e) {}
           setTurnstileToken("");
         }
       }
@@ -372,9 +425,18 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
-            {/* Cloudflare Turnstile Bot Protection */}
-            <div style={{ marginTop: "8px", minHeight: "65px" }}>
-              <div ref={turnstileContainerRef} id="cf-turnstile-container"></div>
+            {/* Cloudflare Turnstile Bot Protection Container */}
+            <div style={{ marginTop: "12px", minHeight: "65px", display: "flex", alignItems: "center" }}>
+              <div
+                ref={turnstileContainerRef}
+                id="cf-turnstile-box"
+                className="cf-turnstile"
+                data-sitekey={TURNSTILE_SITEKEY}
+                data-callback="onTurnstileSuccess"
+                data-expired-callback="onTurnstileExpired"
+                data-error-callback="onTurnstileError"
+                data-theme="light"
+              ></div>
             </div>
 
             {/* Privacy Checkbox */}

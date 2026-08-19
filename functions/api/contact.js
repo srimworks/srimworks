@@ -36,27 +36,30 @@ export async function onRequestPost(context) {
       );
     }
 
-    // 2. Cloudflare Turnstile Verification
+    // 2. Cloudflare Turnstile Verification (Official application/x-www-form-urlencoded)
     const clientIp = request.headers.get('CF-Connecting-IP') || '';
     const userAgent = request.headers.get('User-Agent') || '';
     const secretKey = env.TURNSTILE_SECRET_KEY || '0x4AAAAAAEVQMooahds5RYjn10KE4iqY_T0';
 
     if (turnstileToken) {
-      const turnstileFormData = new FormData();
-      turnstileFormData.append('secret', secretKey);
-      turnstileFormData.append('response', turnstileToken);
-      if (clientIp) turnstileFormData.append('remoteip', clientIp);
+      const verifyParams = new URLSearchParams();
+      verifyParams.append('secret', secretKey);
+      verifyParams.append('response', turnstileToken);
+      if (clientIp) verifyParams.append('remoteip', clientIp);
 
       const turnstileResp = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
         method: 'POST',
-        body: turnstileFormData
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: verifyParams.toString()
       });
       const turnstileOutcome = await turnstileResp.json();
 
       if (!turnstileOutcome.success) {
         console.warn('Turnstile verification failed:', turnstileOutcome);
         return Response.json(
-          { success: false, error: 'Bot verification failed. Please try again.' },
+          { success: false, error: 'Security verification failed. Please check the security box and try again.' },
           { status: 403, headers: corsHeaders }
         );
       }
@@ -91,7 +94,7 @@ export async function onRequestPost(context) {
 
     // 4. DECOUPLED NOTIFICATION LAYER
     try {
-      console.log(`[D1 PERSISTED] Inbound Lead #${submissionId} safely stored for ${email}`);
+      console.log(`[D1 PERSISTED] Lead #${submissionId} stored for ${email}. Target: info@srimworks.com`);
     } catch (notifyErr) {
       console.error('Non-fatal notification error:', notifyErr);
     }
