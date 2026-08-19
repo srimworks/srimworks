@@ -113,6 +113,15 @@
   width: 100%;
 }
 
+.what-we-do-bottom img {
+  max-width: 520px;
+  width: 100%;
+  max-height: 380px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .what-we-do-left {
   display: flex;
   width: 584px;

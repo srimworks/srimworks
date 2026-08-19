@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.log
+audit_report_raw.json
+deep_scan_results.json
+api_credentials_overview.json

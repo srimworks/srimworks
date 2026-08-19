@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://srimworks.pages.dev/sitemap.xml

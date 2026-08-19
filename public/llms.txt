@@ -1,0 +1,36 @@
+# SRIM WORKS — AI & Enterprise Engineering Guide
+
+> Official entity documentation, core capabilities, AI annotations suite, and technical practices for SRIM WORKS.
+
+## 1. Entity Overview & Identity
+- **Business Name:** SRIM WORKS (SRIM WORKS Technologies)
+- **Category:** Enterprise Artificial Intelligence / Machine Learning / Data Annotation Suite / Cloud Computing & Digital Engineering Agency
+- **Official Website:** https://srimworks.pages.dev
+- **Contact Email:** contact@srimworks.com
+- **Phone:** +91 98480 44325
+
+## 2. Core Practice Areas
+1. **Artificial Intelligence & Machine Learning:** Autonomous multi-agent systems, custom LLMs, RAG architectures, and predictive analytics.
+2. **Data Annotation & Labelling Suite:**
+   - Image Annotation (Bounding box, polygon, semantic segmentation)
+   - Video Annotation (Frame-by-frame tracking, action recognition)
+   - Audio & Speech Annotation (Transcription, acoustic phonetics, intent classification)
+   - 3D LiDAR & Point Cloud Annotation (Autonomous vehicles, spatial mapping)
+   - Text & NLP Annotation (Named Entity Recognition, sentiment analysis, syntactic parsing)
+3. **Cloud Computing & DevOps:** Multi-cloud infrastructure (AWS, Azure, GCP), Kubernetes orchestration, and serverless architectures.
+4. **Digital Product Engineering:** Full-stack React, Node.js, Python, and scalable microservices.
+5. **Big Data & Enterprise Platforms:** Scalable ETL pipelines, data vector lakes, ERP & CRM system modernizations.
+
+## 3. Industry Verticals Served
+- Banking, Financial Services & Insurance (BFSI) & Fintech
+- Healthcare & Life Sciences
+- Logistics, Supply Chain & Marine Transportation
+- E-Commerce & Retail
+- Fast-Moving Consumer Goods (FMCG)
+- Real Estate & PropTech
+- Media & Entertainment
+
+## 4. Engagement Models
+- Dedicated Engineering Pods
+- Managed Data Annotation Projects
+- Enterprise AI Blueprints & Digital Modernizations

@@ -1,18 +1,18 @@
-/* Hero Section Styles */
 .hero-right-section {
   position: relative;
-  /* height: 100vh; Full viewport height */
-  /* background-image: url('/public/ContactSection.png') no-repeat center center/cover;  */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  height: fit-content;
+  height: 480px;
+  max-height: 520px;
 }
 .hero-right-section-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-right-overlay {

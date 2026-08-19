@@ -1,3 +1,40 @@
+
+/* Modern Core Web Vitals & Zero CLS Defenses */
+@layer base {
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-display: swap;
+    src: local('SF Pro Display'), local('-apple-system'), local('BlinkMacSystemFont'), local('Segoe UI'), local('Roboto');
+  }
+  @font-face {
+    font-family: 'Config Condensed';
+    font-display: swap;
+    src: local('Config Condensed'), local('Arial Narrow'), local('sans-serif-condensed');
+  }
+}
+
+/* Zero Cumulative Layout Shift (CLS) Global Container Defenses */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  content-visibility: auto;
+}
+
+.image-slider-container, 
+.slider-image, 
+.hero-section-img, 
+.card-image,
+.outlet-render img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.logo-image {
+  aspect-ratio: auto;
+  height: 48px;
+  width: auto;
+}
+
 * {
   margin: 0;
   padding: 0;

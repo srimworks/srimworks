@@ -7,8 +7,8 @@ export const HOME_SLIDE = [
     title: "Driving Global Innovation with Cutting-Edge Technology",
     description:
       "At SRIM Works, we are more than just a technology company—we are innovators, problem solvers, and global partners. Headquartered in Hyderabad, India’s bustling tech hub, we deliver transformative solutions that empower businesses to thrive in an ever-evolving digital landscape. Our expertise in advanced technologies, coupled with a passion for innovation, enables us to create impactful, future-ready solutions that drive growth and success.",
-    button1: { text: "Get Started", link: "/about-us" },
-    button2: { text: "Learn More", link: "/" },
+    button1: { text: "Schedule Consultation", link: "/contact-us" },
+    button2: { text: "Explore Capabilities", link: "/digital-engineering" },
   },
   {
     header: "SRIM WORKS",
@@ -16,8 +16,8 @@ export const HOME_SLIDE = [
     title: "Empowering Businesses with Tailored Solutions",
     description:
       "At SRIM Works, we specialize in creating customized technology solutions that address unique business challenges. From AI-driven innovations to scalable cloud strategies, our expertise empowers companies to stay ahead in a fast-paced digital world. With a global reach and a focus on excellence, we turn visions into results.",
-    button1: { text: "Get Started", link: "/" },
-    button2: { text: "Learn More", link: "/" },
+    button1: { text: "Explore AI Practice", link: "/AI&ML" },
+    button2: { text: "Data Annotation Suite", link: "/data-annotation" },
   },
   {
     header: "SRIM WORKS",
@@ -25,8 +25,8 @@ export const HOME_SLIDE = [
     title: "Bridging Talent and Technology Across Borders",
     description:
       "SRIM Works connects businesses with top-tier talent and the latest technological advancements. With a presence across continents and a commitment to continuous innovation, we build strategic partnerships that transform industries. Together, let’s shape a smarter and more connected future.",
-    button1: { text: "Get Started", link: "/" },
-    button2: { text: "Learn More", link: "/" },
+    button1: { text: "Careers at SRIM", link: "/careers" },
+    button2: { text: "About SRIM WORKS", link: "/about-us" },
   },
 ];
 
@@ -35,9 +35,9 @@ export const INTRO_SRIMWORKS = {
   heading: "INTRODUCING SRIM WORKS",
   title: "Your Global Partner for Technology Innovation",
   image: IMAGES.INTRO_SRIMWORKS,
-  desc: `SRIM Works is a multinational technology solutions and staffing company headquartered in Hyderabad, India. With a talented team of over 300 professionals, we cater to businesses worldwide, delivering customized solutions that meet the unique challenges of every client. 
+  desc: `SRIM Works is a multinational technology solutions and enterprise engineering firm headquartered in Hyderabad, India. With a talented team of over 300 professionals, we cater to businesses worldwide, delivering customized solutions that meet the unique challenges of every client. 
 
-From cloud infrastructure and IT outsourcing to AI-powered analytics and product engineering, our global reach and diverse expertise help businesses navigate digital transformation. Partner with us for a future-ready, innovative approach to success.`,
+From cloud infrastructure and modern DevOps to AI-powered analytics, precision data annotations, and product engineering, our global reach and diverse expertise help businesses navigate digital transformation. Partner with us for a future-ready, innovative approach to success.`,
   dataList: [],
   btnText: "Schedule Meeting",
 };
@@ -52,7 +52,7 @@ export const HOME_WEWORK = {
 };
 
 export const WHO_WE_ARE = {
-  header: "WHO SRIM WORKS ARE",
+  header: "WHO WE ARE",
   title: "Innovative, Passionate, and Global",
   desc: `At SRIM Works, we are more than just a technology services provider – we are your strategic partner in business transformation. Headquartered in Hyderabad, India, our team of over 300 experts works across diverse sectors, delivering end-to-end solutions that drive growth, efficiency, and competitive advantage. 
 With a focus on innovation, collaboration, and integrity, we leverage cutting-edge technologies like AI, blockchain, and cloud computing to help businesses unlock their full potential and embrace the future with confidence.`,
@@ -117,6 +117,7 @@ export const NavItems = [
       { to: "/lean-product-engineering", label: "Lean Product Engineering" },
       { to: "/professional-services", label: "Professional Services" },
       { to: "/channel-partners", label: "Channel Partners" },
+      { to: "https://www.srimworks.com/managed-spend-solutions", label: "Managed Spend Solutions" },
     ],
   },
   {

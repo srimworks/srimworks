@@ -29,6 +29,16 @@
   padding: 128px 0px;
 }
 
+.aside-container img,
+.aside-container-left-image img {
+  max-width: 520px;
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .aside-container-aside {
   display: flex;
   flex-direction: column;

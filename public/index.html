@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/" />
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#020617" />
+    
+    <!-- Primary Title & Meta Description -->
+    <title>SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions."
     />
+    <link rel="canonical" href="https://srimworks.pages.dev/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- OpenGraph / Facebook / WhatsApp -->
+    <meta property="og:site_name" content="SRIM WORKS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://srimworks.pages.dev/" />
+    <meta property="og:title" content="SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms" />
+    <meta property="og:description" content="SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions." />
+    <meta property="og:image" content="%PUBLIC_URL%/ContactSection.png" />
+    <meta property="og:image:alt" content="SRIM WORKS - Enterprise AI & Digital Engineering" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://srimworks.pages.dev/" />
+    <meta name="twitter:title" content="SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms" />
+    <meta name="twitter:description" content="SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/ContactSection.png" />
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link
-      href="https://fonts.cdnfonts.com/css/config-condensed"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/sf-pro-display"
-      rel="stylesheet"
-    />
-    <!-- Google tag (gtag.js) -->
-    <!-- Code for Google Tag -->
-    <!-- <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16525387287"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/config-condensed" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
 
-      gtag("config", "AW-16525387287");
-    </script> -->
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://srimworks.pages.dev/#organization",
+      "name": "SRIM WORKS",
+      "legalName": "SRIM WORKS Technologies Private Limited",
+      "url": "https://srimworks.pages.dev",
+      "logo": "https://srimworks.pages.dev/favicon.png",
+      "image": "https://srimworks.pages.dev/ContactSection.png",
+      "description": "SRIM WORKS is a premier enterprise digital engineering, artificial intelligence, and specialized data annotation agency.",
+      "telephone": "+91-9848044325",
+      "email": "contact@srimworks.com",
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Global" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Enterprise Engineering & AI Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Artificial Intelligence & Machine Learning",
+              "description": "Enterprise AI development, LLM fine-tuning, and multi-agent workflows."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Data Annotation & Labelling Suite",
+              "description": "Image, Video, Audio, LiDAR, Text, and NLP annotation for computer vision and ML models."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cloud Computing & DevOps",
+              "description": "Enterprise cloud architecture, AWS, Azure, GCP infrastructure, and Kubernetes orchestration."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Product Engineering",
+              "description": "Custom full-stack web and mobile application engineering."
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/srimworks",
+        "https://twitter.com/srimworks"
+      ]
+    }
+    </script>
 
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NP66W5LK');</script>
-  <!-- End Google Tag Manager -->
-
-    <title>Srim Works</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NP66W5LK');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -69,19 +123,47 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
     <div id="root">
-      <!-- <img src="./loading-7528_256.gif" alt="Loading Images"> -->
+      <!-- Semantic Static Snapshot for Web Crawlers & LLMs prior to React Hydration -->
+      <header>
+        <nav aria-label="Main Navigation">
+          <strong>SRIM WORKS</strong>
+          <a href="/about-us">About Us</a>
+          <a href="/digital-engineering">Digital Engineering</a>
+          <a href="/AI&ML">AI & Machine Learning</a>
+          <a href="/data-annotation">Data Annotations</a>
+          <a href="/cloud-computing">Cloud Computing</a>
+          <a href="/contact-us">Contact Us</a>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <h1>SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms</h1>
+          <p>
+            SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions.
+          </p>
+          <section>
+            <h2>Core Practice Areas</h2>
+            <ul>
+              <li><strong>Artificial Intelligence & Machine Learning:</strong> Autonomous multi-agent systems, custom LLMs, RAG architectures, and predictive analytics.</li>
+              <li><strong>Data Annotation & Labelling Suite:</strong> Image annotation, Video annotation, Audio annotation, LiDAR annotation, Text annotation, and NLP labelling for computer vision and autonomous AI.</li>
+              <li><strong>Cloud Computing & Modern DevOps:</strong> Kubernetes containerization, serverless architectures, multi-cloud scalability across AWS, GCP, and Azure.</li>
+              <li><strong>Digital Product Engineering:</strong> Scalable enterprise applications, microservices, and modern UI/UX design.</li>
+              <li><strong>Big Data & Enterprise Platforms:</strong> Scalable ETL pipelines, data vector lakes, ERP & CRM system modernizations.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Industry Verticals Served</h2>
+            <p>
+              We engineer specialized technology solutions across BFSI, Fintech, Healthcare, Logistics, E-Commerce, Retail, FMCG, Real Estate, Marine, and Media & Entertainment.
+            </p>
+          </section>
+        </article>
+      </main>
+      <footer>
+        <p>&copy; 2026 SRIM WORKS. All rights reserved. <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+      </footer>
     </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

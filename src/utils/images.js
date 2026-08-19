@@ -260,7 +260,6 @@ import SCHEDULE_MEETING_HERO from "../imagess/Schedule a meeting/scheduleHero.pn
 import WHO_WE_ABOUTUS_CONTACT from "../imagess/Who we are/About Us page/Contact Section.png";
 import WHO_WE_ABOUTUS_HERO from "../imagess/Who we are/About Us page/Hero Section image.png";
 import WHO_WE_ABOUTUS_LEADERSHIP_1 from "../imagess/Who we are/About Us page/Leader Ship Kireeti.png";
-import WHO_WE_ABOUTUS_LEADERSHIP_2 from "../imagess/Who we are/About Us page/Leader Ship Sunil.png";
 import WHO_WE_ABOUTUS_SECTION_1 from "../imagess/Who we are/About Us page/Sectin 1 Image.png";
 import WHO_WE_ABOUTUS_SECTION_2 from "../imagess/Who we are/About Us page/Section 3 Image.png";
 import WHO_WE_ABOUTUS_GLOBAL_ICON from "../imagess/Who we are/About Us page/Global_Icon.svg";
@@ -324,7 +323,7 @@ import FINTECH_ASIDE1 from "../imagess/Industries/fintech/fintech-aside1.png";
 import FINTECH_ASIDE2 from "../imagess/Industries/fintech/fintech-aside2.png";
 import FINTECH_MARKET from "../imagess/Industries/fintech/fintech-market.png";
 
-export const IMAGES = {
+const rawImages = {
   ASIDE_IMAGE,
   BACKGROUND_CIRCLES,
   CHECK,
@@ -526,7 +525,6 @@ export const IMAGES = {
   WHO_WE_ABOUTUS_CONTACT,
   WHO_WE_ABOUTUS_HERO,
   WHO_WE_ABOUTUS_LEADERSHIP_1,
-  WHO_WE_ABOUTUS_LEADERSHIP_2,
   WHO_WE_ABOUTUS_SECTION_1,
   WHO_WE_ABOUTUS_SECTION_2,
   WHO_WE_ABOUTUS_GLOBAL_ICON,
@@ -612,3 +610,10 @@ export const IMAGES = {
   FINTECH_MARKET,
   FINTECH_OVERVIEW,
 };
+
+export const IMAGES = Object.fromEntries(
+  Object.entries(rawImages).map(([key, val]) => [
+    key,
+    typeof val === "object" && val !== null && "src" in val ? val.src : val,
+  ])
+);

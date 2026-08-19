@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+const useLocation = () => ({ pathname: typeof window !== "undefined" ? window.location.pathname : "/" });
 
 const ScrollToTop = () => {
   const location = useLocation();

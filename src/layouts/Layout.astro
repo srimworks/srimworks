@@ -1,0 +1,159 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+}
+
+const {
+  title = "SRIM WORKS — Enterprise AI Engineering, Data Annotations & Digital Platforms",
+  description = "SRIM WORKS powers global enterprises with custom AI & ML systems, Precision Data Annotations, Cloud Computing, and Digital Product Engineering solutions.",
+  image = "/ContactSection.png",
+  canonical = Astro.url.href
+} = Astro.props;
+
+import '../index.css';
+import '../App.css';
+import Navbar from '../reusable/navbar';
+import Footer from '../reusable/footer';
+import ReachOut from '../reusable/reachOut';
+import TermsPopup from '../components/TermsPopUp';
+import { REACH_OUT } from '../utils/constsnts';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#020617" />
+    
+    <!-- Primary Metadata -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- OpenGraph / Social Sharing -->
+    <meta property="og:site_name" content="SRIM WORKS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image.startsWith('http') ? image : `https://srimworks.pages.dev${image}`} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image.startsWith('http') ? image : `https://srimworks.pages.dev${image}`} />
+
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Typography (Self-hosted / Preconnect) -->
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/config-condensed" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://srimworks.pages.dev/#organization",
+      "name": "SRIM WORKS",
+      "legalName": "SRIM WORKS Technologies Private Limited",
+      "url": "https://srimworks.pages.dev",
+      "logo": "https://srimworks.pages.dev/favicon.png",
+      "image": "https://srimworks.pages.dev/ContactSection.png",
+      "description": "SRIM WORKS is a premier enterprise digital engineering, artificial intelligence, and specialized data annotation agency.",
+      "telephone": "+91-9848044325",
+      "email": "contact@srimworks.com",
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Global" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Enterprise Engineering & AI Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Artificial Intelligence & Machine Learning",
+              "description": "Enterprise AI development, LLM fine-tuning, and multi-agent workflows."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Data Annotation & Labelling Suite",
+              "description": "Image, Video, Audio, LiDAR, Text, and NLP annotation for computer vision and ML models."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cloud Computing & DevOps",
+              "description": "Enterprise cloud architecture, AWS, Azure, GCP infrastructure, and Kubernetes orchestration."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Product Engineering",
+              "description": "Custom full-stack web and mobile application engineering."
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/srimworks",
+        "https://twitter.com/srimworks"
+      ]
+    }
+    </script>
+
+    <!-- Google Tag Manager -->
+        <!-- Deferred Non-Blocking Google Tag Manager (Core Web Vitals Optimized) -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function loadGTM() {
+        if (window._gtmLoaded) return;
+        window._gtmLoaded = true;
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NP66W5LK');
+      }
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(loadGTM, { timeout: 2000 });
+      } else {
+        window.addEventListener('load', loadGTM, { passive: true });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP66W5LK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <div id="root">
+      <Navbar client:load />
+      <main>
+        <slot />
+      </main>
+      <ReachOut {...REACH_OUT} client:idle />
+      <TermsPopup client:idle />
+      <Footer client:idle />
+    </div>
+  </body>
+</html>
