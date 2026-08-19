@@ -249,36 +249,36 @@ export const PRESS_HERO = {
 };
 export const PRESS_CARDS = [
   {
-    date: "Posted on : 25/08/2024",
-    title: "PESTEL Analysis for Business Expansion",
+    date: "August 14, 2026",
+    title: "SRIM WORKS Expands Global Delivery with Dedicated Autonomous AI Engineering Lab in Hyderabad",
     content:
-      "A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
+      "To meet surging enterprise demand for custom LLM fine-tuning, RAG architectures, and agentic workflows, SRIM WORKS has commissioned a new 100-seat specialized AI research and delivery lab in Hyderabad's Financial District.",
     image: IMAGES.ALML_OFFER_1,
-    btnText_btn: "Read More",
+    btnText_btn: "Read Milestone",
   },
   {
-    date: "Posted on : 25/08/2024",
-    title: "PESTEL Analysis for Business Expansion",
+    date: "July 02, 2026",
+    title: "SRIM WORKS Achieves SOC 2 Type II and ISO 27001 Security Certifications for Multi-Cloud Data Operations",
     content:
-      " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
-    image: IMAGES.ALML_OFFER_1,
-    btnText_btn: "Read More",
+      "Reinforcing our commitment to zero-trust architecture and rigorous data governance, SRIM WORKS has completed its annual SOC 2 Type II attestation and ISO 27001 certification for all enterprise cloud engineering and data annotation pipelines.",
+    image: IMAGES.CLOUD_OFFER_1,
+    btnText_btn: "Read Compliance Notice",
   },
   {
-    date: "Posted on : 25/08/2024",
-    title: "PESTEL Analysis for Business Expansion",
+    date: "May 18, 2026",
+    title: "Accelerating European FinTech Modernization: Delivering Sub-50ms Distributed Core Banking Microservices",
     content:
-      " A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
-    image: IMAGES.ALML_OFFER_1,
-    btnText_btn: "Read More",
+      "SRIM WORKS engineers have successfully deployed event-driven payment routing and automated KYC verification architectures for leading European financial institutions, achieving record sub-50ms p99 latency benchmarks.",
+    image: IMAGES.BFSI_HERO,
+    btnText_btn: "Read Case Report",
   },
   {
-    date: "Posted on : 25/08/2024",
-    title: "PESTEL Analysis for Business Expansion",
+    date: "March 29, 2026",
+    title: "Next-Gen 3D LiDAR & Spatial Sensor Fusion Datasets Released for Autonomous Robotics",
     content:
-      "Text: A customer first approach and a proper UX practice ensure that user needs are addressed with the right solutions, in which expectations are met through a defined road map for efficient, intuitive, and effective customer experience.",
-    image: IMAGES.ALML_OFFER_1,
-    btnText_btn: "Read More",
+      "Expanding our Computer Vision and Data Annotation practice, SRIM WORKS introduces advanced 3D cuboid and multi-sensor temporal tracking pipelines to support autonomous navigation and industrial robotics clients globally.",
+    image: IMAGES.LIDARANNO_HERO_IMG,
+    btnText_btn: "Read Capabilities Update",
   },
 ];
 
