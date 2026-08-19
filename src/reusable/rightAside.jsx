@@ -1,40 +1,34 @@
 import React from "react";
-import '../styles/leftAside.css'
+import '../styles/leftAside.css';
 
-const RightAside = ({ image, heading,header, title, desc ,dataList, asideList}) => {
-
+const RightAside = ({ image, heading, header, title, desc, dataList, asideList }) => {
   return (
     <div className="aside-container">
-      <aside className={title==='Overview'? "aside-container-aside-overview":"aside-container-aside" }>
-        {heading.length > 0 && (
+      <aside className={title === 'Overview' ? "aside-container-aside-overview" : "aside-container-aside"}>
+        {heading && heading.length > 0 && (
           <div className="aside-tag">
-            {/* <hr className="aside-tag-hr" /> */}
             <h2 className="aside-tag-heading">{heading || header}</h2>
           </div>
         )}
-        <h1 className={title==='Overview' ?"aside-heading-overview"  : "aside-heading"}>{title}</h1>
-        <p className={title==='Overview' ? "aside-content-overview": "aside-content"}>{desc}</p>
+        <h1 className={title === 'Overview' ? "aside-heading-overview" : "aside-heading"}>{title}</h1>
+        <p className={title === 'Overview' ? "aside-content-overview" : "aside-content"}>{desc}</p>
         <div>
-        {
-          asideList && asideList.map((item,index)=>{
-            return(
-              <>
+          {asideList && asideList.map((item, index) => {
+            return (
+              <React.Fragment key={index}>
                 <h3 className="aside-content-head">{item.title}</h3>
-                <p className="aside-content" >{item.content}</p>
-              </>
-            )
-          })
-        }
-        {dataList.length > 0 && dataList.map((item,index)=>{
-            return (<li className="aside-content" key={index} >{item}</li>)
+                <p className="aside-content">{item.content}</p>
+              </React.Fragment>
+            );
+          })}
+          {dataList && dataList.length > 0 && dataList.map((item, index) => {
+            return (<li className="aside-content" key={index}>{item}</li>);
           })}
         </div>
-        {/* <p className="aside-content">Additionally, we offer a Free Digital Marketing services to Non-Profit Organizations, NGO’s and government , helping them achieve their goals and flourish in the marketplace. </p> */}
       </aside>
-      <img src={image} alt={title} />
+      <img src={image} alt={title || heading || "SRIM WORKS Capabilities"} loading="lazy" decoding="async" />
     </div>
   );
 };
 
 export default RightAside;
-

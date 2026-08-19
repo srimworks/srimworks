@@ -47,10 +47,10 @@ const Reviews = () => {
           {visibleReviews?.map((item, index) => {
             const {
               id,
-              icon,
               title,
               content,
               userRole,
+              company,
               username,
               profile,
               rate,
@@ -64,42 +64,54 @@ const Reviews = () => {
 
             return (
               <div className="review-1" key={id}>
-                 < img src={IMAGES.REVIEWS_QUOTES} alt="Quotes"/>
+                <img src={IMAGES.REVIEWS_QUOTES} alt="Quotes" className="review-quote-icon" />
                 <div className="review-1-body">
                   <div className="review-1-top">
-                    <h1 className="review-1-top-heading">{title}</h1>
+                    <h3 className="review-1-top-heading">{title}</h3>
                     <p className="review-1-top-body">{content}</p>
                   </div>
                   <div className="review-1-bottom">
                     <div className="review-1-profile-info">
-                      <img src={profile} alt={`${username}'s Profile`} />
+                      <img src={profile} alt={`${username}'s Profile`} className="review-profile-avatar" />
                       <div className="review-1-details">
-                        <h3 className="review-1-profile-name">{username}</h3>
-                        <p className="review-1-profile-details">{userRole}</p>
+                        <h4 className="review-1-profile-name">{username}</h4>
+                        <p className="review-1-profile-details">
+                          <strong>{userRole}</strong>
+                          {company && <span className="review-1-company"> — {company}</span>}
+                        </p>
                       </div>
                     </div>
-                    <div className="review-1-bottom-ratings">
-                      {stars.map((star, index) => (
-                        <img src={star} alt="Star" key={index} />
+                    <div className="review-1-bottom-ratings" aria-label={`Rating: ${userRating} out of 5 stars`}>
+                      {stars.map((star, starIdx) => (
+                        <img src={star} alt="Star" key={starIdx} />
                       ))}
                     </div>
                   </div>
                 </div>
-                {index < 1 && (
-                <img src={IMAGES.VERTICAL_LINE} alt="Vertical Line" className="vertical-line"/>
-             
+                {index < visibleReviews.length - 1 && (
+                  <img src={IMAGES.VERTICAL_LINE} alt="Divider" className="vertical-line" />
                 )}
               </div>
             );
           })}
         </div>
         <div className="reviews-button">
-          <div id="arrow-button" onClick={handleLeftArrowClick}>
-            < img src={IMAGES.LEFT_ARROW_BLACK} alt="Left Arrow"/> 
-          </div>
-          <div id="arrow-button" onClick={handleRightArrowClick}>
-            < img src={IMAGES.RIGHT_ARROW_DARK} alt="Right Arrow"/> 
-          </div>
+          <button 
+            type="button" 
+            id="arrow-button" 
+            onClick={handleLeftArrowClick} 
+            aria-label="Previous testimonials"
+          >
+            <img src={IMAGES.LEFT_ARROW_BLACK} alt="Previous" />
+          </button>
+          <button 
+            type="button" 
+            id="arrow-button" 
+            onClick={handleRightArrowClick} 
+            aria-label="Next testimonials"
+          >
+            <img src={IMAGES.RIGHT_ARROW_DARK} alt="Next" />
+          </button>
         </div>
       </div>
     </div>
@@ -107,8 +119,3 @@ const Reviews = () => {
 };
 
 export default Reviews;
-
-
-
-
-

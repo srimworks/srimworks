@@ -10,7 +10,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImg((prev) => (prev + 1) % HOME_SLIDE.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
@@ -23,7 +23,7 @@ const ImageSlider = () => {
       <div className="hero-overlay">
         <div className="hero-content">
           <div className="hero-content-top">
-            <h3 className="hero-header">SRIM WORKS</h3>
+            <span className="hero-header">{HOME_SLIDE[currentImg].header || "SRIM WORKS"}</span>
             <h1 className="hero-title">{HOME_SLIDE[currentImg].title}</h1>
           </div>
           <p className="hero-description">{HOME_SLIDE[currentImg].description}</p>
@@ -39,16 +39,22 @@ const ImageSlider = () => {
       </div>
       <img
         src={HOME_SLIDE[currentImg].image}
-        alt="slider"
+        alt={HOME_SLIDE[currentImg].title || "SRIM WORKS Global Technology Solutions"}
         className="hero-section-image"
+        loading="eager"
+        decoding="async"
       />
-      <div className="dots-container">
+      <div className="dots-container" role="tablist" aria-label="Hero slider pagination">
         {HOME_SLIDE.map((_, index) => (
-          <span
+          <button
+            type="button"
             key={index}
+            role="tab"
+            aria-selected={index === currentImg}
+            aria-label={`Go to slide ${index + 1}`}
             className={`dot ${index === currentImg ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
-          ></span>
+          ></button>
         ))}
       </div>
     </div>
