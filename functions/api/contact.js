@@ -92,9 +92,29 @@ export async function onRequestPost(context) {
 
     const submissionId = insertResult.meta?.last_row_id || 1;
 
-    // 4. DECOUPLED NOTIFICATION LAYER
+    // 4. DECOUPLED NOTIFICATION LAYER (Sends email to info@srimworks.com via getplacedoff@gmail.com)
+    const GMAIL_WEBHOOK_URL = env.GMAIL_WEBHOOK_URL || 'https://script.google.com/macros/s/AKfycbySXIvap0Qbsn7RTVAQ8I4ksXzHht8UBH5F4RYAHf3G3ekMDvz0Lv6EnZUxaZUDvoxDtQ/exec';
+
     try {
-      console.log(`[D1 PERSISTED] Lead #${submissionId} stored for ${email}. Target: info@srimworks.com`);
+      await fetch(GMAIL_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        },
+        body: JSON.stringify({
+          leadId: submissionId,
+          firstname: firstname.trim(),
+          lastname: lastname.trim(),
+          email: email.trim(),
+          mobile: (mobile || '').trim(),
+          companyName: (companyName || '').trim(),
+          website: (website || '').trim(),
+          message: message.trim(),
+          ip: clientIp,
+          createdAt: new Date().toISOString()
+        })
+      });
+      console.log(`[EMAIL DISPATCHED] Lead #${submissionId} successfully emailed to info@srimworks.com`);
     } catch (notifyErr) {
       console.error('Non-fatal notification error:', notifyErr);
     }
