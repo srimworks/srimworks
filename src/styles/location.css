@@ -1,81 +1,156 @@
-/* Container styles */
-.container {
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 16px;
-    background-color: #f9f9f9; */
-  display: flex;
-  padding: 64px 0px 0px 0px;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-  background: #fff;
-}
+/* ==========================================================================
+   SRIM WORKS Global Locations Section Styles
+   ========================================================================== */
 
-/* Header styles */
-.header {
-  color: #060606;
-  text-align: center;
-
-  /* Desktop/Heading/56 */
-  font-family: "Config Condensed";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.56px;
-}
-
-/* Description styles */
-.description {
-  width: 600px;
-  color: #060606;
-  text-align: center;
-
-  /* Desktop/Body/18 */
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-/* Image container styles */
-.image-container {
+.location-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 48px;
   width: 100%;
-  height: fit-content;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 32px 100px;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
-.image {
+.location-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 750px;
+}
+
+.location-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0284c7;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin: 0;
+}
+
+.location-heading {
+  color: #0f172a;
+  font-family: "Config Condensed", -apple-system, sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin: 8px 0 0;
+}
+
+.location-description {
+  color: #64748b;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Map Image Box */
+.location-map-container {
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.location-map-image {
   width: 100%;
   height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-@media (max-width: 600px) {
-  .container-top{
-    padding-left: 24px;
-    padding-right: 24px;
+/* Regional Delivery Hubs Grid */
+.location-hubs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+
+.location-hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 28px;
+  transition: all 0.2s ease;
+}
+
+.location-hub-card:hover {
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.08);
+}
+
+.hub-badge {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: #0284c7;
+}
+
+.hub-city {
+  color: #0f172a;
+  font-family: "Config Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hub-address {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+  flex: 1;
+}
+
+.hub-phone {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0284c7;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.hub-phone:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+  .location-section-container {
+    padding: 60px 20px 80px;
+    gap: 36px;
   }
-  .header {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
+  .location-heading {
+    font-size: 34px;
   }
-  .description {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 100%;
+  .location-hubs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

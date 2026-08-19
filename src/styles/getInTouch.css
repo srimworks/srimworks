@@ -1,410 +1,406 @@
-/* Get In Touch */
+/* ==========================================================================
+   SRIM WORKS Contact & Consultation Hub Styling
+   ========================================================================== */
 
-.get-in-touch-section {
-  display: flex;
+.contact-hub-section {
   width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 80px 32px;
+  background: #f8fafc;
+  padding: 80px 32px 100px;
   box-sizing: border-box;
 }
 
-.l-top-tag {
-  color: #3e4143;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.16px;
-}
-
-.l-top-heading {
-  color: #1c1d1f;
-  font-family: "Config Condensed";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.56px;
-  max-width: 310px;
-}
-.l-top-content {
-  color: #3e4143;
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.get-in-touch-l-bottom {
+.contact-hub-container {
   display: flex;
-  width: 337px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-}
-#l-bottom-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-}
-
-#l-bottom-container-text {
-  color: #060606;
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  white-space: pre-line;
-}
-.get-in-touch-section-left {
-  display: flex;
-  width: 457px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64px;
-  align-self: stretch;
-}
-
-.get-in-touch-contact {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 64px;
+  box-sizing: border-box;
 }
 
-.get-in-touch-social-media {
+/* Left Column */
+.contact-hub-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 480px;
+  gap: 40px;
+}
+
+.contact-hub-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0284c7;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin: 0;
+}
+
+.contact-main-heading {
+  color: #0f172a;
+  font-family: "Config Condensed", -apple-system, sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin: 4px 0 0;
+}
+
+.contact-main-subtitle {
+  color: #475569;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Channels Cards */
+.contact-channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact-channel-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.contact-channel-card:hover {
+  border-color: #0284c7;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+}
+
+.channel-icon-wrap {
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #f0f9ff;
+  border: 1px solid #e0f2fe;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
-.get-in-touch-body {
-  color: var(--Light-Color, #a6d1c9);
+.channel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 
-  /* Desktop/Body Text 18 */
-  font-family: Satoshi;
-  font-size: 18px;
-  font-style: normal;
+.channel-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: #0284c7;
+}
+
+.channel-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.channel-value:hover {
+  color: #0284c7;
+}
+
+.channel-text {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Assurance Badges */
+.contact-assurances {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.assurance-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.36px;
-  padding: 0;
+  color: #475569;
+}
+
+/* Right Column: Form Card */
+.contact-hub-right {
+  flex: 1.2;
+  width: 100%;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.01);
+  box-sizing: border-box;
+}
+
+.form-card-header {
+  margin-bottom: 28px;
+}
+
+.form-card-title {
+  color: #0f172a;
+  font-family: "Config Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.form-card-desc {
+  color: #64748b;
+  font-size: 14.5px;
   margin: 0;
 }
 
-.get-in-touch-section-right {
-  display: flex;
-  width: 100%;
-  max-width: 750px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  background: #ebebeb;
-  display: flex;
-  padding: 32px 48px;
-}
-
-.form {
+.contact-form-body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  gap: 20px;
   width: 100%;
 }
 
-.form-grid {
+.form-row-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-field-group {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 6px;
+}
+
+.form-field-group.full-width {
   width: 100%;
 }
 
-.input {
-  min-width: 250px;
-  max-width: 607px;
-  display: flex;
-  padding: 8px 0px;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  border: none;
-  border-bottom: 1px solid var(--Light-Color, #a6d1c9);
-  background-color: transparent;
-  color: var(--Light-Color, #a6d1c9);
-  font-family: Satoshi;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.32px;
+.form-field-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1e293b;
 }
-#input-container {
+
+.form-field-input,
+.form-field-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14.5px;
+  color: #0f172a;
+  background: #ffffff;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+}
+
+.form-field-input:focus,
+.form-field-textarea:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.form-field-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Phone Selector */
+.form-phone-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
   gap: 8px;
-  flex: 1 0 0;
-}
-
-#input-label {
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 0;
-  margin: 0;
-}
-#row {
-  display: flex;
   width: 100%;
-  gap: 24px;
 }
 
-#input {
-  display: flex;
-  height: fit-content;
-  max-width: 750px;
-  padding: 16px 20px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  color: #54585b;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: auto;
-}
-.flag-dropdown {
-  height: 100%;
-}
-/* Container (entire component wrapper) */
-.custom-container {
-  width: 100%;
-  max-width: 750px;
-  border: 1px solid #767676;
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 2px;
-  flex-shrink: 0 !important;
-  display: flex;
-}
-
-/* Input (phone number input box) */
-.custom-input {
-  background: transparent;
-  border: 1px solid #fff !important;
-  font-size: 16px;
-  color: #333;
-  border-radius: 0;
+.form-phone-select {
+  width: 95px;
+  padding: 12px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f8fafc;
+  color: #0f172a;
   outline: none;
-  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-/* Button (flag dropdown button) */
-.custom-button {
-  background: transparent !important;
-  border: none !important;
-
+.form-field-input.phone-input {
+  flex: 1;
 }
 
-
-#input:focus {
-  outline: none;
-}
-
-.check {
+/* Turnstile Widget Box */
+.form-turnstile-container {
+  min-height: 65px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 4px;
 }
-#Accept_Privacy {
-  accent-color: #060606;
+
+/* Privacy Consent */
+.form-privacy-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.form-checkbox-input {
+  margin-top: 2px;
+  accent-color: #0284c7;
+  cursor: pointer;
   width: 16px;
   height: 16px;
-  cursor: pointer;
 }
-.check-text {
-  color: #54585b;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+
+.privacy-link {
+  color: #0284c7;
+  text-decoration: underline;
 }
-.captcha-div {
-  border: 1.55px solid #060606;
-  padding: 8px;
-}
-.captcha {
-  color: #060606;
-  font-family: Satoshi;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2px;
-  transform: matrix3d(
-    0.6,
-    0.1,
-    0.7,
-    0,
-    -0.5,
-    0.8,
-    0.1,
-    0,
-    -0.6,
-    -0.5,
-    0.5,
-    0,
-    0,
-    0,
-    0,
-    1
-  );
-  margin: 0;
-}
-.c-div {
+
+/* Status Alert */
+.form-status-alert {
   display: flex;
-  gap: 8px;
-}
-#refresh {
-  cursor: pointer;
-}
-#refresh:active {
-  transition: transform 0.3s;
-  transform: rotate(45deg);
-}
-
-.privacy {
-  color: #54585b;
-}
-
-.submit-button {
-  position: relative;
-  width: 100px;
-  height: 40px;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.submit-button:disabled {
-  cursor: not-allowed;
-  background-color: grey;
-}
-
-.loading-spinner {
-  width: 24px;
-  height: 24px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-top: 3px solid white;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 0 auto;
-  display: none;
-}
-.secondary-button-black-loading{
-  display: flex;
-  padding: 12px 32px;
-  justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #060606;
-  font-family: "SF Pro Display";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background: #fff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.form-status-alert.success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.form-status-alert.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+/* Submit CTA */
+.form-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border-color: transparent;
+  padding: 14px 28px;
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+  background: #0284c7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.form-submit-btn:disabled {
+  opacity: 0.7;
   cursor: not-allowed;
 }
 
+.btn-loading-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner-circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  to { transform: rotate(360deg); }
 }
 
-
-@media (max-width: 900px) {
-  .get-in-touch-section-left {
-    padding-left: 64px;
-    width: 100%;
-  }
-  .get-in-touch-section {
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .contact-hub-container {
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
+  }
+  .contact-hub-left {
+    max-width: 100%;
   }
 }
 
-@media (max-width: 600px) {
-  .get-in-touch-section{
-    padding-left: 24px;
-    padding-right: 24px;
+@media (max-width: 640px) {
+  .contact-hub-section {
+    padding: 60px 16px 80px;
   }
-  .get-in-touch-section-left {
-    padding-left: 0px;
-    width: 100%;
+  .contact-main-heading {
+    font-size: 32px;
   }
-  #row {
-    flex-direction: column;
+  .contact-form-card {
+    padding: 24px 20px;
   }
-  .l-top-tag {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.16px;
-  }
-  .l-top-heading {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
-  }
-  .l-top-content {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .get-in-touch-section-left {
-    gap: 64px;
-  }
-  #l-bottom-container-text {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .get-in-touch-section-right{
-    padding: 32px 16px;
-  }
-  #input-label{
-    font-size: 14px;
-  }
-  #input{
-    font-size: 14px;
+  .form-row-2col {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }

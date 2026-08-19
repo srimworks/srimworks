@@ -3,13 +3,11 @@ import { IMAGES } from "../utils/images.js";
 import "../styles/getInTouch.css";
 import { sendEvent } from "../gtag.js";
 
-const Link = ({ to, children, ...props }) => <a href={to} {...props}>{children}</a>;
-
 const TURNSTILE_SITEKEY = "0x4AAAAAAEVQMmY5UZUp1Jnp";
 
 const ContactForm = () => {
-  const [loading, setLoading] = useState("Submit");
-  const [submitBtnClass, setSubmitBtnClass] = useState("secondary-button-black-filled");
+  const [loading, setLoading] = useState("Submit Message");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState({ type: null, message: "" });
   const [turnstileToken, setTurnstileToken] = useState("");
   const turnstileContainerRef = useRef(null);
@@ -29,7 +27,6 @@ const ContactForm = () => {
 
   // Load and initialize Cloudflare Turnstile
   useEffect(() => {
-    // Set up global callback listeners
     window.onTurnstileSuccess = (token) => {
       setTurnstileToken(token);
       setFormStatus({ type: null, message: "" });
@@ -62,12 +59,11 @@ const ContactForm = () => {
             size: "normal"
           });
         } catch (e) {
-          // May already be auto-rendered
+          // May already be rendered
         }
       }
     };
 
-    // If Turnstile is already on page, initialize immediately
     if (window.turnstile) {
       if (typeof window.turnstile.ready === 'function') {
         window.turnstile.ready(tryRender);
@@ -75,7 +71,6 @@ const ContactForm = () => {
         tryRender();
       }
     } else {
-      // Dynamic fallback script loader
       let script = document.getElementById("cf-turnstile-script");
       if (!script) {
         script = document.createElement("script");
@@ -101,12 +96,9 @@ const ContactForm = () => {
 
     return () => {
       clearInterval(intervalId);
-      if (window.turnstile && widgetIdRef.current !== null) {
-        try {
-          window.turnstile.remove(widgetIdRef.current);
-          widgetIdRef.current = null;
-        } catch (e) {}
-      }
+      delete window.onTurnstileSuccess;
+      delete window.onTurnstileExpired;
+      delete window.onTurnstileError;
     };
   }, []);
 
@@ -116,77 +108,55 @@ const ContactForm = () => {
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
-    if (formStatus.type === "error") {
+    if (formStatus.type) {
       setFormStatus({ type: null, message: "" });
     }
-  };
-
-  const getEffectiveTurnstileToken = () => {
-    if (turnstileToken) return turnstileToken;
-    const hidden = document.querySelector('[name="cf-turnstile-response"]');
-    if (hidden && hidden.value) return hidden.value;
-    if (window.turnstile && typeof window.turnstile.getResponse === 'function') {
-      try {
-        const resp = window.turnstile.getResponse(widgetIdRef.current);
-        if (resp) return resp;
-      } catch (e) {}
-      try {
-        const respAll = window.turnstile.getResponse();
-        if (respAll) return respAll;
-      } catch (e) {}
-    }
-    return "";
-  };
-
-  const validateForm = () => {
-    if (!formData.firstname.trim() || !formData.lastname.trim()) {
-      setFormStatus({ type: "error", message: "Please enter your full name." });
-      return false;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email.trim())) {
-      setFormStatus({ type: "error", message: "Please enter a valid business email address." });
-      return false;
-    }
-
-    if (!formData.mobile.trim() || formData.mobile.replace(/\D/g, "").length < 7) {
-      setFormStatus({ type: "error", message: "Please enter a valid contact phone number." });
-      return false;
-    }
-
-    if (formData.message.trim().length < 10) {
-      setFormStatus({ type: "error", message: "Please provide a brief description of your project or inquiry (minimum 10 characters)." });
-      return false;
-    }
-
-    if (!formData.privacyAccepted) {
-      setFormStatus({ type: "error", message: "Please agree to the privacy policy before submitting." });
-      return false;
-    }
-
-    const token = getEffectiveTurnstileToken();
-    if (!token) {
-      setFormStatus({ type: "error", message: "Please complete the Cloudflare security verification below." });
-      return false;
-    }
-
-    return true;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!validateForm()) return;
-
-    const effectiveToken = getEffectiveTurnstileToken();
-    if (!effectiveToken) {
-      setFormStatus({ type: "error", message: "Security verification is still initializing. Please wait 2 seconds and click Submit again." });
+    if (!formData.firstname.trim()) {
+      setFormStatus({ type: "error", message: "Please enter your first name." });
+      return;
+    }
+    if (!formData.lastname.trim()) {
+      setFormStatus({ type: "error", message: "Please enter your last name." });
+      return;
+    }
+    if (!formData.email.trim() || !/^\S+@\S+\.\S+$/.test(formData.email.trim())) {
+      setFormStatus({ type: "error", message: "Please enter a valid corporate email address." });
+      return;
+    }
+    if (!formData.mobile.trim()) {
+      setFormStatus({ type: "error", message: "Please enter your contact phone number." });
+      return;
+    }
+    if (!formData.companyName.trim()) {
+      setFormStatus({ type: "error", message: "Please enter your company or organization name." });
+      return;
+    }
+    if (!formData.message.trim()) {
+      setFormStatus({ type: "error", message: "Please enter your message or project requirements." });
+      return;
+    }
+    if (!formData.privacyAccepted) {
+      setFormStatus({ type: "error", message: "Please accept the Privacy Policy to proceed." });
       return;
     }
 
-    setLoading("Sending securely...");
-    setSubmitBtnClass("secondary-button-black-loading");
+    let effectiveToken = turnstileToken;
+    if (!effectiveToken) {
+      const hidden = document.querySelector('[name="cf-turnstile-response"]');
+      if (hidden && hidden.value) {
+        effectiveToken = hidden.value;
+        setTurnstileToken(hidden.value);
+      }
+    }
+
+    setIsSubmitting(true);
+    setLoading("Sending inquiry...");
+    setFormStatus({ type: null, message: "" });
 
     const fullMobile = `${formData.countryCode} ${formData.mobile.trim()}`;
 
@@ -236,10 +206,10 @@ const ContactForm = () => {
         }
 
         setLoading("Message Sent ✓");
-        setSubmitBtnClass("secondary-button-black-filled");
+        setIsSubmitting(false);
 
         setTimeout(() => {
-          setLoading("Submit");
+          setLoading("Submit Message");
         }, 5000);
       } else {
         setFormStatus({
@@ -247,245 +217,279 @@ const ContactForm = () => {
           message: data.error || "Failed to submit form. Please check your details and try again.",
         });
         setLoading("Retry Submission");
-        setSubmitBtnClass("secondary-button-black-filled");
-        if (window.turnstile && widgetIdRef.current !== null) {
-          try { window.turnstile.reset(widgetIdRef.current); } catch (e) {}
-          setTurnstileToken("");
-        }
+        setIsSubmitting(false);
       }
     } catch (error) {
       console.error("Submission error:", error);
       setFormStatus({
         type: "error",
-        message: "Network error submitting inquiry. Please check your connection or contact us directly at info@srimworks.com.",
+        message: "Network error submitting inquiry. Please contact us directly at info@srimworks.com.",
       });
       setLoading("Retry Submission");
-      setSubmitBtnClass("secondary-button-black-filled");
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <div className="get-in-touch-section">
-      <div className="get-in-touch-section-left">
-        <div className="get-in-touch-l-top">
-          <h4 className="l-top-tag">Get in Touch</h4>
-          <h1 className="l-top-heading">Let’s chat. Reach out to us.</h1>
-          <p className="l-top-content">
-            Have questions about enterprise AI, data annotation, or digital platforms? Send us a message, and our engineering team will respond within 24 hours.
-          </p>
-        </div>
-        <div className="get-in-touch-l-bottom">
-          <div id="l-bottom-container">
-            <img src={IMAGES.CALL_ICON} alt="Phone" width="24" height="24" loading="lazy" />
-            <p id="l-bottom-container-text">
-              USA/CA +1 (832) 501-3875<br />
-              IND +91 (080) 6218-0277
+    <section className="contact-hub-section" aria-label="Contact and Consultation Hub">
+      <div className="contact-hub-container">
+        
+        {/* Left Column: Contact Channels & Credentials */}
+        <div className="contact-hub-left">
+          <div className="contact-hub-header">
+            <span className="contact-pill-tag">Get in Touch</span>
+            <h2 className="contact-main-heading">Let’s discuss your next breakthrough.</h2>
+            <p className="contact-main-subtitle">
+              Have questions about enterprise AI models, precision data annotations, or digital platform modernization? Our senior architects are ready to assist.
             </p>
           </div>
-          <div id="l-bottom-container">
-            <img src={IMAGES.MAIL_ICON} alt="Email" width="24" height="24" loading="lazy" />
-            <p id="l-bottom-container-text">
-              <a href="mailto:info@srimworks.com" style={{ color: "inherit", textDecoration: "none" }}>info@srimworks.com</a>
-            </p>
-          </div>
-          <div id="l-bottom-container">
-            <img src={IMAGES.LOCATION_ICON} alt="Office Location" width="24" height="24" loading="lazy" />
-            <p id="l-bottom-container-text">
-              Rajapushpa Summit, SY. 130P & 115/1P, Nanakramguda Rd, Financial District, Manikonda Jagir, Hyderabad, Telangana 500032
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div className="get-in-touch-section-right">
-        <form onSubmit={handleSubmit} className="form" noValidate>
-          <div className="form-grid">
-            <div id="row">
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-firstname">First Name *</label>
-                <input
-                  id="contact-firstname"
-                  type="text"
-                  name="firstname"
-                  value={formData.firstname}
-                  onChange={handleChange}
-                  placeholder="First Name"
-                  autoComplete="given-name"
-                  required
-                />
+          <div className="contact-channels-list">
+            <div className="contact-channel-card">
+              <div className="channel-icon-wrap">
+                <img src={IMAGES.CALL_ICON} alt="" width="22" height="22" loading="lazy" />
               </div>
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-lastname">Last Name *</label>
-                <input
-                  id="contact-lastname"
-                  type="text"
-                  name="lastname"
-                  value={formData.lastname}
-                  onChange={handleChange}
-                  placeholder="Last Name"
-                  autoComplete="family-name"
-                  required
-                />
+              <div className="channel-info">
+                <span className="channel-label">Direct Lines</span>
+                <a href="tel:+18325013875" className="channel-value">USA / CA: +1 (832) 501-3875</a>
+                <a href="tel:+9108062180277" className="channel-value">IND: +91 (080) 6218-0277</a>
               </div>
             </div>
 
-            <div id="row">
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-email">Corporate Email *</label>
-                <input
-                  id="contact-email"
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="name@company.com"
-                  autoComplete="email"
-                  required
-                />
+            <div className="contact-channel-card">
+              <div className="channel-icon-wrap">
+                <img src={IMAGES.MAIL_ICON} alt="" width="22" height="22" loading="lazy" />
               </div>
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-mobile">Phone Number *</label>
-                <div style={{ display: "flex", gap: "8px", width: "100%" }}>
-                  <select
-                    name="countryCode"
-                    value={formData.countryCode}
-                    onChange={handleChange}
-                    style={{
-                      width: "90px",
-                      padding: "10px 6px",
-                      borderRadius: "6px",
-                      border: "1px solid #ccc",
-                      fontSize: "14px",
-                      background: "#fff",
-                      cursor: "pointer"
-                    }}
-                    aria-label="Country Dial Code"
-                  >
-                    <option value="+1">🇺🇸 +1</option>
-                    <option value="+91">🇮🇳 +91</option>
-                    <option value="+44">🇬🇧 +44</option>
-                    <option value="+61">🇦🇺 +61</option>
-                    <option value="+49">🇩🇪 +49</option>
-                    <option value="+971">🇦🇪 +971</option>
-                    <option value="+65">🇸🇬 +65</option>
-                  </select>
+              <div className="channel-info">
+                <span className="channel-label">Corporate Inquiries</span>
+                <a href="mailto:info@srimworks.com" className="channel-value">info@srimworks.com</a>
+              </div>
+            </div>
+
+            <div className="contact-channel-card">
+              <div className="channel-icon-wrap">
+                <img src={IMAGES.LOCATION_ICON} alt="" width="22" height="22" loading="lazy" />
+              </div>
+              <div className="channel-info">
+                <span className="channel-label">Global Delivery HQ</span>
+                <p className="channel-text">
+                  Rajapushpa Summit, Financial District, Nanakramguda, Hyderabad, Telangana 500032, India
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="contact-assurances">
+            <div className="assurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Strict Mutual NDA & Enterprise IP Protection</span>
+            </div>
+            <div className="assurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Guaranteed 24-Hour Business SLA Response</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Premium Consultation Form Card */}
+        <div className="contact-hub-right">
+          <div className="contact-form-card">
+            <div className="form-card-header">
+              <h3 className="form-card-title">Schedule a Consultation</h3>
+              <p className="form-card-desc">Fill out the form below to connect with an engineering lead.</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="contact-form-body" noValidate>
+              <div className="form-row-2col">
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-firstname">First Name *</label>
                   <input
-                    id="contact-mobile"
-                    type="tel"
-                    name="mobile"
-                    value={formData.mobile}
+                    id="contact-firstname"
+                    type="text"
+                    name="firstname"
+                    className="form-field-input"
+                    value={formData.firstname}
                     onChange={handleChange}
-                    placeholder="Mobile / Office Phone"
-                    autoComplete="tel-national"
-                    style={{ flex: 1 }}
+                    placeholder="First Name"
+                    autoComplete="given-name"
+                    required
+                  />
+                </div>
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-lastname">Last Name *</label>
+                  <input
+                    id="contact-lastname"
+                    type="text"
+                    name="lastname"
+                    className="form-field-input"
+                    value={formData.lastname}
+                    onChange={handleChange}
+                    placeholder="Last Name"
+                    autoComplete="family-name"
                     required
                   />
                 </div>
               </div>
-            </div>
 
-            <div id="row">
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-company">Company / Organization *</label>
-                <input
-                  id="contact-company"
-                  type="text"
-                  name="companyName"
-                  value={formData.companyName}
+              <div className="form-row-2col">
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-email">Corporate Email *</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    className="form-field-input"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="name@company.com"
+                    autoComplete="email"
+                    required
+                  />
+                </div>
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-mobile">Phone Number *</label>
+                  <div className="form-phone-wrapper">
+                    <select
+                      name="countryCode"
+                      className="form-phone-select"
+                      value={formData.countryCode}
+                      onChange={handleChange}
+                      aria-label="Country Dial Code"
+                    >
+                      <option value="+1">🇺🇸 +1</option>
+                      <option value="+91">🇮🇳 +91</option>
+                      <option value="+44">🇬🇧 +44</option>
+                      <option value="+61">🇦🇺 +61</option>
+                      <option value="+49">🇩🇪 +49</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+65">🇸🇬 +65</option>
+                    </select>
+                    <input
+                      id="contact-mobile"
+                      type="tel"
+                      name="mobile"
+                      className="form-field-input phone-input"
+                      value={formData.mobile}
+                      onChange={handleChange}
+                      placeholder="Mobile Number"
+                      autoComplete="tel-national"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="form-row-2col">
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-company">Company / Organization *</label>
+                  <input
+                    id="contact-company"
+                    type="text"
+                    name="companyName"
+                    className="form-field-input"
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    placeholder="Your Company Name"
+                    autoComplete="organization"
+                    required
+                  />
+                </div>
+                <div className="form-field-group">
+                  <label className="form-field-label" htmlFor="contact-website">Company Website</label>
+                  <input
+                    id="contact-website"
+                    type="url"
+                    name="website"
+                    className="form-field-input"
+                    value={formData.website}
+                    onChange={handleChange}
+                    placeholder="https://yourcompany.com"
+                    autoComplete="url"
+                  />
+                </div>
+              </div>
+
+              <div className="form-field-group full-width">
+                <label className="form-field-label" htmlFor="contact-message">Project Requirements / Inquiry *</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  className="form-field-textarea"
+                  rows="4"
+                  value={formData.message}
                   onChange={handleChange}
-                  placeholder="Your Company Name"
-                  autoComplete="organization"
+                  placeholder="Describe your technical objectives, timeline, or team scaling needs..."
                   required
-                />
+                ></textarea>
               </div>
-              <div id="input-container">
-                <label id="input-label" htmlFor="contact-website">Website (Optional)</label>
-                <input
-                  id="contact-website"
-                  type="url"
-                  name="website"
-                  value={formData.website}
-                  onChange={handleChange}
-                  placeholder="https://yourcompany.com"
-                  autoComplete="url"
-                />
+
+              {/* Turnstile Security Widget */}
+              <div className="form-turnstile-container">
+                <div ref={turnstileContainerRef} className="cf-turnstile"></div>
               </div>
-            </div>
 
-            <div id="input-container">
-              <label id="input-label" htmlFor="contact-message">Project Description / Requirements *</label>
-              <textarea
-                id="contact-message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell us about your project requirements, data annotation needs, or timeline..."
-                rows="4"
-                required
-              ></textarea>
-            </div>
+              {/* Privacy Consent Checkbox */}
+              <div className="form-privacy-wrapper">
+                <label className="form-checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="privacyAccepted"
+                    checked={formData.privacyAccepted}
+                    onChange={handleChange}
+                    className="form-checkbox-input"
+                    required
+                  />
+                  <span>
+                    I agree to the <a href="/privacy" target="_blank" rel="noopener noreferrer" className="privacy-link">Privacy Policy</a> and consent to SRIM WORKS processing my information.
+                  </span>
+                </label>
+              </div>
 
-            {/* Cloudflare Turnstile Bot Protection Container */}
-            <div style={{ marginTop: "12px", minHeight: "65px", display: "flex", alignItems: "center" }}>
-              <div
-                ref={turnstileContainerRef}
-                id="cf-turnstile-box"
-                className="cf-turnstile"
-                data-sitekey={TURNSTILE_SITEKEY}
-                data-callback="onTurnstileSuccess"
-                data-expired-callback="onTurnstileExpired"
-                data-error-callback="onTurnstileError"
-                data-theme="light"
-              ></div>
-            </div>
+              {/* Status Alert Banner */}
+              {formStatus.message && (
+                <div className={`form-status-alert ${formStatus.type}`}>
+                  {formStatus.type === "success" ? (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  ) : (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="12"></line>
+                      <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                  )}
+                  <span>{formStatus.message}</span>
+                </div>
+              )}
 
-            {/* Privacy Checkbox */}
-            <div className="check" style={{ marginTop: "4px" }}>
-              <input
-                type="checkbox"
-                id="Accept_Privacy"
-                name="privacyAccepted"
-                checked={formData.privacyAccepted}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="Accept_Privacy" className="check-text">
-                I agree to the <Link className="privacy" to="/privacy">privacy policy</Link> and consent to being contacted regarding this inquiry.
-              </label>
-            </div>
-
-            {/* Accessible Inline Status / Alert Box */}
-            {formStatus.message && (
-              <div
-                role="alert"
-                aria-live="polite"
-                style={{
-                  padding: "12px 16px",
-                  borderRadius: "8px",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  marginTop: "8px",
-                  color: formStatus.type === "success" ? "#065f46" : "#991b1b",
-                  backgroundColor: formStatus.type === "success" ? "#d1fae5" : "#fee2e2",
-                  border: `1px solid ${formStatus.type === "success" ? "#a7f3d0" : "#fecaca"}`
-                }}
+              {/* Submit CTA Button */}
+              <button
+                type="submit"
+                className="form-submit-btn"
+                disabled={isSubmitting}
               >
-                {formStatus.message}
-              </div>
-            )}
+                {isSubmitting ? (
+                  <span className="btn-loading-state">
+                    <span className="spinner-circle"></span>
+                    {loading}
+                  </span>
+                ) : (
+                  <span>{loading} →</span>
+                )}
+              </button>
+            </form>
           </div>
+        </div>
 
-          <button
-            type="submit"
-            className={submitBtnClass}
-            disabled={loading.startsWith("Sending") || loading.startsWith("Message Sent")}
-            style={{ marginTop: "16px" }}
-          >
-            {loading}
-          </button>
-        </form>
       </div>
-    </div>
+    </section>
   );
 };
 
