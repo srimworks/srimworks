@@ -1504,7 +1504,7 @@ export const DIGITAL_CARDS = [
         image: IMAGES.DIGITAL_TRANSFORMATION_2,
         heading: "Cloud Migration",
         content:
-          "Text: We offer seamless cloud migration services to help organizations transition from on-premise systems to cloud-based platforms, minimizing risks and ensuring data integrity throughout the process.",
+          "We offer seamless cloud migration services to help organizations transition from on-premise systems to cloud-based platforms, minimizing risks and ensuring data integrity throughout the process.",
       },
       {
         image: IMAGES.DIGITAL_TRANSFORMATION_3,
@@ -1547,7 +1547,7 @@ export const DIGITAL_CARDS = [
         image: IMAGES.DIGITAL_DEVOPS_4,
         heading: "Continuous Testing",
         content:
-          "Text: We integrate continuous testing into the DevOps pipeline to catch issues early in the development lifecycle and ensure that the software is always in a deployable state.",
+          "We integrate continuous testing into the DevOps pipeline to catch issues early in the development lifecycle and ensure that the software is always in a deployable state.",
       },
       {
         image: IMAGES.DIGITAL_DEVOPS_5,

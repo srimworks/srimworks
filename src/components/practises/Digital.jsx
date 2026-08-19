@@ -10,43 +10,44 @@ import RightAside from "../../reusable/rightAside";
 import Cards from "../../reusable/cards";
 import MarketReuse from "../../reusable/MarketReuse";
 import Accordian from "../../reusable/accordian";
-import "../../styles/practises.css";
 
 const Digital = () => {
   return (
     <div className="outlet-render">
       <HeroSection {...DIGITAL_ENGINEERING_HERO} />
       <RightAside {...DIGITAL_OVERVIEW} />
-      <div className="what-offers-section">
+      <section className="what-offers-section" aria-label="Digital Engineering Solutions">
         <div className="what-offers-top">
-          <p className="what-offers-tag">SRIM Works Offer</p>
-          <h1 className="what-offers-heading">What We Offers</h1>
+          <span className="what-offers-tag">SRIM Works Capabilities</span>
+          <h2 className="what-offers-heading">What We Offer</h2>
+          <p className="what-offers-subheading">
+            End-to-end digital engineering disciplines across Salesforce ecosystem, Cloud Architecture, Modernization, and CI/CD DevOps.
+          </p>
         </div>
-        <div className="practices-cards">
+        
+        <div className="digital-categories-container">
           {DIGITAL_CARDS.map((category, index) => (
-            <div key={index}>
-              <div className="pc-whl-container">
-                <div className="price-top-container">
-                  <h2 className="pricing-category-head">{category.heading}</h2>
-                  <p className="pricing-category-body">{category.content}</p>
-                </div>
+            <div key={index} className="digital-category-block">
+              <div className="category-header">
+                <h3 className="category-heading">{category.heading}</h3>
+                <p className="category-description">{category.content}</p>
+              </div>
 
-                <div className="practices-cards">
-                  {category.cards.map((card, cardIndex) => (
-                    <Cards
-                      key={cardIndex}
-                      title={card.heading}
-                      content={card.content}
-                      image={card.image}
-                      postedon={category.heading} // Optionally add a date or heading here
-                    />
-                  ))}
-                </div>
+              <div className="practices-cards">
+                {category.cards.map((card, cardIndex) => (
+                  <Cards
+                    key={cardIndex}
+                    title={card.heading}
+                    content={card.content.replace(/^Text:\s*/i, "")}
+                    image={card.image}
+                    badge={category.heading}
+                  />
+                ))}
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
       <MarketReuse {...DIGITAL_MARKET_TRENDS} />
       <Accordian MARKKET_TRENDS={DIGITAL_MARKET_TRENDS} />
     </div>

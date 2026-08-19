@@ -1,37 +1,37 @@
 import React from "react";
 import {
-  CARDS_DATA,
   DESIGN_CARDS,
   DESIGN_MARKET_TRENDS,
   DESIGN_OVERVIEW,
+  DESIGN_HERO,
 } from "../../utils/constsnts";
 import HeroSection from "../../reusable/HeroWithLeftImg";
-import { DESIGN_HERO } from "../../utils/constsnts";
 import RightAside from "../../reusable/rightAside";
 import Cards from "../../reusable/cards";
 import MarketReuse from "../../reusable/MarketReuse";
 import Accordian from "../../reusable/accordian";
-import "../../styles/practises.css";
 
 const Design = () => {
   return (
     <div className="outlet-render">
       <HeroSection {...DESIGN_HERO} />
       <RightAside {...DESIGN_OVERVIEW} />
-      <div className="what-offers-section">
+      <section className="what-offers-section" aria-label="Design Engineering Capabilities">
         <div className="what-offers-top">
-          <p className="what-offers-tag">SRIM Works Offer</p>
-          <h1 className="what-offers-heading">What We Offers</h1>
+          <span className="what-offers-tag">SRIM Works Capabilities</span>
+          <h2 className="what-offers-heading">What We Offer</h2>
+          <p className="what-offers-subheading">
+            Design thinking workshops, comprehensive enterprise design systems, rapid prototyping, and user-centric experience engineering.
+          </p>
         </div>
         <div className="practices-cards">
-          {DESIGN_CARDS.map((item) => {
-            return <Cards {...item} />;
-          })}
+          {DESIGN_CARDS.map((item, index) => (
+            <Cards {...item} key={index} />
+          ))}
         </div>
-      </div>
-      <MarketReuse {...DESIGN_MARKET_TRENDS}/>
-      {/* {DESIGN_MARKET_TRENDS.map((item)=>{})} */}
-      <Accordian MARKKET_TRENDS={DESIGN_MARKET_TRENDS}/>
+      </section>
+      <MarketReuse {...DESIGN_MARKET_TRENDS} />
+      <Accordian MARKKET_TRENDS={DESIGN_MARKET_TRENDS} />
     </div>
   );
 };

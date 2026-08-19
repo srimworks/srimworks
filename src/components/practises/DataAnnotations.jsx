@@ -5,25 +5,26 @@ import RightAside from "../../reusable/rightAside";
 import Cards from "../../reusable/cards";
 import MarketReuse from "../../reusable/MarketReuse";
 import Accordian from "../../reusable/accordian";
-// standard anchor navigation
-const Link = ({ to, children, ...props }) => <a href={to} {...props}>{children}</a>;
 
 const DataAnnotations = () => {
   return (
     <div className="outlet-render">
       <HeroSection {...DATAAN_HERO} />
       <RightAside {...DATAAN_OVERVIEW} />
-      <div className="what-offers-section">
+      <section className="what-offers-section" aria-label="Data Annotation Solutions">
         <div className="what-offers-top">
-          <p className="what-offers-tag">SRIM Works Offer</p>
-          <h1 className="what-offers-heading">What We Offers</h1>
+          <span className="what-offers-tag">SRIM Works Capabilities</span>
+          <h2 className="what-offers-heading">What We Offer</h2>
+          <p className="what-offers-subheading">
+            Pixel-accurate computer vision labeling, multi-lingual NLP annotation, 3D LiDAR point cloud segmentation, and human-in-the-loop quality benchmarking.
+          </p>
         </div>
         <div className="practices-cards">
-          {DATAAN_CARDS.map((item) => {
-            return <Link className="link-cards" to={item.link}><Cards {...item} /></Link>
-          })}
+          {DATAAN_CARDS.map((item, index) => (
+            <Cards {...item} key={index} />
+          ))}
         </div>
-      </div>
+      </section>
       <MarketReuse {...DATAAN_MARKET_TRENDS} />
       <Accordian MARKKET_TRENDS={DATAAN_MARKET_TRENDS} />
     </div>
