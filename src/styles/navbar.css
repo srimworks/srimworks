@@ -1,285 +1,380 @@
-/* General Navbar Styles */
+/* ==========================================================================
+   SRIM WORKS Standardized Navigation & Mega-Dropdown Styles
+   ========================================================================== */
+
 .navbar {
   position: fixed;
-  /* top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-  z-index: 10;
-  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   width: 100%;
-  padding: 8px 64px;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #c8c8c8;
-  background: #fff;
-}
-/* Logo Styles */
-.navbar-logo {
-  flex-shrink: 0; /* Prevent the logo from shrinking */
+  height: 72px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.menu-icon{
-  display: none;
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-image {
-  height: 64px; /* Adjust the height of the logo */
-  width: auto; /* Maintain the aspect ratio */
-  object-fit: contain; /* Ensure the logo fits well */
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
-/* Adjust other navbar elements to align with the logo */
-.navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu-icon-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
+.menu-icon-btn:hover {
+  background: #f1f5f9;
+}
+
+.menu-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Nav Menu Items */
 .navbar-items {
   display: flex;
-  gap: 20px;
   align-items: center;
-}
-
-.navbar-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navbar-icon {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navbar-items {
-  display: flex;
-  gap: 20px;
+  gap: 8px;
 }
 
 .navbar-item {
   position: relative;
   display: flex;
-  align-items: flex-start;
-}
-.nav-button {
-  position: relative;
-  display: flex;
   align-items: center;
-  gap: 8px;
-  background: none;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
   border: none;
   cursor: pointer;
-  padding: 10px;
-  text-decoration: none;
-  color: #060606;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #1e293b;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover,
+.navbar-item:hover .nav-button,
+.navbar-item.dropdown-open .nav-button {
+  color: #0284c7;
+  background: #f0f9ff;
 }
 
 .chevron-image {
-  width: 12px; /* Adjust the size of the chevron */
-  height: 12px; /* Ensure proper aspect ratio */
-  transition: transform 0.3s ease;
+  width: 10px;
+  height: 10px;
+  transition: transform 0.25s ease;
+  opacity: 0.7;
 }
 
-.navbar-item:hover .chevron-image {
-  transform: rotate(180deg); /* Rotate the chevron upwards */
+.navbar-item:hover .chevron-image,
+.navbar-item.dropdown-open .chevron-image,
+.chevron-image.rotated {
+  transform: rotate(180deg);
+  opacity: 1;
 }
 
-/* Dropdown Styles */
-#nav-dropdown   {
+/* Desktop Mega Menu Dropdown */
+.nav-dropdown {
   display: none;
   position: fixed;
-  margin-top: 24px;
+  top: 72px;
   left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: transparent;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  padding-top: 36px;
-  overflow-y: auto;
+  right: 0;
+  width: 100vw;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+  z-index: 998;
+  animation: navDropdownFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-#nav-dropdown-active{
-  display: none;
-  position: fixed;
-  margin-top: 24px;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: transparent;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  padding-top: 36px;
-  overflow-y: auto;
+
+@keyframes navDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-#nav-dropdown-container {
-  display: flex;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  padding: 32px 128px 64px 144px;
-  align-items: flex-start;
-  gap: 64px;
-  border-top: 1px solid #C8C8C8;
+
+.navbar-item:hover .nav-dropdown,
+.nav-dropdown.active {
+  display: block;
 }
-#dropdown-heading {
-  color: #060606;
-  text-align: center;
-  font-family: "SF Pro Display";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.48px;
+
+.nav-dropdown-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 36px 32px 40px;
+  box-sizing: border-box;
 }
-.dropdown {
+
+/* Dropdown Mega Groups (e.g. Offerings) */
+.dropdown-mega-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.dropdown-group-col {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  flex-wrap: wrap;
-  height: 100%;
 }
 
-.navbar-item:hover #nav-dropdown {
-  display: block;
+.dropdown-group-title {
+  color: #0284c7;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 0 0 4px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0f2fe;
 }
-#dropdown-item-heading {
-  width: fit-content;
-}
-.dropdown-item {
-  width: 285px;
-  padding: 8px 16px;
-  color: #333;
-  text-decoration: none;
-  display: block;
-  color: #060606;
-  font-family: "SF Pro Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  display: flex;
-  padding: 8px 16px;
-  align-items: center;
+
+.dropdown-group-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 10px;
-  align-self: stretch;
-  border-bottom: 0.5px solid #000;
 }
 
-.dropdown-item:hover {
-  background-color: #f1f1f1;
-}
-@media (max-width:1100px) {
-  .navbar-logo{
-    width: 100%;
-    justify-content: space-between;
-  }
-  .menu-icon{
-    display: block;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  }
-  .navbar-items{
-    display: none;
-  }
-  .navbar-button{
-    display: none;
-  }
+/* Dropdown Grid Columns (e.g. Practices, Industries, Who We Are, Resources) */
+.dropdown-grid-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
+.dropdown-grid-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
 
-/* For smaller screens (mobile) */
-@media screen and (max-width: 768px) {
-  .navbar-button-active{
-    display: block;
+/* Dropdown Link Item Card */
+.dropdown-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item-card:hover {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  transform: translateX(3px);
+}
+
+.dropdown-item-label {
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+.dropdown-item-card:hover .dropdown-item-label {
+  color: #0284c7;
+}
+
+.dropdown-item-desc {
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Primary Schedule Call Button */
+.navbar-button .primary-button {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "SF Pro Display", -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-button .primary-button:hover {
+  background: #0284c7;
+  transform: translateY(-1px);
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Mobile Dropdown & Responsive Drawer */
+.mobile-dropdown-accordion {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    padding: 0;
   }
-  .nav-button{
-    width: 100%;
-    justify-content: space-between;
-  }
+
   .navbar-content {
-    flex-direction: column;
-    align-items: center;
+    padding: 0 20px;
   }
-  .navbar{
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .navbar-item:hover #nav-dropdown {
-    display: none;
-  }
-  .navbar-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .navbar-items.active{
-    display: block;
-    width: 100%;
 
+  .menu-icon-btn {
+    display: block;
   }
-  .navbar-item{
-    flex-direction: column;
+
+  .navbar-logo {
     width: 100%;
+    justify-content: space-between;
   }
-  .dropdown-item{
-    font-size: 14px;
-    width: 100%;
-  }
-  #nav-dropdown-active{
-    display: flex;
-    position: relative;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  #dropdown-heading{
+
+  .navbar-items {
     display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 72px);
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .navbar-items.active {
+    display: flex;
   }
 
   .navbar-item {
     width: 100%;
-    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid #f1f5f9;
   }
-  #nav-dropdown-container{
-    padding: 0;
-    width: 100%;
 
-  }
-  .dropdown{
+  .nav-button {
     width: 100%;
+    justify-content: space-between;
+    padding: 14px 12px;
+    font-size: 16px;
   }
-  .navbar-content{
-    align-items: flex-start;
+
+  .nav-dropdown {
+    display: none !important;
   }
-  
+
+  .mobile-dropdown-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 12px 16px 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-group-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .mobile-group-title {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0284c7;
+    margin-top: 6px;
+  }
+
+  .mobile-dropdown-link {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: #334155;
+    text-decoration: none;
+    padding: 6px 0;
+  }
+
+  .mobile-dropdown-link:hover {
+    color: #0284c7;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+
+  .navbar-button.active {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .navbar-button.active .primary-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
 }
-
-/* For larger screens (tablets and above) */
-/* @media screen and (min-width: 769px) {
-  .navbar-items {
-    flex-direction: row;
-    gap: 20px;
-  }
-} */

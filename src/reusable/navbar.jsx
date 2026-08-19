@@ -1,87 +1,164 @@
 import React, { useState } from "react";
-import "../styles/navbar.css"; // Import the CSS file for styling
+import "../styles/navbar.css";
 import { IMAGES } from "../utils/images";
-// standard anchor navigation
-const Link = ({ to, children, ...props }) => <a href={to} {...props}>{children}</a>;
 import { NavItems } from "../utils/constsnts";
 
+const Link = ({ to, children, ...props }) => <a href={to} {...props}>{children}</a>;
+
 const Navbar = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null); 
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
+  const [openMobileAccordion, setOpenMobileAccordion] = useState(null);
 
   const handleMouseEnter = (index) => {
-    setActiveDropdown(index); 
+    setActiveDropdown(index);
   };
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null); 
+    setActiveDropdown(null);
   };
 
-  const handleItemClick = () => {
-    setActiveDropdown(null); 
-    setIsMobileMenuOpen(!isMobileMenuOpen)
+  const handleLinkClick = () => {
+    setActiveDropdown(null);
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileAccordion = (index) => {
+    setOpenMobileAccordion(openMobileAccordion === index ? null : index);
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" role="navigation" aria-label="Main Navigation">
       <div className="navbar-content">
         <div className="navbar-logo">
-          <Link to="/">
-            <img src={IMAGES.NAV_LOGO} alt="Logo" className="logo-image" />
+          <Link to="/" onClick={handleLinkClick}>
+            <img src={IMAGES.NAV_LOGO} alt="SRIM WORKS Logo" className="logo-image" />
           </Link>
-          <img src={IMAGES.MENU_ICON} alt="Menu_Icon" className="menu-icon" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}/>
+          <button 
+            type="button"
+            className="menu-icon-btn" 
+            aria-label="Toggle navigation menu"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <img src={IMAGES.MENU_ICON} alt="" className="menu-icon" />
+          </button>
         </div>
 
-        <div className={`navbar-items ${isMobileMenuOpen ? "active":""} `}>
+        <div className={`navbar-items ${isMobileMenuOpen ? "active" : ""}`}>
           {NavItems.map((item, index) => (
             <div
               key={index}
-              className="navbar-item"
+              className={`navbar-item ${activeDropdown === index ? "dropdown-open" : ""}`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
-              onClick={()=> setIsDropDownMenuOpen(!isDropDownMenuOpen)}
             >
-              <button className="nav-button" >
+              <button 
+                type="button"
+                className="nav-button"
+                onClick={() => toggleMobileAccordion(index)}
+                aria-expanded={activeDropdown === index || openMobileAccordion === index}
+              >
                 {item.title}
                 <img
                   src={IMAGES.CHEVRON_DOWN}
-                  alt="Chevron"
-                  className="chevron-image"
+                  alt=""
+                  className={`chevron-image ${openMobileAccordion === index ? "rotated" : ""}`}
                 />
               </button>
-              {activeDropdown === index && (
-                <div id={`${isDropDownMenuOpen && isMobileMenuOpen ? "nav-dropdown-active":"nav-dropdown"}`}>
-                  <div id="nav-dropdown-container">
-                    <h1 id="dropdown-heading">{item.title}</h1>
-                    <div className="dropdown">
-                      {item.links.map((link, idx) => (
-                        <Link
-                          key={idx}
-                          to={link.to}
-                          className="dropdown-item"
-                          onClick={handleItemClick}
-                          // onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                          {link.label}
-                        </Link>
+
+              {/* Desktop Mega Menu Dropdown */}
+              <div className={`nav-dropdown ${activeDropdown === index ? "active" : ""}`}>
+                <div className="nav-dropdown-wrapper">
+                  {item.groups ? (
+                    <div className="dropdown-mega-groups">
+                      {item.groups.map((grp, gIdx) => (
+                        <div key={gIdx} className="dropdown-group-col">
+                          <h4 className="dropdown-group-title">{grp.groupTitle}</h4>
+                          <div className="dropdown-group-links">
+                            {grp.links.map((link, lIdx) => (
+                              <Link
+                                key={lIdx}
+                                to={link.to}
+                                className="dropdown-item-card"
+                                onClick={handleLinkClick}
+                              >
+                                <span className="dropdown-item-label">{link.label}</span>
+                                {link.desc && <span className="dropdown-item-desc">{link.desc}</span>}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
                       ))}
                     </div>
-                  </div>
+                  ) : (
+                    <div className="dropdown-grid-columns">
+                      <div className="dropdown-column-header">
+                        <h4 className="dropdown-group-title">{item.title}</h4>
+                      </div>
+                      <div className="dropdown-grid-links">
+                        {item.links.map((link, lIdx) => (
+                          <Link
+                            key={lIdx}
+                            to={link.to}
+                            className="dropdown-item-card"
+                            onClick={handleLinkClick}
+                          >
+                            <span className="dropdown-item-label">{link.label}</span>
+                            {link.desc && <span className="dropdown-item-desc">{link.desc}</span>}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Mobile Accordion Dropdown */}
+              {openMobileAccordion === index && (
+                <div className="mobile-dropdown-accordion">
+                  {item.groups ? (
+                    item.groups.map((grp, gIdx) => (
+                      <div key={gIdx} className="mobile-group-block">
+                        <span className="mobile-group-title">{grp.groupTitle}</span>
+                        {grp.links.map((link, lIdx) => (
+                          <Link
+                            key={lIdx}
+                            to={link.to}
+                            className="mobile-dropdown-link"
+                            onClick={handleLinkClick}
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    ))
+                  ) : (
+                    item.links.map((link, lIdx) => (
+                      <Link
+                        key={lIdx}
+                        to={link.to}
+                        className="mobile-dropdown-link"
+                        onClick={handleLinkClick}
+                      >
+                        {link.label}
+                      </Link>
+                    ))
+                  )}
                 </div>
               )}
             </div>
           ))}
-                  <div className="navbar-item">
-            <Link to="/careers" className="link">
-              <button className="nav-button" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}>Careers</button>
+
+          <div className="navbar-item">
+            <Link to="/careers" className="link" onClick={handleLinkClick}>
+              <button type="button" className="nav-button">Careers</button>
             </Link>
           </div>
         </div>
 
-        <div className={`${isMobileMenuOpen ? "navbar-button-active":"navbar-button" }`}>
-          <Link to="/contact-us" className="link" >
-            <button className="primary-button" onClick={()=>setIsMobileMenuOpen(!isMobileMenuOpen)}>Schedule a Call</button>
+        <div className={`navbar-button ${isMobileMenuOpen ? "active" : ""}`}>
+          <Link to="/contact-us" className="link" onClick={handleLinkClick}>
+            <button type="button" className="primary-button">Schedule a Call</button>
           </Link>
         </div>
       </div>
