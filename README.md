@@ -23,5 +23,5 @@
 
 * **[Auto+ (`autoplus.srimworks.com/cars`)](https://autoplus.srimworks.com/cars)** — High-scale automotive intelligence & valuation platform indexing **1,100–1,200+ automobile models across India** and **10,000+ distinct trim/powertrain variants** via Hybrid Dense-Sparse Retrieval.
 * **[PopcornIQ (`popcorniq.nuaibot.com`)](https://popcorniq.nuaibot.com/)** — Autonomous OTT & entertainment discovery engine harmonizing **13,000,000+ global content titles** via **Temporal durable state machines** and LangGraph swarms.
-* **[PricePulse (`Live Portal`)](https://pricepulse-9oe.pages.dev/)** — Real-time multi-merchant hardware benchmark & historical price sparkline intelligence engine.
+* **[PricePulse (`pricepulse.nuaibot.com`)](https://pricepulse.nuaibot.com/)** — Real-time multi-merchant hardware benchmark & historical price sparkline intelligence engine.
 * **[VEN-Hermes-14B-AWQ (`Hugging Face Hub`)](https://huggingface.co/kireetialugunulla/VEN-Hermes-14B-AWQ)** — Custom post-trained 14B AWQ reasoning engine with C++/CUDA fused kernel acceleration.
