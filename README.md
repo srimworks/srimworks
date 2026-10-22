@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Alugunulla Vigneswara Kireeti (Vignesh)
+### **Level 5 Principal AI Systems Architect & Sovereign Engineering Lead**
+*Autonomous Multi-Agent Swarms (Temporal / LangGraph) • Custom LLM Post-Training (QLoRA / SFT / DPO) • Raw C++/CUDA Hardware Acceleration • Zero-Trust AppSec & KMS Walletization*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Hugging Face Hub](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-kireetialugunulla-blue)](https://huggingface.co/kireetialugunulla)
+[![VEN-Hermes-14B-AWQ](https://img.shields.io/badge/Model-VEN--Hermes--14B--AWQ-success)](https://huggingface.co/kireetialugunulla/VEN-Hermes-14B-AWQ)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kireeti--av-0A66C2)](https://linkedin.com/in/kireeti-av)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Featured Open-Source Engineering Repositories
 
-### `npm start`
+| Repository | Domain & Core Architecture | Verified Benchmark / Impact |
+| :--- | :--- | :--- |
+| **[`cuda-llm-fused-kernels`](https://github.com/srimworks/cuda-llm-fused-kernels)** | Raw C++/CUDA custom kernels (`fused_rmsnorm_swiglu` & `fused_l2_cosine_similarity`) using warp-level `__shfl_down_sync` reductions and vectorized `float4` loads. | **`15.87x` & `6.73x` Speedup** over PyTorch Eager on Dual NVIDIA Tesla T4 (`sm_75`). |
+| **[`sovereign-agent-skills`](https://github.com/srimworks/sovereign-agent-skills)** | Institutional Model Context Protocol (MCP) & Agentic Skill Library: **NAWG Anti-Hallucination**, **3-Pass Zero-Variance Reconciliation**, and **4 Ironclad Locks Git-Ratcheted QA Loops**. | **100.0% Zero-Variance Convergence** & deterministic self-healing QA. |
+| **[`zero-trust-llm-wallet-proxy`](https://github.com/srimworks/zero-trust-llm-wallet-proxy)** | Enterprise Dynamic LLM Proxy & Cryptographic Key Walletization with **AES-256-GCM envelope encryption** and **15-minute ephemeral in-memory leasing**. | **Zero Static `.env` Exposure** & **70%+ Compute Cost Reduction**. |
+| **[`qlora-chatml-dpo-pipeline`](https://github.com/srimworks/qlora-chatml-dpo-pipeline)** | Open-weight LLM post-training harness: **Rank-32 NF4 QLoRA SFT** with `<think>` traces, **Bradley-Terry DPO**, and **4-bit Group-128 AWQ** quantization. | **99.6% SFT Loss Reduction** & **100% DPO Preference Accuracy**. |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Flagship Production Platforms Architected
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **[Auto+ (`autoplus.srimworks.com/cars`)](https://autoplus.srimworks.com/cars)** — High-scale automotive intelligence & valuation platform indexing **1,100–1,200+ automobile models across India** and **10,000+ distinct trim/powertrain variants** via Hybrid Dense-Sparse Retrieval.
+* **[PopcornIQ (`popcorniq.nuaibot.com`)](https://popcorniq.nuaibot.com/)** — Autonomous OTT & entertainment discovery engine harmonizing **13,000,000+ global content titles** via **Temporal durable state machines** and LangGraph swarms.
+* **[PricePulse (`Live Portal`)](https://pricepulse-9oe.pages.dev/)** — Real-time multi-merchant hardware benchmark & historical price sparkline intelligence engine.
+* **[VEN-Hermes-14B-AWQ (`Hugging Face Hub`)](https://huggingface.co/kireetialugunulla/VEN-Hermes-14B-AWQ)** — Custom post-trained 14B AWQ reasoning engine with C++/CUDA fused kernel acceleration.
